@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /centermint/
+Sitemap: https://zhao73.github.io/centermint/sitemap.xml
