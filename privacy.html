@@ -27,16 +27,21 @@
     <p>CenterMint ("we", "our", or "the app") is a card centering measurement tool. We are committed to protecting your privacy. This policy explains what data we collect and how we handle it.</p>
 
     <h2>Data We Handle Locally</h2>
-    <p><strong>Card photos and centering measurements stay on your device.</strong> CenterMint processes card images locally for centering measurement and does not automatically upload those images, measurements, scan history, or manual adjustment samples to our servers.</p>
+    <p><strong>Card recognition runs on your device. Correction sharing is optional and off by default.</strong> If you enable Share my corrections, future manually corrected card images, suggested and final frame coordinates, correction masks, app version, and device model are automatically sent to CenterMint through Cloudflare for detection evaluation and improvement. We do not upload your scan history or backfill corrections made before you enabled sharing.</p>
     <ul>
-        <li><strong>Photos & Camera:</strong> Used solely to capture or import card images for centering measurement. Images are not automatically sent off your device. You can choose to export or share images and reports using the app's sharing tools.</li>
+        <li><strong>Photos & Camera:</strong> Used solely to capture or import card images for centering measurement. Images are uploaded only for future correction samples after you enable sharing. You can choose to export or share images and reports using the app's sharing tools.</li>
         <li><strong>Device Motion:</strong> Used only for the real-time level indicator during photo capture. This data is not stored or shared.</li>
-        <li><strong>Local Correction Records:</strong> New installations keep manually adjusted card images and frame positions on the device by default. Earlier choices to disable this are preserved. You can turn recording off, export records, or delete them in Data &amp; Privacy. These records support later review; saving them does not automatically train or update a detection model. They are not sent to Firebase or any other remote training service.</li>
+        <li><strong>Local Correction Records:</strong> New installations keep manually adjusted card images and frame positions on the device by default. Earlier choices to disable this are preserved. Local recording and remote sharing are separate choices. Saving a sample does not automatically train or update a detection model. Records are not sent to Firebase. The optional Cloudflare upload preserves the exact locally stored image and correction coordinates.</li>
     </ul>
+
+    <h2>Optional Correction Sharing</h2>
+    <p>Sharing is off by default and can be turned off at any time in Data &amp; Privacy. Turning it off stops future uploads and retries; samples already received remain available for review. An installation-specific random credential and its hash are used for authorization, isolation, and duplicate prevention. They are not your Apple ID, email address, or advertising identifier, but submitted samples are associated with this installation identifier. The upload service uses your IP address transiently for rate limiting; the application database does not store it. Cloudflare processes network information to provide the service.</p>
+    <p>Images and annotation files are kept in private Cloudflare R2 storage; receipt and budget metadata are stored in Cloudflare D1. Only authorized operators can download them. We retain received corrections while needed for detection evaluation and improvement. For access or deletion requests, contact us using the address below; we may need information to identify the relevant sample. Data is not sold or used by CenterMint for advertising. Card images may include the area surrounding the card; share only images you intend to contribute.</p>
 
     <h2>Third-Party Services</h2>
     <p>The app may use the following third-party services:</p>
     <ul>
+        <li><strong>Cloudflare:</strong> Hosts optional correction uploads and processes network requests. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s Privacy Policy</a>.</li>
         <li><strong>Apple StoreKit:</strong> For processing in-app subscriptions. Payments are handled entirely by Apple. We do not have access to your payment information.</li>
         <li><strong>Google AdMob:</strong> For displaying advertisements in the free version. AdMob may collect device identifiers, approximate location, advertising data, product interaction, crash data, performance data, and other diagnostic data for advertising, measurement, analytics, and fraud prevention according to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
         <li><strong>Google User Messaging Platform:</strong> For presenting and storing advertising consent choices where required. This SDK may process approximate location, product interaction, and performance data for consent and app functionality.</li>
@@ -49,7 +54,7 @@
     <p>CenterMint Pro is available as a monthly or yearly auto-renewable subscription. Payment is charged to your Apple ID account. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage subscriptions in your device Settings > Apple ID > Subscriptions.</p>
 
     <h2>Data Storage</h2>
-    <p>Scan history, saved records, and local training samples are stored locally on your device using Apple's on-device storage. This card data is not accessible to us and is not automatically transmitted to any external server. Files you choose to export or share are handled by the destination you select.</p>
+    <p>Scan history, saved records, and local training samples are stored locally on your device using Apple's on-device storage. Saved scans remain local. Only future eligible correction samples are automatically transmitted after you explicitly enable sharing; those received samples are accessible to authorized CenterMint operators. Files you choose to export or share are handled by the destination you select.</p>
 
     <h2>Children's Privacy</h2>
     <p>The app does not knowingly collect any personal information from children under 13.</p>
