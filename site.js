@@ -16,7 +16,7 @@
       if (link.hasAttribute("data-app-link")) {
         target.searchParams.set("ct", target.searchParams.get("ct").replace("_202609", `_${source}_202609`));
         link.href = target.href;
-      } else if (target.origin === location.origin && target.pathname.startsWith("/centermint/") && target.pathname.endsWith("/")) {
+      } else if (!link.getAttribute("href").startsWith("#") && target.origin === location.origin && target.pathname.startsWith("/centermint/") && target.pathname.endsWith("/")) {
         target.searchParams.set("cm_ref", source);
         link.href = target.href;
       }
