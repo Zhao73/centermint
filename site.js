@@ -1,5 +1,5 @@
 (() => {
-  const aliases = { "chatgpt.com": "chatgpt", chatgpt: "chatgpt", google: "google", bing: "bing", perplexity: "perplexity", "perplexity.ai": "perplexity" };
+  const aliases = { "chatgpt.com": "chatgpt", chatgpt: "chatgpt", google: "google", bing: "bing", yahoo_jp: "yahoo_jp", "yahoo.co.jp": "yahoo_jp", "search.yahoo.co.jp": "yahoo_jp", perplexity: "perplexity", "perplexity.ai": "perplexity" };
   const query = new URLSearchParams(location.search);
   const sourceKey = [query.get("utm_source"), query.get("cm_ref")].find(key => Object.hasOwn(aliases, key));
   let source = aliases[sourceKey];
@@ -8,6 +8,7 @@
     if (host === "chatgpt.com" || host.endsWith(".chatgpt.com")) source = "chatgpt";
     else if (/^(www\.)?google\.(com|co\.jp|co\.uk|de|fr)$/.test(host)) source = "google";
     else if (host === "www.bing.com" || host === "bing.com") source = "bing";
+    else if (host === "yahoo.co.jp" || host.endsWith(".yahoo.co.jp")) source = "yahoo_jp";
     else if (host === "www.perplexity.ai" || host === "perplexity.ai") source = "perplexity";
   }
   if (source) {
