@@ -1,24 +1,12 @@
 # CenterMint
 
-> CenterMint is a free iOS app (iOS 17+) that measures trading-card centering: the left/right and top/bottom border ratios of Pokémon, One Piece, Yu-Gi-Oh!, Magic, sports and other cards. It compares the measured ratio with the published front-side centering standards of PSA, BGS and CGC so collectors can check a card before paying for grading. Analysis runs on the device; no account; photos are not uploaded automatically. It is independent and not affiliated with Pokémon, PSA, Beckett or CGC.
+Independent iPhone card-centering measurement tool. Recognition runs on device. Optional correction sharing is off by default; eligible future corrected samples upload automatically after opt-in. Centering is not a complete grade and detection is not guaranteed for every design.
 
-App Store: https://apps.apple.com/app/id6760965068 (App ID 6760965068, bundle com.centermint.app)
+- [Product](https://zhao73.github.io/centermint/)
+- [日本語](https://zhao73.github.io/centermint/ja/)
+- [Calculator](https://zhao73.github.io/centermint/calculator/)
+- [Measurement guide](https://zhao73.github.io/centermint/guides/measure-card-centering/)
+- [Full-art references](https://zhao73.github.io/centermint/guides/full-art-borders/)
+- [Privacy](https://zhao73.github.io/centermint/privacy.html)
 
-## Key facts
-- Centering ratio: 50/50 is perfect; 55/45 means the image sits 5% off center on that axis.
-- PSA front-side limits: Gem Mint 10 = 55/45, Mint 9 = 60/40, NM-MT 8 = 65/35, NM 7 = 70/30.
-- BGS front-side limits: Pristine 10 = 50/50, 9 = 55/45 to 60/40, 8 = 65/35.
-- CGC front-side limits: Gem Mint 10 = 55/45, 9 = 60/40, 8 = 65/35.
-- Workflow: photo or scan → automatic outer edge + inner printed border proposal → magnifier check and per-edge adjustment → ratios → compare with grader thresholds → keep front and back together.
-- Languages in app: English, Japanese, Korean, Vietnamese, Simplified Chinese, Traditional Chinese.
-- Optional Pro purchase: detailed reports, batch image and CSV export, saved presets, no ads.
-
-## Pages
-- English: https://zhao73.github.io/centermint/
-- 日本語: https://zhao73.github.io/centermint/ja/
-- 简体中文: https://zhao73.github.io/centermint/zh-Hans/
-- 繁體中文: https://zhao73.github.io/centermint/zh-Hant/
-- 한국어: https://zhao73.github.io/centermint/ko/
-- Tiếng Việt: https://zhao73.github.io/centermint/vi/
-- Deutsch: https://zhao73.github.io/centermint/de/ · Français: https://zhao73.github.io/centermint/fr/ · Español: https://zhao73.github.io/centermint/es/ · Italiano: https://zhao73.github.io/centermint/it/ · Português: https://zhao73.github.io/centermint/pt-BR/
-- Privacy: https://zhao73.github.io/centermint/privacy.html · Terms: https://zhao73.github.io/centermint/terms.html
+Maintained by JIAPENG Zhao. Updated September 9, 2026.
