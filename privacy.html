@@ -21,7 +21,7 @@
 <body>
 <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Last updated: September 16, 2026</p>
+    <p class="subtitle">Last updated: September 18, 2026</p>
 
     <h2>Overview</h2>
     <p>CenterMint ("we", "our", or "the app") is a card centering measurement tool. We are committed to protecting your privacy. This policy explains what data we collect and how we handle it.</p>
@@ -41,10 +41,14 @@
     <h2>Batch Import Learning</h2>
     <p>Batch import (choosing several photos at once from the home screen) is handled differently from single scans. Before your first batch, the app shows a one-time notice: photos you batch-import and the borders the app detects or you confirm are uploaded to CenterMint through Cloudflare to evaluate and improve border detection. Uploaded images are re-encoded without location or camera metadata, are associated only with the same installation identifier used for correction sharing, and follow the same storage, retention, access and deletion terms described above. You can decline in that notice or turn batch learning off at any time in Settings; single scans are never uploaded unless you separately enable Share my corrections.</p>
 
+    <h2>Optional Usage Statistics</h2>
+    <p>In versions that include Share usage statistics, this setting is off by default and separate from card-learning sharing and advertising consent. If you turn it on in More &gt; Data &amp; Privacy, CenterMint sends session and feature-use events, scan completion and processing times, purchase outcomes, app version and supported language with a random installation credential. Our server stores a keyed hash of this credential. These pseudonymous events are linked to the same installation, not to an Apple account. They contain no card photos, card names, album contents, payment details, advertising ID or precise location.</p>
+    <p>Cloudflare processes the network requests, including IP addresses required to deliver and rate-limit them. We do not store IP addresses in the usage database or enable Worker request logs. Statistics are accessible only through a private administrator dashboard and are not used for cross-app advertising tracking. Unsent events are kept on device for up to seven days; received events are automatically removed after at most 90 days. Turning sharing off cancels pending uploads and clears unsent events; requests already received may remain until retention expires. If you enable sharing again, a new random identifier is created. Events collected before you opted in are never backfilled.</p>
+
     <h2>Third-Party Services</h2>
     <p>The app may use the following third-party services:</p>
     <ul>
-        <li><strong>Cloudflare:</strong> Hosts optional correction uploads and batch import learning uploads, and processes network requests. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s Privacy Policy</a>.</li>
+        <li><strong>Cloudflare:</strong> Hosts optional usage statistics, correction uploads and batch import learning uploads, and processes network requests. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s Privacy Policy</a>.</li>
         <li><strong>Apple StoreKit:</strong> For processing in-app subscriptions. Payments are handled entirely by Apple. We do not have access to your payment information.</li>
         <li><strong>Google AdMob:</strong> For displaying advertisements in the free version. AdMob may collect device identifiers, approximate location, advertising data, product interaction, crash data, performance data, and other diagnostic data for advertising, measurement, analytics, and fraud prevention according to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
         <li><strong>Google User Messaging Platform:</strong> For presenting and storing advertising consent choices where required. This SDK may process approximate location, product interaction, and performance data for consent and app functionality.</li>
@@ -57,7 +61,7 @@
     <p>CenterMint Pro is available as a monthly or yearly auto-renewable subscription. Payment is charged to your Apple ID account. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage subscriptions in your device Settings > Apple ID > Subscriptions.</p>
 
     <h2>Data Storage</h2>
-    <p>Scan history, saved records, and local training samples are stored locally on your device using Apple's on-device storage. Saved scans remain local. Only future eligible correction samples (after you explicitly enable sharing) and batch-imported photos (after you accept the batch learning notice) are automatically transmitted; those received samples are accessible to authorized CenterMint operators. Files you choose to export or share are handled by the destination you select.</p>
+    <p>Scan history, saved records, and local training samples are stored locally on your device using Apple's on-device storage. Saved scans remain local. Future eligible correction samples (after you explicitly enable sharing), batch-imported photos (after you accept the batch learning notice), and optional usage events (after separate opt-in) may be transmitted; received data is accessible only to authorized CenterMint operators. Files you choose to export or share are handled by the destination you select.</p>
 
     <h2>Children's Privacy</h2>
     <p>The app does not knowingly collect any personal information from children under 13.</p>
