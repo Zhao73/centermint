@@ -1,0 +1,1113 @@
+{
+ "en": {
+  "skip": "Skip to content",
+  "lang_label": "Language",
+  "download": "Download",
+  "badge_alt": "Download on the App Store",
+  "qr_caption": "Scan with your iPhone camera to open CenterMint in the App Store.",
+  "stage_caption": "Our own sample card, drawn for CenterMint. Its left and right borders are 52.9 / 47.1.",
+  "loupe_hint": "Move the pointer over the card to use the loupe.",
+  "readout_lr": "Left / right",
+  "readout_tb": "Top / bottom",
+  "readout_ref": "PSA 10 front reference",
+  "readout_within": "within 55/45",
+  "step_titles": [
+   "Lay it flat",
+   "Find the edges",
+   "Confirm each line",
+   "Compare with the references",
+   "Check before you send it"
+  ],
+  "step_of": "Step {n} of 5",
+  "raw_only": "Raw cards only.",
+  "new_in": "New in version 1.9",
+  "f_share_title": "Share images",
+  "f_batch_title": "Batch 2.0 and the decision assistant",
+  "shot_alt": {
+   "result": "CenterMint result screen with the left/right and top/bottom centering of a sample card",
+   "guide": "Guided line check: the loupe on one border line with the reason it needs a look",
+   "value": "Worth Grading? screen comparing selling raw with PSA 9 and PSA 10",
+   "closeups": "Corner and edge close-ups cropped from the original photo",
+   "ledger": "Submission Log with grading fees and returned grades",
+   "share": "Share image with the card photo and its centering"
+  },
+  "closeups_caption": "Crops from our sample card at full resolution: four corners, four edges. You judge the whitening; the app does not score it.",
+  "closeup_labels": [
+   "Top left",
+   "Top edge",
+   "Top right",
+   "Left edge",
+   "Right edge",
+   "Bottom left",
+   "Bottom edge",
+   "Bottom right"
+  ],
+  "batch_bins": [
+   "Submit",
+   "Fix first",
+   "Below target"
+  ],
+  "batch_pdf": "Submission checklist PDF",
+  "calc": {
+   "h": "Try the break-even math",
+   "help": "Use recent sold prices in one currency. The calculator runs in your browser; nothing is sent anywhere.",
+   "raw": "Raw price (sell as is)",
+   "second": "PSA 9 sold price",
+   "top": "PSA 10 sold price",
+   "fee": "Grading fee per card",
+   "sell": "Selling fee (%)",
+   "ceiling": "What your centering allows",
+   "opts": [
+    "Not measured yet (no limit)",
+    "PSA 10 range: front ≤ 55/45, back ≤ 75/25",
+    "PSA 9 at best: front ≤ 60/40, back ≤ 90/10",
+    "Worse than the PSA 9 range"
+   ],
+   "error": "Enter plain numbers; the selling fee must be below 100%.",
+   "reset": "Reset example",
+   "verdict": {
+    "needs-prices": "Enter the three sold prices and the grading fee.",
+    "worth-it": "Worth grading",
+    "worth-it-detail": "Even at PSA 9 you come out ahead after the grading and selling fees.",
+    "only-if-top-grade": "Pays only at PSA 10",
+    "only-if-top-grade-detail": "A PSA 10 makes money; a PSA 9 doesn’t. Make sure the corners, edges and surface are clean first.",
+    "not-worth": "Not worth grading",
+    "not-worth-detail": "Even at PSA 10 you’d make less than selling it raw.",
+    "centering-blocks": "Centering rules out the grade that pays",
+    "centering-blocks-detail": "With this centering, the grade that would make money is out of reach.",
+    "unreachable": "Ruled out"
+   },
+   "out": [
+    "Extra vs raw at PSA 9",
+    "Extra vs raw at PSA 10",
+    "PSA 10 break-even price"
+   ],
+   "caption": "Works the same for BGS (9.5 and 9) or CGC (10 and 9.5): enter those prices in the two grade fields.",
+   "more": "Formula, worked example and sources",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "Watch it measure",
+  "video_p": "Cards land on the mat. The outer edge and the printed inner border are found, the ratios appear, and the one that is off-center gets flagged.",
+  "video_note": "Abstract cards drawn for this page. In the app you measure your own card from a photo.",
+  "footer_download": "Get CenterMint",
+  "footer_languages": "Languages",
+  "footer_more": "Contact and legal",
+  "mobile_bar": "Free on iPhone"
+ },
+ "ja": {
+  "skip": "本文へ移動",
+  "lang_label": "言語",
+  "download": "ダウンロード",
+  "badge_alt": "App Store からダウンロード",
+  "qr_caption": "iPhone のカメラで読み取ると、App Store の CenterMint を開きます。",
+  "stage_caption": "CenterMint のために描いたサンプルカード。左右の余白は 52.9 / 47.1 です。",
+  "loupe_hint": "カードの上でポインタを動かすと拡大鏡になります。",
+  "readout_lr": "左右",
+  "readout_tb": "上下",
+  "readout_ref": "PSA 10 表面の基準",
+  "readout_within": "55/45 以内",
+  "step_titles": [
+   "平らに置いて撮る",
+   "縁を見つける",
+   "線を一本ずつ確認",
+   "基準と比べる",
+   "出す前に確認"
+  ],
+  "step_of": "手順 {n} / 5",
+  "raw_only": "自動測定は素体のカードだけ。",
+  "new_in": "バージョン 1.9 の新機能",
+  "f_share_title": "共有画像",
+  "f_batch_title": "バッチ 2.0 と決策アシスタント",
+  "shot_alt": {
+   "result": "サンプルカードの左右・上下のセンタリングを表示した CenterMint の結果画面",
+   "guide": "一本ずつの線確認：拡大鏡が枠線に合い、確認が必要な理由を表示",
+   "value": "素体で売る場合と PSA 9・PSA 10 を比べる「鑑定に出す価値は？」の画面",
+   "closeups": "元の写真から切り出した四隅・四辺の拡大",
+   "ledger": "鑑定費用と戻ってきた評価を記録する鑑定記録",
+   "share": "カード写真とセンタリングを載せた共有画像"
+  },
+  "closeups_caption": "サンプルカードの画像から元の解像度で切り出した四隅と四辺。白欠けの判断はあなたの目で。アプリは採点しません。",
+  "closeup_labels": [
+   "左上",
+   "上辺",
+   "右上",
+   "左辺",
+   "右辺",
+   "左下",
+   "下辺",
+   "右下"
+  ],
+  "batch_bins": [
+   "送る",
+   "先に補う",
+   "目標未満"
+  ],
+  "batch_pdf": "提出リスト PDF",
+  "calc": {
+   "h": "損益分岐を計算してみる",
+   "help": "最近の成約価格を同じ通貨で入力してください。計算はブラウザ内だけで行われ、どこにも送信されません。",
+   "raw": "素体の価格（そのまま売る）",
+   "second": "PSA 9 の成約価格",
+   "top": "PSA 10 の成約価格",
+   "fee": "1 枚あたりの鑑定費用",
+   "sell": "販売手数料（%）",
+   "ceiling": "センタリングで届く評価",
+   "opts": [
+    "まだ測っていない（制限なし）",
+    "PSA 10 の範囲：表 55/45・裏 75/25 以内",
+    "最高で PSA 9：表 60/40・裏 90/10 以内",
+    "PSA 9 の範囲より悪い"
+   ],
+   "error": "数字だけを入力してください。販売手数料は 100% 未満にしてください。",
+   "reset": "例に戻す",
+   "verdict": {
+    "needs-prices": "3 つの成約価格と鑑定費用を入れてください。",
+    "worth-it": "鑑定に出す価値あり",
+    "worth-it-detail": "PSA 9 でも、鑑定費用と販売手数料を引いて素体より得になります。",
+    "only-if-top-grade": "PSA 10 のときだけ得",
+    "only-if-top-grade-detail": "PSA 10 なら得、PSA 9 なら損です。先に四隅・エッジ・表面がきれいか確認しましょう。",
+    "not-worth": "おすすめしません",
+    "not-worth-detail": "PSA 10 でも、素体で売るより手取りが少なくなります。",
+    "centering-blocks": "センタリングで得する評価に届かない",
+    "centering-blocks-detail": "このセンタリングでは、利益の出る評価には届きません。",
+    "unreachable": "対象外"
+   },
+   "out": [
+    "PSA 9 なら素体比",
+    "PSA 10 なら素体比",
+    "元が取れる PSA 10 の価格"
+   ],
+   "caption": "BGS（9.5 と 9）や CGC（10 と 9.5）でも同じです。2 つの評価欄にその価格を入れてください。",
+   "more": "計算式・計算例・出典を見る",
+   "example": [
+    5000,
+    7000,
+    20000,
+    10000,
+    10
+   ]
+  },
+  "video_h2": "測る様子を見る",
+  "video_p": "カードがマットに置かれると、外縁と印刷された内枠が見つかり、比率が表示されます。中心がずれた一枚には印がつきます。",
+  "video_note": "このページのために描いた抽象的なカードです。アプリでは、あなたのカードを写真から測ります。",
+  "footer_download": "CenterMint を入手",
+  "footer_languages": "言語",
+  "footer_more": "お問い合わせと規約",
+  "mobile_bar": "iPhone で無料"
+ },
+ "zh-Hans": {
+  "skip": "跳到正文",
+  "lang_label": "语言",
+  "download": "下载",
+  "badge_alt": "在 App Store 下载",
+  "qr_caption": "用 iPhone 相机扫一扫，打开 App Store 里的 CenterMint。",
+  "stage_caption": "这是我们为 CenterMint 画的示例卡，左右边距是 52.9 / 47.1。",
+  "loupe_hint": "把鼠标移到卡上，就是一个放大镜。",
+  "readout_lr": "左右",
+  "readout_tb": "上下",
+  "readout_ref": "PSA 10 正面参考",
+  "readout_within": "在 55/45 以内",
+  "step_titles": [
+   "平放拍照",
+   "找到边线",
+   "逐条确认",
+   "对照标准",
+   "送评前再看一眼"
+  ],
+  "step_of": "第 {n} 步，共 5 步",
+  "raw_only": "自动测量只支持裸卡。",
+  "new_in": "1.9 版新功能",
+  "f_share_title": "分享图",
+  "f_batch_title": "批量 2.0 与决策助手",
+  "shot_alt": {
+   "result": "CenterMint 结果页：示例卡的左右、上下居中比例",
+   "guide": "逐条对线：放大镜对准一条边线，并说明为什么要检查",
+   "value": "「值不值得送评」页面：对比直接卖裸卡、PSA 9 和 PSA 10",
+   "closeups": "从原照片裁出的四角四边特写",
+   "ledger": "送评账本：送评费和回来的分数",
+   "share": "带卡牌照片和居中比例的分享图"
+  },
+  "closeups_caption": "从示例卡图片按原清晰度裁出的四个角和四条边。白边要你自己判断，App 不打分。",
+  "closeup_labels": [
+   "左上角",
+   "上边",
+   "右上角",
+   "左边",
+   "右边",
+   "左下角",
+   "下边",
+   "右下角"
+  ],
+  "batch_bins": [
+   "送评",
+   "先补齐",
+   "低于目标"
+  ],
+  "batch_pdf": "送评清单 PDF",
+  "calc": {
+   "h": "先算一下回本线",
+   "help": "请用同一种货币填写最近的成交价。计算只在你的浏览器里进行，不会上传任何数据。",
+   "raw": "裸卡价格（直接卖）",
+   "second": "PSA 9 成交价",
+   "top": "PSA 10 成交价",
+   "fee": "每张送评费",
+   "sell": "卖出手续费（%）",
+   "ceiling": "居中最多允许的等级",
+   "opts": [
+    "还没测（不限制）",
+    "PSA 10 范围：正面 ≤ 55/45，背面 ≤ 75/25",
+    "最多 PSA 9：正面 ≤ 60/40，背面 ≤ 90/10",
+    "比 PSA 9 范围还差"
+   ],
+   "error": "请只填数字；手续费要低于 100%。",
+   "reset": "恢复示例",
+   "verdict": {
+    "needs-prices": "填好三个成交价和送评费就能算。",
+    "worth-it": "值得送评",
+    "worth-it-detail": "就算只拿到 PSA 9，扣掉送评费和手续费也比卖裸卡多。",
+    "only-if-top-grade": "拿到 PSA 10 才赚",
+    "only-if-top-grade-detail": "PSA 10 赚、PSA 9 亏。先确认四角、卡边和表面有没有把握。",
+    "not-worth": "不建议送评",
+    "not-worth-detail": "就算拿到 PSA 10，到手的钱也比直接卖裸卡少。",
+    "centering-blocks": "居中拿不到赚钱的等级",
+    "centering-blocks-detail": "按这个居中，能赚钱的等级拿不到。",
+    "unreachable": "居中拿不到"
+   },
+   "out": [
+    "拿 PSA 9 比裸卡多赚",
+    "拿 PSA 10 比裸卡多赚",
+    "PSA 10 回本价"
+   ],
+   "caption": "BGS（9.5 和 9）或 CGC（10 和 9.5）也一样，把对应等级的价格填进两个等级栏即可。",
+   "more": "公式、算例和出处",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "看它怎么测",
+  "video_p": "卡落到切割垫上，外框和印刷内框被找出来，比例随之出现；偏心的那一张会被标出来。",
+  "video_note": "画面里是为本页画的抽象卡。在 App 里，你测的是自己卡的照片。",
+  "footer_download": "下载 CenterMint",
+  "footer_languages": "语言",
+  "footer_more": "联系与条款",
+  "mobile_bar": "iPhone 免费下载"
+ },
+ "zh-Hant": {
+  "skip": "跳到正文",
+  "lang_label": "語言",
+  "download": "下載",
+  "badge_alt": "在 App Store 下載",
+  "qr_caption": "用 iPhone 相機掃描，開啟 App Store 裡的 CenterMint。",
+  "stage_caption": "這是我們為 CenterMint 畫的範例卡，左右邊距是 52.9 / 47.1。",
+  "loupe_hint": "把游標移到卡上，就是一個放大鏡。",
+  "readout_lr": "左右",
+  "readout_tb": "上下",
+  "readout_ref": "PSA 10 正面參考",
+  "readout_within": "在 55/45 以內",
+  "step_titles": [
+   "平放拍照",
+   "找到邊線",
+   "逐條確認",
+   "對照標準",
+   "送鑑前再看一眼"
+  ],
+  "step_of": "第 {n} 步，共 5 步",
+  "raw_only": "自動測量只支援裸卡。",
+  "new_in": "1.9 版新功能",
+  "f_share_title": "分享圖",
+  "f_batch_title": "批次 2.0 與決策助手",
+  "shot_alt": {
+   "result": "CenterMint 結果頁：範例卡的左右、上下置中比例",
+   "guide": "逐條對線：放大鏡對準一條邊線，並說明為什麼要檢查",
+   "value": "「值不值得送鑑」頁面：比較直接賣裸卡、PSA 9 與 PSA 10",
+   "closeups": "從原照片裁出的四角四邊特寫",
+   "ledger": "送鑑帳本：送鑑費與回來的分數",
+   "share": "附卡牌照片與置中比例的分享圖"
+  },
+  "closeups_caption": "從範例卡圖片依原解析度裁出的四個角與四條邊。白邊要你自己判斷，App 不評分。",
+  "closeup_labels": [
+   "左上角",
+   "上邊",
+   "右上角",
+   "左邊",
+   "右邊",
+   "左下角",
+   "下邊",
+   "右下角"
+  ],
+  "batch_bins": [
+   "送評",
+   "先補齊",
+   "低於目標"
+  ],
+  "batch_pdf": "送鑑清單 PDF",
+  "calc": {
+   "h": "先算一下回本線",
+   "help": "請用同一種貨幣填寫最近的成交價。計算只在你的瀏覽器裡進行，不會上傳任何資料。",
+   "raw": "裸卡價格（直接賣）",
+   "second": "PSA 9 成交價",
+   "top": "PSA 10 成交價",
+   "fee": "每張送鑑費",
+   "sell": "賣出手續費（%）",
+   "ceiling": "置中最多允許的等級",
+   "opts": [
+    "還沒測（不限制）",
+    "PSA 10 範圍：正面 ≤ 55/45，背面 ≤ 75/25",
+    "最多 PSA 9：正面 ≤ 60/40，背面 ≤ 90/10",
+    "比 PSA 9 範圍還差"
+   ],
+   "error": "請只填數字；手續費要低於 100%。",
+   "reset": "恢復範例",
+   "verdict": {
+    "needs-prices": "填好三個成交價和送鑑費就能算。",
+    "worth-it": "值得送鑑",
+    "worth-it-detail": "就算只拿到 PSA 9，扣掉送鑑費和手續費也比賣裸卡多。",
+    "only-if-top-grade": "拿到 PSA 10 才賺",
+    "only-if-top-grade-detail": "PSA 10 賺、PSA 9 虧。先確認四角、卡邊和表面有沒有把握。",
+    "not-worth": "不建議送鑑",
+    "not-worth-detail": "就算拿到 PSA 10，到手的錢也比直接賣裸卡少。",
+    "centering-blocks": "置中拿不到賺錢的等級",
+    "centering-blocks-detail": "依這個置中，能賺錢的等級拿不到。",
+    "unreachable": "置中拿不到"
+   },
+   "out": [
+    "拿 PSA 9 比裸卡多賺",
+    "拿 PSA 10 比裸卡多賺",
+    "PSA 10 回本價"
+   ],
+   "caption": "BGS（9.5 和 9）或 CGC（10 和 9.5）也一樣，把對應等級的價格填進兩個等級欄即可。",
+   "more": "公式、算例與出處（簡體中文）",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "看它怎麼測",
+  "video_p": "卡落到切割墊上，外框和印刷內框被找出來，比例隨之出現；偏心的那一張會被標出來。",
+  "video_note": "畫面裡是為本頁畫的抽象卡。在 App 裡，你測的是自己卡的照片。",
+  "footer_download": "下載 CenterMint",
+  "footer_languages": "語言",
+  "footer_more": "聯絡與條款",
+  "mobile_bar": "iPhone 免費下載"
+ },
+ "ko": {
+  "skip": "본문으로 건너뛰기",
+  "lang_label": "언어",
+  "download": "다운로드",
+  "badge_alt": "App Store에서 다운로드",
+  "qr_caption": "iPhone 카메라로 스캔하면 App Store의 CenterMint가 열립니다.",
+  "stage_caption": "CenterMint를 위해 직접 그린 샘플 카드입니다. 좌우 여백은 52.9 / 47.1입니다.",
+  "loupe_hint": "카드 위로 포인터를 움직이면 확대경이 됩니다.",
+  "readout_lr": "좌우",
+  "readout_tb": "상하",
+  "readout_ref": "PSA 10 앞면 기준",
+  "readout_within": "55/45 이내",
+  "step_titles": [
+   "평평하게 놓고 촬영",
+   "테두리 찾기",
+   "선 하나씩 확인",
+   "기준과 비교",
+   "보내기 전에 확인"
+  ],
+  "step_of": "{n} / 5 단계",
+  "raw_only": "자동 측정은 슬리브 없는 카드만 됩니다.",
+  "new_in": "버전 1.9 새 기능",
+  "f_share_title": "공유 이미지",
+  "f_batch_title": "일괄 2.0과 결정 도우미",
+  "shot_alt": {
+   "result": "샘플 카드의 좌우·상하 센터링을 보여 주는 CenterMint 결과 화면",
+   "guide": "선 하나씩 확인: 확대경이 테두리 선에 맞춰지고 확인이 필요한 이유를 표시",
+   "value": "그대로 팔 때와 PSA 9·PSA 10을 비교하는 ‘그레이딩할 가치가 있을까?’ 화면",
+   "closeups": "원본 사진에서 잘라 낸 모서리·가장자리 확대",
+   "ledger": "그레이딩 비용과 돌아온 등급을 기록하는 그레이딩 기록",
+   "share": "카드 사진과 센터링을 담은 공유 이미지"
+  },
+  "closeups_caption": "샘플 카드 이미지에서 원래 해상도로 잘라 낸 네 모서리와 네 가장자리입니다. 화이트닝은 직접 판단하세요. 앱은 점수를 매기지 않습니다.",
+  "closeup_labels": [
+   "왼쪽 위",
+   "위쪽",
+   "오른쪽 위",
+   "왼쪽",
+   "오른쪽",
+   "왼쪽 아래",
+   "아래쪽",
+   "오른쪽 아래"
+  ],
+  "batch_bins": [
+   "제출",
+   "먼저 보완",
+   "목표 미만"
+  ],
+  "batch_pdf": "제출 목록 PDF",
+  "calc": {
+   "h": "손익분기점 계산해 보기",
+   "help": "최근 거래 가격을 한 가지 통화로 입력하세요. 계산은 브라우저 안에서만 이루어지며 어디에도 전송되지 않습니다.",
+   "raw": "원래 카드 가격(그대로 판매)",
+   "second": "PSA 9 거래 가격",
+   "top": "PSA 10 거래 가격",
+   "fee": "카드 1장당 그레이딩 비용",
+   "sell": "판매 수수료(%)",
+   "ceiling": "센터링으로 가능한 등급",
+   "opts": [
+    "아직 측정 전(제한 없음)",
+    "PSA 10 범위: 앞면 ≤ 55/45, 뒷면 ≤ 75/25",
+    "최대 PSA 9: 앞면 ≤ 60/40, 뒷면 ≤ 90/10",
+    "PSA 9 범위보다 나쁨"
+   ],
+   "error": "숫자만 입력하세요. 판매 수수료는 100% 미만이어야 합니다.",
+   "reset": "예시로 되돌리기",
+   "verdict": {
+    "needs-prices": "거래 가격 세 개와 그레이딩 비용을 입력하세요.",
+    "worth-it": "그레이딩할 가치 있음",
+    "worth-it-detail": "PSA 9를 받아도 그레이딩 비용과 판매 수수료를 빼고 그대로 파는 것보다 이득입니다.",
+    "only-if-top-grade": "PSA 10일 때만 이득",
+    "only-if-top-grade-detail": "PSA 10이면 이득, PSA 9면 손해입니다. 먼저 모서리, 가장자리, 표면이 깨끗한지 확인하세요.",
+    "not-worth": "추천하지 않음",
+    "not-worth-detail": "PSA 10을 받아도 그대로 파는 것보다 손에 쥐는 돈이 적습니다.",
+    "centering-blocks": "센터링으로는 이득이 나는 등급에 닿지 않음",
+    "centering-blocks-detail": "이 센터링으로는 이득이 나는 등급을 받을 수 없습니다.",
+    "unreachable": "제외"
+   },
+   "out": [
+    "PSA 9일 때 추가 수익",
+    "PSA 10일 때 추가 수익",
+    "PSA 10 손익분기 가격"
+   ],
+   "caption": "BGS(9.5와 9)나 CGC(10과 9.5)도 같습니다. 두 등급 칸에 해당 가격을 넣으세요.",
+   "more": "공식, 계산 예시, 출처(영어)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "측정하는 모습 보기",
+  "video_p": "카드가 매트 위에 놓이면 바깥 테두리와 인쇄된 안쪽 테두리를 찾고 비율이 나타납니다. 중심이 어긋난 카드는 표시됩니다.",
+  "video_note": "이 페이지를 위해 그린 추상적인 카드입니다. 앱에서는 내 카드 사진으로 측정합니다.",
+  "footer_download": "CenterMint 받기",
+  "footer_languages": "언어",
+  "footer_more": "문의와 약관",
+  "mobile_bar": "iPhone 무료"
+ },
+ "vi": {
+  "skip": "Chuyển đến nội dung",
+  "lang_label": "Ngôn ngữ",
+  "download": "Tải về",
+  "badge_alt": "Tải về trên App Store",
+  "qr_caption": "Quét bằng camera iPhone để mở CenterMint trên App Store.",
+  "stage_caption": "Thẻ mẫu do chúng tôi vẽ cho CenterMint. Viền trái và phải là 52.9 / 47.1.",
+  "loupe_hint": "Di chuột lên thẻ để dùng kính lúp.",
+  "readout_lr": "Trái / phải",
+  "readout_tb": "Trên / dưới",
+  "readout_ref": "Chuẩn PSA 10 mặt trước",
+  "readout_within": "trong 55/45",
+  "step_titles": [
+   "Đặt phẳng và chụp",
+   "Tìm các cạnh",
+   "Xác nhận từng đường",
+   "So với chuẩn",
+   "Kiểm tra trước khi gửi"
+  ],
+  "step_of": "Bước {n} / 5",
+  "raw_only": "Chỉ đo tự động thẻ trần.",
+  "new_in": "Mới trong phiên bản 1.9",
+  "f_share_title": "Ảnh chia sẻ",
+  "f_batch_title": "Hàng loạt 2.0 và trợ lý quyết định",
+  "shot_alt": {
+   "result": "Màn hình kết quả CenterMint với độ căn giữa trái/phải và trên/dưới của thẻ mẫu",
+   "guide": "Kiểm tra từng đường: kính lúp đặt lên một đường viền kèm lý do cần kiểm tra",
+   "value": "Màn hình Có đáng gửi chấm điểm? so sánh bán thẻ trần với PSA 9 và PSA 10",
+   "closeups": "Ảnh phóng to góc và cạnh cắt từ ảnh gốc",
+   "ledger": "Sổ gửi chấm với phí chấm điểm và điểm nhận về",
+   "share": "Ảnh chia sẻ có ảnh thẻ và độ căn giữa"
+  },
+  "closeups_caption": "Cắt từ ảnh thẻ mẫu ở độ phân giải gốc: bốn góc, bốn cạnh. Bạn tự đánh giá vết trắng; ứng dụng không chấm điểm.",
+  "closeup_labels": [
+   "Góc trên trái",
+   "Cạnh trên",
+   "Góc trên phải",
+   "Cạnh trái",
+   "Cạnh phải",
+   "Góc dưới trái",
+   "Cạnh dưới",
+   "Góc dưới phải"
+  ],
+  "batch_bins": [
+   "Gửi chấm",
+   "Bổ sung trước",
+   "Dưới mục tiêu"
+  ],
+  "batch_pdf": "Danh sách gửi PDF",
+  "calc": {
+   "h": "Thử tính điểm hòa vốn",
+   "help": "Nhập giá đã bán gần đây bằng cùng một loại tiền. Máy tính chạy trong trình duyệt; không gửi dữ liệu đi đâu.",
+   "raw": "Giá thẻ trần (bán ngay)",
+   "second": "Giá bán PSA 9",
+   "top": "Giá bán PSA 10",
+   "fee": "Phí chấm điểm mỗi thẻ",
+   "sell": "Phí bán (%)",
+   "ceiling": "Độ căn giữa cho phép tới đâu",
+   "opts": [
+    "Chưa đo (không giới hạn)",
+    "Khoảng PSA 10: mặt trước ≤ 55/45, mặt sau ≤ 75/25",
+    "Tối đa PSA 9: mặt trước ≤ 60/40, mặt sau ≤ 90/10",
+    "Kém hơn khoảng PSA 9"
+   ],
+   "error": "Chỉ nhập số; phí bán phải dưới 100%.",
+   "reset": "Trở lại ví dụ",
+   "verdict": {
+    "needs-prices": "Nhập ba giá đã bán và phí chấm điểm.",
+    "worth-it": "Đáng gửi chấm",
+    "worth-it-detail": "Ngay cả khi được PSA 9, sau phí chấm và phí bán bạn vẫn lời hơn bán thẻ trần.",
+    "only-if-top-grade": "Chỉ lời khi được PSA 10",
+    "only-if-top-grade-detail": "PSA 10 thì lời, PSA 9 thì lỗ. Hãy chắc chắn góc, cạnh và bề mặt sạch trước đã.",
+    "not-worth": "Không đáng gửi chấm",
+    "not-worth-detail": "Ngay cả khi được PSA 10, bạn vẫn nhận ít hơn bán thẻ trần.",
+    "centering-blocks": "Độ căn giữa không đạt mức điểm có lời",
+    "centering-blocks-detail": "Với độ căn giữa này, mức điểm có lời nằm ngoài tầm.",
+    "unreachable": "Loại trừ"
+   },
+   "out": [
+    "Chênh lệch khi được PSA 9",
+    "Chênh lệch khi được PSA 10",
+    "Giá hòa vốn PSA 10"
+   ],
+   "caption": "Tương tự với BGS (9.5 và 9) hoặc CGC (10 và 9.5): nhập giá đó vào hai ô điểm.",
+   "more": "Công thức, ví dụ và nguồn (tiếng Anh)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "Xem cách đo",
+  "video_p": "Thẻ đặt xuống tấm lót cắt. Cạnh ngoài và viền in bên trong được tìm ra, tỉ lệ hiện lên, và thẻ lệch tâm được đánh dấu.",
+  "video_note": "Thẻ trừu tượng vẽ riêng cho trang này. Trong ứng dụng, bạn đo thẻ của mình từ ảnh.",
+  "footer_download": "Tải CenterMint",
+  "footer_languages": "Ngôn ngữ",
+  "footer_more": "Liên hệ và pháp lý",
+  "mobile_bar": "Miễn phí trên iPhone"
+ },
+ "de": {
+  "skip": "Zum Inhalt springen",
+  "lang_label": "Sprache",
+  "download": "Laden",
+  "badge_alt": "Laden im App Store",
+  "qr_caption": "Mit der iPhone-Kamera scannen, um CenterMint im App Store zu öffnen.",
+  "stage_caption": "Unsere eigene Beispielkarte, für CenterMint gezeichnet. Linker und rechter Rand: 52.9 / 47.1.",
+  "loupe_hint": "Bewege den Zeiger über die Karte, dann wird er zur Lupe.",
+  "readout_lr": "Links / rechts",
+  "readout_tb": "Oben / unten",
+  "readout_ref": "PSA-10-Referenz Vorderseite",
+  "readout_within": "innerhalb 55/45",
+  "step_titles": [
+   "Flach hinlegen",
+   "Kanten finden",
+   "Jede Linie bestätigen",
+   "Mit den Referenzen vergleichen",
+   "Vor dem Einsenden prüfen"
+  ],
+  "step_of": "Schritt {n} von 5",
+  "raw_only": "Automatisch nur bei Karten ohne Hülle.",
+  "new_in": "Neu in Version 1.9",
+  "f_share_title": "Bilder zum Teilen",
+  "f_batch_title": "Batch 2.0 und Entscheidungsassistent",
+  "shot_alt": {
+   "result": "CenterMint-Ergebnis mit der Zentrierung links/rechts und oben/unten einer Beispielkarte",
+   "guide": "Guided line check: die Lupe auf einer Randlinie mit dem Grund für die Prüfung",
+   "value": "Worth Grading?: Verkauf ohne Grading im Vergleich zu PSA 9 und PSA 10",
+   "closeups": "Nahaufnahmen von Ecken und Kanten aus dem Originalfoto",
+   "ledger": "Submission Log mit Grading-Gebühren und zurückgekommenen Noten",
+   "share": "Bild zum Teilen mit Kartenfoto und Zentrierung"
+  },
+  "closeups_caption": "Ausschnitte aus unserer Beispielkarte in voller Auflösung: vier Ecken, vier Kanten. Weiße Stellen beurteilst du selbst; die App vergibt keine Note.",
+  "closeup_labels": [
+   "Oben links",
+   "Oberkante",
+   "Oben rechts",
+   "Linke Kante",
+   "Rechte Kante",
+   "Unten links",
+   "Unterkante",
+   "Unten rechts"
+  ],
+  "batch_bins": [
+   "Submit",
+   "Fix first",
+   "Below target"
+  ],
+  "batch_pdf": "Einsendeliste als PDF",
+  "calc": {
+   "h": "Break-even ausprobieren",
+   "help": "Nutze aktuelle Verkaufspreise in einer Währung. Der Rechner läuft im Browser; es wird nichts gesendet.",
+   "raw": "Preis ohne Grading (so verkaufen)",
+   "second": "Verkaufspreis PSA 9",
+   "top": "Verkaufspreis PSA 10",
+   "fee": "Grading-Gebühr pro Karte",
+   "sell": "Verkaufsgebühr (%)",
+   "ceiling": "Was deine Zentrierung zulässt",
+   "opts": [
+    "Noch nicht gemessen (keine Grenze)",
+    "PSA-10-Bereich: vorne ≤ 55/45, hinten ≤ 75/25",
+    "Höchstens PSA 9: vorne ≤ 60/40, hinten ≤ 90/10",
+    "Schlechter als der PSA-9-Bereich"
+   ],
+   "error": "Bitte nur Zahlen eingeben; die Verkaufsgebühr muss unter 100 % liegen.",
+   "reset": "Beispiel wiederherstellen",
+   "verdict": {
+    "needs-prices": "Gib die drei Verkaufspreise und die Grading-Gebühr ein.",
+    "worth-it": "Grading lohnt sich",
+    "worth-it-detail": "Schon mit PSA 9 bleibt nach Grading- und Verkaufsgebühr mehr als beim Verkauf ohne Grading.",
+    "only-if-top-grade": "Lohnt sich nur mit PSA 10",
+    "only-if-top-grade-detail": "Eine PSA 10 bringt Gewinn, eine PSA 9 nicht. Prüfe zuerst Ecken, Kanten und Oberfläche.",
+    "not-worth": "Grading lohnt sich nicht",
+    "not-worth-detail": "Selbst mit PSA 10 bekommst du weniger als beim Verkauf ohne Grading.",
+    "centering-blocks": "Die Zentrierung schließt die lohnende Note aus",
+    "centering-blocks-detail": "Mit dieser Zentrierung ist die Note, die Gewinn bringt, nicht erreichbar.",
+    "unreachable": "Ausgeschlossen"
+   },
+   "out": [
+    "Mehr als ohne Grading bei PSA 9",
+    "Mehr als ohne Grading bei PSA 10",
+    "Break-even-Preis für PSA 10"
+   ],
+   "caption": "Für BGS (9.5 und 9) oder CGC (10 und 9.5) genauso: diese Preise in die beiden Notenfelder eintragen.",
+   "more": "Formel, Rechenbeispiel und Quellen (Englisch)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "So wird gemessen",
+  "video_p": "Karten landen auf der Schneidematte. Außenkante und gedruckter Innenrahmen werden gefunden, die Verhältnisse erscheinen, und die dezentrierte Karte wird markiert.",
+  "video_note": "Abstrakte Karten, eigens für diese Seite gezeichnet. In der App misst du deine eigene Karte auf einem Foto.",
+  "footer_download": "CenterMint laden",
+  "footer_languages": "Sprachen",
+  "footer_more": "Kontakt und Rechtliches",
+  "mobile_bar": "Kostenlos fürs iPhone"
+ },
+ "fr": {
+  "skip": "Aller au contenu",
+  "lang_label": "Langue",
+  "download": "Télécharger",
+  "badge_alt": "Télécharger dans l’App Store",
+  "qr_caption": "Scannez avec l’appareil photo de l’iPhone pour ouvrir CenterMint dans l’App Store.",
+  "stage_caption": "Notre propre carte d’exemple, dessinée pour CenterMint. Marges gauche et droite : 52.9 / 47.1.",
+  "loupe_hint": "Passez le pointeur sur la carte : il devient une loupe.",
+  "readout_lr": "Gauche / droite",
+  "readout_tb": "Haut / bas",
+  "readout_ref": "Référence PSA 10, recto",
+  "readout_within": "dans les 55/45",
+  "step_titles": [
+   "Posez-la à plat",
+   "Trouver les bords",
+   "Confirmer chaque ligne",
+   "Comparer aux références",
+   "Vérifier avant l’envoi"
+  ],
+  "step_of": "Étape {n} sur 5",
+  "raw_only": "Mesure automatique sur carte nue uniquement.",
+  "new_in": "Nouveau dans la version 1.9",
+  "f_share_title": "Images à partager",
+  "f_batch_title": "Batch 2.0 et assistant de décision",
+  "shot_alt": {
+   "result": "Écran de résultat CenterMint avec le centrage gauche/droite et haut/bas d’une carte d’exemple",
+   "guide": "Guided line check : la loupe sur une ligne de bordure, avec la raison de la vérification",
+   "value": "Écran Worth Grading? comparant la vente brute avec PSA 9 et PSA 10",
+   "closeups": "Gros plans des coins et des bords recadrés dans la photo d’origine",
+   "ledger": "Submission Log avec les frais de gradation et les notes reçues",
+   "share": "Image à partager avec la photo de la carte et son centrage"
+  },
+  "closeups_caption": "Recadrages en pleine résolution de notre carte d’exemple : quatre coins, quatre bords. Vous jugez le blanchiment ; l’app ne note rien.",
+  "closeup_labels": [
+   "Coin haut gauche",
+   "Bord haut",
+   "Coin haut droit",
+   "Bord gauche",
+   "Bord droit",
+   "Coin bas gauche",
+   "Bord bas",
+   "Coin bas droit"
+  ],
+  "batch_bins": [
+   "Submit",
+   "Fix first",
+   "Below target"
+  ],
+  "batch_pdf": "Liste d’envoi en PDF",
+  "calc": {
+   "h": "Essayez le calcul du seuil de rentabilité",
+   "help": "Utilisez des prix de vente récents dans une seule devise. Le calcul se fait dans votre navigateur ; rien n’est envoyé.",
+   "raw": "Prix brut (vendre tel quel)",
+   "second": "Prix de vente PSA 9",
+   "top": "Prix de vente PSA 10",
+   "fee": "Frais de gradation par carte",
+   "sell": "Frais de vente (%)",
+   "ceiling": "Ce que permet votre centrage",
+   "opts": [
+    "Pas encore mesuré (sans limite)",
+    "Plage PSA 10 : recto ≤ 55/45, verso ≤ 75/25",
+    "PSA 9 au mieux : recto ≤ 60/40, verso ≤ 90/10",
+    "Moins bien que la plage PSA 9"
+   ],
+   "error": "Saisissez des nombres simples ; les frais de vente doivent être inférieurs à 100 %.",
+   "reset": "Rétablir l’exemple",
+   "verdict": {
+    "needs-prices": "Saisissez les trois prix de vente et les frais de gradation.",
+    "worth-it": "Ça vaut la gradation",
+    "worth-it-detail": "Même en PSA 9, vous gagnez plus qu’en vendant brut, frais déduits.",
+    "only-if-top-grade": "Rentable seulement en PSA 10",
+    "only-if-top-grade-detail": "Une PSA 10 rapporte, une PSA 9 non. Vérifiez d’abord les coins, les bords et la surface.",
+    "not-worth": "Ça ne vaut pas la gradation",
+    "not-worth-detail": "Même en PSA 10, vous toucheriez moins qu’en vendant brut.",
+    "centering-blocks": "Le centrage exclut la note rentable",
+    "centering-blocks-detail": "Avec ce centrage, la note qui rapporterait est hors de portée.",
+    "unreachable": "Exclu"
+   },
+   "out": [
+    "Écart avec la vente brute en PSA 9",
+    "Écart avec la vente brute en PSA 10",
+    "Prix d’équilibre PSA 10"
+   ],
+   "caption": "Même principe pour BGS (9.5 et 9) ou CGC (10 et 9.5) : saisissez ces prix dans les deux champs de note.",
+   "more": "Formule, exemple chiffré et sources (anglais)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "Voir la mesure",
+  "video_p": "Les cartes se posent sur le tapis de découpe. Le bord extérieur et la bordure imprimée sont trouvés, les ratios s’affichent, et la carte décentrée est signalée.",
+  "video_note": "Cartes abstraites dessinées pour cette page. Dans l’app, vous mesurez votre propre carte à partir d’une photo.",
+  "footer_download": "Obtenir CenterMint",
+  "footer_languages": "Langues",
+  "footer_more": "Contact et mentions",
+  "mobile_bar": "Gratuit sur iPhone"
+ },
+ "es": {
+  "skip": "Ir al contenido",
+  "lang_label": "Idioma",
+  "download": "Descargar",
+  "badge_alt": "Descárgalo en el App Store",
+  "qr_caption": "Escanéalo con la cámara del iPhone para abrir CenterMint en el App Store.",
+  "stage_caption": "Nuestra propia carta de ejemplo, dibujada para CenterMint. Bordes izquierdo y derecho: 52.9 / 47.1.",
+  "loupe_hint": "Pasa el puntero sobre la carta y se convierte en una lupa.",
+  "readout_lr": "Izquierda / derecha",
+  "readout_tb": "Arriba / abajo",
+  "readout_ref": "Referencia PSA 10, anverso",
+  "readout_within": "dentro de 55/45",
+  "step_titles": [
+   "Déjala plana",
+   "Encontrar los bordes",
+   "Confirmar cada línea",
+   "Comparar con las referencias",
+   "Revisar antes de enviar"
+  ],
+  "step_of": "Paso {n} de 5",
+  "raw_only": "Medición automática solo con cartas sin funda.",
+  "new_in": "Novedades de la versión 1.9",
+  "f_share_title": "Imágenes para compartir",
+  "f_batch_title": "Lote 2.0 y asistente de decisión",
+  "shot_alt": {
+   "result": "Pantalla de resultado de CenterMint con el centrado izquierda/derecha y arriba/abajo de una carta de ejemplo",
+   "guide": "Guided line check: la lupa sobre una línea del borde con el motivo de la revisión",
+   "value": "Pantalla Worth Grading? que compara vender sin gradear con PSA 9 y PSA 10",
+   "closeups": "Primeros planos de esquinas y bordes recortados de la foto original",
+   "ledger": "Submission Log con tarifas de gradeo y notas recibidas",
+   "share": "Imagen para compartir con la foto de la carta y su centrado"
+  },
+  "closeups_caption": "Recortes a resolución completa de nuestra carta de ejemplo: cuatro esquinas, cuatro bordes. El blanqueado lo juzgas tú; la app no lo puntúa.",
+  "closeup_labels": [
+   "Arriba izquierda",
+   "Borde superior",
+   "Arriba derecha",
+   "Borde izquierdo",
+   "Borde derecho",
+   "Abajo izquierda",
+   "Borde inferior",
+   "Abajo derecha"
+  ],
+  "batch_bins": [
+   "Submit",
+   "Fix first",
+   "Below target"
+  ],
+  "batch_pdf": "Lista de envío en PDF",
+  "calc": {
+   "h": "Prueba el cálculo del punto de equilibrio",
+   "help": "Usa precios de venta recientes en una sola moneda. La calculadora funciona en tu navegador; no se envía nada.",
+   "raw": "Precio sin gradear (vender así)",
+   "second": "Precio de venta PSA 9",
+   "top": "Precio de venta PSA 10",
+   "fee": "Tarifa de gradeo por carta",
+   "sell": "Comisión de venta (%)",
+   "ceiling": "Lo que permite tu centrado",
+   "opts": [
+    "Aún sin medir (sin límite)",
+    "Rango PSA 10: anverso ≤ 55/45, reverso ≤ 75/25",
+    "Como mucho PSA 9: anverso ≤ 60/40, reverso ≤ 90/10",
+    "Peor que el rango PSA 9"
+   ],
+   "error": "Escribe solo números; la comisión de venta debe ser inferior al 100 %.",
+   "reset": "Restablecer ejemplo",
+   "verdict": {
+    "needs-prices": "Escribe los tres precios de venta y la tarifa de gradeo.",
+    "worth-it": "Vale la pena gradear",
+    "worth-it-detail": "Incluso con PSA 9 ganas más que vendiéndola sin gradear, descontadas las tarifas.",
+    "only-if-top-grade": "Solo compensa con PSA 10",
+    "only-if-top-grade-detail": "Una PSA 10 da ganancia; una PSA 9 no. Revisa antes esquinas, bordes y superficie.",
+    "not-worth": "No vale la pena gradear",
+    "not-worth-detail": "Incluso con PSA 10 ganarías menos que vendiéndola sin gradear.",
+    "centering-blocks": "El centrado descarta la nota que compensa",
+    "centering-blocks-detail": "Con este centrado, la nota que daría ganancia queda fuera de alcance.",
+    "unreachable": "Descartada"
+   },
+   "out": [
+    "Diferencia con PSA 9",
+    "Diferencia con PSA 10",
+    "Precio de equilibrio PSA 10"
+   ],
+   "caption": "Igual para BGS (9.5 y 9) o CGC (10 y 9.5): escribe esos precios en los dos campos de nota.",
+   "more": "Fórmula, ejemplo y fuentes (inglés)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "Así mide",
+  "video_p": "Las cartas caen sobre la plancha de corte. Se encuentran el borde exterior y el marco impreso, aparecen las proporciones y la carta descentrada queda marcada.",
+  "video_note": "Cartas abstractas dibujadas para esta página. En la app mides tu propia carta a partir de una foto.",
+  "footer_download": "Consigue CenterMint",
+  "footer_languages": "Idiomas",
+  "footer_more": "Contacto y legal",
+  "mobile_bar": "Gratis en iPhone"
+ },
+ "it": {
+  "skip": "Vai al contenuto",
+  "lang_label": "Lingua",
+  "download": "Scarica",
+  "badge_alt": "Scarica su App Store",
+  "qr_caption": "Inquadra con la fotocamera dell’iPhone per aprire CenterMint su App Store.",
+  "stage_caption": "La nostra carta di esempio, disegnata per CenterMint. Margini sinistro e destro: 52.9 / 47.1.",
+  "loupe_hint": "Muovi il puntatore sulla carta: diventa una lente.",
+  "readout_lr": "Sinistra / destra",
+  "readout_tb": "Alto / basso",
+  "readout_ref": "Riferimento PSA 10, fronte",
+  "readout_within": "entro 55/45",
+  "step_titles": [
+   "Appoggiala in piano",
+   "Trovare i bordi",
+   "Confermare ogni linea",
+   "Confrontare con i riferimenti",
+   "Controllare prima dell’invio"
+  ],
+  "step_of": "Passo {n} di 5",
+  "raw_only": "Misura automatica solo su carte senza bustina.",
+  "new_in": "Novità della versione 1.9",
+  "f_share_title": "Immagini da condividere",
+  "f_batch_title": "Batch 2.0 e assistente decisionale",
+  "shot_alt": {
+   "result": "Schermata del risultato di CenterMint con la centratura sinistra/destra e alto/basso di una carta di esempio",
+   "guide": "Guided line check: la lente su una linea del bordo con il motivo del controllo",
+   "value": "Schermata Worth Grading? che confronta la vendita raw con PSA 9 e PSA 10",
+   "closeups": "Primi piani di angoli e bordi ritagliati dalla foto originale",
+   "ledger": "Submission Log con costi di gradazione e voti ricevuti",
+   "share": "Immagine da condividere con la foto della carta e la centratura"
+  },
+  "closeups_caption": "Ritagli a piena risoluzione della nostra carta di esempio: quattro angoli, quattro bordi. Lo sbiancamento lo giudichi tu; l’app non dà voti.",
+  "closeup_labels": [
+   "In alto a sinistra",
+   "Bordo superiore",
+   "In alto a destra",
+   "Bordo sinistro",
+   "Bordo destro",
+   "In basso a sinistra",
+   "Bordo inferiore",
+   "In basso a destra"
+  ],
+  "batch_bins": [
+   "Submit",
+   "Fix first",
+   "Below target"
+  ],
+  "batch_pdf": "Lista d’invio in PDF",
+  "calc": {
+   "h": "Prova il calcolo del pareggio",
+   "help": "Usa prezzi di vendita recenti in un’unica valuta. Il calcolo avviene nel browser; non viene inviato nulla.",
+   "raw": "Prezzo raw (vendere così)",
+   "second": "Prezzo di vendita PSA 9",
+   "top": "Prezzo di vendita PSA 10",
+   "fee": "Costo di gradazione per carta",
+   "sell": "Commissione di vendita (%)",
+   "ceiling": "Cosa consente la tua centratura",
+   "opts": [
+    "Non ancora misurata (nessun limite)",
+    "Fascia PSA 10: fronte ≤ 55/45, retro ≤ 75/25",
+    "Al massimo PSA 9: fronte ≤ 60/40, retro ≤ 90/10",
+    "Peggio della fascia PSA 9"
+   ],
+   "error": "Inserisci solo numeri; la commissione deve essere sotto il 100%.",
+   "reset": "Ripristina l’esempio",
+   "verdict": {
+    "needs-prices": "Inserisci i tre prezzi di vendita e il costo di gradazione.",
+    "worth-it": "Vale la pena gradarla",
+    "worth-it-detail": "Anche con PSA 9 guadagni più che vendendola raw, al netto dei costi.",
+    "only-if-top-grade": "Conviene solo con PSA 10",
+    "only-if-top-grade-detail": "Una PSA 10 rende, una PSA 9 no. Controlla prima angoli, bordi e superficie.",
+    "not-worth": "Non vale la pena gradarla",
+    "not-worth-detail": "Anche con PSA 10 incasseresti meno che vendendola raw.",
+    "centering-blocks": "La centratura esclude il voto che conviene",
+    "centering-blocks-detail": "Con questa centratura il voto che renderebbe è fuori portata.",
+    "unreachable": "Escluso"
+   },
+   "out": [
+    "Differenza con PSA 9",
+    "Differenza con PSA 10",
+    "Prezzo di pareggio PSA 10"
+   ],
+   "caption": "Vale anche per BGS (9.5 e 9) o CGC (10 e 9.5): inserisci quei prezzi nei due campi del voto.",
+   "more": "Formula, esempio e fonti (inglese)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "Guarda come misura",
+  "video_p": "Le carte si posano sul tappetino da taglio. Si trovano il bordo esterno e la cornice stampata, compaiono i rapporti e la carta decentrata viene segnalata.",
+  "video_note": "Carte astratte disegnate per questa pagina. Nell’app misuri la tua carta da una foto.",
+  "footer_download": "Scarica CenterMint",
+  "footer_languages": "Lingue",
+  "footer_more": "Contatti e note legali",
+  "mobile_bar": "Gratis su iPhone"
+ },
+ "pt-BR": {
+  "skip": "Ir para o conteúdo",
+  "lang_label": "Idioma",
+  "download": "Baixar",
+  "badge_alt": "Baixar na App Store",
+  "qr_caption": "Aponte a câmera do iPhone para abrir o CenterMint na App Store.",
+  "stage_caption": "Nossa própria carta de exemplo, desenhada para o CenterMint. Bordas esquerda e direita: 52.9 / 47.1.",
+  "loupe_hint": "Passe o ponteiro sobre a carta e ele vira uma lupa.",
+  "readout_lr": "Esquerda / direita",
+  "readout_tb": "Topo / base",
+  "readout_ref": "Referência PSA 10, frente",
+  "readout_within": "dentro de 55/45",
+  "step_titles": [
+   "Deixe a carta plana",
+   "Encontrar as bordas",
+   "Confirmar cada linha",
+   "Comparar com as referências",
+   "Conferir antes de enviar"
+  ],
+  "step_of": "Passo {n} de 5",
+  "raw_only": "Medição automática só com carta sem sleeve.",
+  "new_in": "Novidades da versão 1.9",
+  "f_share_title": "Imagens para compartilhar",
+  "f_batch_title": "Lote 2.0 e assistente de decisão",
+  "shot_alt": {
+   "result": "Tela de resultado do CenterMint com a centralização esquerda/direita e topo/base de uma carta de exemplo",
+   "guide": "Guided line check: a lupa sobre uma linha da borda com o motivo da conferência",
+   "value": "Tela Worth Grading? comparando vender raw com PSA 9 e PSA 10",
+   "closeups": "Close-ups de cantos e bordas recortados da foto original",
+   "ledger": "Submission Log com taxas de graduação e notas recebidas",
+   "share": "Imagem para compartilhar com a foto da carta e a centralização"
+  },
+  "closeups_caption": "Recortes em resolução total da nossa carta de exemplo: quatro cantos, quatro bordas. Você avalia o desgaste branco; o app não dá nota.",
+  "closeup_labels": [
+   "Canto superior esquerdo",
+   "Borda superior",
+   "Canto superior direito",
+   "Borda esquerda",
+   "Borda direita",
+   "Canto inferior esquerdo",
+   "Borda inferior",
+   "Canto inferior direito"
+  ],
+  "batch_bins": [
+   "Submit",
+   "Fix first",
+   "Below target"
+  ],
+  "batch_pdf": "Lista de envio em PDF",
+  "calc": {
+   "h": "Teste a conta do ponto de equilíbrio",
+   "help": "Use preços de venda recentes em uma só moeda. A calculadora roda no seu navegador; nada é enviado.",
+   "raw": "Preço raw (vender assim)",
+   "second": "Preço de venda PSA 9",
+   "top": "Preço de venda PSA 10",
+   "fee": "Taxa de graduação por carta",
+   "sell": "Taxa de venda (%)",
+   "ceiling": "O que sua centralização permite",
+   "opts": [
+    "Ainda não medida (sem limite)",
+    "Faixa PSA 10: frente ≤ 55/45, verso ≤ 75/25",
+    "No máximo PSA 9: frente ≤ 60/40, verso ≤ 90/10",
+    "Pior que a faixa PSA 9"
+   ],
+   "error": "Digite só números; a taxa de venda precisa ser menor que 100%.",
+   "reset": "Restaurar exemplo",
+   "verdict": {
+    "needs-prices": "Digite os três preços de venda e a taxa de graduação.",
+    "worth-it": "Vale a pena graduar",
+    "worth-it-detail": "Mesmo com PSA 9 você ganha mais do que vendendo raw, já descontadas as taxas.",
+    "only-if-top-grade": "Só compensa com PSA 10",
+    "only-if-top-grade-detail": "Uma PSA 10 dá lucro; uma PSA 9 não. Confira antes cantos, bordas e superfície.",
+    "not-worth": "Não vale a pena graduar",
+    "not-worth-detail": "Mesmo com PSA 10 você receberia menos do que vendendo raw.",
+    "centering-blocks": "A centralização descarta a nota que compensa",
+    "centering-blocks-detail": "Com essa centralização, a nota que daria lucro está fora de alcance.",
+    "unreachable": "Descartada"
+   },
+   "out": [
+    "Diferença com PSA 9",
+    "Diferença com PSA 10",
+    "Preço de equilíbrio PSA 10"
+   ],
+   "caption": "Vale igual para BGS (9.5 e 9) ou CGC (10 e 9.5): digite esses preços nos dois campos de nota.",
+   "more": "Fórmula, exemplo e fontes (inglês)",
+   "example": [
+    40,
+    60,
+    150,
+    70,
+    13
+   ]
+  },
+  "video_h2": "Veja como mede",
+  "video_p": "As cartas pousam na base de corte. A borda externa e a moldura impressa são encontradas, as proporções aparecem e a carta descentralizada é marcada.",
+  "video_note": "Cartas abstratas desenhadas para esta página. No app você mede a sua carta a partir de uma foto.",
+  "footer_download": "Baixe o CenterMint",
+  "footer_languages": "Idiomas",
+  "footer_more": "Contato e termos",
+  "mobile_bar": "Grátis no iPhone"
+ }
+}

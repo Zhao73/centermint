@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CenterMint - 卡牌置中檢測與鑑定預檢｜PSA/BGS/CGC 置中標準計算</title><meta name="description" content="用 iPhone 量測寶可夢、海賊王、球員卡等卡牌的置中比例，對照 PSA、BGS、CGC 公開標準，送評前先自查。本機運算、免註冊的免費 App。">
-<link rel="canonical" href="https://zhao73.github.io/centermint/zh-Hant/"><link rel="alternate" hreflang="en" href="https://zhao73.github.io/centermint/">
+<html lang="zh-Hant" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CenterMint - 卡牌置中量測與送鑑前檢查｜PSA/BGS/CGC 置中標準</title>
+<meta name="description" content="用 iPhone 量測寶可夢、海賊王、球員卡的置中比例，逐條檢查不確定的邊線，放大四角四邊查白邊，算清送鑑費值不值得。可對照 PSA、BGS、CGC 公開標準的免費 App。">
+<link rel="canonical" href="https://zhao73.github.io/centermint/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://zhao73.github.io/centermint/">
 <link rel="alternate" hreflang="zh-Hans" href="https://zhao73.github.io/centermint/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://zhao73.github.io/centermint/zh-Hant/">
 <link rel="alternate" hreflang="ja" href="https://zhao73.github.io/centermint/ja/">
@@ -13,11 +18,264 @@
 <link rel="alternate" hreflang="it" href="https://zhao73.github.io/centermint/it/">
 <link rel="alternate" hreflang="pt-BR" href="https://zhao73.github.io/centermint/pt-BR/">
 <link rel="alternate" hreflang="x-default" href="https://zhao73.github.io/centermint/">
-<meta property="og:type" content="website"><meta property="og:site_name" content="CenterMint"><meta property="og:title" content="CenterMint - 卡牌置中檢測與鑑定預檢｜PSA/BGS/CGC 置中標準計算"><meta property="og:description" content="用 iPhone 量測寶可夢、海賊王、球員卡等卡牌的置中比例，對照 PSA、BGS、CGC 公開標準，送評前先自查。本機運算、免註冊的免費 App。"><meta property="og:url" content="https://zhao73.github.io/centermint/zh-Hant/">
-<meta name="apple-itunes-app" content="app-id=6760965068"><link rel="stylesheet" href="../site.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CenterMint", "url": "https://zhao73.github.io/centermint/zh-Hant/", "downloadUrl": "https://apps.apple.com/app/id6760965068", "operatingSystem": "iOS 17.0 or later", "applicationCategory": "UtilitiesApplication", "description": "用 iPhone 量測寶可夢、海賊王、球員卡等卡牌的置中比例，對照 PSA、BGS、CGC 公開標準，送評前先自查。本機運算、免註冊的免費 App。", "inLanguage": ["en", "ja", "ko", "vi", "zh-Hans", "zh-Hant"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "featureList": "Card centering calculator; PSA, BGS and CGC centering thresholds; front/back scan pairing; on-device processing"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant", "mainEntity": [{"@type": "Question", "name": "什麼是卡牌置中？", "acceptedAnswer": {"@type": "Answer", "text": "置中以左右、上下邊寬比例表示。50/50 代表該方向兩側寬度相等。40/60 和 60/40 的偏移程度相同，比較時應保留左右、上下方向。"}}, {"@type": "Question", "name": "PSA 10 需要什麼置中？", "acceptedAnswer": {"@type": "Answer", "text": "PSA 公布的 Gem Mint 10 置中參考為正面約 55/45 以內、背面 75/25 以內。置中不能單獨決定評級，表面、角、邊緣等也會影響結果。送評前請查看官方最新標準。"}}, {"@type": "Question", "name": "BGS 與 CGC 的置中標準是什麼？", "acceptedAnswer": {"@type": "Answer", "text": "BGS 與 CGC 使用各自的標準，需區分卡型及正背面。CGC 對 Mint 9 列出的 60/40、NM/Mint 8 列出的 65/35 適用於 sports/non-sports 類別，不能泛化為所有 TCG。CenterMint 僅提供獨立量測參考，不作評級決定。"}}, {"@type": "Question", "name": "怎麼用 iPhone 量置中？", "acceptedAnswer": {"@type": "Answer", "text": "在均勻光線下把卡平放拍照，或匯入掃描圖。CenterMint 自動建議外框與印刷內框，用放大鏡檢查、微調任一邊後，立即算出左右與上下比例。"}}, {"@type": "Question", "name": "寶可夢、海賊王、遊戲王、魔法風雲會、球員卡都能量嗎？", "acceptedAnswer": {"@type": "Answer", "text": "具有清晰、一致內側參考邊的卡牌可以量測。反光、卡套和滿圖設計尤其需要檢查自動建議。缺少可量測內框時，不能靠猜測的長方形得出準確置中比例。"}}, {"@type": "Question", "name": "和 PSA、BGS、CGC 有關係嗎？", "acceptedAnswer": {"@type": "Answer", "text": "沒有。CenterMint 是獨立工具，只估算置中，不評估表面、四角、卡邊與真偽，實際鑑定結果可能不同。"}}, {"@type": "Question", "name": "免費嗎？照片隱私如何？", "acceptedAnswer": {"@type": "Answer", "text": "基本量測免費，辨識在裝置本機完成，無須帳號。修正分享可選且預設關閉。開啟後，之後符合條件的手動修正圖片和邊框資料會自動上傳，用於偵測評估。Pro 提供額外工具和移除廣告功能。詳情請查看隱私權政策。"}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "用 CenterMint 量測卡牌置中的步驟", "inLanguage": "zh-Hant", "tool": {"@type": "HowToTool", "name": "CenterMint (iOS)"}, "step": [{"@type": "HowToStep", "position": 1, "text": "在均勻光線下把卡平放拍照，或匯入掃描圖。"}, {"@type": "HowToStep", "position": 2, "text": "用放大鏡檢查自動建議的外框與印刷內框。"}, {"@type": "HowToStep", "position": 3, "text": "微調任一偏離的邊，左右與上下比例即時更新。"}, {"@type": "HowToStep", "position": 4, "text": "對照指南中的 PSA、BGS、CGC 門檻，把正反面一起保存。"}]}</script><script src="../site.js" defer></script></head><body>
-<header><a class="brand" href="https://zhao73.github.io/centermint/zh-Hant/">CenterMint</a><nav aria-label="語言"><a lang="en" href="https://zhao73.github.io/centermint/">English</a><a lang="zh-Hans" href="https://zhao73.github.io/centermint/zh-Hans/">简体中文</a><a lang="zh-Hant" href="https://zhao73.github.io/centermint/zh-Hant/" aria-current="page">繁體中文</a><a lang="ja" href="https://zhao73.github.io/centermint/ja/">日本語</a><a lang="ko" href="https://zhao73.github.io/centermint/ko/">한국어</a><a lang="vi" href="https://zhao73.github.io/centermint/vi/">Tiếng Việt</a><a lang="de" href="https://zhao73.github.io/centermint/de/">Deutsch</a><a lang="fr" href="https://zhao73.github.io/centermint/fr/">Français</a><a lang="es" href="https://zhao73.github.io/centermint/es/">Español</a><a lang="it" href="https://zhao73.github.io/centermint/it/">Italiano</a><a lang="pt-BR" href="https://zhao73.github.io/centermint/pt-BR/">Português</a></nav></header>
-<main><section><h1>送評前，看清卡牌置中</h1><p>先確認邊框，再查看結果。逐邊微調卡牌內外框，量測左右與上下置中比例，將正反面掃描保存在同一份收藏紀錄。</p><a class="cta" data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=zh_Hant_site_202609">在 App Store 查看</a><p>CenterMint 協助集換式卡牌與球星卡收藏者，量測左右、上下的邊距比例。拍攝卡牌或匯入照片，檢查自動建議的內外框，確認或微調邊線後再查看置中結果。</p></section>
-<section><h2>檢查每一道邊框</h2><ul><li>在原圖上檢查卡牌外緣與印刷內框。</li><li>使用放大鏡與微調工具，逐邊校正位置。</li><li>將置中比例與 App 內的參考標準對照。</li><li>配對正反面掃描，在本機收藏庫搜尋及比較卡牌。</li><li>分享附有邊框與比例的量測圖片。</li></ul></section>
-<section><h2>可選的 Pro 工具</h2><p>選購 CenterMint Pro 可使用詳細報告、批次圖片與 CSV 匯出、編輯預設及無廣告體驗。可購買方案與當地價格以 App 內顯示為準。訂閱會自動續訂，直到取消；可在 Apple 帳號設定中管理。</p></section><section><h2>量測前請確認</h2><p>卡牌分析在裝置上完成，無須註冊帳號。照片與量測資料不會自動上傳；分享或匯出由你主動選擇。</p><p>支援繁體中文、簡體中文、英文、日文、韓文及越南文。</p><p>自動偵測僅提供邊框建議，請在量測前確認。光線、卡套、透視與卡面設計都會影響偵測；全圖卡可能沒有可量測的印刷內框。CenterMint 僅估算置中，不評估表面、四角、卡邊、真偽或完整專業等級。本工具獨立開發，與寶可夢、PSA、Beckett、CGC 無隸屬或合作關係。</p></section><section id="faq"><h2>用 CenterMint 量測卡牌置中的步驟</h2><ol><li>在均勻光線下把卡平放拍照，或匯入掃描圖。</li><li>用放大鏡檢查自動建議的外框與印刷內框。</li><li>微調任一偏離的邊，左右與上下比例即時更新。</li><li>對照指南中的 PSA、BGS、CGC 門檻，把正反面一起保存。</li></ol></section><section id="faq-list"><h2>卡牌置中常見問題</h2><details><summary>什麼是卡牌置中？</summary><p>置中以左右、上下邊寬比例表示。50/50 代表該方向兩側寬度相等。40/60 和 60/40 的偏移程度相同，比較時應保留左右、上下方向。</p></details><details><summary>PSA 10 需要什麼置中？</summary><p>PSA 公布的 Gem Mint 10 置中參考為正面約 55/45 以內、背面 75/25 以內。置中不能單獨決定評級，表面、角、邊緣等也會影響結果。送評前請查看官方最新標準。</p></details><details><summary>BGS 與 CGC 的置中標準是什麼？</summary><p>BGS 與 CGC 使用各自的標準，需區分卡型及正背面。CGC 對 Mint 9 列出的 60/40、NM/Mint 8 列出的 65/35 適用於 sports/non-sports 類別，不能泛化為所有 TCG。CenterMint 僅提供獨立量測參考，不作評級決定。</p></details><details><summary>怎麼用 iPhone 量置中？</summary><p>在均勻光線下把卡平放拍照，或匯入掃描圖。CenterMint 自動建議外框與印刷內框，用放大鏡檢查、微調任一邊後，立即算出左右與上下比例。</p></details><details><summary>寶可夢、海賊王、遊戲王、魔法風雲會、球員卡都能量嗎？</summary><p>具有清晰、一致內側參考邊的卡牌可以量測。反光、卡套和滿圖設計尤其需要檢查自動建議。缺少可量測內框時，不能靠猜測的長方形得出準確置中比例。</p></details><details><summary>和 PSA、BGS、CGC 有關係嗎？</summary><p>沒有。CenterMint 是獨立工具，只估算置中，不評估表面、四角、卡邊與真偽，實際鑑定結果可能不同。</p></details><details><summary>免費嗎？照片隱私如何？</summary><p>基本量測免費，辨識在裝置本機完成，無須帳號。修正分享可選且預設關閉。開啟後，之後符合條件的手動修正圖片和邊框資料會自動上傳，用於偵測評估。Pro 提供額外工具和移除廣告功能。詳情請查看隱私權政策。</p></details></section><p>評級標準官方來源: <a href="https://www.psacard.com/gradingstandards">PSA</a> · <a href="https://www.beckett.com/grading">BGS</a> · <a href="https://www.cgccards.com/card-grading/grading-scale/">CGC</a></p></main>
-<footer><a href="https://zhao73.github.io/centermint/privacy.html">隱私權政策（英文）</a><a href="https://zhao73.github.io/centermint/terms.html">使用條款（英文）</a><a href="mailto:qwe911291860@gmail.com">電子郵件聯絡</a><p>© 2026 JIAPENG Zhao · CenterMint</p></footer></body></html>
+<meta property="og:type" content="website"><meta property="og:site_name" content="CenterMint"><meta property="og:locale" content="zh_TW"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="zh_CN"><meta property="og:locale:alternate" content="ja_JP"><meta property="og:locale:alternate" content="ko_KR"><meta property="og:locale:alternate" content="vi_VN"><meta property="og:locale:alternate" content="de_DE"><meta property="og:locale:alternate" content="fr_FR"><meta property="og:locale:alternate" content="es_ES"><meta property="og:locale:alternate" content="it_IT"><meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:title" content="CenterMint - 卡牌置中量測與送鑑前檢查｜PSA/BGS/CGC 置中標準"><meta property="og:description" content="用 iPhone 量測寶可夢、海賊王、球員卡的置中比例，逐條檢查不確定的邊線，放大四角四邊查白邊，算清送鑑費值不值得。可對照 PSA、BGS、CGC 公開標準的免費 App。"><meta property="og:url" content="https://zhao73.github.io/centermint/zh-Hant/">
+<meta property="og:image" content="https://zhao73.github.io/centermint/assets/img/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="這是我們為 CenterMint 畫的範例卡，左右邊距是 52.9 / 47.1。">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://zhao73.github.io/centermint/assets/img/og.png">
+<meta name="theme-color" content="#F3F5F7"><meta name="color-scheme" content="light">
+<meta name="apple-itunes-app" content="app-id=6760965068">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/video/measure-tall-poster.webp" as="image" media="(max-width: 1099px)" fetchpriority="high">
+<link rel="stylesheet" href="../site.css?v=dba98d1b">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "@id": "https://zhao73.github.io/centermint/#app", "name": "CenterMint", "url": "https://zhao73.github.io/centermint/zh-Hant/", "description": "用 iPhone 量測寶可夢、海賊王、球員卡的置中比例，逐條檢查不確定的邊線，放大四角四邊查白邊，算清送鑑費值不值得。可對照 PSA、BGS、CGC 公開標準的免費 App。", "inLanguage": ["en", "ja", "ko", "vi", "zh-Hans", "zh-Hant"], "operatingSystem": "iOS 17.0 or later", "applicationCategory": "UtilitiesApplication", "downloadUrl": "https://apps.apple.com/app/id6760965068", "installUrl": "https://apps.apple.com/app/id6760965068", "sameAs": ["https://apps.apple.com/app/id6760965068"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "free"}, "featureList": ["拍照量測卡牌置中", "放大鏡逐條對線", "對照 PSA、BGS、CGC 置中標準", "值不值得送鑑（盈虧與回本線計算）", "原圖四角四邊特寫", "送鑑帳本", "批次掃描與送鑑清單 PDF", "本機處理、無需帳號"], "author": {"@type": "Person", "name": "JIAPENG Zhao"}, "image": "https://zhao73.github.io/centermint/assets/img/og.png", "screenshot": ["https://zhao73.github.io/centermint/assets/shots/zh-Hant/result.webp", "https://zhao73.github.io/centermint/assets/shots/zh-Hant/guide.webp", "https://zhao73.github.io/centermint/assets/shots/zh-Hant/value.webp", "https://zhao73.github.io/centermint/assets/shots/zh-Hant/closeups.webp", "https://zhao73.github.io/centermint/assets/shots/zh-Hant/ledger.webp", "https://zhao73.github.io/centermint/assets/shots/zh-Hant/share.webp"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant", "url": "https://zhao73.github.io/centermint/zh-Hant/#faq", "mainEntity": [{"@type": "Question", "name": "裝在卡套、硬卡套或評級殼裡的卡能量嗎？", "acceptedAnswer": {"@type": "Answer", "text": "自動量測只支援裸卡。卡套、硬卡套和評級殼有自己的邊緣和反光，App 會把塑膠邊當成卡邊。偵測到卡套時，App 會提示並切換到手動對線，由你自己對齊四條卡邊。想要最準的結果，請取出卡片再重拍。"}}, {"@type": "Question", "name": "量得準不準？", "acceptedAnswer": {"@type": "Answer", "text": "取決於照片品質和你確認的線。差別其實很小：左右各 3 公釐邊的卡，從 50/50 到 55/45 只差 0.3 公釐。CenterMint 對金邊、銀邊逐邊做次像素貼合，並標出沒把握的線，但不宣稱單一的準確率。被標出的線請用放大鏡確認，模糊或反光的照片請重拍。"}}, {"@type": "Question", "name": "PSA 10 的置中標準是多少？", "acceptedAnswer": {"@type": "Answer", "text": "PSA 公布的 Gem Mint 10 參考為正面約 55/45 以內、背面 75/25 以內；PSA 9 為正面約 60/40、背面 90/10。BGS 與 CGC 有各自公布的標準，部分數值只適用於特定卡種。置中只是評分項目之一，置中好也不代表一定拿高分。送鑑前請查看官方頁面。"}}, {"@type": "Question", "name": "「值不值得送鑑」是怎麼算的？", "acceptedAnswer": {"@type": "Answer", "text": "每個分數依「多賺 =（鑑定後售價 − 裸卡售價）×（1 − 賣出手續費）− 送鑑費」計算。不論賣裸卡或鑑定卡都要付手續費，所以只對差價乘手續費。回本線是「最高分售價至少 = 裸卡售價 + 送鑑費 ÷（1 − 手續費）」。就算只拿到次一檔（如 PSA 9）也不虧，就顯示「值得送鑑」；只有拿到最高分才賺，就提醒先確認四角和表面；哪一檔都不賺，或置中拿不到賺錢的分數，就顯示「不建議送鑑」。App 不估算拿 10 分的機率。"}}, {"@type": "Question", "name": "會自動查 eBay 或市場價格嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會。App 不串接 eBay 或任何價格服務，也不猜價格。最近的成交價由你自己填，依卡片儲存在本機。日本地區有按鈕，可用卡名和編號直接開啟メルカリ已售、ヤフオク已成交的搜尋結果。"}}, {"@type": "Question", "name": "能檢查四角、卡邊和表面嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不評判。「四角四邊特寫」是從原照片以原解析度裁出四個角和四條邊，讓你自己放大看。手機照片可能拍不出極細的瑕疵，有疑問的地方請用放大鏡在強光下再看一次。"}}, {"@type": "Question", "name": "免費版和 Pro 有什麼差別？", "acceptedAnswer": {"@type": "Answer", "text": "免費：全解析度置中量測、放大鏡、逐條對線、對照 PSA/BGS/CGC 標準、一次最多 5 張的批次體驗，以及任選 1 張卡試用送鑑前檢查（值不值得送鑑、四角四邊特寫）。Pro：所有卡都能用送鑑前檢查，另有送鑑帳本、批次掃描、附送鑑清單 PDF 的決策助手、CSV 與 4K 匯出、預設和移除廣告。"}}, {"@type": "Question", "name": "和 PSA、BGS、CGC 有關係嗎？", "acceptedAnswer": {"@type": "Answer", "text": "沒有。CenterMint 是獨立開發的 App，置中標準只是依各公司公布的標準做對照，實際鑑定結果可能不同。"}}, {"@type": "Question", "name": "卡牌照片的隱私如何保障？", "acceptedAnswer": {"@type": "Answer", "text": "量測在 iPhone 本機完成，不需要帳號。只有你開啟修正分享（預設關閉），或在批次匯入時同意那一次提示，照片才會上傳，而且可以拒絕。價格和送鑑帳本只存在本機。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "用 CenterMint 量測卡牌置中", "inLanguage": "zh-Hant", "url": "https://zhao73.github.io/centermint/zh-Hant/#how-to", "tool": {"@type": "HowToTool", "name": "CenterMint (iPhone)"}, "step": [{"@type": "HowToStep", "position": 1, "text": "把卡從卡套取出，平放在和卡邊顏色反差明顯的素色墊子上，在均勻光線下拍照，或匯入照片、掃描圖。"}, {"@type": "HowToStep", "position": 2, "text": "CenterMint 自動給出卡牌外緣和印刷內框。有不確定的線時，會用放大鏡一條條帶你看，並說明原因。"}, {"@type": "HowToStep", "position": 3, "text": "確認或微調每一條線，左右、上下比例即時更新。"}, {"@type": "HowToStep", "position": 4, "text": "背面也量一次，正反面分別對照 PSA、BGS 或 CGC 標準。"}, {"@type": "HowToStep", "position": 5, "text": "送鑑前看一遍四角四邊特寫，再用最近的成交價算一下「值不值得送鑑」。"}]}</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js","gsap":"https://cdn.jsdelivr.net/npm/gsap@3.15.0/+esm","gsap/ScrollTrigger":"https://cdn.jsdelivr.net/npm/gsap@3.15.0/ScrollTrigger.js/+esm","lenis":"https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.mjs"}}</script>
+<script src="../site.js?v=bd2c070b" defer></script>
+<script type="module" src="../assets/js/home.js?v=4fa389cf"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="masthead">
+<div class="colorbar" aria-hidden="true"></div>
+<div class="masthead-row">
+<a class="wordmark" href="https://zhao73.github.io/centermint/zh-Hant/"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 1v22M1 12h22"/></g></svg><span>CenterMint</span></a>
+<nav class="masthead-nav" aria-label="語言">
+<details class="langs"><summary><span class="sr">語言: </span><span lang="zh-Hant">繁體中文</span></summary>
+<ul><li><a lang="en" hreflang="en" href="https://zhao73.github.io/centermint/">English</a></li><li><a lang="zh-Hans" hreflang="zh-Hans" href="https://zhao73.github.io/centermint/zh-Hans/">简体中文</a></li><li><a lang="zh-Hant" hreflang="zh-Hant" href="https://zhao73.github.io/centermint/zh-Hant/" aria-current="page">繁體中文</a></li><li><a lang="ja" hreflang="ja" href="https://zhao73.github.io/centermint/ja/">日本語</a></li><li><a lang="ko" hreflang="ko" href="https://zhao73.github.io/centermint/ko/">한국어</a></li><li><a lang="vi" hreflang="vi" href="https://zhao73.github.io/centermint/vi/">Tiếng Việt</a></li><li><a lang="de" hreflang="de" href="https://zhao73.github.io/centermint/de/">Deutsch</a></li><li><a lang="fr" hreflang="fr" href="https://zhao73.github.io/centermint/fr/">Français</a></li><li><a lang="es" hreflang="es" href="https://zhao73.github.io/centermint/es/">Español</a></li><li><a lang="it" hreflang="it" href="https://zhao73.github.io/centermint/it/">Italiano</a></li><li><a lang="pt-BR" hreflang="pt-BR" href="https://zhao73.github.io/centermint/pt-BR/">Português</a></li></ul>
+</details>
+<a class="masthead-dl" data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=zh_Hant_site_202609">下載</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="story">
+<section class="hero" aria-labelledby="hero-title">
+<h1 id="hero-title">送鑑前，看清卡牌置中</h1>
+<p class="lede">先把邊距量準，App 不確定的線一條條確認，再決定這張卡值不值得花送鑑費。</p>
+<div class="get" data-hero-get>
+<a class="badge " data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=zh_Hant_site_202609"><img src="../assets/badges/app-store-zh-Hant.svg" width="108.85" height="40" alt="在 App Store 下載"></a>
+<figure class="qr"><svg viewBox="0 0 45 45" role="img" aria-label="在 App Store 下載" shape-rendering="crispEdges"><rect width="45" height="45" fill="#fff"/><path class="qrline" stroke="#14161a" d="M2 2.5h7m4 0h2m2 0h12m4 0h1m2 0h7m-41 1h1m5 0h1m2 0h1m1 0h3m1 0h3m3 0h1m2 0h4m1 0h2m1 0h1m1 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h2m2 0h2m2 0h1m1 0h2m1 0h1m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m6 0h1m3 0h3m4 0h2m1 0h2m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h2m2 0h3m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m1 0h1m1 0h2m1 0h2m3 0h1m3 0h1m1 0h1m2 0h2m1 0h1m3 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h1m2 0h1m2 0h1m2 0h3m2 0h1m1 0h2m4 0h1m-33 1h1m1 0h5m3 0h1m1 0h1m3 0h2m4 0h1m1 0h3m2 0h1m4 0h5m-39 1h1m3 0h1m2 0h2m1 0h1m1 0h1m2 0h3m1 0h2m2 0h2m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-41 1h2m1 0h2m1 0h2m1 0h1m1 0h1m3 0h2m1 0h1m1 0h2m4 0h2m1 0h1m2 0h1m3 0h1m-36 1h2m2 0h1m1 0h1m3 0h2m2 0h1m2 0h5m5 0h1m2 0h2m4 0h1m2 0h1m-40 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m3 0h4m3 0h2m3 0h1m1 0h2m4 0h2m1 0h1m-41 1h1m1 0h4m2 0h3m1 0h1m1 0h1m1 0h1m5 0h1m2 0h3m1 0h1m1 0h1m3 0h2m3 0h1m-40 1h2m3 0h2m2 0h4m1 0h2m1 0h1m1 0h5m1 0h2m2 0h1m2 0h1m2 0h2m1 0h1m-40 1h1m2 0h1m1 0h1m2 0h1m2 0h2m1 0h3m4 0h3m2 0h2m2 0h1m3 0h2m1 0h1m1 0h1m-39 1h1m1 0h1m1 0h3m3 0h4m1 0h2m4 0h2m1 0h1m1 0h4m1 0h2m1 0h1m1 0h2m-39 1h3m4 0h1m6 0h2m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h1m2 0h7m-38 1h2m1 0h2m1 0h1m1 0h4m3 0h1m1 0h1m1 0h1m4 0h3m6 0h2m-37 1h1m1 0h2m4 0h2m5 0h1m2 0h2m2 0h2m1 0h3m1 0h1m5 0h1m3 0h1m-41 1h3m1 0h3m3 0h3m1 0h3m1 0h5m6 0h2m1 0h2m3 0h2m1 0h1m-41 1h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h6m2 0h2m-41 1h4m2 0h2m1 0h1m3 0h1m2 0h1m1 0h1m5 0h1m2 0h2m1 0h1m1 0h1m3 0h3m-38 1h1m1 0h1m3 0h5m1 0h1m1 0h1m2 0h1m2 0h3m4 0h1m1 0h2m3 0h3m1 0h1m-39 1h1m1 0h2m1 0h1m1 0h6m1 0h1m1 0h1m4 0h1m1 0h3m2 0h1m3 0h1m1 0h1m2 0h1m1 0h1m-39 1h2m5 0h1m1 0h7m1 0h1m1 0h1m1 0h1m2 0h1m4 0h1m2 0h1m1 0h2m-38 1h1m3 0h4m1 0h1m2 0h2m3 0h1m2 0h1m1 0h1m1 0h7m1 0h1m1 0h1m-35 1h1m1 0h3m4 0h6m1 0h1m3 0h2m8 0h3m1 0h1m1 0h2m1 0h1m-37 1h1m2 0h2m3 0h3m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h3m3 0h2m-39 1h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h4m2 0h2m2 0h3m3 0h1m-41 1h1m4 0h4m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m7 0h2m1 0h1m2 0h2m1 0h1m-37 1h1m1 0h1m4 0h1m1 0h1m1 0h2m2 0h2m1 0h4m2 0h1m2 0h1m2 0h2m1 0h2m1 0h2m1 0h1m-40 1h1m1 0h1m1 0h1m1 0h3m1 0h2m3 0h3m1 0h2m1 0h1m1 0h2m3 0h2m1 0h8m-32 1h3m1 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m2 0h1m1 0h3m3 0h1m2 0h2m-41 1h7m2 0h3m3 0h1m1 0h1m3 0h1m2 0h4m2 0h3m1 0h1m1 0h2m1 0h1m-40 1h1m5 0h1m1 0h1m1 0h3m1 0h1m2 0h2m2 0h3m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h2m4 0h3m4 0h2m1 0h2m1 0h8m-40 1h1m1 0h3m1 0h1m1 0h3m3 0h1m2 0h3m2 0h3m6 0h1m1 0h1m1 0h1m2 0h1m-39 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h3m2 0h1m1 0h1m4 0h2m1 0h2m1 0h5m-38 1h1m5 0h1m2 0h4m1 0h1m1 0h1m3 0h4m3 0h2m1 0h3m1 0h1m1 0h2m1 0h1m-40 1h7m1 0h1m3 0h1m2 0h2m1 0h1m3 0h1m1 0h6m1 0h1m3 0h4"/></svg><figcaption>用 iPhone 相機掃描，開啟 App Store 裡的 CenterMint。</figcaption></figure>
+</div>
+<figure class="hero-video"><video data-video muted loop playsinline preload="none" poster="../assets/video/measure-tall-poster.webp" width="720" height="900" aria-label="看它怎麼測"><source src="../assets/video/measure-tall.webm" type="video/webm"><source src="../assets/video/measure-tall.mp4" type="video/mp4"></video></figure>
+<p class="imprint">CenterMint 是一款給集換式卡牌與球員卡收藏者使用的 iPhone App。它根據裸卡照片量測左右、上下的置中比例，對照 PSA、BGS、CGC 公開的置中標準，幫你在花錢送鑑之前做判斷。它是獨立工具，只量置中，不預測完整鑑定分數。</p>
+</section>
+<div class="stage" aria-hidden="true">
+<div class="lightbox"><div class="panel" data-panel>
+<i class="trim tl"></i><i class="trim tr"></i><i class="trim bl"></i><i class="trim br"></i>
+<canvas data-gl></canvas>
+<div class="proof-fig stage-fig" data-state="0" data-stage-fig><img src="../assets/img/card-offcenter-640.webp" width="640" height="898" alt="" loading="lazy" decoding="async"><svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg"><g transform="translate(45.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(45.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g></g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg></div>
+<div class="gl-labels" data-gl-labels><span data-lbl="l">52.9</span><span data-lbl="r">47.1</span><span data-lbl="t">50.6</span><span data-lbl="b">49.4</span></div>
+<div class="readout" data-readout>
+<div class="ro-row" data-ro-row="lr"><span class="ro-k">左右</span><span class="ro-v" data-odo="52.9 / 47.1">52.9 / 47.1</span></div>
+<div class="ro-row" data-ro-row="tb"><span class="ro-k">上下</span><span class="ro-v" data-odo="50.6 / 49.4">50.6 / 49.4</span></div>
+<div class="ro-row ro-ref" data-ro-row="ref"><span class="ro-k">PSA 10 正面參考</span><span class="ro-v">在 55/45 以內</span></div>
+<div class="gauge ro-gauge" aria-hidden="true"><svg viewBox="0 0 260 46"><rect class="g-ok" x="10" y="20" width="120" height="10"/><line class="g-axis" x1="10" y1="30" x2="250" y2="30"/><line class="g-tick" x1="10" y1="26" x2="10" y2="36"/><text x="10" y="46" text-anchor="middle">50/50</text><line class="g-tick" x1="130" y1="26" x2="130" y2="36"/><text x="130" y="46" text-anchor="middle">55/45</text><line class="g-tick" x1="250" y1="26" x2="250" y2="36"/><text x="250" y="46" text-anchor="middle">60/40</text><path class="g-mark" d="M79.6 19l-5-8h10z"/><text class="g-val" x="79.6" y="8" text-anchor="middle">52.9</text></svg></div>
+</div>
+<p class="stage-cap">這是我們為 CenterMint 畫的範例卡，左右邊距是 52.9 / 47.1。<span class="loupe-hint">把游標移到卡上，就是一個放大鏡。</span></p>
+</div></div>
+</div>
+<section class="howto" id="how-to" aria-labelledby="howto-title">
+<h2 id="howto-title">用 CenterMint 量測卡牌置中的步驟</h2>
+<p class="howto-sub">會提醒你哪裡要再看一眼的量測</p>
+<ol class="steps">
+<li class="step" data-step="1">
+<p class="step-n">第 1 步，共 5 步</p>
+<h3>平放拍照</h3>
+<p class="step-main">把卡從卡套取出，平放在和卡邊顏色反差明顯的素色墊子上，在均勻光線下拍照，或匯入照片、掃描圖。</p>
+<p class="note-raw"><strong>自動測量只支援裸卡。</strong> 裝在卡套、硬卡套或評級殼裡的卡，需要自己手動對齊四條邊。偵測到卡套時，App 會提示並切換到手動對線。</p>
+<div class="proof-fig step-fig" data-state="1"><img src="../assets/img/card-offcenter-640.webp" srcset="../assets/img/card-offcenter-360.webp 360w, ../assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async"><svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg"><g transform="translate(45.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(45.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g></g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg></div>
+
+</li>
+<li class="step" data-step="2">
+<p class="step-n">第 2 步，共 5 步</p>
+<h3>找到邊線</h3>
+<p class="step-main">CenterMint 自動給出卡牌外緣和印刷內框。有不確定的線時，會用放大鏡一條條帶你看，並說明原因。</p>
+<p class="step-more">裸卡自動量測：金邊、銀邊逐邊次像素貼合；在布面、花紋墊上，外框也更不容易認錯。</p>
+<div class="proof-fig step-fig" data-state="2"><img src="../assets/img/card-offcenter-640.webp" srcset="../assets/img/card-offcenter-360.webp 360w, ../assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async"><svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg"><g transform="translate(45.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(45.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g></g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg></div>
+
+</li>
+<li class="step" data-step="3">
+<p class="step-n">第 3 步，共 5 步</p>
+<h3>逐條確認</h3>
+<p class="step-main">確認或微調每一條線，左右、上下比例即時更新。</p>
+<p class="step-more">放大鏡 2.0：顯示真實像素、像素格線和邊緣明暗曲線，對邊連動，方便兩側比較。</p><p class="step-more">免費版量測同樣使用全解析度原圖。</p>
+<div class="proof-fig step-fig" data-state="3"><img src="../assets/img/card-offcenter-640.webp" srcset="../assets/img/card-offcenter-360.webp 360w, ../assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async"><svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg"><g transform="translate(45.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(45.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g></g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg></div>
+
+</li>
+<li class="step" data-step="4">
+<p class="step-n">第 4 步，共 5 步</p>
+<h3>對照標準</h3>
+<p class="step-main">背面也量一次，正反面分別對照 PSA、BGS 或 CGC 標準。</p>
+<div class="proof-fig step-fig" data-state="4"><img src="../assets/img/card-offcenter-640.webp" srcset="../assets/img/card-offcenter-360.webp 360w, ../assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async"><svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg"><g transform="translate(45.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(45.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g></g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg></div>
+<div class="gauge " aria-hidden="true"><svg viewBox="0 0 260 46"><rect class="g-ok" x="10" y="20" width="120" height="10"/><line class="g-axis" x1="10" y1="30" x2="250" y2="30"/><line class="g-tick" x1="10" y1="26" x2="10" y2="36"/><text x="10" y="46" text-anchor="middle">50/50</text><line class="g-tick" x1="130" y1="26" x2="130" y2="36"/><text x="130" y="46" text-anchor="middle">55/45</text><line class="g-tick" x1="250" y1="26" x2="250" y2="36"/><text x="250" y="46" text-anchor="middle">60/40</text><path class="g-mark" d="M79.6 19l-5-8h10z"/><text class="g-val" x="79.6" y="8" text-anchor="middle">52.9</text></svg></div><figure class="device "><img src="../assets/shots/zh-Hant/result.webp" width="603" height="1311" loading="lazy" decoding="async" alt="CenterMint 結果頁：範例卡的左右、上下置中比例"></figure>
+</li>
+<li class="step" data-step="5">
+<p class="step-n">第 5 步，共 5 步</p>
+<h3>送鑑前再看一眼</h3>
+<p class="step-main">送鑑前看一遍四角四邊特寫，再用最近的成交價算一下「值不值得送鑑」。</p>
+<div class="proof-fig step-fig" data-state="5"><img src="../assets/img/card-offcenter-640.webp" srcset="../assets/img/card-offcenter-360.webp 360w, ../assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async"><svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg"><g transform="translate(45.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 41)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(45.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g><g transform="translate(999.5 1419)"><g class="c"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="m"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g><g class="y"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g></g></g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg></div>
+
+</li>
+</ol>
+</section>
+</div>
+
+<section class="features" id="new" aria-labelledby="new-title">
+<header class="sec-head wrap">
+<h2 id="new-title">花送鑑費之前</h2>
+<p>1.9 版圍繞一個要花錢的決定：這張卡值不值得送鑑。</p>
+<p class="ver">1.9 版新功能</p>
+</header>
+
+<article class="feature wrap" id="line-check">
+<div class="f-text">
+<h3>逐條對線 <span class="plan">免費</span></h3><p>有需要確認的線時，編輯器依「最不確定」的順序一條條帶你看。放大鏡自動對準這條線，點「這條對了」進入下一條；不對就直接拖到正確位置。</p>
+<h3>告訴你為什麼要檢查 <span class="plan">免費</span></h3><p>每一步用一句話說明原因：反光、模糊、太暗、解析度低、墊子和卡邊顏色太像、沒找到印刷邊框等。能靠重拍解決的會直接告訴你。</p>
+</div>
+<div class="f-media"><figure class="device "><img src="../assets/shots/zh-Hant/guide.webp" width="603" height="1311" loading="lazy" decoding="async" alt="逐條對線：放大鏡對準一條邊線，並說明為什麼要檢查"></figure></div>
+</article>
+<article class="feature feature--calc wrap" id="worth-grading">
+<div class="f-text">
+<h3>值不值得送鑑 <span class="plan pro">Pro · 免費試 1 張</span></h3><p>填上未鑑定、PSA 9、PSA 10 的成交價（也支援 BGS、CGC），再填送鑑費和賣出手續費，App 會算出送鑑後比直接賣裸卡多賺或虧多少，以及 PSA 10 至少要賣多少才回本。置中拿不到的分數會自動排除。價格由你自己填；日本地區可一鍵開啟メルカリ、ヤフオク的已售紀錄。</p>
+<form class="calc" id="value-form" novalidate aria-labelledby="calc-title">
+<h4 id="calc-title">先算一下回本線</h4>
+<p class="help" id="value-help">請用同一種貨幣填寫最近的成交價。計算只在你的瀏覽器裡進行，不會上傳任何資料。</p>
+<div class="calc-grid">
+<label for="raw-price">裸卡價格（直接賣）<input id="raw-price" name="raw-price" type="text" inputmode="decimal" value="40" autocomplete="off" aria-describedby="value-help value-error"></label>
+<label for="second-price">PSA 9 成交價<input id="second-price" name="second-price" type="text" inputmode="decimal" value="60" autocomplete="off" aria-describedby="value-help value-error"></label>
+<label for="top-price">PSA 10 成交價<input id="top-price" name="top-price" type="text" inputmode="decimal" value="150" autocomplete="off" aria-describedby="value-help value-error"></label>
+<label for="grading-fee">每張送鑑費<input id="grading-fee" name="grading-fee" type="text" inputmode="decimal" value="70" autocomplete="off" aria-describedby="value-help value-error"></label>
+<label for="selling-fee">賣出手續費（%）<input id="selling-fee" name="selling-fee" type="text" inputmode="decimal" value="13" autocomplete="off" aria-describedby="value-help value-error"></label>
+<label for="centering-ceiling" class="wide">置中最多允許的等級<select id="centering-ceiling" name="centering-ceiling"><option value="">還沒測（不限制）</option><option value="10">PSA 10 範圍：正面 ≤ 55/45，背面 ≤ 75/25</option><option value="9">最多 PSA 9：正面 ≤ 60/40，背面 ≤ 90/10</option><option value="8">比 PSA 9 範圍還差</option></select></label>
+</div>
+<p id="value-error" class="error" role="alert" hidden>請只填數字；手續費要低於 100%。</p>
+<div class="calc-out" aria-live="polite" aria-atomic="true">
+<p class="value-verdict" id="value-verdict" data-needs-prices="填好三個成交價和送鑑費就能算。" data-worth-it="值得送鑑" data-worth-it-detail="就算只拿到 PSA 9，扣掉送鑑費和手續費也比賣裸卡多。" data-only-if-top-grade="拿到 PSA 10 才賺" data-only-if-top-grade-detail="PSA 10 賺、PSA 9 虧。先確認四角、卡邊和表面有沒有把握。" data-not-worth="不建議送鑑" data-not-worth-detail="就算拿到 PSA 10，到手的錢也比直接賣裸卡少。" data-centering-blocks="置中拿不到賺錢的等級" data-centering-blocks-detail="依這個置中，能賺錢的等級拿不到。" data-unreachable="置中拿不到">—</p>
+<p class="value-detail" id="value-detail"></p>
+<div class="calc-nums"><p>拿 PSA 9 比裸卡多賺<output id="gain-second">—</output></p><p>拿 PSA 10 比裸卡多賺<output id="gain-top">—</output></p><p>PSA 10 回本價<output id="break-even">—</output></p></div>
+</div>
+<div class="calc-foot"><button type="reset">恢復範例</button><a href="https://zhao73.github.io/centermint/zh-Hans/guides/worth-grading/">公式、算例與出處（簡體中文）</a></div>
+<p class="caption">BGS（9.5 和 9）或 CGC（10 和 9.5）也一樣，把對應等級的價格填進兩個等級欄即可。</p>
+</form>
+</div>
+<div class="f-media"><figure class="device "><img src="../assets/shots/zh-Hant/value.webp" width="603" height="1311" loading="lazy" decoding="async" alt="「值不值得送鑑」頁面：比較直接賣裸卡、PSA 9 與 PSA 10"></figure></div>
+</article>
+<article class="feature wrap" id="close-ups">
+<div class="f-text">
+<h3>四角四邊特寫 <span class="plan pro">Pro · 免費試 1 張</span></h3><p>從原照片以原解析度裁出四個角和四條邊的中段，放大查白邊、碰傷，還能匯出一張拼圖分享。App 只負責讓你看清楚，不替四角和表面打分。</p>
+<div class="contact"><figure><img src="../assets/img/closeup-tl.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>左上角</figcaption></figure><figure><img src="../assets/img/closeup-t.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>上邊</figcaption></figure><figure><img src="../assets/img/closeup-tr.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>右上角</figcaption></figure><figure><img src="../assets/img/closeup-l.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>左邊</figcaption></figure><figure><img src="../assets/img/closeup-r.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>右邊</figcaption></figure><figure><img src="../assets/img/closeup-bl.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>左下角</figcaption></figure><figure><img src="../assets/img/closeup-b.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>下邊</figcaption></figure><figure><img src="../assets/img/closeup-br.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>右下角</figcaption></figure></div>
+<p class="contact-cap">從範例卡圖片依原解析度裁出的四個角與四條邊。白邊要你自己判斷，App 不評分。</p>
+</div>
+<div class="f-media"><figure class="device "><img src="../assets/shots/zh-Hant/closeups.webp" width="603" height="1311" loading="lazy" decoding="async" alt="從原照片裁出的四角四邊特寫"></figure></div>
+</article>
+<article class="feature wrap" id="submission-log">
+<div class="f-text">
+<h3>送鑑帳本 <span class="plan pro">Pro</span></h3><p>記下每次送了哪些卡、花了多少錢、回來幾分。可以看到拿滿分的比例、送鑑費總花費，以及實際分數是否沒超過 App 量出的置中上限。</p>
+</div>
+<div class="f-media"><figure class="device "><img src="../assets/shots/zh-Hant/ledger.webp" width="603" height="1311" loading="lazy" decoding="async" alt="送鑑帳本：送鑑費與回來的分數"></figure></div>
+</article>
+<article class="feature wrap" id="share">
+<div class="f-text">
+<h3>分享圖 <span class="plan">免費</span></h3><p>分享圖以卡牌照片為主，只在右下角放一個小 logo。</p>
+</div>
+<div class="f-media"><figure class="device "><img src="../assets/shots/zh-Hant/share.webp" width="603" height="1311" loading="lazy" decoding="async" alt="附卡牌照片與置中比例的分享圖"></figure></div>
+</article>
+<article class="feature wrap" id="batch">
+<div class="f-text">
+<h3>批次 2.0 與決策助手 <span class="plan pro">Pro</span></h3><p>批次 2.0（Pro）：連拍進佇列，只看需要檢查的卡，依置中排序，一鍵儲存。決策助手把卡分成「送評 / 先補齊（如背面還沒量）/ 低於目標」，並可匯出送鑑清單 PDF。</p>
+</div>
+<div class="f-media"><div class="bins-wrap">
+<div class="bins" aria-hidden="true"><div class="bin"><svg viewBox="0 0 120 146"><rect x="16" y="44" width="72" height="100" rx="4" fill="#E9EDF1" stroke="#14161A" stroke-width="1.5"/><rect x="22" y="30" width="72" height="100" rx="4" fill="#E9EDF1" stroke="#14161A" stroke-width="1.5"/><rect x="28" y="16" width="72" height="100" rx="4" fill="#E9EDF1" stroke="#14161A" stroke-width="1.5"/><rect x="34" y="2" width="72" height="100" rx="4" fill="#fff" stroke="#14161A" stroke-width="1.5"/></svg><p>送評</p></div><div class="bin"><svg viewBox="0 0 120 132"><rect x="16" y="30" width="72" height="100" rx="4" fill="#E9EDF1" stroke="#14161A" stroke-width="1.5"/><rect x="22" y="16" width="72" height="100" rx="4" fill="#E9EDF1" stroke="#14161A" stroke-width="1.5"/><rect x="28" y="2" width="72" height="100" rx="4" fill="#fff" stroke="#14161A" stroke-width="1.5"/></svg><p>先補齊</p></div><div class="bin"><svg viewBox="0 0 120 118"><rect x="16" y="16" width="72" height="100" rx="4" fill="#E9EDF1" stroke="#14161A" stroke-width="1.5"/><rect x="22" y="2" width="72" height="100" rx="4" fill="#fff" stroke="#14161A" stroke-width="1.5"/></svg><p>低於目標</p></div></div>
+<p class="pdf-note"><svg viewBox="0 0 26 32" aria-hidden="true"><path d="M1 1h16l8 8v22H1z" fill="#fff" stroke="#14161A" stroke-width="1.5"/><path d="M17 1v8h8" fill="none" stroke="#14161A" stroke-width="1.5"/><path d="M6 16h14M6 20h14M6 24h9" stroke="#D6247B" stroke-width="1.5"/></svg>送鑑清單 PDF</p>
+</div></div>
+</article>
+</section>
+
+<section class="watch mat" id="watch" aria-labelledby="watch-title">
+<div class="wrap watch-grid">
+<div><h2 id="watch-title">看它怎麼測</h2><p>卡落到切割墊上，外框和印刷內框被找出來，比例隨之出現；偏心的那一張會被標出來。</p><p class="small">畫面裡是為本頁畫的抽象卡。在 App 裡，你測的是自己卡的照片。</p></div>
+<figure class="watch-video"><video data-video muted loop playsinline preload="none" poster="../assets/video/measure-wide-poster.webp" width="1280" height="800" aria-label="看它怎麼測"><source src="../assets/video/measure-wide.webm" type="video/webm"><source src="../assets/video/measure-wide.mp4" type="video/mp4"></video></figure>
+</div>
+</section>
+
+<section class="pricing wrap" id="pricing" aria-labelledby="pricing-title">
+<h2 class="sec-h2" id="pricing-title">免費與 Pro</h2>
+<div class="sheets">
+<div class="sheet sheet--free"><h3>免費</h3><ul><li>正反面置中量測（全解析度）</li><li>放大鏡與逐條對線（附原因說明）</li><li>對照 PSA、BGS、CGC 置中標準</li><li>本機收藏庫、正反面配對、分享圖</li><li>免費體驗一次批次，最多 5 張</li><li>任選 1 張卡完整試用「值不值得送鑑」和「四角四邊特寫」</li></ul></div>
+<div class="sheet sheet--pro"><h3>CenterMint Pro</h3><ul><li>所有卡都能用「值不值得送鑑」和「四角四邊特寫」</li><li>送鑑帳本</li><li>批次掃描與 CSV 匯出</li><li>決策助手與送鑑清單 PDF</li><li>置中報告、4K 畫質增強與 4K 匯出</li><li>儲存編輯預設、移除廣告</li></ul></div>
+</div>
+<p class="note">Pro 提供月訂閱、年訂閱與一次買斷，方案與當地價格以 App 內顯示為準。訂閱會自動續訂，直到你在 Apple 帳號設定中取消。</p>
+<a class="badge " data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=zh_Hant_site_202609"><img src="../assets/badges/app-store-zh-Hant.svg" width="108.85" height="40" alt="在 App Store 下載"></a>
+</section>
+
+<section class="limits wrap" id="limits" aria-labelledby="limits-title">
+<h2 class="sec-h2" id="limits-title">CenterMint 不做什麼</h2>
+<ul class="dele"><li>不評判四角、卡邊、表面與真偽，也不預測 PSA、BGS、CGC 分數或拿到 10 分的機率。</li><li>不保證鑑定結果。置中標準只是依公開標準做對照參考，與 PSA、Beckett、CGC、寶可夢及任何卡牌發行商都沒有關聯。</li><li>不抓取、不估算價格，也不串接 eBay。「值不值得送鑑」只用你填的價格計算。</li><li>自動量測只針對裸卡。沒有印刷邊框的全圖卡，內線只能沿畫框走，結果僅供參考。</li></ul>
+<div class="limits-foot"><p>量測在你的 iPhone 上完成，不需要註冊帳號。只有你主動同意時照片才會離開手機：修正分享預設關閉；批次匯入前會詢問一次，可以拒絕。你填的價格和送鑑帳本都只存在本機。詳情請見隱私權政策。 <a href="https://zhao73.github.io/centermint/privacy.html">隱私權政策（英文）</a></p><p>App 支援繁體中文、簡體中文、英文、日文、韓文及越南文。</p></div>
+</section>
+
+<section class="faq wrap" id="faq" aria-labelledby="faq-title">
+<h2 class="sec-h2" id="faq-title">卡牌置中與送鑑常見問題</h2>
+<div class="faq-list"><details><summary>裝在卡套、硬卡套或評級殼裡的卡能量嗎？</summary><p>自動量測只支援裸卡。卡套、硬卡套和評級殼有自己的邊緣和反光，App 會把塑膠邊當成卡邊。偵測到卡套時，App 會提示並切換到手動對線，由你自己對齊四條卡邊。想要最準的結果，請取出卡片再重拍。</p></details><details><summary>量得準不準？</summary><p>取決於照片品質和你確認的線。差別其實很小：左右各 3 公釐邊的卡，從 50/50 到 55/45 只差 0.3 公釐。CenterMint 對金邊、銀邊逐邊做次像素貼合，並標出沒把握的線，但不宣稱單一的準確率。被標出的線請用放大鏡確認，模糊或反光的照片請重拍。</p></details><details><summary>PSA 10 的置中標準是多少？</summary><p>PSA 公布的 Gem Mint 10 參考為正面約 55/45 以內、背面 75/25 以內；PSA 9 為正面約 60/40、背面 90/10。BGS 與 CGC 有各自公布的標準，部分數值只適用於特定卡種。置中只是評分項目之一，置中好也不代表一定拿高分。送鑑前請查看官方頁面。</p></details><details><summary>「值不值得送鑑」是怎麼算的？</summary><p>每個分數依「多賺 =（鑑定後售價 − 裸卡售價）×（1 − 賣出手續費）− 送鑑費」計算。不論賣裸卡或鑑定卡都要付手續費，所以只對差價乘手續費。回本線是「最高分售價至少 = 裸卡售價 + 送鑑費 ÷（1 − 手續費）」。就算只拿到次一檔（如 PSA 9）也不虧，就顯示「值得送鑑」；只有拿到最高分才賺，就提醒先確認四角和表面；哪一檔都不賺，或置中拿不到賺錢的分數，就顯示「不建議送鑑」。App 不估算拿 10 分的機率。</p></details><details><summary>會自動查 eBay 或市場價格嗎？</summary><p>不會。App 不串接 eBay 或任何價格服務，也不猜價格。最近的成交價由你自己填，依卡片儲存在本機。日本地區有按鈕，可用卡名和編號直接開啟メルカリ已售、ヤフオク已成交的搜尋結果。</p></details><details><summary>能檢查四角、卡邊和表面嗎？</summary><p>不評判。「四角四邊特寫」是從原照片以原解析度裁出四個角和四條邊，讓你自己放大看。手機照片可能拍不出極細的瑕疵，有疑問的地方請用放大鏡在強光下再看一次。</p></details><details><summary>免費版和 Pro 有什麼差別？</summary><p>免費：全解析度置中量測、放大鏡、逐條對線、對照 PSA/BGS/CGC 標準、一次最多 5 張的批次體驗，以及任選 1 張卡試用送鑑前檢查（值不值得送鑑、四角四邊特寫）。Pro：所有卡都能用送鑑前檢查，另有送鑑帳本、批次掃描、附送鑑清單 PDF 的決策助手、CSV 與 4K 匯出、預設和移除廣告。</p></details><details><summary>和 PSA、BGS、CGC 有關係嗎？</summary><p>沒有。CenterMint 是獨立開發的 App，置中標準只是依各公司公布的標準做對照，實際鑑定結果可能不同。</p></details><details><summary>卡牌照片的隱私如何保障？</summary><p>量測在 iPhone 本機完成，不需要帳號。只有你開啟修正分享（預設關閉），或在批次匯入時同意那一次提示，照片才會上傳，而且可以拒絕。價格和送鑑帳本只存在本機。</p></details></div>
+<p class="sources">評級標準官方來源: <a href="https://www.psacard.com/gradingstandards">PSA</a><a href="https://www.beckett.com/grading">BGS</a><a href="https://www.cgccards.com/card-grading/grading-scale/">CGC</a></p>
+</section>
+
+<section class="guides wrap" id="tools" aria-labelledby="tools-title">
+<h2 class="sec-h2" id="tools-title">實用工具與指南</h2>
+<ul class="guide-list"><li><a href="https://zhao73.github.io/centermint/zh-Hans/guides/worth-grading/"><span>卡牌值不值得送鑑？送鑑費、PSA 9/10 價差與回本線（簡體中文）</span></a></li><li><a href="https://zhao73.github.io/centermint/zh-Hans/guides/check-corners-edges/"><span>送鑑前怎麼檢查四角和卡邊白邊（簡體中文）</span></a></li><li><a href="https://zhao73.github.io/centermint/calculator/"><span>卡牌置中計算器（英文）</span></a></li></ul>
+</section>
+</main>
+
+<footer class="foot mat">
+<div class="wrap">
+<p class="foot-mark" aria-hidden="true">CenterMint</p>
+<div class="foot-grid">
+<div><h2 class="foot-h">下載 CenterMint</h2><div class="get"><a class="badge " data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=zh_Hant_site_202609"><img src="../assets/badges/app-store-zh-Hant.svg" width="108.85" height="40" alt="在 App Store 下載"></a><figure class="qr"><svg viewBox="0 0 45 45" role="img" aria-label="在 App Store 下載" shape-rendering="crispEdges"><rect width="45" height="45" fill="#fff"/><path class="qrline" stroke="#14161a" d="M2 2.5h7m4 0h2m2 0h12m4 0h1m2 0h7m-41 1h1m5 0h1m2 0h1m1 0h3m1 0h3m3 0h1m2 0h4m1 0h2m1 0h1m1 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h2m2 0h2m2 0h1m1 0h2m1 0h1m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m6 0h1m3 0h3m4 0h2m1 0h2m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m1 0h2m2 0h3m3 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m1 0h1m1 0h2m1 0h2m3 0h1m3 0h1m1 0h1m2 0h2m1 0h1m3 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h1m2 0h1m2 0h1m2 0h3m2 0h1m1 0h2m4 0h1m-33 1h1m1 0h5m3 0h1m1 0h1m3 0h2m4 0h1m1 0h3m2 0h1m4 0h5m-39 1h1m3 0h1m2 0h2m1 0h1m1 0h1m2 0h3m1 0h2m2 0h2m1 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-41 1h2m1 0h2m1 0h2m1 0h1m1 0h1m3 0h2m1 0h1m1 0h2m4 0h2m1 0h1m2 0h1m3 0h1m-36 1h2m2 0h1m1 0h1m3 0h2m2 0h1m2 0h5m5 0h1m2 0h2m4 0h1m2 0h1m-40 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h1m3 0h4m3 0h2m3 0h1m1 0h2m4 0h2m1 0h1m-41 1h1m1 0h4m2 0h3m1 0h1m1 0h1m1 0h1m5 0h1m2 0h3m1 0h1m1 0h1m3 0h2m3 0h1m-40 1h2m3 0h2m2 0h4m1 0h2m1 0h1m1 0h5m1 0h2m2 0h1m2 0h1m2 0h2m1 0h1m-40 1h1m2 0h1m1 0h1m2 0h1m2 0h2m1 0h3m4 0h3m2 0h2m2 0h1m3 0h2m1 0h1m1 0h1m-39 1h1m1 0h1m1 0h3m3 0h4m1 0h2m4 0h2m1 0h1m1 0h4m1 0h2m1 0h1m1 0h2m-39 1h3m4 0h1m6 0h2m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h1m2 0h7m-38 1h2m1 0h2m1 0h1m1 0h4m3 0h1m1 0h1m1 0h1m4 0h3m6 0h2m-37 1h1m1 0h2m4 0h2m5 0h1m2 0h2m2 0h2m1 0h3m1 0h1m5 0h1m3 0h1m-41 1h3m1 0h3m3 0h3m1 0h3m1 0h5m6 0h2m1 0h2m3 0h2m1 0h1m-41 1h1m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m1 0h2m1 0h1m1 0h1m2 0h6m2 0h2m-41 1h4m2 0h2m1 0h1m3 0h1m2 0h1m1 0h1m5 0h1m2 0h2m1 0h1m1 0h1m3 0h3m-38 1h1m1 0h1m3 0h5m1 0h1m1 0h1m2 0h1m2 0h3m4 0h1m1 0h2m3 0h3m1 0h1m-39 1h1m1 0h2m1 0h1m1 0h6m1 0h1m1 0h1m4 0h1m1 0h3m2 0h1m3 0h1m1 0h1m2 0h1m1 0h1m-39 1h2m5 0h1m1 0h7m1 0h1m1 0h1m1 0h1m2 0h1m4 0h1m2 0h1m1 0h2m-38 1h1m3 0h4m1 0h1m2 0h2m3 0h1m2 0h1m1 0h1m1 0h7m1 0h1m1 0h1m-35 1h1m1 0h3m4 0h6m1 0h1m3 0h2m8 0h3m1 0h1m1 0h2m1 0h1m-37 1h1m2 0h2m3 0h3m1 0h3m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h3m3 0h2m-39 1h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h4m2 0h2m2 0h3m3 0h1m-41 1h1m4 0h4m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m7 0h2m1 0h1m2 0h2m1 0h1m-37 1h1m1 0h1m4 0h1m1 0h1m1 0h2m2 0h2m1 0h4m2 0h1m2 0h1m2 0h2m1 0h2m1 0h2m1 0h1m-40 1h1m1 0h1m1 0h1m1 0h3m1 0h2m3 0h3m1 0h2m1 0h1m1 0h2m3 0h2m1 0h8m-32 1h3m1 0h1m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m2 0h1m1 0h3m3 0h1m2 0h2m-41 1h7m2 0h3m3 0h1m1 0h1m3 0h1m2 0h4m2 0h3m1 0h1m1 0h2m1 0h1m-40 1h1m5 0h1m1 0h1m1 0h3m1 0h1m2 0h2m2 0h3m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h2m4 0h3m4 0h2m1 0h2m1 0h8m-40 1h1m1 0h3m1 0h1m1 0h3m3 0h1m2 0h3m2 0h3m6 0h1m1 0h1m1 0h1m2 0h1m-39 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m1 0h3m2 0h1m1 0h1m4 0h2m1 0h2m1 0h5m-38 1h1m5 0h1m2 0h4m1 0h1m1 0h1m3 0h4m3 0h2m1 0h3m1 0h1m1 0h2m1 0h1m-40 1h7m1 0h1m3 0h1m2 0h2m1 0h1m3 0h1m1 0h6m1 0h1m3 0h4"/></svg><figcaption>用 iPhone 相機掃描，開啟 App Store 裡的 CenterMint。</figcaption></figure></div></div>
+<nav class="foot-langs" aria-label="語言"><h2 class="foot-h">語言</h2><ul><li><a lang="en" hreflang="en" href="https://zhao73.github.io/centermint/">English</a></li><li><a lang="zh-Hans" hreflang="zh-Hans" href="https://zhao73.github.io/centermint/zh-Hans/">简体中文</a></li><li><a lang="zh-Hant" hreflang="zh-Hant" href="https://zhao73.github.io/centermint/zh-Hant/" aria-current="page">繁體中文</a></li><li><a lang="ja" hreflang="ja" href="https://zhao73.github.io/centermint/ja/">日本語</a></li><li><a lang="ko" hreflang="ko" href="https://zhao73.github.io/centermint/ko/">한국어</a></li><li><a lang="vi" hreflang="vi" href="https://zhao73.github.io/centermint/vi/">Tiếng Việt</a></li><li><a lang="de" hreflang="de" href="https://zhao73.github.io/centermint/de/">Deutsch</a></li><li><a lang="fr" hreflang="fr" href="https://zhao73.github.io/centermint/fr/">Français</a></li><li><a lang="es" hreflang="es" href="https://zhao73.github.io/centermint/es/">Español</a></li><li><a lang="it" hreflang="it" href="https://zhao73.github.io/centermint/it/">Italiano</a></li><li><a lang="pt-BR" hreflang="pt-BR" href="https://zhao73.github.io/centermint/pt-BR/">Português</a></li></ul></nav>
+<div><h2 class="foot-h">聯絡與條款</h2><ul><li><a href="https://zhao73.github.io/centermint/privacy.html">隱私權政策（英文）</a></li><li><a href="https://zhao73.github.io/centermint/terms.html">使用條款（英文）</a></li><li><a href="mailto:qwe911291860@gmail.com">電子郵件聯絡</a></li></ul></div>
+</div>
+<p class="copy">© 2026 JIAPENG Zhao · CenterMint</p>
+</div>
+</footer>
+<div class="dock" data-dock aria-hidden="true"><span>iPhone 免費下載</span><a class="badge" data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=zh_Hant_site_202609" tabindex="-1"><img src="../assets/badges/app-store-zh-Hant.svg" width="108.85" height="40" alt="在 App Store 下載"></a></div>
+</body>
+</html>

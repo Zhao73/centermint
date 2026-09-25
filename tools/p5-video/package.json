@@ -1,0 +1,13 @@
+{
+  "name": "centermint-measure-video",
+  "private": true,
+  "type": "module",
+  "description": "Offline-rendered p5.js loop for the CenterMint site hero video",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "p5": "1.11.3",
+    "puppeteer-core": "^24.0.0"
+  }
+}

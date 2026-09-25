@@ -1,0 +1,222 @@
+{%- macro overlay(state_extra='') -%}
+<svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
+<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
+<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
+<g class="o-reg">{% for x, y in [(45.5,41),(999.5,41),(45.5,1419),(999.5,1419)] %}<g transform="translate({{x}} {{y}})">{% for c in ['c','m','y'] %}<g class="{{c}}"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g>{% endfor %}</g>{% endfor %}</g>
+<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+</svg>
+{%- endmacro -%}
+{%- macro gauge(extra_class='') -%}
+<div class="gauge {{extra_class}}" aria-hidden="true"><svg viewBox="0 0 260 46"><rect class="g-ok" x="10" y="20" width="120" height="10"/><line class="g-axis" x1="10" y1="30" x2="250" y2="30"/>{% for x, t in [(10,'50/50'),(130,'55/45'),(250,'60/40')] %}<line class="g-tick" x1="{{x}}" y1="26" x2="{{x}}" y2="36"/><text x="{{x}}" y="46" text-anchor="middle">{{t}}</text>{% endfor %}<path class="g-mark" d="M79.6 19l-5-8h10z"/><text class="g-val" x="79.6" y="8" text-anchor="middle">52.9</text></svg></div>
+{%- endmacro -%}
+{%- macro device(key, cls='') -%}
+{%- set s = shots[key] -%}
+<figure class="device {{cls}}{% if not s.real %} is-placeholder{% endif %}"><img src="{{ s.src }}" width="603" height="1311" loading="lazy" decoding="async" alt="{{ ui.shot_alt[key] }}"></figure>
+{%- endmacro -%}
+{%- macro badge(cls='') -%}
+<a class="badge {{cls}}" data-app-link href="{{ app_url }}"><img src="{{ rel }}assets/badges/app-store-{{ lang }}.svg" width="{{ badge_w }}" height="40" alt="{{ ui.badge_alt }}"></a>
+{%- endmacro -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="no-js">
+<head>
+<meta charset="UTF-8">
+{% for m in extra_head %}{{ m }}
+{% endfor -%}
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ url }}">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l }}" href="{{ page_url(l) }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ page_url('en') }}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="CenterMint"><meta property="og:locale" content="{{ og_locale }}">{% for loc in og_alternates %}<meta property="og:locale:alternate" content="{{ loc }}">{% endfor %}
+<meta property="og:title" content="{{ og_title }}"><meta property="og:description" content="{{ og_description }}"><meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{ base }}assets/img/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{{ ui.stage_caption }}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{{ base }}assets/img/og.png">
+<meta name="theme-color" content="#F3F5F7"><meta name="color-scheme" content="light">
+<meta name="apple-itunes-app" content="app-id=6760965068">
+<link rel="icon" href="{{ rel }}assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{{ rel }}assets/img/apple-touch-icon.png">
+<link rel="preload" href="{{ rel }}assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ rel }}assets/video/measure-tall-poster.webp" as="image" media="(max-width: 1099px)" fetchpriority="high">
+<link rel="stylesheet" href="{{ rel }}site.css?v={{ v.css }}">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+{% for block in jsonld %}<script type="application/ld+json">{{ block }}</script>
+{% endfor %}<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js","gsap":"https://cdn.jsdelivr.net/npm/gsap@3.15.0/+esm","gsap/ScrollTrigger":"https://cdn.jsdelivr.net/npm/gsap@3.15.0/ScrollTrigger.js/+esm","lenis":"https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.mjs"}}</script>
+<script src="{{ rel }}site.js?v={{ v.js }}" defer></script>
+<script type="module" src="{{ rel }}assets/js/home.js?v={{ v.home }}"></script>
+</head>
+<body>
+<a class="skip" href="#main">{{ ui.skip }}</a>
+<header class="masthead">
+<div class="colorbar" aria-hidden="true"></div>
+<div class="masthead-row">
+<a class="wordmark" href="{{ url }}"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 1v22M1 12h22"/></g></svg><span>CenterMint</span></a>
+<nav class="masthead-nav" aria-label="{{ nav_label }}">
+<details class="langs"><summary><span class="sr">{{ ui.lang_label }}: </span><span lang="{{ lang }}">{{ names[lang] }}</span></summary>
+<ul>{% for l in langs %}<li><a lang="{{ l }}" hreflang="{{ l }}" href="{{ page_url(l) }}"{% if l == lang %} aria-current="page"{% endif %}>{{ names[l] }}</a></li>{% endfor %}</ul>
+</details>
+<a class="masthead-dl" data-app-link href="{{ app_url }}">{{ ui.download }}</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="story">
+<section class="hero" aria-labelledby="hero-title">
+<h1 id="hero-title">{{ hero.h1 }}</h1>
+<p class="lede">{{ hero.lede }}</p>
+<div class="get" data-hero-get>
+{{ badge() }}
+<figure class="qr">{{ qr }}<figcaption>{{ ui.qr_caption }}</figcaption></figure>
+</div>
+<figure class="hero-video"><video data-video muted loop playsinline preload="none" poster="{{ rel }}assets/video/measure-tall-poster.webp" width="720" height="900" aria-label="{{ ui.video_h2 }}"><source src="{{ rel }}assets/video/measure-tall.webm" type="video/webm"><source src="{{ rel }}assets/video/measure-tall.mp4" type="video/mp4"></video></figure>
+<p class="imprint">{{ hero.intro }}</p>
+</section>
+<div class="stage" aria-hidden="true">
+<div class="lightbox"><div class="panel" data-panel>
+<i class="trim tl"></i><i class="trim tr"></i><i class="trim bl"></i><i class="trim br"></i>
+<canvas data-gl></canvas>
+<div class="proof-fig stage-fig" data-state="0" data-stage-fig><img src="{{ rel }}assets/img/card-offcenter-640.webp" width="640" height="898" alt="" loading="lazy" decoding="async">{{ overlay() }}</div>
+<div class="gl-labels" data-gl-labels><span data-lbl="l">52.9</span><span data-lbl="r">47.1</span><span data-lbl="t">50.6</span><span data-lbl="b">49.4</span></div>
+<div class="readout" data-readout>
+<div class="ro-row" data-ro-row="lr"><span class="ro-k">{{ ui.readout_lr }}</span><span class="ro-v" data-odo="52.9 / 47.1">52.9 / 47.1</span></div>
+<div class="ro-row" data-ro-row="tb"><span class="ro-k">{{ ui.readout_tb }}</span><span class="ro-v" data-odo="50.6 / 49.4">50.6 / 49.4</span></div>
+<div class="ro-row ro-ref" data-ro-row="ref"><span class="ro-k">{{ ui.readout_ref }}</span><span class="ro-v">{{ ui.readout_within }}</span></div>
+{{ gauge('ro-gauge') }}
+</div>
+<p class="stage-cap">{{ ui.stage_caption }}<span class="loupe-hint">{{ ui.loupe_hint }}</span></p>
+</div></div>
+</div>
+<section class="howto" id="how-to" aria-labelledby="howto-title">
+<h2 id="howto-title">{{ howto.h2 }}</h2>
+<p class="howto-sub">{{ measure.h2 }}</p>
+<ol class="steps">
+{% for step in howto.steps %}{% set n = loop.index %}<li class="step" data-step="{{ n }}">
+<p class="step-n">{{ ui.step_of.replace('{n}', n|string) }}</p>
+<h3>{{ ui.step_titles[n-1] }}</h3>
+<p class="step-main">{{ step }}</p>
+{% if n == 1 %}<p class="note-raw"><strong>{{ ui.raw_only }}</strong> {{ measure['items'][1] }}</p>
+{% elif n == 2 %}<p class="step-more">{{ measure['items'][0] }}</p>
+{% elif n == 3 %}<p class="step-more">{{ measure['items'][2] }}</p><p class="step-more">{{ measure['items'][3] }}</p>
+{% endif %}<div class="proof-fig step-fig" data-state="{{ n }}"><img src="{{ rel }}assets/img/card-offcenter-640.webp" srcset="{{ rel }}assets/img/card-offcenter-360.webp 360w, {{ rel }}assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async">{{ overlay() }}</div>
+{% if n == 4 %}{{ gauge() }}{{ device('result') }}{% endif %}
+</li>
+{% endfor %}</ol>
+</section>
+</div>
+
+<section class="features" id="new" aria-labelledby="new-title">
+<header class="sec-head wrap">
+<h2 id="new-title">{{ new.h2 }}</h2>
+<p>{{ new.intro }}</p>
+<p class="ver">{{ ui.new_in }}</p>
+</header>
+{% set f = new.features %}
+<article class="feature wrap" id="line-check">
+<div class="f-text">
+<h3>{{ f[0].title }} <span class="plan{% if f[0].pro %} pro{% endif %}">{{ f[0].plan }}</span></h3><p>{{ f[0].body }}</p>
+<h3>{{ f[1].title }} <span class="plan{% if f[1].pro %} pro{% endif %}">{{ f[1].plan }}</span></h3><p>{{ f[1].body }}</p>
+</div>
+<div class="f-media">{{ device('guide') }}</div>
+</article>
+<article class="feature feature--calc wrap" id="worth-grading">
+<div class="f-text">
+<h3>{{ f[2].title }} <span class="plan{% if f[2].pro %} pro{% endif %}">{{ f[2].plan }}</span></h3><p>{{ f[2].body }}</p>
+<form class="calc" id="value-form" novalidate aria-labelledby="calc-title">
+<h4 id="calc-title">{{ ui.calc.h }}</h4>
+<p class="help" id="value-help">{{ ui.calc.help }}</p>
+<div class="calc-grid">
+{% for id, key, val in [('raw-price','raw',0),('second-price','second',1),('top-price','top',2),('grading-fee','fee',3),('selling-fee','sell',4)] %}<label for="{{ id }}">{{ ui.calc[key] }}<input id="{{ id }}" name="{{ id }}" type="text" inputmode="decimal" value="{{ ui.calc.example[val] }}" autocomplete="off" aria-describedby="value-help value-error"></label>
+{% endfor %}<label for="centering-ceiling" class="wide">{{ ui.calc.ceiling }}<select id="centering-ceiling" name="centering-ceiling"><option value="">{{ ui.calc.opts[0] }}</option><option value="10">{{ ui.calc.opts[1] }}</option><option value="9">{{ ui.calc.opts[2] }}</option><option value="8">{{ ui.calc.opts[3] }}</option></select></label>
+</div>
+<p id="value-error" class="error" role="alert" hidden>{{ ui.calc.error }}</p>
+<div class="calc-out" aria-live="polite" aria-atomic="true">
+<p class="value-verdict" id="value-verdict"{% for k, t in ui.calc.verdict.items() %} data-{{ k }}="{{ t }}"{% endfor %}>—</p>
+<p class="value-detail" id="value-detail"></p>
+<div class="calc-nums"><p>{{ ui.calc.out[0] }}<output id="gain-second">—</output></p><p>{{ ui.calc.out[1] }}<output id="gain-top">—</output></p><p>{{ ui.calc.out[2] }}<output id="break-even">—</output></p></div>
+</div>
+<div class="calc-foot"><button type="reset">{{ ui.calc.reset }}</button><a href="{{ worth_guide }}">{{ ui.calc.more }}</a></div>
+<p class="caption">{{ ui.calc.caption }}</p>
+</form>
+</div>
+<div class="f-media">{{ device('value') }}</div>
+</article>
+<article class="feature wrap" id="close-ups">
+<div class="f-text">
+<h3>{{ f[3].title }} <span class="plan{% if f[3].pro %} pro{% endif %}">{{ f[3].plan }}</span></h3><p>{{ f[3].body }}</p>
+<div class="contact">{% for k in ['tl','t','tr','l','r','bl','b','br'] %}<figure><img src="{{ rel }}assets/img/closeup-{{ k }}.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>{{ ui.closeup_labels[loop.index0] }}</figcaption></figure>{% endfor %}</div>
+<p class="contact-cap">{{ ui.closeups_caption }}</p>
+</div>
+<div class="f-media">{{ device('closeups') }}</div>
+</article>
+<article class="feature wrap" id="submission-log">
+<div class="f-text">
+<h3>{{ f[4].title }} <span class="plan{% if f[4].pro %} pro{% endif %}">{{ f[4].plan }}</span></h3><p>{{ f[4].body }}</p>
+</div>
+<div class="f-media">{{ device('ledger') }}</div>
+</article>
+<article class="feature wrap" id="share">
+<div class="f-text">
+<h3>{{ ui.f_share_title }} <span class="plan">{{ f[0].plan }}</span></h3><p>{{ measure['items'][4] }}</p>
+</div>
+<div class="f-media">{{ device('share') }}</div>
+</article>
+<article class="feature wrap" id="batch">
+<div class="f-text">
+<h3>{{ ui.f_batch_title }} <span class="plan pro">{{ f[4].plan }}</span></h3><p>{{ measure['items'][5] }}</p>
+</div>
+<div class="f-media"><div class="bins-wrap">
+<div class="bins" aria-hidden="true">{% for bin in ui.batch_bins %}{% set c = [4,3,2][loop.index0] %}{% set H = 104 + (c-1)*14 %}<div class="bin"><svg viewBox="0 0 120 {{ H }}">{% for k in range(c) %}<rect x="{{ 16 + k*6 }}" y="{{ H - 102 - k*14 }}" width="72" height="100" rx="4" fill="{% if loop.last %}#fff{% else %}#E9EDF1{% endif %}" stroke="#14161A" stroke-width="1.5"/>{% endfor %}</svg><p>{{ bin }}</p></div>{% endfor %}</div>
+<p class="pdf-note"><svg viewBox="0 0 26 32" aria-hidden="true"><path d="M1 1h16l8 8v22H1z" fill="#fff" stroke="#14161A" stroke-width="1.5"/><path d="M17 1v8h8" fill="none" stroke="#14161A" stroke-width="1.5"/><path d="M6 16h14M6 20h14M6 24h9" stroke="#D6247B" stroke-width="1.5"/></svg>{{ ui.batch_pdf }}</p>
+</div></div>
+</article>
+</section>
+
+<section class="watch mat" id="watch" aria-labelledby="watch-title">
+<div class="wrap watch-grid">
+<div><h2 id="watch-title">{{ ui.video_h2 }}</h2><p>{{ ui.video_p }}</p><p class="small">{{ ui.video_note }}</p></div>
+<figure class="watch-video"><video data-video muted loop playsinline preload="none" poster="{{ rel }}assets/video/measure-wide-poster.webp" width="1280" height="800" aria-label="{{ ui.video_h2 }}"><source src="{{ rel }}assets/video/measure-wide.webm" type="video/webm"><source src="{{ rel }}assets/video/measure-wide.mp4" type="video/mp4"></video></figure>
+</div>
+</section>
+
+<section class="pricing wrap" id="pricing" aria-labelledby="pricing-title">
+<h2 class="sec-h2" id="pricing-title">{{ pricing.h2 }}</h2>
+<div class="sheets">
+<div class="sheet sheet--free"><h3>{{ pricing.free_title }}</h3><ul>{% for i in pricing.free %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<div class="sheet sheet--pro"><h3>{{ pricing.pro_title }}</h3><ul>{% for i in pricing.pro %}<li>{{ i }}</li>{% endfor %}</ul></div>
+</div>
+<p class="note">{{ pricing.note }}</p>
+{{ badge() }}
+</section>
+
+<section class="limits wrap" id="limits" aria-labelledby="limits-title">
+<h2 class="sec-h2" id="limits-title">{{ limits.h2 }}</h2>
+<ul class="dele">{% for i in limits['items'] %}<li>{{ i }}</li>{% endfor %}</ul>
+<div class="limits-foot"><p>{{ limits.privacy }} <a href="{{ base }}privacy.html">{{ footer.privacy }}</a></p><p>{{ limits.languages }}</p></div>
+</section>
+
+<section class="faq wrap" id="faq" aria-labelledby="faq-title">
+<h2 class="sec-h2" id="faq-title">{{ faq.h2 }}</h2>
+<div class="faq-list">{% for q in faq['items'] %}<details><summary>{{ q.q }}</summary><p>{{ q.a }}</p></details>{% endfor %}</div>
+<p class="sources">{{ sources_label }} <a href="https://www.psacard.com/gradingstandards">PSA</a><a href="https://www.beckett.com/grading">BGS</a><a href="https://www.cgccards.com/card-grading/grading-scale/">CGC</a></p>
+</section>
+
+<section class="guides wrap" id="tools" aria-labelledby="tools-title">
+<h2 class="sec-h2" id="tools-title">{{ tools.h2 }}</h2>
+<ul class="guide-list">{% for g in tools.links %}<li><a href="{{ g.href }}"><span>{{ g.text }}</span></a></li>{% endfor %}</ul>
+</section>
+</main>
+
+<footer class="foot mat">
+<div class="wrap">
+<p class="foot-mark" aria-hidden="true">CenterMint</p>
+<div class="foot-grid">
+<div><h2 class="foot-h">{{ ui.footer_download }}</h2><div class="get">{{ badge() }}<figure class="qr">{{ qr_foot }}<figcaption>{{ ui.qr_caption }}</figcaption></figure></div></div>
+<nav class="foot-langs" aria-label="{{ ui.footer_languages }}"><h2 class="foot-h">{{ ui.footer_languages }}</h2><ul>{% for l in langs %}<li><a lang="{{ l }}" hreflang="{{ l }}" href="{{ page_url(l) }}"{% if l == lang %} aria-current="page"{% endif %}>{{ names[l] }}</a></li>{% endfor %}</ul></nav>
+<div><h2 class="foot-h">{{ ui.footer_more }}</h2><ul><li><a href="{{ base }}privacy.html">{{ footer.privacy }}</a></li><li><a href="{{ base }}terms.html">{{ footer.terms }}</a></li><li><a href="mailto:qwe911291860@gmail.com">{{ footer.email }}</a></li></ul></div>
+</div>
+<p class="copy">{{ footer["copy"] }}</p>
+</div>
+</footer>
+<div class="dock" data-dock aria-hidden="true"><span>{{ ui.mobile_bar }}</span><a class="badge" data-app-link href="{{ app_url }}" tabindex="-1"><img src="{{ rel }}assets/badges/app-store-{{ lang }}.svg" width="{{ badge_w }}" height="40" alt="{{ ui.badge_alt }}"></a></div>
+</body>
+</html>

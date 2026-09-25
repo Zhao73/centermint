@@ -24,6 +24,24 @@
     }
   }
 
+  setupCenteringCalculator();
+  setupGradingValueCalculator();
+  setupLanguageMenus();
+
+  // Close the language <details> menu on outside click or Escape (it opens natively).
+  function setupLanguageMenus() {
+    const menus = document.querySelectorAll("details.langs");
+    if (!menus.length) return;
+    document.addEventListener("click", event => {
+      for (const menu of menus) if (menu.open && !menu.contains(event.target)) menu.open = false;
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key !== "Escape") return;
+      for (const menu of menus) if (menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
+    });
+  }
+
+  function setupCenteringCalculator() {
   const form = document.querySelector("#centering-form");
   if (!form) return;
   const fields = ["left", "right", "top", "bottom"].map(id => document.getElementById(id));
@@ -56,4 +74,57 @@
   form.addEventListener("input", calculate);
   form.addEventListener("reset", () => setTimeout(calculate, 0));
   calculate();
+  }
+
+  // "Worth grading?" guide calculator. Same math as the app's GradingValueCalculator:
+  // the selling fee is paid whether the card sells raw or graded, so only the price
+  // difference is reduced by it; the grading fee is paid either way. A grade that the
+  // measured centering cannot reach is left out instead of being weighed by a guessed
+  // probability (corners and surface are never measured).
+  function setupGradingValueCalculator() {
+    const form = document.querySelector("#value-form");
+    if (!form) return;
+    const get = id => document.getElementById(id);
+    const inputs = ["raw-price", "second-price", "top-price", "grading-fee", "selling-fee"].map(get);
+    const out = { second: get("gain-second"), top: get("gain-top"), breakEven: get("break-even"), verdict: get("value-verdict"), detail: get("value-detail") };
+    const texts = out.verdict.dataset;
+    const format = new Intl.NumberFormat(document.documentElement.lang || undefined, { maximumFractionDigits: 2 });
+    const parse = field => {
+      const raw = field.value.trim().replace(/[\s,$¥￥€£円元%]/g, "");
+      return /^(?:\d+(?:\.\d*)?|\.\d+)$/.test(raw) ? Number(raw) : NaN;
+    };
+    const signed = value => (value >= 0 ? "+" : "−") + format.format(Math.abs(Math.round(value * 100) / 100));
+    function calculate() {
+      const [raw, second, top, fee, sellPercent] = inputs.map(parse);
+      const valid = [raw, second, top, fee].every(Number.isFinite) && Number.isFinite(sellPercent) && sellPercent < 100;
+      inputs.forEach(field => field.setAttribute("aria-invalid", String(!Number.isFinite(parse(field)))));
+      get("value-error").hidden = valid;
+      if (!valid) {
+        out.second.textContent = out.top.textContent = out.breakEven.textContent = "—";
+        out.verdict.textContent = texts.needsPrices;
+        out.detail.textContent = "";
+        return;
+      }
+      const keep = 1 - sellPercent / 100;
+      const gain = price => (price - raw) * keep - fee;
+      const ceiling = Number(get("centering-ceiling").value) || Infinity;
+      const secondGain = gain(second), topGain = gain(top);
+      const secondReachable = ceiling >= 9, topReachable = ceiling >= 10;
+      out.second.textContent = secondReachable ? signed(secondGain) : texts.unreachable;
+      out.top.textContent = topReachable ? signed(topGain) : texts.unreachable;
+      out.breakEven.textContent = format.format(Math.ceil((raw + fee / keep) * 100) / 100);
+      let verdict;
+      if (secondReachable && secondGain >= 0) verdict = "worthIt";
+      else if (topReachable && topGain > 0) verdict = "onlyIfTopGrade";
+      else if ((topGain > 0 && !topReachable) || (secondGain >= 0 && !secondReachable)) verdict = "centeringBlocks";
+      else verdict = "notWorth";
+      out.verdict.textContent = texts[verdict];
+      out.detail.textContent = texts[verdict + "Detail"] || "";
+    }
+    form.addEventListener("submit", event => event.preventDefault());
+    form.addEventListener("input", calculate);
+    form.addEventListener("change", calculate);
+    form.addEventListener("reset", () => setTimeout(calculate, 0));
+    calculate();
+  }
 })();

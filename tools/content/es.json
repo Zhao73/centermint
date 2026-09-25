@@ -1,0 +1,340 @@
+{
+ "lang": "es",
+ "title": "CenterMint: centrado de cartas antes de graduar | PSA, BGS, CGC",
+ "description": "App para iPhone: mide el centrado de tus cartas, amplía esquinas y bordes y calcula si compensa pagar la graduación. Referencias de PSA, BGS y CGC.",
+ "og_title": "CenterMint: centrado de cartas antes de graduar | PSA, BGS, CGC",
+ "og_description": "App para iPhone: mide el centrado de tus cartas, amplía esquinas y bordes y calcula si compensa pagar la graduación. Referencias de PSA, BGS y CGC.",
+ "og_locale": "es_ES",
+ "extra_head": [],
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "MobileApplication",
+   "@id": "https://zhao73.github.io/centermint/#app",
+   "name": "CenterMint",
+   "url": "https://zhao73.github.io/centermint/es/",
+   "description": "App para iPhone: mide el centrado de tus cartas, amplía esquinas y bordes y calcula si compensa pagar la graduación. Referencias de PSA, BGS y CGC.",
+   "inLanguage": [
+    "en",
+    "ja",
+    "ko",
+    "vi",
+    "zh-Hans",
+    "zh-Hant"
+   ],
+   "operatingSystem": "iOS 17.0 or later",
+   "applicationCategory": "UtilitiesApplication",
+   "downloadUrl": "https://apps.apple.com/app/id6760965068",
+   "installUrl": "https://apps.apple.com/app/id6760965068",
+   "sameAs": [
+    "https://apps.apple.com/app/id6760965068"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "free"
+   },
+   "featureList": [
+    "Medición del centrado a partir de una foto",
+    "Revisión línea a línea con lupa",
+    "Comparación con las referencias de PSA, BGS y CGC",
+    "Worth Grading?: cálculo de ganancia y punto de equilibrio",
+    "Primeros planos de esquinas y bordes desde la foto original",
+    "Submission Log de envíos",
+    "Escaneo por lotes y lista de envío en PDF",
+    "Procesamiento en el dispositivo, sin cuenta"
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "JIAPENG Zhao"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "inLanguage": "es",
+   "url": "https://zhao73.github.io/centermint/es/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Puede CenterMint medir una carta en funda, toploader o cápsula?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La medición automática solo funciona con cartas sin protección. Fundas, toploaders y cápsulas tienen sus propios bordes y reflejos, y la app mediría el plástico. Si detecta una funda, te avisa y pasa al ajuste manual, donde alineas tú los cuatro bordes. Para el resultado más preciso, saca la carta y vuelve a fotografiarla."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué precisión tiene la medición?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Depende de la foto y de las líneas que confirmes. Las diferencias son pequeñas: con 3 mm de borde a cada lado, pasar de 50/50 a 55/45 supone solo 0,3 mm. CenterMint ajusta los marcos dorados y plateados borde a borde con precisión subpíxel y marca las líneas dudosas, pero no promete un porcentaje de precisión único. Revisa las líneas marcadas con la lupa y repite las fotos borrosas o con reflejos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué centrado necesita un PSA 10?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La guía publicada por PSA para Gem Mint 10 es de aproximadamente 55/45 o mejor en el anverso y 75/25 en el reverso; PSA 9, unos 60/40 en el anverso y 90/10 en el reverso. BGS y CGC publican sus propias escalas, algunas solo para ciertas categorías. El centrado es un criterio más: un buen centrado no garantiza la nota. Consulta las páginas oficiales antes de enviar."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo decide Worth Grading? si compensa graduar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Para cada nota: ganancia extra = (precio graduado − precio sin graduar) × (1 − comisión de venta) − tarifa de graduación. La comisión se paga tanto si vendes sin graduar como graduada, así que solo reduce la diferencia de precio. El precio de equilibrio de la nota máxima = precio sin graduar + tarifa ÷ (1 − comisión). Si incluso la nota inferior (como PSA 9) deja ganancia, compensa; si solo la nota máxima gana, depende de esquinas y superficie; si ninguna nota gana o el centrado impide la nota rentable, no compensa. La app nunca estima la probabilidad de un 10."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿CenterMint consulta precios de eBay o del mercado?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. La app no se conecta a eBay ni a ningún servicio de precios y no adivina precios. Introduces tú los precios de venta recientes, que se guardan en el dispositivo para cada carta."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿CenterMint revisa esquinas, bordes y superficie?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Corner & Edge Close-ups recorta las cuatro esquinas y los cuatro bordes de la foto original a resolución completa para que los revises tú. La app no los puntúa y una foto de móvil puede no captar defectos diminutos: revisa las zonas dudosas con lupa y luz intensa."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué es gratis y qué requiere Pro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Gratis: medición del centrado a resolución completa, lupa, Guided line check, comparación PSA/BGS/CGC, un lote de hasta 5 cartas y la revisión previa a la graduación (Worth Grading? y primeros planos) en una carta a tu elección. Pro: esa revisión para todas las cartas, Submission Log, escaneo por lotes, asistente de decisión con lista de envío en PDF, exportación CSV y 4K, ajustes guardados y sin anuncios."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Está CenterMint afiliado a PSA, BGS o CGC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. CenterMint es una app independiente. Sus referencias de centrado siguen los estándares publicados solo para comparar, y la nota real puede ser distinta."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Mis fotos de cartas son privadas?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "La medición se hace en tu iPhone, sin cuenta. Las fotos solo se suben si activas compartir correcciones (desactivado por defecto) o aceptas el aviso único de la importación por lotes, que puedes rechazar. Los precios y el Submission Log se quedan en el dispositivo."
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "HowTo",
+   "name": "Medir el centrado de una carta con CenterMint",
+   "inLanguage": "es",
+   "url": "https://zhao73.github.io/centermint/es/#how-to",
+   "tool": {
+    "@type": "HowToTool",
+    "name": "CenterMint (iPhone)"
+   },
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Saca la carta de la funda y colócala plana sobre un tapete liso que contraste con el borde. Fotografíala con luz uniforme o importa una foto o un escaneo."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "CenterMint propone el borde exterior y el marco impreso. Si alguna línea es dudosa, te guía una a una con la lupa y explica el motivo."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Confirma o ajusta cada línea. Las proporciones izquierda/derecha y superior/inferior se actualizan al momento."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "Mide también el reverso y compara cada cara con la referencia de PSA, BGS o CGC."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Antes de enviar, revisa los primeros planos de esquinas y bordes y calcula Worth Grading? con precios de venta recientes."
+    }
+   ]
+  }
+ ],
+ "nav_label": "Idiomas",
+ "hero": {
+  "h1": "Comprueba el centrado antes de graduar",
+  "lede": "Mide los bordes, revisa cada línea de la que la app no está segura y decide si la carta compensa el coste de graduarla.",
+  "cta_text": "Ver en el App Store",
+  "app_url": "https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&mt=8&ct=es_site_202609",
+  "intro": "CenterMint es una app para iPhone pensada para coleccionistas de cartas coleccionables y deportivas. Mide el centrado izquierda/derecha y superior/inferior a partir de una foto de la carta fuera de la funda, compara el resultado con las referencias de centrado publicadas por PSA, BGS y CGC y te ayuda a decidir antes de pagar la graduación. Es una herramienta independiente: solo mide el centrado y no predice una nota completa."
+ },
+ "new": {
+  "eyebrow": "NOVEDADES DE LA VERSIÓN 1.9",
+  "h2": "Antes de pagar la graduación",
+  "intro": "La versión 1.9 ayuda con la decisión que cuesta dinero: ¿merece la pena enviar esta carta? La interfaz de la app está en inglés; por eso los nombres de las funciones aparecen tal como se ven en pantalla.",
+  "features": [
+   {
+    "title": "Guided line check",
+    "plan": "Gratis",
+    "pro": false,
+    "body": "Cuando una línea necesita otra mirada, el editor te lleva por las líneas menos seguras una a una. La lupa salta a cada línea; toca «Looks Right» para pasar a la siguiente o arrastra la línea a su sitio."
+   },
+   {
+    "title": "Por qué revisar",
+    "plan": "Gratis",
+    "pro": false,
+    "body": "Cada paso explica el motivo: reflejos, desenfoque, foto oscura o de baja resolución, un tapete del mismo color que el borde o que no se encontró el marco impreso. Si una nueva foto lo soluciona, la app lo dice."
+   },
+   {
+    "title": "Worth Grading?",
+    "plan": "Pro · 1 carta gratis",
+    "pro": true,
+    "body": "Introduce los precios de venta de la carta sin graduar, en PSA 9 y en PSA 10 (o los equivalentes de BGS y CGC), la tarifa de graduación y la comisión de venta. CenterMint muestra cuánto ganarías o perderías frente a vender sin graduar y el precio mínimo de la nota máxima para recuperar el coste. Las notas que el centrado no permite quedan fuera. Los precios los introduces tú."
+   },
+   {
+    "title": "Corner &amp; Edge Close-ups",
+    "plan": "Pro · 1 carta gratis",
+    "pro": true,
+    "body": "Recorta las cuatro esquinas y el centro de los cuatro bordes de la foto original a resolución completa para ampliar y buscar blanqueamiento y golpes, y compartir un collage. La app solo los muestra; no puntúa esquinas ni superficie."
+   },
+   {
+    "title": "Submission Log",
+    "plan": "Pro",
+    "pro": true,
+    "body": "Registra cada envío, su coste y las notas recibidas. Consulta tu porcentaje de notas máximas, el total gastado en graduación y si las notas se mantuvieron dentro del límite de centrado medido."
+   }
+  ]
+ },
+ "measure": {
+  "h2": "Una medición que te indica dónde mirar mejor",
+  "items": [
+   "Medición automática de cartas sin funda, con ajuste subpíxel borde a borde en marcos dorados y plateados, y un borde exterior más fiable sobre tapetes de tela o con dibujo.",
+   "Las cartas en funda, toploader o cápsula de graduación se miden alineando tú los cuatro bordes. Si la app detecta una funda, te avisa y pasa al ajuste manual.",
+   "Lupa 2.0: píxeles reales, cuadrícula de píxeles y perfil del borde, con los bordes opuestos vinculados para comparar ambos lados.",
+   "Cada medición usa la foto a resolución completa, también en la versión gratuita.",
+   "Las imágenes para compartir dan protagonismo a la foto de la carta, con un logo pequeño en la esquina.",
+   "Lote 2.0 (Pro): fotografía un montón seguido, muestra solo las cartas que hay que revisar, ordena por centrado y guarda de una vez. El asistente de decisión clasifica en Submit, Fix first y Below target y exporta una lista de envío en PDF."
+  ]
+ },
+ "pricing": {
+  "h2": "Gratis y Pro",
+  "free_title": "Gratis",
+  "free": [
+   "Medición del centrado de anverso y reverso a resolución completa",
+   "Lupa y Guided line check, con el motivo",
+   "Comparación con las referencias de centrado de PSA, BGS y CGC",
+   "Colección local, pares anverso/reverso e imágenes para compartir",
+   "Un lote de hasta 5 cartas",
+   "Worth Grading? y Corner &amp; Edge Close-ups en una carta a tu elección"
+  ],
+  "pro_title": "CenterMint Pro",
+  "pro": [
+   "Worth Grading? y Corner &amp; Edge Close-ups para todas las cartas",
+   "Submission Log",
+   "Escaneo por lotes y exportación CSV",
+   "Asistente de decisión con lista de envío en PDF",
+   "Informe de centrado, mejora de imagen 4K y exportación 4K",
+   "Ajustes guardados y sin anuncios"
+  ],
+  "note": "Pro se ofrece como suscripción mensual o anual, o como compra única; la app muestra los planes y precios locales. Las suscripciones se renuevan automáticamente hasta que las canceles en los ajustes de tu cuenta de Apple."
+ },
+ "limits": {
+  "h2": "Lo que CenterMint no hace",
+  "items": [
+   "No evalúa esquinas, bordes, superficie ni autenticidad, y no predice una nota de PSA, BGS o CGC ni la probabilidad de un 10.",
+   "No garantiza ningún resultado. Las referencias de centrado sirven solo para comparar con los estándares publicados. CenterMint no está afiliado a PSA, Beckett, CGC, Pokémon ni a ninguna editorial de cartas.",
+   "No obtiene ni estima precios y no se conecta a eBay. Worth Grading? usa los precios que introduces.",
+   "La medición automática es para cartas sin funda. En cartas full-art sin marco impreso, las líneas interiores siguen el marco de la ilustración y el resultado es solo orientativo."
+  ],
+  "privacy": "La medición se hace en tu iPhone y no necesita cuenta. Las fotos solo salen del dispositivo si lo aceptas: compartir correcciones está desactivado por defecto y la importación por lotes pregunta una vez antes de subir, y puedes negarte. Los precios que introduces y el Submission Log se quedan en el dispositivo. Consulta la política de privacidad.",
+  "languages": "La interfaz de la app está disponible en inglés, japonés, coreano, vietnamita, chino simplificado y chino tradicional."
+ },
+ "howto": {
+  "h2": "Cómo medir el centrado con CenterMint",
+  "steps": [
+   "Saca la carta de la funda y colócala plana sobre un tapete liso que contraste con el borde. Fotografíala con luz uniforme o importa una foto o un escaneo.",
+   "CenterMint propone el borde exterior y el marco impreso. Si alguna línea es dudosa, te guía una a una con la lupa y explica el motivo.",
+   "Confirma o ajusta cada línea. Las proporciones izquierda/derecha y superior/inferior se actualizan al momento.",
+   "Mide también el reverso y compara cada cara con la referencia de PSA, BGS o CGC.",
+   "Antes de enviar, revisa los primeros planos de esquinas y bordes y calcula Worth Grading? con precios de venta recientes."
+  ]
+ },
+ "faq": {
+  "h2": "Preguntas frecuentes sobre centrado y graduación",
+  "items": [
+   {
+    "q": "¿Puede CenterMint medir una carta en funda, toploader o cápsula?",
+    "a": "La medición automática solo funciona con cartas sin protección. Fundas, toploaders y cápsulas tienen sus propios bordes y reflejos, y la app mediría el plástico. Si detecta una funda, te avisa y pasa al ajuste manual, donde alineas tú los cuatro bordes. Para el resultado más preciso, saca la carta y vuelve a fotografiarla."
+   },
+   {
+    "q": "¿Qué precisión tiene la medición?",
+    "a": "Depende de la foto y de las líneas que confirmes. Las diferencias son pequeñas: con 3 mm de borde a cada lado, pasar de 50/50 a 55/45 supone solo 0,3 mm. CenterMint ajusta los marcos dorados y plateados borde a borde con precisión subpíxel y marca las líneas dudosas, pero no promete un porcentaje de precisión único. Revisa las líneas marcadas con la lupa y repite las fotos borrosas o con reflejos."
+   },
+   {
+    "q": "¿Qué centrado necesita un PSA 10?",
+    "a": "La guía publicada por PSA para Gem Mint 10 es de aproximadamente 55/45 o mejor en el anverso y 75/25 en el reverso; PSA 9, unos 60/40 en el anverso y 90/10 en el reverso. BGS y CGC publican sus propias escalas, algunas solo para ciertas categorías. El centrado es un criterio más: un buen centrado no garantiza la nota. Consulta las páginas oficiales antes de enviar."
+   },
+   {
+    "q": "¿Cómo decide Worth Grading? si compensa graduar?",
+    "a": "Para cada nota: ganancia extra = (precio graduado − precio sin graduar) × (1 − comisión de venta) − tarifa de graduación. La comisión se paga tanto si vendes sin graduar como graduada, así que solo reduce la diferencia de precio. El precio de equilibrio de la nota máxima = precio sin graduar + tarifa ÷ (1 − comisión). Si incluso la nota inferior (como PSA 9) deja ganancia, compensa; si solo la nota máxima gana, depende de esquinas y superficie; si ninguna nota gana o el centrado impide la nota rentable, no compensa. La app nunca estima la probabilidad de un 10."
+   },
+   {
+    "q": "¿CenterMint consulta precios de eBay o del mercado?",
+    "a": "No. La app no se conecta a eBay ni a ningún servicio de precios y no adivina precios. Introduces tú los precios de venta recientes, que se guardan en el dispositivo para cada carta."
+   },
+   {
+    "q": "¿CenterMint revisa esquinas, bordes y superficie?",
+    "a": "No. Corner &amp; Edge Close-ups recorta las cuatro esquinas y los cuatro bordes de la foto original a resolución completa para que los revises tú. La app no los puntúa y una foto de móvil puede no captar defectos diminutos: revisa las zonas dudosas con lupa y luz intensa."
+   },
+   {
+    "q": "¿Qué es gratis y qué requiere Pro?",
+    "a": "Gratis: medición del centrado a resolución completa, lupa, Guided line check, comparación PSA/BGS/CGC, un lote de hasta 5 cartas y la revisión previa a la graduación (Worth Grading? y primeros planos) en una carta a tu elección. Pro: esa revisión para todas las cartas, Submission Log, escaneo por lotes, asistente de decisión con lista de envío en PDF, exportación CSV y 4K, ajustes guardados y sin anuncios."
+   },
+   {
+    "q": "¿Está CenterMint afiliado a PSA, BGS o CGC?",
+    "a": "No. CenterMint es una app independiente. Sus referencias de centrado siguen los estándares publicados solo para comparar, y la nota real puede ser distinta."
+   },
+   {
+    "q": "¿Mis fotos de cartas son privadas?",
+    "a": "La medición se hace en tu iPhone, sin cuenta. Las fotos solo se suben si activas compartir correcciones (desactivado por defecto) o aceptas el aviso único de la importación por lotes, que puedes rechazar. Los precios y el Submission Log se quedan en el dispositivo."
+   }
+  ]
+ },
+ "sources_label": "Fuentes oficiales de graduación:",
+ "tools": {
+  "h2": "Herramientas y guías gratuitas",
+  "links": [
+   {
+    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "text": "Is it worth grading? Break-even calculator (inglés)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "text": "How to check corners and edges before grading (inglés)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/calculator/",
+    "text": "Card centering calculator (inglés)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "text": "How to measure card centering on iPhone (inglés)"
+   }
+  ]
+ },
+ "footer": {
+  "privacy": "Privacidad (inglés)",
+  "terms": "Condiciones (inglés)",
+  "email": "Soporte por correo",
+  "copy": "© 2026 JIAPENG Zhao · CenterMint"
+ }
+}

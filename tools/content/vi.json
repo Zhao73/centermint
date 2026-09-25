@@ -1,0 +1,340 @@
+{
+ "lang": "vi",
+ "title": "CenterMint - Đo căn giữa thẻ trước khi chấm điểm | PSA, BGS, CGC",
+ "description": "Ứng dụng iPhone miễn phí: đo căn giữa thẻ Pokémon, One Piece, thẻ thể thao, phóng to góc và cạnh, tính xem có đáng trả phí chấm điểm. Chuẩn PSA, BGS, CGC.",
+ "og_title": "CenterMint - Đo căn giữa thẻ trước khi chấm điểm | PSA, BGS, CGC",
+ "og_description": "Ứng dụng iPhone miễn phí: đo căn giữa thẻ Pokémon, One Piece, thẻ thể thao, phóng to góc và cạnh, tính xem có đáng trả phí chấm điểm. Chuẩn PSA, BGS, CGC.",
+ "og_locale": "vi_VN",
+ "extra_head": [],
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "MobileApplication",
+   "@id": "https://zhao73.github.io/centermint/#app",
+   "name": "CenterMint",
+   "url": "https://zhao73.github.io/centermint/vi/",
+   "description": "Ứng dụng iPhone miễn phí: đo căn giữa thẻ Pokémon, One Piece, thẻ thể thao, phóng to góc và cạnh, tính xem có đáng trả phí chấm điểm. Chuẩn PSA, BGS, CGC.",
+   "inLanguage": [
+    "en",
+    "ja",
+    "ko",
+    "vi",
+    "zh-Hans",
+    "zh-Hant"
+   ],
+   "operatingSystem": "iOS 17.0 or later",
+   "applicationCategory": "UtilitiesApplication",
+   "downloadUrl": "https://apps.apple.com/app/id6760965068",
+   "installUrl": "https://apps.apple.com/app/id6760965068",
+   "sameAs": [
+    "https://apps.apple.com/app/id6760965068"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "free"
+   },
+   "featureList": [
+    "Đo căn giữa thẻ từ ảnh",
+    "Kiểm tra từng đường viền bằng kính lúp",
+    "So với chuẩn căn giữa PSA, BGS, CGC",
+    "Có đáng gửi chấm điểm? (lời/lỗ và điểm hòa vốn)",
+    "Phóng to góc và cạnh từ ảnh gốc",
+    "Sổ gửi chấm",
+    "Quét hàng loạt và danh sách gửi PDF",
+    "Xử lý trên máy, không cần tài khoản"
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "JIAPENG Zhao"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "inLanguage": "vi",
+   "url": "https://zhao73.github.io/centermint/vi/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Có đo được thẻ trong bao, toploader hoặc vỏ chấm điểm không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tự động đo chỉ dành cho thẻ đã lấy khỏi bao. Bao, toploader hay vỏ có mép và độ lóa riêng, nên ứng dụng sẽ đo nhầm lớp nhựa. Khi phát hiện bao thẻ, ứng dụng báo và chuyển sang căn thủ công để bạn tự căn bốn cạnh. Muốn chính xác nhất, hãy lấy thẻ ra và chụp lại."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Phép đo chính xác đến đâu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tùy vào chất lượng ảnh và các đường bạn xác nhận. Chênh lệch rất nhỏ: với viền 3 mm mỗi bên, từ 50/50 lên 55/45 chỉ lệch 0,3 mm. CenterMint khớp viền vàng và bạc từng cạnh ở mức dưới điểm ảnh và đánh dấu đường chưa chắc chắn, nhưng không công bố một con số độ chính xác chung. Hãy kiểm tra đường được đánh dấu bằng kính lúp và chụp lại ảnh mờ hoặc bị lóa."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "PSA 10 cần căn giữa thế nào?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hướng dẫn Gem Mint 10 do PSA công bố là khoảng 55/45 hoặc tốt hơn ở mặt trước và 75/25 ở mặt sau. PSA 9 là khoảng 60/40 mặt trước và 90/10 mặt sau. BGS và CGC có thang riêng, một số con số chỉ áp dụng cho loại thẻ nhất định. Căn giữa chỉ là một tiêu chí, nên căn giữa tốt không bảo đảm điểm. Hãy xem trang chính thức trước khi gửi."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "“Có đáng gửi chấm điểm?” tính thế nào?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Với mỗi mức điểm: tiền lời thêm = (giá sau chấm − giá chưa chấm) × (1 − phí bán) − phí chấm điểm. Phí bán phải trả dù bán thẻ chưa chấm hay đã chấm, nên chỉ áp vào phần chênh lệch. Giá hòa vốn của mức điểm cao nhất = giá chưa chấm + phí chấm ÷ (1 − phí bán). Nếu cả mức thấp hơn một bậc (như PSA 9) vẫn lời thì kết luận là đáng gửi; nếu chỉ mức cao nhất mới lời thì phụ thuộc góc và bề mặt; nếu không mức nào lời, hoặc độ căn giữa không đạt mức có lời, thì không nên gửi. Ứng dụng không ước tính khả năng đạt 10."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ứng dụng có tự tra giá eBay không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không. Ứng dụng không kết nối eBay hay dịch vụ giá nào và không đoán giá. Bạn tự nhập giá đã bán gần đây, giá được lưu trên máy cho từng thẻ. Tại Nhật Bản có nút mở kết quả đã bán trên Mercari và Yahoo! Auctions theo tên và số thẻ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ứng dụng có kiểm tra góc, cạnh và bề mặt không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không chấm điểm. “Phóng to góc và cạnh” cắt bốn góc và bốn cạnh từ ảnh gốc ở độ phân giải gốc để bạn tự xem. Ảnh điện thoại có thể bỏ sót vết rất nhỏ, nên hãy kiểm tra chỗ nghi ngờ bằng kính lúp dưới ánh sáng mạnh."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bản miễn phí và Pro khác nhau thế nào?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Miễn phí: đo căn giữa độ phân giải đầy đủ, kính lúp, kiểm tra từng đường, so với chuẩn PSA/BGS/CGC, một lượt hàng loạt tối đa 5 thẻ và thử công cụ kiểm tra trước khi gửi chấm cho 1 thẻ. Pro: công cụ kiểm tra trước khi gửi chấm cho mọi thẻ, Sổ gửi chấm, quét hàng loạt, trợ lý quyết định kèm danh sách PDF, xuất CSV và 4K, cấu hình lưu sẵn và không quảng cáo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "CenterMint có liên kết với PSA, BGS hay CGC không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không. CenterMint là ứng dụng độc lập; các mức căn giữa chỉ để so sánh theo chuẩn các công ty đã công bố, và điểm thực tế có thể khác."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ảnh thẻ của tôi có riêng tư không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Việc đo diễn ra trên iPhone, không cần tài khoản. Ảnh chỉ được tải lên khi bạn bật chia sẻ chỉnh sửa (mặc định tắt) hoặc đồng ý thông báo một lần khi nhập hàng loạt, và bạn có thể từ chối. Giá và Sổ gửi chấm chỉ lưu trên máy."
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "HowTo",
+   "name": "Đo căn giữa thẻ bằng CenterMint",
+   "inLanguage": "vi",
+   "url": "https://zhao73.github.io/centermint/vi/#how-to",
+   "tool": {
+    "@type": "HowToTool",
+    "name": "CenterMint (iPhone)"
+   },
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Lấy thẻ ra khỏi bao, đặt phẳng trên tấm lót trơn khác màu với viền thẻ. Chụp dưới ánh sáng đều, hoặc nhập ảnh hay bản quét."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "CenterMint đề xuất mép ngoài của thẻ và viền in bên trong. Nếu có đường chưa chắc chắn, ứng dụng dẫn bạn qua từng đường bằng kính lúp và nói rõ lý do."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Xác nhận hoặc chỉnh nhẹ từng đường. Tỷ lệ trái/phải và trên/dưới cập nhật ngay."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "Đo cả mặt sau và so từng mặt với chuẩn PSA, BGS hoặc CGC."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Trước khi gửi, xem ảnh phóng to góc và cạnh, rồi tính “Có đáng gửi chấm điểm?” với giá đã bán gần đây."
+    }
+   ]
+  }
+ ],
+ "nav_label": "Ngôn ngữ",
+ "hero": {
+  "h1": "Kiểm tra căn giữa trước khi chấm điểm",
+  "lede": "Đo viền, xem lại từng đường ứng dụng chưa chắc chắn, rồi quyết định thẻ có đáng trả phí chấm điểm hay không.",
+  "cta_text": "Xem trên App Store",
+  "app_url": "https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&mt=8&ct=vi_site_202609",
+  "intro": "CenterMint là ứng dụng iPhone cho người sưu tầm thẻ bài và thẻ thể thao. Ứng dụng đo độ căn giữa trái/phải và trên/dưới từ ảnh của thẻ đã lấy ra khỏi bao, so với các mức tham chiếu căn giữa do PSA, BGS và CGC công bố, giúp bạn quyết định trước khi trả tiền gửi chấm. Đây là công cụ độc lập: chỉ đo căn giữa, không dự đoán điểm tổng thể."
+ },
+ "new": {
+  "eyebrow": "MỚI TRONG PHIÊN BẢN 1.9",
+  "h2": "Trước khi trả phí chấm điểm",
+  "intro": "Phiên bản 1.9 thêm công cụ cho quyết định tốn tiền: thẻ này có đáng gửi chấm không?",
+  "features": [
+   {
+    "title": "Kiểm tra từng đường",
+    "plan": "Miễn phí",
+    "pro": false,
+    "body": "Khi có đường cần xem lại, trình chỉnh sửa dẫn bạn qua từng đường, bắt đầu từ đường kém chắc chắn nhất. Kính lúp tự nhảy đến đường đó; chạm “Đúng rồi” để sang đường tiếp theo, hoặc kéo đường về đúng chỗ."
+   },
+   {
+    "title": "Vì sao cần kiểm tra",
+    "plan": "Miễn phí",
+    "pro": false,
+    "body": "Mỗi bước nói rõ lý do: ảnh bị lóa, mờ, tối, độ phân giải thấp, tấm lót cùng màu với mép thẻ, hoặc không tìm thấy viền in. Nếu chụp lại sẽ khắc phục được, ứng dụng sẽ nói rõ."
+   },
+   {
+    "title": "Có đáng gửi chấm điểm?",
+    "plan": "Pro · thử miễn phí 1 thẻ",
+    "pro": true,
+    "body": "Nhập giá đã bán của thẻ chưa chấm, PSA 9 và PSA 10 (hỗ trợ cả BGS, CGC), phí chấm điểm và phí bán. CenterMint cho biết bạn lời hay lỗ bao nhiêu so với bán thẻ chưa chấm, và giá PSA 10 thấp nhất để hòa vốn. Mức điểm mà độ căn giữa không thể đạt sẽ bị loại. Bạn tự nhập giá; tại Nhật Bản có nút mở giá đã bán trên Mercari và Yahoo! Auctions."
+   },
+   {
+    "title": "Phóng to góc và cạnh",
+    "plan": "Pro · thử miễn phí 1 thẻ",
+    "pro": true,
+    "body": "Cắt bốn góc và phần giữa bốn cạnh từ ảnh gốc ở độ phân giải gốc để bạn phóng to tìm vết trắng, móp và chia sẻ thành một ảnh ghép. Ứng dụng chỉ hiển thị, không chấm điểm góc hay bề mặt."
+   },
+   {
+    "title": "Sổ gửi chấm",
+    "plan": "Pro",
+    "pro": true,
+    "body": "Ghi lại mỗi lần gửi, chi phí và điểm trả về. Xem tỉ lệ đạt điểm cao nhất, tổng phí chấm điểm và điểm thực tế có nằm trong giới hạn căn giữa ứng dụng đã đo hay không."
+   }
+  ]
+ },
+ "measure": {
+  "h2": "Đo đạc cho biết chỗ nào cần xem kỹ",
+  "items": [
+   "Tự động đo thẻ đã lấy khỏi bao, khớp viền vàng và viền bạc từng cạnh ở mức dưới điểm ảnh, và nhận mép ngoài chính xác hơn trên tấm lót vải hoặc có hoa văn.",
+   "Thẻ trong bao, toploader hoặc vỏ chấm điểm được đo bằng cách tự căn bốn cạnh. Khi phát hiện bao thẻ, ứng dụng báo cho bạn và chuyển sang căn thủ công.",
+   "Kính lúp 2.0 hiển thị điểm ảnh thật, lưới điểm ảnh và biểu đồ độ sáng của mép, liên kết hai cạnh đối diện để so sánh.",
+   "Mọi phép đo đều dùng ảnh độ phân giải đầy đủ, kể cả bản miễn phí.",
+   "Ảnh chia sẻ lấy ảnh thẻ làm chính, chỉ có logo nhỏ ở góc.",
+   "Hàng loạt 2.0 (Pro): chụp liên tiếp vào hàng đợi, chỉ xem thẻ cần kiểm tra, sắp theo độ căn giữa và lưu một lần. Trợ lý quyết định chia thẻ thành Gửi chấm, Bổ sung trước và Dưới mục tiêu, rồi xuất danh sách gửi dạng PDF."
+  ]
+ },
+ "pricing": {
+  "h2": "Miễn phí và Pro",
+  "free_title": "Miễn phí",
+  "free": [
+   "Đo căn giữa mặt trước và mặt sau ở độ phân giải đầy đủ",
+   "Kính lúp và kiểm tra từng đường, kèm lý do",
+   "So với chuẩn căn giữa của PSA, BGS, CGC",
+   "Bộ sưu tập trên máy, ghép mặt trước/sau, ảnh chia sẻ",
+   "Một lượt hàng loạt tối đa 5 thẻ",
+   "Dùng thử “Có đáng gửi chấm điểm?” và “Phóng to góc và cạnh” cho 1 thẻ tùy chọn"
+  ],
+  "pro_title": "CenterMint Pro",
+  "pro": [
+   "“Có đáng gửi chấm điểm?” và “Phóng to góc và cạnh” cho mọi thẻ",
+   "Sổ gửi chấm",
+   "Quét hàng loạt và xuất CSV",
+   "Trợ lý quyết định và danh sách gửi dạng PDF",
+   "Báo cáo căn giữa, tăng cường ảnh 4K và xuất 4K",
+   "Lưu cấu hình chỉnh sửa, không quảng cáo"
+  ],
+  "note": "Pro có gói đăng ký theo tháng, theo năm hoặc mua một lần; các gói và giá tại khu vực của bạn hiển thị trong ứng dụng. Gói đăng ký tự động gia hạn cho đến khi bạn hủy trong cài đặt Tài khoản Apple."
+ },
+ "limits": {
+  "h2": "Những gì CenterMint không làm",
+  "items": [
+   "Không đánh giá góc, cạnh, bề mặt hay tính xác thực, và không dự đoán điểm PSA, BGS, CGC hay khả năng đạt 10.",
+   "Không bảo đảm kết quả chấm điểm. Các mức căn giữa chỉ dùng để so sánh theo chuẩn công bố. CenterMint không liên kết với PSA, Beckett, CGC, Pokémon hay bất kỳ nhà phát hành thẻ nào.",
+   "Không lấy hay ước tính giá và không kết nối eBay. “Có đáng gửi chấm điểm?” chỉ dùng giá bạn nhập.",
+   "Tự động đo dành cho thẻ đã lấy khỏi bao. Với thẻ full-art không có viền in, đường trong đi theo khung tranh nên kết quả chỉ để tham khảo."
+  ],
+  "privacy": "Việc đo diễn ra trên iPhone, không cần tài khoản. Ảnh chỉ rời khỏi máy khi bạn đồng ý: chia sẻ chỉnh sửa mặc định tắt, và nhập hàng loạt sẽ hỏi một lần trước khi tải lên, bạn có thể từ chối. Giá bạn nhập và Sổ gửi chấm chỉ lưu trên máy. Xem chính sách quyền riêng tư để biết chi tiết.",
+  "languages": "Ứng dụng hỗ trợ tiếng Việt, tiếng Hàn, tiếng Nhật, tiếng Anh, tiếng Trung giản thể và phồn thể."
+ },
+ "howto": {
+  "h2": "Cách đo căn giữa thẻ bằng CenterMint",
+  "steps": [
+   "Lấy thẻ ra khỏi bao, đặt phẳng trên tấm lót trơn khác màu với viền thẻ. Chụp dưới ánh sáng đều, hoặc nhập ảnh hay bản quét.",
+   "CenterMint đề xuất mép ngoài của thẻ và viền in bên trong. Nếu có đường chưa chắc chắn, ứng dụng dẫn bạn qua từng đường bằng kính lúp và nói rõ lý do.",
+   "Xác nhận hoặc chỉnh nhẹ từng đường. Tỷ lệ trái/phải và trên/dưới cập nhật ngay.",
+   "Đo cả mặt sau và so từng mặt với chuẩn PSA, BGS hoặc CGC.",
+   "Trước khi gửi, xem ảnh phóng to góc và cạnh, rồi tính “Có đáng gửi chấm điểm?” với giá đã bán gần đây."
+  ]
+ },
+ "faq": {
+  "h2": "Câu hỏi thường gặp về căn giữa và chấm điểm thẻ",
+  "items": [
+   {
+    "q": "Có đo được thẻ trong bao, toploader hoặc vỏ chấm điểm không?",
+    "a": "Tự động đo chỉ dành cho thẻ đã lấy khỏi bao. Bao, toploader hay vỏ có mép và độ lóa riêng, nên ứng dụng sẽ đo nhầm lớp nhựa. Khi phát hiện bao thẻ, ứng dụng báo và chuyển sang căn thủ công để bạn tự căn bốn cạnh. Muốn chính xác nhất, hãy lấy thẻ ra và chụp lại."
+   },
+   {
+    "q": "Phép đo chính xác đến đâu?",
+    "a": "Tùy vào chất lượng ảnh và các đường bạn xác nhận. Chênh lệch rất nhỏ: với viền 3 mm mỗi bên, từ 50/50 lên 55/45 chỉ lệch 0,3 mm. CenterMint khớp viền vàng và bạc từng cạnh ở mức dưới điểm ảnh và đánh dấu đường chưa chắc chắn, nhưng không công bố một con số độ chính xác chung. Hãy kiểm tra đường được đánh dấu bằng kính lúp và chụp lại ảnh mờ hoặc bị lóa."
+   },
+   {
+    "q": "PSA 10 cần căn giữa thế nào?",
+    "a": "Hướng dẫn Gem Mint 10 do PSA công bố là khoảng 55/45 hoặc tốt hơn ở mặt trước và 75/25 ở mặt sau. PSA 9 là khoảng 60/40 mặt trước và 90/10 mặt sau. BGS và CGC có thang riêng, một số con số chỉ áp dụng cho loại thẻ nhất định. Căn giữa chỉ là một tiêu chí, nên căn giữa tốt không bảo đảm điểm. Hãy xem trang chính thức trước khi gửi."
+   },
+   {
+    "q": "“Có đáng gửi chấm điểm?” tính thế nào?",
+    "a": "Với mỗi mức điểm: tiền lời thêm = (giá sau chấm − giá chưa chấm) × (1 − phí bán) − phí chấm điểm. Phí bán phải trả dù bán thẻ chưa chấm hay đã chấm, nên chỉ áp vào phần chênh lệch. Giá hòa vốn của mức điểm cao nhất = giá chưa chấm + phí chấm ÷ (1 − phí bán). Nếu cả mức thấp hơn một bậc (như PSA 9) vẫn lời thì kết luận là đáng gửi; nếu chỉ mức cao nhất mới lời thì phụ thuộc góc và bề mặt; nếu không mức nào lời, hoặc độ căn giữa không đạt mức có lời, thì không nên gửi. Ứng dụng không ước tính khả năng đạt 10."
+   },
+   {
+    "q": "Ứng dụng có tự tra giá eBay không?",
+    "a": "Không. Ứng dụng không kết nối eBay hay dịch vụ giá nào và không đoán giá. Bạn tự nhập giá đã bán gần đây, giá được lưu trên máy cho từng thẻ. Tại Nhật Bản có nút mở kết quả đã bán trên Mercari và Yahoo! Auctions theo tên và số thẻ."
+   },
+   {
+    "q": "Ứng dụng có kiểm tra góc, cạnh và bề mặt không?",
+    "a": "Không chấm điểm. “Phóng to góc và cạnh” cắt bốn góc và bốn cạnh từ ảnh gốc ở độ phân giải gốc để bạn tự xem. Ảnh điện thoại có thể bỏ sót vết rất nhỏ, nên hãy kiểm tra chỗ nghi ngờ bằng kính lúp dưới ánh sáng mạnh."
+   },
+   {
+    "q": "Bản miễn phí và Pro khác nhau thế nào?",
+    "a": "Miễn phí: đo căn giữa độ phân giải đầy đủ, kính lúp, kiểm tra từng đường, so với chuẩn PSA/BGS/CGC, một lượt hàng loạt tối đa 5 thẻ và thử công cụ kiểm tra trước khi gửi chấm cho 1 thẻ. Pro: công cụ kiểm tra trước khi gửi chấm cho mọi thẻ, Sổ gửi chấm, quét hàng loạt, trợ lý quyết định kèm danh sách PDF, xuất CSV và 4K, cấu hình lưu sẵn và không quảng cáo."
+   },
+   {
+    "q": "CenterMint có liên kết với PSA, BGS hay CGC không?",
+    "a": "Không. CenterMint là ứng dụng độc lập; các mức căn giữa chỉ để so sánh theo chuẩn các công ty đã công bố, và điểm thực tế có thể khác."
+   },
+   {
+    "q": "Ảnh thẻ của tôi có riêng tư không?",
+    "a": "Việc đo diễn ra trên iPhone, không cần tài khoản. Ảnh chỉ được tải lên khi bạn bật chia sẻ chỉnh sửa (mặc định tắt) hoặc đồng ý thông báo một lần khi nhập hàng loạt, và bạn có thể từ chối. Giá và Sổ gửi chấm chỉ lưu trên máy."
+   }
+  ]
+ },
+ "sources_label": "Nguồn chấm điểm chính thức:",
+ "tools": {
+  "h2": "Công cụ và hướng dẫn miễn phí",
+  "links": [
+   {
+    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "text": "Is it worth grading? Break-even calculator (English)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "text": "How to check corners and edges before grading (English)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/calculator/",
+    "text": "Card centering calculator (English)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "text": "How to measure card centering on iPhone (English)"
+   }
+  ]
+ },
+ "footer": {
+  "privacy": "Quyền riêng tư (tiếng Anh)",
+  "terms": "Điều khoản (tiếng Anh)",
+  "email": "Liên hệ qua email",
+  "copy": "© 2026 JIAPENG Zhao · CenterMint"
+ }
+}

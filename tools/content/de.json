@@ -1,0 +1,340 @@
+{
+ "lang": "de",
+ "title": "CenterMint: Karten-Zentrierung vor dem Grading messen | PSA, BGS, CGC",
+ "description": "iPhone-App: Zentrierung von Sammelkarten messen, Ecken und Kanten vergrößern und prüfen, ob sich die Grading-Gebühr lohnt. PSA-, BGS- und CGC-Referenzen.",
+ "og_title": "CenterMint: Karten-Zentrierung vor dem Grading messen | PSA, BGS, CGC",
+ "og_description": "iPhone-App: Zentrierung von Sammelkarten messen, Ecken und Kanten vergrößern und prüfen, ob sich die Grading-Gebühr lohnt. PSA-, BGS- und CGC-Referenzen.",
+ "og_locale": "de_DE",
+ "extra_head": [],
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "MobileApplication",
+   "@id": "https://zhao73.github.io/centermint/#app",
+   "name": "CenterMint",
+   "url": "https://zhao73.github.io/centermint/de/",
+   "description": "iPhone-App: Zentrierung von Sammelkarten messen, Ecken und Kanten vergrößern und prüfen, ob sich die Grading-Gebühr lohnt. PSA-, BGS- und CGC-Referenzen.",
+   "inLanguage": [
+    "en",
+    "ja",
+    "ko",
+    "vi",
+    "zh-Hans",
+    "zh-Hant"
+   ],
+   "operatingSystem": "iOS 17.0 or later",
+   "applicationCategory": "UtilitiesApplication",
+   "downloadUrl": "https://apps.apple.com/app/id6760965068",
+   "installUrl": "https://apps.apple.com/app/id6760965068",
+   "sameAs": [
+    "https://apps.apple.com/app/id6760965068"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "free"
+   },
+   "featureList": [
+    "Karten-Zentrierung per Foto messen",
+    "Linie für Linie mit Lupe prüfen",
+    "Vergleich mit PSA-, BGS- und CGC-Zentrierung",
+    "Worth Grading?: Gewinn- und Break-even-Rechner",
+    "Ecken- und Kanten-Nahaufnahmen aus dem Originalfoto",
+    "Submission Log für Einsendungen",
+    "Batch-Scans und Einsendeliste als PDF",
+    "Verarbeitung auf dem Gerät, kein Konto"
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "JIAPENG Zhao"
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "inLanguage": "de",
+   "url": "https://zhao73.github.io/centermint/de/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Kann CenterMint Karten in Hülle, Toploader oder Slab messen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die automatische Messung funktioniert nur bei Karten ohne Hülle. Hüllen, Toploader und Slabs haben eigene Kanten und Spiegelungen; die App würde Kunststoff statt Karte messen. Erkennt sie eine Hülle, weist sie darauf hin und wechselt zur manuellen Ausrichtung, bei der du die vier Kartenkanten selbst setzt. Am genauesten wird es, wenn du die Karte herausnimmst und neu fotografierst."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie genau ist die Messung?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Das hängt vom Foto und von den bestätigten Linien ab. Es geht um kleine Abstände: Bei 3 mm Rand auf jeder Seite liegen zwischen 50/50 und 55/45 nur 0,3 mm. CenterMint passt goldene und silberne Ränder kantenweise mit Subpixel-Genauigkeit an und markiert unsichere Linien, nennt aber keine pauschale Genauigkeit in Prozent. Prüfe markierte Linien mit der Lupe und wiederhole unscharfe oder spiegelnde Fotos."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Welche Zentrierung braucht eine PSA 10?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die veröffentlichte Richtlinie von PSA für Gem Mint 10 lautet etwa 55/45 oder besser auf der Vorderseite und 75/25 auf der Rückseite; PSA 9 etwa 60/40 vorne und 90/10 hinten. BGS und CGC veröffentlichen eigene Skalen, teils nur für bestimmte Kartenkategorien. Zentrierung ist nur ein Kriterium; gute Zentrierung garantiert keine Note. Prüfe vor dem Einschicken die offiziellen Seiten."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie entscheidet Worth Grading?, ob sich das Grading lohnt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Für jede Note gilt: Mehrerlös = (Preis gegradet − Preis ungegradet) × (1 − Verkaufsgebühr) − Grading-Gebühr. Die Verkaufsgebühr fällt in beiden Fällen an, deshalb wird nur die Preisdifferenz damit verrechnet. Der Break-even-Preis für die Top-Note ist Preis ungegradet + Grading-Gebühr ÷ (1 − Verkaufsgebühr). Lohnt sich schon die zweitbeste Note (etwa PSA 9), lohnt sich das Grading; rechnet sich nur die Top-Note, hängt es von Ecken und Oberfläche ab; rechnet sich keine Note oder lässt die Zentrierung die lohnende Note nicht zu, lohnt es sich nicht. Die App schätzt keine Wahrscheinlichkeit für eine 10."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ruft CenterMint eBay- oder Marktpreise ab?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Die App ist weder mit eBay noch mit einem Preisdienst verbunden und rät keine Preise. Du trägst aktuelle Verkaufspreise selbst ein; sie werden pro Karte auf dem Gerät gespeichert."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Prüft CenterMint Ecken, Kanten und Oberfläche?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Corner & Edge Close-ups schneiden die vier Ecken und Kanten in voller Auflösung aus dem Originalfoto aus, damit du selbst hinsehen kannst. Die App bewertet sie nicht, und ein Handyfoto kann winzige Mängel übersehen – prüfe Zweifelsfälle mit Lupe und hellem Licht."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was ist kostenlos, was braucht Pro?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Kostenlos: Zentrierungsmessung in voller Auflösung, Lupe, Guided line check, Vergleich mit PSA/BGS/CGC, ein Batch mit bis zu 5 Karten und die Grading-Vorabprüfung (Worth Grading? und Close-ups) für eine Karte deiner Wahl. Pro: diese Vorabprüfung für jede Karte, Submission Log, Batch-Scans, Entscheidungsassistent mit Einsendeliste als PDF, CSV- und 4K-Export, Vorlagen und keine Werbung."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ist CenterMint mit PSA, BGS oder CGC verbunden?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. CenterMint ist eine unabhängige App. Die Zentrierungsreferenzen folgen nur zum Vergleich den veröffentlichten Standards; die tatsächliche Note kann abweichen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bleiben meine Kartenfotos privat?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die Messung läuft ohne Konto auf deinem iPhone. Fotos werden nur hochgeladen, wenn du das Teilen von Korrekturen einschaltest (standardmäßig aus) oder dem einmaligen Hinweis beim Batch-Import zustimmst – ablehnen ist möglich. Preise und Submission Log bleiben auf dem Gerät."
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "HowTo",
+   "name": "Karten-Zentrierung mit CenterMint messen",
+   "inLanguage": "de",
+   "url": "https://zhao73.github.io/centermint/de/#how-to",
+   "tool": {
+    "@type": "HowToTool",
+    "name": "CenterMint (iPhone)"
+   },
+   "step": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "text": "Nimm die Karte aus der Hülle und lege sie flach auf eine einfarbige Unterlage, die sich vom Rand abhebt. Fotografiere bei gleichmäßigem Licht oder importiere ein Foto bzw. einen Scan."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "text": "CenterMint schlägt Außenkante und gedruckten Innenrahmen vor. Ist eine Linie unsicher, führt die App dich mit der Lupe Linie für Linie hindurch und nennt den Grund."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "text": "Bestätige oder verschiebe jede Linie. Die Verhältnisse links/rechts und oben/unten aktualisieren sich sofort."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "text": "Miss auch die Rückseite und vergleiche beide Seiten mit der PSA-, BGS- oder CGC-Referenz."
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "text": "Sieh dir vor dem Einschicken die Ecken- und Kanten-Nahaufnahmen an und rechne Worth Grading? mit aktuellen Verkaufspreisen durch."
+    }
+   ]
+  }
+ ],
+ "nav_label": "Sprachen",
+ "hero": {
+  "h1": "Karten-Zentrierung vor dem Grading",
+  "lede": "Ränder messen, jede unsichere Linie prüfen und dann entscheiden, ob sich die Grading-Gebühr für die Karte lohnt.",
+  "cta_text": "Im App Store ansehen",
+  "app_url": "https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&mt=8&ct=de_site_202609",
+  "intro": "CenterMint ist eine iPhone-App für Sammler von Trading Cards und Sportkarten. Sie misst die Zentrierung links/rechts und oben/unten anhand eines Fotos der Karte ohne Hülle, vergleicht das Ergebnis mit den veröffentlichten Zentrierungsreferenzen von PSA, BGS und CGC und hilft bei der Entscheidung, bevor du für das Grading bezahlst. Sie ist ein unabhängiges Werkzeug: Sie misst nur die Zentrierung und sagt keine Gesamtnote voraus."
+ },
+ "new": {
+  "eyebrow": "NEU IN VERSION 1.9",
+  "h2": "Bevor du für das Grading bezahlst",
+  "intro": "Version 1.9 hilft bei der Entscheidung, die Geld kostet: Lohnt es sich, diese Karte einzuschicken? Die App-Oberfläche ist auf Englisch; die Funktionsnamen stehen deshalb so, wie du sie in der App siehst.",
+  "features": [
+   {
+    "title": "Guided line check",
+    "plan": "Kostenlos",
+    "pro": false,
+    "body": "Wenn eine Linie unsicher ist, führt dich der Editor der Reihe nach durch die unsichersten Linien. Die Lupe springt zur jeweiligen Linie; mit „Looks Right“ geht es weiter, oder du ziehst die Linie an die richtige Stelle."
+   },
+   {
+    "title": "Warum prüfen?",
+    "plan": "Kostenlos",
+    "pro": false,
+    "body": "Jeder Schritt nennt den Grund: Spiegelung, Unschärfe, zu dunkles oder niedrig aufgelöstes Foto, eine Unterlage in der Farbe des Kartenrands oder kein gedruckter Rahmen gefunden. Hilft ein neues Foto, sagt die App das."
+   },
+   {
+    "title": "Worth Grading?",
+    "plan": "Pro · 1 Karte gratis",
+    "pro": true,
+    "body": "Trage die Verkaufspreise ungegradet, PSA 9 und PSA 10 ein (oder die BGS- und CGC-Stufen), dazu Grading-Gebühr und Verkaufsgebühr. CenterMint zeigt, wie viel mehr oder weniger du im Vergleich zum Verkauf ohne Grading erzielst und ab welchem Preis für die Top-Note sich das Grading rechnet. Noten, die die Zentrierung nicht zulässt, werden ausgeschlossen. Die Preise gibst du selbst ein."
+   },
+   {
+    "title": "Corner &amp; Edge Close-ups",
+    "plan": "Pro · 1 Karte gratis",
+    "pro": true,
+    "body": "Schneidet alle vier Ecken und die Mitte aller vier Kanten in voller Auflösung aus dem Originalfoto aus, damit du Weißstellen und Dellen vergrößert prüfen und als Collage teilen kannst. Die App zeigt nur; sie bewertet weder Ecken noch Oberfläche."
+   },
+   {
+    "title": "Submission Log",
+    "plan": "Pro",
+    "pro": true,
+    "body": "Halte jede Einsendung, die Kosten und die zurückgekommenen Noten fest. Du siehst die Quote der Top-Noten, die gesamten Grading-Gebühren und ob die Noten innerhalb der gemessenen Zentrierungsgrenze lagen."
+   }
+  ]
+ },
+ "measure": {
+  "h2": "Messen, das zeigt, wo du genauer hinsehen solltest",
+  "items": [
+   "Automatische Messung für Karten ohne Hülle, mit kantenweiser Subpixel-Anpassung bei goldenen und silbernen Rändern und zuverlässigerer Außenkante auf Stoff- und Mustermatten.",
+   "Karten in Hüllen, Toploadern oder Grading-Slabs misst du, indem du die vier Kanten selbst ausrichtest. Erkennt die App eine Hülle, weist sie darauf hin und wechselt zur manuellen Ausrichtung.",
+   "Lupe 2.0 zeigt echte Pixel mit Pixelraster und Kantenprofil und verknüpft gegenüberliegende Kanten zum Vergleich.",
+   "Jede Messung nutzt das Foto in voller Auflösung, auch in der kostenlosen Version.",
+   "Geteilte Bilder zeigen vor allem dein Kartenfoto, mit einem kleinen Logo in der Ecke.",
+   "Batch 2.0 (Pro): Stapel nacheinander fotografieren, nur prüfbedürftige Karten anzeigen, nach Zentrierung sortieren und in einem Schritt speichern. Der Entscheidungsassistent sortiert in Submit, Fix first und Below target und exportiert eine Einsendeliste als PDF."
+  ]
+ },
+ "pricing": {
+  "h2": "Kostenlos und Pro",
+  "free_title": "Kostenlos",
+  "free": [
+   "Zentrierung von Vorder- und Rückseite in voller Auflösung",
+   "Lupe und Guided line check mit Begründung",
+   "Vergleich mit den Zentrierungsreferenzen von PSA, BGS und CGC",
+   "Lokale Sammlung, Vorder-/Rückseiten-Paare, Bilder teilen",
+   "Ein Batch mit bis zu 5 Karten",
+   "Worth Grading? und Corner &amp; Edge Close-ups für eine Karte deiner Wahl"
+  ],
+  "pro_title": "CenterMint Pro",
+  "pro": [
+   "Worth Grading? und Corner &amp; Edge Close-ups für jede Karte",
+   "Submission Log",
+   "Batch-Scans und CSV-Export",
+   "Entscheidungsassistent mit Einsendeliste als PDF",
+   "Zentrierungsbericht, 4K-Bildverbesserung und 4K-Export",
+   "Gespeicherte Vorlagen, keine Werbung"
+  ],
+  "note": "Pro gibt es als Monats- oder Jahresabo oder als Einmalkauf; Angebote und lokale Preise zeigt die App. Abos verlängern sich automatisch, bis du sie in den Einstellungen deines Apple Accounts kündigst."
+ },
+ "limits": {
+  "h2": "Was CenterMint nicht macht",
+  "items": [
+   "Keine Bewertung von Ecken, Kanten, Oberfläche oder Echtheit und keine Vorhersage einer PSA-, BGS- oder CGC-Note oder der Chance auf eine 10.",
+   "Keine Garantie für ein Grading-Ergebnis. Die Zentrierungsreferenzen dienen nur dem Vergleich mit veröffentlichten Standards. CenterMint ist nicht mit PSA, Beckett, CGC, Pokémon oder einem Kartenverlag verbunden.",
+   "Keine Preisabfrage oder -schätzung und keine Verbindung zu eBay. Worth Grading? rechnet mit den Preisen, die du eingibst.",
+   "Die automatische Messung gilt für Karten ohne Hülle. Bei Full-Art-Karten ohne gedruckten Rahmen folgen die inneren Linien dem Bildrahmen; das Ergebnis ist nur ein Richtwert."
+  ],
+  "privacy": "Die Messung läuft auf deinem iPhone und braucht kein Konto. Fotos verlassen das Gerät nur mit deiner Zustimmung: Das Teilen von Korrekturen ist standardmäßig aus, und beim Batch-Import fragt die App einmal vor dem Hochladen – du kannst ablehnen. Eingegebene Preise und das Submission Log bleiben auf dem Gerät. Details in der Datenschutzerklärung.",
+  "languages": "Die App-Oberfläche ist auf Englisch, Japanisch, Koreanisch, Vietnamesisch sowie in vereinfachtem und traditionellem Chinesisch verfügbar."
+ },
+ "howto": {
+  "h2": "So misst du die Zentrierung mit CenterMint",
+  "steps": [
+   "Nimm die Karte aus der Hülle und lege sie flach auf eine einfarbige Unterlage, die sich vom Rand abhebt. Fotografiere bei gleichmäßigem Licht oder importiere ein Foto bzw. einen Scan.",
+   "CenterMint schlägt Außenkante und gedruckten Innenrahmen vor. Ist eine Linie unsicher, führt die App dich mit der Lupe Linie für Linie hindurch und nennt den Grund.",
+   "Bestätige oder verschiebe jede Linie. Die Verhältnisse links/rechts und oben/unten aktualisieren sich sofort.",
+   "Miss auch die Rückseite und vergleiche beide Seiten mit der PSA-, BGS- oder CGC-Referenz.",
+   "Sieh dir vor dem Einschicken die Ecken- und Kanten-Nahaufnahmen an und rechne Worth Grading? mit aktuellen Verkaufspreisen durch."
+  ]
+ },
+ "faq": {
+  "h2": "Häufige Fragen zu Zentrierung und Grading",
+  "items": [
+   {
+    "q": "Kann CenterMint Karten in Hülle, Toploader oder Slab messen?",
+    "a": "Die automatische Messung funktioniert nur bei Karten ohne Hülle. Hüllen, Toploader und Slabs haben eigene Kanten und Spiegelungen; die App würde Kunststoff statt Karte messen. Erkennt sie eine Hülle, weist sie darauf hin und wechselt zur manuellen Ausrichtung, bei der du die vier Kartenkanten selbst setzt. Am genauesten wird es, wenn du die Karte herausnimmst und neu fotografierst."
+   },
+   {
+    "q": "Wie genau ist die Messung?",
+    "a": "Das hängt vom Foto und von den bestätigten Linien ab. Es geht um kleine Abstände: Bei 3 mm Rand auf jeder Seite liegen zwischen 50/50 und 55/45 nur 0,3 mm. CenterMint passt goldene und silberne Ränder kantenweise mit Subpixel-Genauigkeit an und markiert unsichere Linien, nennt aber keine pauschale Genauigkeit in Prozent. Prüfe markierte Linien mit der Lupe und wiederhole unscharfe oder spiegelnde Fotos."
+   },
+   {
+    "q": "Welche Zentrierung braucht eine PSA 10?",
+    "a": "Die veröffentlichte Richtlinie von PSA für Gem Mint 10 lautet etwa 55/45 oder besser auf der Vorderseite und 75/25 auf der Rückseite; PSA 9 etwa 60/40 vorne und 90/10 hinten. BGS und CGC veröffentlichen eigene Skalen, teils nur für bestimmte Kartenkategorien. Zentrierung ist nur ein Kriterium; gute Zentrierung garantiert keine Note. Prüfe vor dem Einschicken die offiziellen Seiten."
+   },
+   {
+    "q": "Wie entscheidet Worth Grading?, ob sich das Grading lohnt?",
+    "a": "Für jede Note gilt: Mehrerlös = (Preis gegradet − Preis ungegradet) × (1 − Verkaufsgebühr) − Grading-Gebühr. Die Verkaufsgebühr fällt in beiden Fällen an, deshalb wird nur die Preisdifferenz damit verrechnet. Der Break-even-Preis für die Top-Note ist Preis ungegradet + Grading-Gebühr ÷ (1 − Verkaufsgebühr). Lohnt sich schon die zweitbeste Note (etwa PSA 9), lohnt sich das Grading; rechnet sich nur die Top-Note, hängt es von Ecken und Oberfläche ab; rechnet sich keine Note oder lässt die Zentrierung die lohnende Note nicht zu, lohnt es sich nicht. Die App schätzt keine Wahrscheinlichkeit für eine 10."
+   },
+   {
+    "q": "Ruft CenterMint eBay- oder Marktpreise ab?",
+    "a": "Nein. Die App ist weder mit eBay noch mit einem Preisdienst verbunden und rät keine Preise. Du trägst aktuelle Verkaufspreise selbst ein; sie werden pro Karte auf dem Gerät gespeichert."
+   },
+   {
+    "q": "Prüft CenterMint Ecken, Kanten und Oberfläche?",
+    "a": "Nein. Corner &amp; Edge Close-ups schneiden die vier Ecken und Kanten in voller Auflösung aus dem Originalfoto aus, damit du selbst hinsehen kannst. Die App bewertet sie nicht, und ein Handyfoto kann winzige Mängel übersehen – prüfe Zweifelsfälle mit Lupe und hellem Licht."
+   },
+   {
+    "q": "Was ist kostenlos, was braucht Pro?",
+    "a": "Kostenlos: Zentrierungsmessung in voller Auflösung, Lupe, Guided line check, Vergleich mit PSA/BGS/CGC, ein Batch mit bis zu 5 Karten und die Grading-Vorabprüfung (Worth Grading? und Close-ups) für eine Karte deiner Wahl. Pro: diese Vorabprüfung für jede Karte, Submission Log, Batch-Scans, Entscheidungsassistent mit Einsendeliste als PDF, CSV- und 4K-Export, Vorlagen und keine Werbung."
+   },
+   {
+    "q": "Ist CenterMint mit PSA, BGS oder CGC verbunden?",
+    "a": "Nein. CenterMint ist eine unabhängige App. Die Zentrierungsreferenzen folgen nur zum Vergleich den veröffentlichten Standards; die tatsächliche Note kann abweichen."
+   },
+   {
+    "q": "Bleiben meine Kartenfotos privat?",
+    "a": "Die Messung läuft ohne Konto auf deinem iPhone. Fotos werden nur hochgeladen, wenn du das Teilen von Korrekturen einschaltest (standardmäßig aus) oder dem einmaligen Hinweis beim Batch-Import zustimmst – ablehnen ist möglich. Preise und Submission Log bleiben auf dem Gerät."
+   }
+  ]
+ },
+ "sources_label": "Offizielle Grading-Quellen:",
+ "tools": {
+  "h2": "Kostenlose Tools und Anleitungen",
+  "links": [
+   {
+    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "text": "Is it worth grading? Break-even calculator (Englisch)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "text": "How to check corners and edges before grading (Englisch)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/calculator/",
+    "text": "Card centering calculator (Englisch)"
+   },
+   {
+    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "text": "How to measure card centering on iPhone (Englisch)"
+   }
+  ]
+ },
+ "footer": {
+  "privacy": "Datenschutz (Englisch)",
+  "terms": "Nutzungsbedingungen (Englisch)",
+  "email": "Support per E-Mail",
+  "copy": "© 2026 JIAPENG Zhao · CenterMint"
+ }
+}

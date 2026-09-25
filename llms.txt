@@ -1,12 +1,62 @@
 # CenterMint
 
-Independent iPhone card-centering measurement tool. Recognition runs on device. Optional correction sharing is off by default; eligible future corrected samples upload automatically after opt-in. Centering is not a complete grade and detection is not guaranteed for every design.
+> CenterMint is an iPhone app (iOS 17 or later) that measures the left/right and top/bottom centering of trading cards and sports cards from a photo, compares the result with the published PSA, BGS and CGC centering references, and helps collectors decide whether a card is worth the grading fee. It is an independent tool made by JIAPENG Zhao and is not affiliated with PSA, Beckett (BGS), CGC, Pokémon or any card publisher.
 
-- [Product](https://zhao73.github.io/centermint/)
+App Store: https://apps.apple.com/app/id6760965068
+Price: free download; optional CenterMint Pro (monthly or yearly subscription, or one-time purchase; prices shown in the app).
+App interface languages: English, Japanese, Korean, Vietnamese, Simplified Chinese, Traditional Chinese.
+
+## What it does
+
+- Measures card centering from a photo or scan of a raw (unsleeved) card. Gold and silver borders are fitted edge by edge at sub-pixel level; the outer edge is found more reliably on cloth or patterned mats.
+- Guided line check (free, version 1.9): when a border line is uncertain, the editor walks the user through the least certain lines one by one with a loupe and states why the line needs checking (glare, blur, dark or low-resolution photo, mat close to the card edge color, no printed border found, full-art card).
+- Loupe 2.0: real pixels, pixel grid, edge profile, linked opposite edges.
+- Compares front and back centering with PSA, BGS and CGC published references. PSA's Gem Mint 10 guideline is approximately 55/45 or better on the front and 75/25 on the back; PSA 9 is approximately 60/40 front and 90/10 back.
+- Worth Grading? (Pro, version 1.9; one card free): the user enters raw, second-grade and top-grade sold prices (PSA 9/10, BGS 9/9.5 or CGC 9.5/10), the grading fee and the selling fee. Formula: extra = (graded price − raw price) × (1 − selling fee) − grading fee; top-grade break-even price = raw price + grading fee ÷ (1 − selling fee). Grades the measured centering cannot reach are excluded. Four answers: worth grading, pays only at the top grade, not worth grading, centering rules out the grade that pays.
+- Corner & Edge Close-ups (Pro, version 1.9; shares the one free card): crops the four corners and four edge midpoints from the original photo at full resolution for the user to inspect and share.
+- Submission Log (Pro, version 1.9): records submissions, fees and returned grades; shows top-grade rate, total fees and whether returned grades stayed within the measured centering ceiling.
+- Batch 2.0 (Pro): burst capture into a queue, filter to cards needing review, sort by centering, save at once. Free users get one batch of up to 5 cards.
+- Decision assistant (Pro) sorts cards into Submit / Fix first / Below target and exports a submission checklist PDF.
+- Measurement always uses the full-resolution photo, including in the free version.
+
+## What it does not do
+
+- It does not measure cards automatically through a sleeve, top loader or graded slab. A detected sleeve triggers manual alignment, where the user lines up the four edges.
+- It does not grade corners, edges, surface or authenticity, and does not predict an overall PSA/BGS/CGC grade or the probability of a 10.
+- It does not guarantee grading results.
+- It does not fetch, scrape or estimate prices and has no eBay integration. Prices are entered by the user. In Japan only, buttons open Mercari sold listings and Yahoo! Auctions closed listings in an in-app browser.
+- Full-art cards without a printed border can only be measured against the art frame; results are a reference.
+
+## Privacy
+
+Measurement runs on the device without an account. Photos are uploaded only if the user opts in to correction sharing (off by default) or accepts a one-time batch-learning notice, which can be declined. Entered prices and the Submission Log are stored on the device. Details: https://zhao73.github.io/centermint/privacy.html
+
+## Pages
+
+- [Home (English)](https://zhao73.github.io/centermint/)
 - [日本語](https://zhao73.github.io/centermint/ja/)
-- [Calculator](https://zhao73.github.io/centermint/calculator/)
-- [Measurement guide](https://zhao73.github.io/centermint/guides/measure-card-centering/)
-- [Full-art references](https://zhao73.github.io/centermint/guides/full-art-borders/)
-- [Privacy](https://zhao73.github.io/centermint/privacy.html)
+- [简体中文](https://zhao73.github.io/centermint/zh-Hans/)
+- [繁體中文](https://zhao73.github.io/centermint/zh-Hant/)
+- [한국어](https://zhao73.github.io/centermint/ko/)
+- [Tiếng Việt](https://zhao73.github.io/centermint/vi/)
+- [Deutsch](https://zhao73.github.io/centermint/de/)
+- [Français](https://zhao73.github.io/centermint/fr/)
+- [Español](https://zhao73.github.io/centermint/es/)
+- [Italiano](https://zhao73.github.io/centermint/it/)
+- [Português (Brasil)](https://zhao73.github.io/centermint/pt-BR/)
 
-Maintained by JIAPENG Zhao. Updated September 9, 2026.
+## Guides and tools
+
+- [Is it worth grading? PSA 9 vs PSA 10 break-even calculator](https://zhao73.github.io/centermint/guides/worth-grading/) · [日本語](https://zhao73.github.io/centermint/ja/guides/worth-grading/) · [简体中文](https://zhao73.github.io/centermint/zh-Hans/guides/worth-grading/)
+- [How to check corners and edges before grading](https://zhao73.github.io/centermint/guides/check-corners-edges/) · [日本語](https://zhao73.github.io/centermint/ja/guides/check-corners-edges/) · [简体中文](https://zhao73.github.io/centermint/zh-Hans/guides/check-corners-edges/)
+- [Card centering calculator](https://zhao73.github.io/centermint/calculator/) · [日本語](https://zhao73.github.io/centermint/ja/calculator/)
+- [How to measure card centering on iPhone](https://zhao73.github.io/centermint/guides/measure-card-centering/) · [日本語](https://zhao73.github.io/centermint/ja/guides/measure-card-centering/)
+- [How to find the inner border on a full-art card](https://zhao73.github.io/centermint/guides/full-art-borders/) · [日本語](https://zhao73.github.io/centermint/ja/guides/full-art-borders/)
+
+## Official grading sources
+
+- PSA grading standards: https://www.psacard.com/gradingstandards
+- Beckett (BGS) grading: https://www.beckett.com/grading
+- CGC Cards grading scale: https://www.cgccards.com/card-grading/grading-scale/
+
+Maintained by JIAPENG Zhao. Contact: qwe911291860@gmail.com. Updated September 24, 2026.

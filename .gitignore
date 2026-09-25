@@ -1,0 +1,4 @@
+.qa/
+.DS_Store
+__pycache__/
+tools/p5-video/node_modules/
