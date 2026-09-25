@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Render the one-shape flow (assets/js/flow.js) to assets/video/flow-<lang>.mp4 (1080 x 1080, 60 fps, no audio)
-and the still frame assets/video/flow-poster.webp.
+"""Render the one-shape loops (assets/js/flow.js) to assets/video/flow-<segment>-<lang>.mp4
+(1080 x 1080, 60 fps, no audio), one file per segment.
 
 Frames are screenshotted by Playwright's Chromium and piped straight into ffmpeg: no frame files on disk.
 With --blur N each output frame is the average of N sub-frames (motion blur; N=1 turns it off).
 
-    python3 tools/flow-video/render.py                    # English, 60 fps, 4 sub-frames
-    python3 tools/flow-video/render.py --lang ja --blur 1
-    python3 tools/flow-video/render.py --poster-only
+    python3 tools/flow-video/render.py                          # all six segments, English, 4 sub-frames
+    python3 tools/flow-video/render.py --lang ja --seg check    # one segment
+    python3 tools/flow-video/render.py --blur 1                 # no motion blur
 """
 import argparse, http.server, socketserver, subprocess, threading, io
 from functools import partial
@@ -20,7 +20,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--lang", default="en")
 ap.add_argument("--fps", type=int, default=60)
 ap.add_argument("--blur", type=int, default=4)
-ap.add_argument("--poster-only", action="store_true")
+ap.add_argument("--seg", default="measure,check,worth,closeups,ledger,share")
 args = ap.parse_args()
 
 handler = partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT))
@@ -35,26 +35,22 @@ with sync_playwright() as p:
         browser = p.chromium.launch(channel="chrome")
     except Exception:
         browser = p.chromium.launch()
-    page = browser.new_page(viewport={"width": 1080, "height": 1080}, device_scale_factor=1)
     errors = []
-    page.on("pageerror", lambda e: errors.append(str(e)))
-    page.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
-    page.goto(url)
-    page.wait_for_function("window.__ready === true", timeout=60000)
-    info = page.evaluate("window.FLOW")
-
-    def shot(t):
-        page.evaluate(f"window.flowSeek({t})")
-        return page.screenshot(type="png")
-
     out = ROOT / "assets/video"
-    poster = Image.open(io.BytesIO(shot(info["poster"]))).convert("RGB")
-    poster.save(out / "flow-poster.webp", "WEBP", quality=82, method=6)
-    print("flow-poster.webp", (out / "flow-poster.webp").stat().st_size // 1024, "KB")
+    for seg in args.seg.split(","):
+        page = browser.new_page(viewport={"width": 1080, "height": 1080}, device_scale_factor=1)
+        page.on("pageerror", lambda e: errors.append(str(e)))
+        page.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
+        page.goto(f"{url}&seg={seg}")
+        page.wait_for_function("window.__ready === true", timeout=60000)
+        info = page.evaluate("window.FLOW")
 
-    if not args.poster_only:
+        def shot(t):
+            page.evaluate(f"window.flowSeek({t})")
+            return page.screenshot(type="png")
+
         frames = round(info["duration"] * args.fps)
-        dst = out / f"flow-{args.lang}.mp4"
+        dst = out / f"flow-{seg}-{args.lang}.mp4"
         ff = subprocess.Popen(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                                "-s", "1080x1080", "-r", str(args.fps), "-i", "-", "-an", "-c:v", "libx264", "-preset", "slow",
                                "-crf", "18", "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart", str(dst)],
@@ -68,11 +64,10 @@ with sync_playwright() as p:
                 im = Image.open(io.BytesIO(shot(t % info["duration"]))).convert("RGB")
                 acc = im if acc is None else Image.blend(acc, im, 1 / (k + 1))
             ff.stdin.write(acc.tobytes())
-            if i % 120 == 0:
-                print(f"frame {i}/{frames}", flush=True)
         ff.stdin.close()
         ff.wait()
-        print(dst.name, dst.stat().st_size // 1024, "KB")
+        print(dst.name, frames, "frames", dst.stat().st_size // 1024, "KB", flush=True)
+        page.close()
     browser.close()
     srv.shutdown()
     if errors:

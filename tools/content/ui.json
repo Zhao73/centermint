@@ -98,16 +98,57 @@
   "mobile_bar": "Free on iPhone",
   "hero_card_alt": "Charizard from the 1999 Pokémon Base Set with measuring lines on the inner edge of its yellow border: left/right {lr}, top/bottom {tb}",
   "trademark": "Pokémon and the card images are trademarks and copyrights of Nintendo, Creatures Inc., GAME FREAK inc. and The Pokémon Company. CenterMint is not affiliated with, sponsored or endorsed by them.",
-  "flow": {
-   "h2": "From scan to submission log",
-   "p": "Scan the card, confirm each line with the loupe, weigh the grading fee, look at the corners, and log the submission.",
-   "note": "Drawn live in your browser from simplified app screens. The numbers are the app's reading of the Charizard; the prices are an example.",
-   "alt": "Animation: Scan Card becomes the analyzing ring, then the Charizard with its four measuring lines and {lr}, {tb}; the loupe checks one line and Looks Right is tapped; Worth Grading? shows PSA 10 +$125.25 and PSA 9 +$16.50; the four corner close-ups; the Submission Log row PSA · Value 4/4; Saved.",
+  "flows": {
+   "h2": "See it in the app",
+   "p": "Six short loops, one task each. The screens are simplified; the card and its numbers are real.",
+   "note": "Drawn live in your browser. The prices in Worth Grading? are an example.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Scan and measure",
+     "p": "It finds the card edge and the printed border and gives both ratios."
+    },
+    {
+     "key": "check",
+     "t": "Check each line",
+     "p": "The loupe goes to a line. Drag it onto the edge if needed, then tap Looks Right."
+    },
+    {
+     "key": "worth",
+     "t": "Worth Grading?",
+     "p": "Type the sold prices and see what a PSA 10 or a PSA 9 would earn after fees."
+    },
+    {
+     "key": "closeups",
+     "t": "Corner & Edge Close-ups",
+     "p": "Four corners and four edges from the original photo. Tap one to look closer."
+    },
+    {
+     "key": "ledger",
+     "t": "Submission Log",
+     "p": "Log what you send and move it from Preparing to Sent to Returned."
+    },
+    {
+     "key": "share",
+     "t": "Share Studio",
+     "p": "Pick a layout and choose whether the measuring lines show."
+    }
+   ],
    "app": {
     "scan": "Scan Card",
     "looks": "Looks Right",
+    "step": "Line %1$ld of %2$ld",
     "worth": "Worth Grading?",
-    "saved": "Saved"
+    "raw": "Raw (sell as is)",
+    "worthIt": "Worth grading",
+    "corners": "Corners",
+    "edges": "Edges (middle)",
+    "ledger": "Submission Log",
+    "preparing": "Preparing",
+    "sent": "Sent",
+    "returned": "Returned",
+    "share": "Share Studio",
+    "lines": "Show measurement lines"
    }
   }
  },
@@ -210,16 +251,57 @@
   "mobile_bar": "iPhone で無料",
   "hero_card_alt": "1999 年の英語版 Base Set のリザードン。黄色い枠の内側に測定線（左右 {lr}、上下 {tb}）",
   "trademark": "ポケモンおよびカード画像の商標・著作権は任天堂、クリーチャーズ、ゲームフリーク、株式会社ポケモンに帰属します。CenterMint はこれらの企業と提携しておらず、承認も受けていません。",
-  "flow": {
-   "h2": "スキャンから鑑定記録まで",
-   "p": "カードをスキャンし、拡大鏡で線を一本ずつ確認し、鑑定費用に見合うかを計算し、四隅を見て、提出を記録します。",
-   "note": "アプリの画面を簡略化して、ブラウザ上でその場で描いています。数値はアプリがこのリザードンを測った結果、価格は例です。",
-   "alt": "アニメーション：「カードをスキャン」が分析中の輪になり、リザードンと4本の測定線、{lr}・{tb} が表示されます。拡大鏡で線を1本確認して「この線でOK」をタップ。「鑑定に出す価値は？」で PSA 10 +$125.25、PSA 9 +$16.50。四隅の拡大、鑑定記録の行 PSA · Value 4/4、保存しました。",
+  "flows": {
+   "h2": "アプリでの動き",
+   "p": "操作ごとの短いループが 6 つ。画面は簡略化していますが、カードと数値は本物です。",
+   "note": "ブラウザ上でその場で描いています。「鑑定に出す価値は？」の価格は例です。",
+   "items": [
+    {
+     "key": "measure",
+     "t": "スキャンして測る",
+     "p": "カードの外縁と印刷枠を見つけ、左右・上下の比率を出します。"
+    },
+    {
+     "key": "check",
+     "t": "一本ずつ線を確認",
+     "p": "拡大鏡が線に寄ります。必要ならドラッグで枠に合わせ、「この線でOK」をタップ。"
+    },
+    {
+     "key": "worth",
+     "t": "鑑定に出す価値は？",
+     "p": "成約価格を入れると、手数料を引いた PSA 10・PSA 9 の損益が出ます。"
+    },
+    {
+     "key": "closeups",
+     "t": "四隅・四辺の拡大",
+     "p": "元の写真から四隅と四辺を切り出します。タップで大きく表示。"
+    },
+    {
+     "key": "ledger",
+     "t": "鑑定記録",
+     "p": "提出したカードを記録し、準備中・発送済み・返却済みと進めます。"
+    },
+    {
+     "key": "share",
+     "t": "シェアスタジオ",
+     "p": "レイアウトを選び、測定ラインを表示するかを切り替えます。"
+    }
+   ],
    "app": {
     "scan": "カードをスキャン",
     "looks": "この線でOK",
+    "step": "%2$ld 本中 %1$ld 本目",
     "worth": "鑑定に出す価値は？",
-    "saved": "保存しました"
+    "raw": "未鑑定で売る",
+    "worthIt": "鑑定に出す価値あり",
+    "corners": "四隅",
+    "edges": "四辺（中央）",
+    "ledger": "鑑定記録",
+    "preparing": "準備中",
+    "sent": "発送済み",
+    "returned": "返却済み",
+    "share": "シェアスタジオ",
+    "lines": "測定ラインを表示"
    }
   }
  },
@@ -322,16 +404,57 @@
   "mobile_bar": "iPhone 免费下载",
   "hero_card_alt": "1999 年英文版 Base Set 的喷火龙，测量线压在黄边内沿上：左右 {lr}，上下 {tb}",
   "trademark": "宝可梦及卡牌图像的商标和版权归任天堂、Creatures、GAME FREAK 和 The Pokémon Company 所有。CenterMint 与上述公司没有关联，也未获得其认可。",
-  "flow": {
-   "h2": "从扫描到送评账本",
-   "p": "扫描卡牌，用放大镜逐条确认，算算送评费值不值，看看四个角，再把这次送评记下来。",
-   "note": "用简化的 App 画面在你的浏览器里实时绘制。数字是 App 对这张喷火龙的测量结果，价格只是示例。",
-   "alt": "动画：“扫描卡牌”变成分析中的圆环，然后出现喷火龙和四条测量线，比例 {lr}、{tb}；放大镜检查一条线后点“这条对了”；“值不值得送评”显示 PSA 10 +$125.25、PSA 9 +$16.50；四角特写；送评账本一行 PSA · Value 4/4；已保存。",
+  "flows": {
+   "h2": "在 App 里是这样的",
+   "p": "六段短循环，每段一个操作。画面做了简化，卡和数字都是真的。",
+   "note": "在你的浏览器里实时绘制。「值不值得送评」里的价格只是示例。",
+   "items": [
+    {
+     "key": "measure",
+     "t": "扫描并测量",
+     "p": "找出卡边和印刷边框，给出左右、上下两个比例。"
+    },
+    {
+     "key": "check",
+     "t": "逐条对线",
+     "p": "放大镜落到一条线上，需要时拖到边上，再点「这条对了」。"
+    },
+    {
+     "key": "worth",
+     "t": "值不值得送评",
+     "p": "填入成交价，看扣掉费用后 PSA 10、PSA 9 各赚多少。"
+    },
+    {
+     "key": "closeups",
+     "t": "四角四边特写",
+     "p": "从原图裁出四个角和四条边，点一张放大看。"
+    },
+    {
+     "key": "ledger",
+     "t": "送评账本",
+     "p": "记下寄出的卡，从准备中、已寄出一路到已返回。"
+    },
+    {
+     "key": "share",
+     "t": "分享工作室",
+     "p": "选一种版式，决定要不要显示测量线。"
+    }
+   ],
    "app": {
     "scan": "扫描卡牌",
     "looks": "这条对了",
+    "step": "第 %1$ld / %2$ld 条线",
     "worth": "值不值得送评",
-    "saved": "已保存"
+    "raw": "未评级（直接卖）",
+    "worthIt": "值得送评",
+    "corners": "四个角",
+    "edges": "四条边（中段）",
+    "ledger": "送评账本",
+    "preparing": "准备中",
+    "sent": "已寄出",
+    "returned": "已返回",
+    "share": "分享工作室",
+    "lines": "显示测量线"
    }
   }
  },
@@ -434,16 +557,57 @@
   "mobile_bar": "iPhone 免費下載",
   "hero_card_alt": "1999 年英文版 Base Set 的噴火龍，測量線壓在黃邊內緣上：左右 {lr}，上下 {tb}",
   "trademark": "寶可夢及卡牌圖像的商標與著作權屬於任天堂、Creatures、GAME FREAK 與 The Pokémon Company。CenterMint 與上述公司沒有關聯，也未獲得其認可。",
-  "flow": {
-   "h2": "從掃描到送鑑帳本",
-   "p": "掃描卡牌，用放大鏡逐條確認，算算送鑑費值不值，看看四個角，再把這次送鑑記下來。",
-   "note": "用簡化的 App 畫面在你的瀏覽器裡即時繪製。數字是 App 對這張噴火龍的測量結果，價格只是範例。",
-   "alt": "動畫：「掃描卡牌」變成分析中的圓環，接著出現噴火龍和四條測量線，比例 {lr}、{tb}；放大鏡檢查一條線後點「這條對了」；「值不值得送鑑」顯示 PSA 10 +$125.25、PSA 9 +$16.50；四角特寫；送鑑帳本一行 PSA · Value 4/4；已儲存。",
+  "flows": {
+   "h2": "在 App 裡是這樣的",
+   "p": "六段短循環，每段一個操作。畫面做了簡化，卡和數字都是真的。",
+   "note": "在你的瀏覽器裡即時繪製。「值不值得送鑑」裡的價格只是範例。",
+   "items": [
+    {
+     "key": "measure",
+     "t": "掃描並測量",
+     "p": "找出卡邊和印刷邊框，給出左右、上下兩個比例。"
+    },
+    {
+     "key": "check",
+     "t": "逐條對線",
+     "p": "放大鏡落到一條線上，需要時拖到邊上，再點「這條對了」。"
+    },
+    {
+     "key": "worth",
+     "t": "值不值得送鑑",
+     "p": "填入成交價，看扣掉費用後 PSA 10、PSA 9 各賺多少。"
+    },
+    {
+     "key": "closeups",
+     "t": "四角四邊特寫",
+     "p": "從原圖裁出四個角和四條邊，點一張放大看。"
+    },
+    {
+     "key": "ledger",
+     "t": "送鑑帳本",
+     "p": "記下寄出的卡，從準備中、已寄出一路到已返回。"
+    },
+    {
+     "key": "share",
+     "t": "分享工作室",
+     "p": "選一種版式，決定要不要顯示測量線。"
+    }
+   ],
    "app": {
     "scan": "掃描卡牌",
     "looks": "這條對了",
+    "step": "第 %1$ld / %2$ld 條線",
     "worth": "值不值得送鑑",
-    "saved": "已儲存"
+    "raw": "未鑑定（直接賣）",
+    "worthIt": "值得送鑑",
+    "corners": "四個角",
+    "edges": "四條邊（中段）",
+    "ledger": "送鑑帳本",
+    "preparing": "準備中",
+    "sent": "已寄出",
+    "returned": "已返回",
+    "share": "分享工作室",
+    "lines": "顯示測量線"
    }
   }
  },
@@ -546,16 +710,57 @@
   "mobile_bar": "iPhone 무료",
   "hero_card_alt": "1999년 영문판 Base Set의 리자몽, 노란 테두리 안쪽 가장자리에 측정선: 좌우 {lr}, 상하 {tb}",
   "trademark": "포켓몬 및 카드 이미지의 상표권과 저작권은 Nintendo, Creatures Inc., GAME FREAK inc., The Pokémon Company에 있습니다. CenterMint는 이들과 제휴 관계가 없으며 승인이나 후원을 받지 않았습니다.",
-  "flow": {
-   "h2": "스캔부터 그레이딩 기록까지",
-   "p": "카드를 스캔하고, 확대경으로 선을 하나씩 확인하고, 그레이딩 비용이 남는지 계산하고, 모서리를 본 뒤 제출을 기록합니다.",
-   "note": "앱 화면을 단순하게 옮겨 브라우저에서 바로 그립니다. 숫자는 앱이 이 리자몽을 측정한 결과이고 가격은 예시입니다.",
-   "alt": "애니메이션: ‘카드 스캔’이 분석 중 링으로 바뀌고 리자몽과 측정선 4개, {lr}·{tb}이 나타납니다. 확대경으로 선 하나를 확인하고 ‘맞아요’를 누릅니다. ‘그레이딩할 가치가 있을까?’에 PSA 10 +$125.25, PSA 9 +$16.50. 네 모서리 확대, 그레이딩 기록 PSA · Value 4/4, 저장됨.",
+  "flows": {
+   "h2": "앱에서는 이렇게 보입니다",
+   "p": "작업마다 하나씩, 짧은 루프 6개. 화면은 단순화했지만 카드와 숫자는 실제입니다.",
+   "note": "브라우저에서 바로 그립니다. ‘그레이딩할 가치가 있을까?’의 가격은 예시입니다.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "스캔하고 측정",
+     "p": "카드 가장자리와 인쇄 테두리를 찾아 좌우·상하 비율을 보여 줍니다."
+    },
+    {
+     "key": "check",
+     "t": "선 하나씩 확인",
+     "p": "확대경이 선으로 갑니다. 필요하면 가장자리로 끌어 맞추고 ‘맞아요’를 누르세요."
+    },
+    {
+     "key": "worth",
+     "t": "그레이딩할 가치가 있을까?",
+     "p": "판매 가격을 넣으면 수수료를 뺀 PSA 10·PSA 9 손익이 나옵니다."
+    },
+    {
+     "key": "closeups",
+     "t": "모서리·가장자리 확대",
+     "p": "원본 사진에서 네 모서리와 네 가장자리를 잘라 냅니다. 눌러서 크게 보세요."
+    },
+    {
+     "key": "ledger",
+     "t": "그레이딩 기록",
+     "p": "보낸 카드를 기록하고 준비 중, 발송함, 돌아옴으로 바꿉니다."
+    },
+    {
+     "key": "share",
+     "t": "공유 스튜디오",
+     "p": "레이아웃을 고르고 측정선을 보일지 정합니다."
+    }
+   ],
    "app": {
     "scan": "카드 스캔",
     "looks": "맞아요",
+    "step": "%2$ld개 중 %1$ld번째 선",
     "worth": "그레이딩할 가치가 있을까?",
-    "saved": "저장됨"
+    "raw": "미등급 (그대로 판매)",
+    "worthIt": "그레이딩할 가치 있음",
+    "corners": "네 모서리",
+    "edges": "네 가장자리 (가운데)",
+    "ledger": "그레이딩 기록",
+    "preparing": "준비 중",
+    "sent": "발송함",
+    "returned": "돌아옴",
+    "share": "공유 스튜디오",
+    "lines": "측정선 표시"
    }
   }
  },
@@ -658,16 +863,57 @@
   "mobile_bar": "Miễn phí trên iPhone",
   "hero_card_alt": "Charizard trong bộ Pokémon Base Set năm 1999 với các đường đo ở mép trong viền vàng: trái/phải {lr}, trên/dưới {tb}",
   "trademark": "Pokémon và hình ảnh thẻ là nhãn hiệu và bản quyền của Nintendo, Creatures Inc., GAME FREAK inc. và The Pokémon Company. CenterMint không liên kết, không được tài trợ hay chứng thực bởi các công ty này.",
-  "flow": {
-   "h2": "Từ lúc quét đến sổ gửi chấm",
-   "p": "Quét thẻ, dùng kính lúp xác nhận từng đường, tính xem phí chấm có đáng không, xem bốn góc và ghi lại lần gửi.",
-   "note": "Vẽ trực tiếp trong trình duyệt từ màn hình ứng dụng đã được giản lược. Số đo là kết quả ứng dụng đo thẻ Charizard này; giá chỉ là ví dụ.",
-   "alt": "Hoạt ảnh: nút Quét thẻ thành vòng đang phân tích, rồi thẻ Charizard với bốn đường đo, {lr} và {tb}; kính lúp kiểm tra một đường và nhấn Đúng rồi; Có đáng gửi chấm điểm? hiện PSA 10 +$125.25, PSA 9 +$16.50; bốn góc phóng to; dòng sổ gửi chấm PSA · Value 4/4; Đã lưu.",
+  "flows": {
+   "h2": "Trong ứng dụng trông thế này",
+   "p": "Sáu vòng lặp ngắn, mỗi vòng một thao tác. Màn hình được giản lược; thẻ và số đo là thật.",
+   "note": "Vẽ trực tiếp trong trình duyệt. Giá trong Có đáng gửi chấm điểm? chỉ là ví dụ.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Quét và đo",
+     "p": "Tìm mép thẻ và viền in, cho tỉ lệ trái/phải và trên/dưới."
+    },
+    {
+     "key": "check",
+     "t": "Kiểm tra từng đường",
+     "p": "Kính lúp đến một đường. Kéo nó vào mép nếu cần, rồi nhấn Đúng rồi."
+    },
+    {
+     "key": "worth",
+     "t": "Có đáng gửi chấm điểm?",
+     "p": "Nhập giá đã bán để xem PSA 10 và PSA 9 lời bao nhiêu sau phí."
+    },
+    {
+     "key": "closeups",
+     "t": "Phóng to góc và cạnh",
+     "p": "Bốn góc và bốn cạnh cắt từ ảnh gốc. Nhấn một ảnh để xem kỹ."
+    },
+    {
+     "key": "ledger",
+     "t": "Sổ gửi chấm",
+     "p": "Ghi lại lần gửi và chuyển từ Đang chuẩn bị sang Đã gửi, Đã trả về."
+    },
+    {
+     "key": "share",
+     "t": "Studio chia sẻ",
+     "p": "Chọn bố cục và bật hay tắt đường đo."
+    }
+   ],
    "app": {
     "scan": "Quét thẻ",
     "looks": "Đúng rồi",
+    "step": "Đường %1$ld / %2$ld",
     "worth": "Có đáng gửi chấm điểm?",
-    "saved": "Đã lưu"
+    "raw": "Chưa chấm (bán luôn)",
+    "worthIt": "Đáng gửi chấm điểm",
+    "corners": "Bốn góc",
+    "edges": "Bốn cạnh (đoạn giữa)",
+    "ledger": "Sổ gửi chấm",
+    "preparing": "Đang chuẩn bị",
+    "sent": "Đã gửi",
+    "returned": "Đã trả về",
+    "share": "Studio chia sẻ",
+    "lines": "Hiện đường đo"
    }
   }
  },
@@ -770,16 +1016,57 @@
   "mobile_bar": "Kostenlos fürs iPhone",
   "hero_card_alt": "Glurak aus dem Pokémon-Grundset von 1999 mit Messlinien an der Innenkante des gelben Rands: links/rechts {lr}, oben/unten {tb}",
   "trademark": "Pokémon und die Kartenbilder sind Marken und urheberrechtlich geschützt von Nintendo, Creatures Inc., GAME FREAK inc. und The Pokémon Company. CenterMint ist mit diesen Unternehmen nicht verbunden und wird von ihnen weder gesponsert noch unterstützt.",
-  "flow": {
-   "h2": "Vom Scan bis zum Submission Log",
-   "p": "Karte scannen, jede Linie mit der Lupe bestätigen, die Grading-Gebühr durchrechnen, die Ecken ansehen und die Einsendung festhalten.",
-   "note": "Live im Browser gezeichnet, nach vereinfachten App-Bildschirmen (die App ist auf Englisch). Die Zahlen sind die Messung der App für dieses Glurak, die Preise ein Beispiel.",
-   "alt": "Animation: Scan Card wird zum Ladering, dann Glurak mit vier Messlinien und {lr}, {tb}; die Lupe prüft eine Linie, Looks Right wird angetippt; Worth Grading? zeigt PSA 10 +$125.25 und PSA 9 +$16.50; die vier Ecken vergrößert; die Zeile PSA · Value 4/4 im Submission Log; Saved.",
+  "flows": {
+   "h2": "So sieht es in der App aus",
+   "p": "Sechs kurze Loops, je eine Aufgabe. Die Bildschirme sind vereinfacht, Karte und Zahlen sind echt.",
+   "note": "Live im Browser gezeichnet. Die App ist auf Englisch; die Preise bei Worth Grading? sind ein Beispiel.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Scannen und messen",
+     "p": "Findet Kartenkante und gedruckten Rand und zeigt beide Verhältnisse."
+    },
+    {
+     "key": "check",
+     "t": "Jede Linie prüfen",
+     "p": "Die Lupe geht an eine Linie. Bei Bedarf an die Kante ziehen, dann Looks Right tippen."
+    },
+    {
+     "key": "worth",
+     "t": "Worth Grading?",
+     "p": "Verkaufspreise eintippen und sehen, was PSA 10 oder PSA 9 nach Gebühren bringt."
+    },
+    {
+     "key": "closeups",
+     "t": "Corner & Edge Close-ups",
+     "p": "Vier Ecken und vier Kanten aus dem Originalfoto. Eine antippen zum Vergrößern."
+    },
+    {
+     "key": "ledger",
+     "t": "Submission Log",
+     "p": "Einsendungen festhalten: von Preparing über Sent bis Returned."
+    },
+    {
+     "key": "share",
+     "t": "Share Studio",
+     "p": "Layout wählen und festlegen, ob die Messlinien zu sehen sind."
+    }
+   ],
    "app": {
     "scan": "Scan Card",
     "looks": "Looks Right",
+    "step": "Line %1$ld of %2$ld",
     "worth": "Worth Grading?",
-    "saved": "Saved"
+    "raw": "Raw (sell as is)",
+    "worthIt": "Worth grading",
+    "corners": "Corners",
+    "edges": "Edges (middle)",
+    "ledger": "Submission Log",
+    "preparing": "Preparing",
+    "sent": "Sent",
+    "returned": "Returned",
+    "share": "Share Studio",
+    "lines": "Show measurement lines"
    }
   }
  },
@@ -882,16 +1169,57 @@
   "mobile_bar": "Gratuit sur iPhone",
   "hero_card_alt": "Dracaufeu du set de base Pokémon de 1999, avec les lignes de mesure sur le bord intérieur de la bordure jaune : gauche/droite {lr}, haut/bas {tb}",
   "trademark": "Pokémon et les images des cartes sont des marques et des œuvres protégées de Nintendo, Creatures Inc., GAME FREAK inc. et The Pokémon Company. CenterMint n’est ni affilié à ces sociétés, ni sponsorisé, ni approuvé par elles.",
-  "flow": {
-   "h2": "Du scan au Submission Log",
-   "p": "Scannez la carte, validez chaque ligne à la loupe, faites le calcul des frais de grading, regardez les coins et notez l’envoi.",
-   "note": "Dessiné en direct dans votre navigateur à partir d’écrans simplifiés de l’app (en anglais). Les chiffres sont la mesure de l’app pour ce Dracaufeu ; les prix sont un exemple.",
-   "alt": "Animation : Scan Card devient l’anneau de chargement, puis Dracaufeu avec ses quatre lignes de mesure et {lr}, {tb} ; la loupe vérifie une ligne et Looks Right est touché ; Worth Grading? affiche PSA 10 +$125.25 et PSA 9 +$16.50 ; les quatre coins agrandis ; la ligne PSA · Value 4/4 du Submission Log ; Saved.",
+  "flows": {
+   "h2": "À quoi ça ressemble dans l’app",
+   "p": "Six courtes boucles, une par tâche. Les écrans sont simplifiés ; la carte et ses chiffres sont réels.",
+   "note": "Dessiné en direct dans le navigateur. L’app est en anglais ; les prix de Worth Grading? sont un exemple.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Scanner et mesurer",
+     "p": "Trouve le bord de la carte et la bordure imprimée, puis donne les deux ratios."
+    },
+    {
+     "key": "check",
+     "t": "Vérifier chaque ligne",
+     "p": "La loupe se place sur une ligne. Glissez-la sur le bord si besoin, puis touchez Looks Right."
+    },
+    {
+     "key": "worth",
+     "t": "Worth Grading?",
+     "p": "Saisissez les prix de vente et voyez ce que rapporterait un PSA 10 ou un PSA 9 après frais."
+    },
+    {
+     "key": "closeups",
+     "t": "Corner & Edge Close-ups",
+     "p": "Les quatre coins et les quatre bords tirés de la photo d’origine. Touchez-en un pour zoomer."
+    },
+    {
+     "key": "ledger",
+     "t": "Submission Log",
+     "p": "Notez vos envois et faites-les passer de Preparing à Sent puis Returned."
+    },
+    {
+     "key": "share",
+     "t": "Share Studio",
+     "p": "Choisissez une mise en page et affichez ou non les lignes de mesure."
+    }
+   ],
    "app": {
     "scan": "Scan Card",
     "looks": "Looks Right",
+    "step": "Line %1$ld of %2$ld",
     "worth": "Worth Grading?",
-    "saved": "Saved"
+    "raw": "Raw (sell as is)",
+    "worthIt": "Worth grading",
+    "corners": "Corners",
+    "edges": "Edges (middle)",
+    "ledger": "Submission Log",
+    "preparing": "Preparing",
+    "sent": "Sent",
+    "returned": "Returned",
+    "share": "Share Studio",
+    "lines": "Show measurement lines"
    }
   }
  },
@@ -994,16 +1322,57 @@
   "mobile_bar": "Gratis en iPhone",
   "hero_card_alt": "Charizard de la colección básica de Pokémon de 1999 con líneas de medida en el borde interior del marco amarillo: izquierda/derecha {lr}, arriba/abajo {tb}",
   "trademark": "Pokémon y las imágenes de las cartas son marcas y obras protegidas de Nintendo, Creatures Inc., GAME FREAK inc. y The Pokémon Company. CenterMint no está afiliada a estas empresas ni cuenta con su patrocinio o aprobación.",
-  "flow": {
-   "h2": "Del escaneo al Submission Log",
-   "p": "Escanea la carta, confirma cada línea con la lupa, calcula si compensa la tarifa de grading, mira las esquinas y registra el envío.",
-   "note": "Dibujado en directo en tu navegador a partir de pantallas simplificadas de la app (en inglés). Los números son la medición de la app para este Charizard; los precios son un ejemplo.",
-   "alt": "Animación: Scan Card se convierte en el anillo de análisis, luego Charizard con sus cuatro líneas de medida y {lr}, {tb}; la lupa revisa una línea y se toca Looks Right; Worth Grading? muestra PSA 10 +$125.25 y PSA 9 +$16.50; las cuatro esquinas ampliadas; la fila PSA · Value 4/4 del Submission Log; Saved.",
+  "flows": {
+   "h2": "Así se ve en la app",
+   "p": "Seis bucles cortos, uno por tarea. Las pantallas están simplificadas; la carta y sus números son reales.",
+   "note": "Dibujado en directo en el navegador. La app está en inglés; los precios de Worth Grading? son un ejemplo.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Escanear y medir",
+     "p": "Encuentra el borde de la carta y el marco impreso y da las dos proporciones."
+    },
+    {
+     "key": "check",
+     "t": "Revisar cada línea",
+     "p": "La lupa va a una línea. Arrástrala al borde si hace falta y toca Looks Right."
+    },
+    {
+     "key": "worth",
+     "t": "Worth Grading?",
+     "p": "Escribe los precios de venta y mira cuánto dejaría un PSA 10 o un PSA 9 tras las tarifas."
+    },
+    {
+     "key": "closeups",
+     "t": "Corner & Edge Close-ups",
+     "p": "Las cuatro esquinas y los cuatro bordes de la foto original. Toca uno para ampliarlo."
+    },
+    {
+     "key": "ledger",
+     "t": "Submission Log",
+     "p": "Registra lo que envías y pásalo de Preparing a Sent y a Returned."
+    },
+    {
+     "key": "share",
+     "t": "Share Studio",
+     "p": "Elige un diseño y decide si se ven las líneas de medida."
+    }
+   ],
    "app": {
     "scan": "Scan Card",
     "looks": "Looks Right",
+    "step": "Line %1$ld of %2$ld",
     "worth": "Worth Grading?",
-    "saved": "Saved"
+    "raw": "Raw (sell as is)",
+    "worthIt": "Worth grading",
+    "corners": "Corners",
+    "edges": "Edges (middle)",
+    "ledger": "Submission Log",
+    "preparing": "Preparing",
+    "sent": "Sent",
+    "returned": "Returned",
+    "share": "Share Studio",
+    "lines": "Show measurement lines"
    }
   }
  },
@@ -1106,16 +1475,57 @@
   "mobile_bar": "Gratis su iPhone",
   "hero_card_alt": "Charizard del set base Pokémon del 1999 con le linee di misura sul bordo interno della cornice gialla: sinistra/destra {lr}, alto/basso {tb}",
   "trademark": "Pokémon e le immagini delle carte sono marchi e opere protette di Nintendo, Creatures Inc., GAME FREAK inc. e The Pokémon Company. CenterMint non è affiliata a queste società né sponsorizzata o approvata da esse.",
-  "flow": {
-   "h2": "Dalla scansione al Submission Log",
-   "p": "Scansiona la carta, conferma ogni linea con la lente, fai il conto della tariffa di grading, guarda gli angoli e registra l’invio.",
-   "note": "Disegnato dal vivo nel browser da schermate semplificate dell’app (in inglese). I numeri sono la misura dell’app per questo Charizard; i prezzi sono un esempio.",
-   "alt": "Animazione: Scan Card diventa l’anello di analisi, poi Charizard con le quattro linee di misura e {lr}, {tb}; la lente controlla una linea e si tocca Looks Right; Worth Grading? mostra PSA 10 +$125.25 e PSA 9 +$16.50; i quattro angoli ingranditi; la riga PSA · Value 4/4 del Submission Log; Saved.",
+  "flows": {
+   "h2": "Com’è nell’app",
+   "p": "Sei brevi loop, uno per attività. Le schermate sono semplificate; la carta e i numeri sono veri.",
+   "note": "Disegnato dal vivo nel browser. L’app è in inglese; i prezzi di Worth Grading? sono un esempio.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Scansiona e misura",
+     "p": "Trova il bordo della carta e la cornice stampata e dà entrambi i rapporti."
+    },
+    {
+     "key": "check",
+     "t": "Controlla ogni linea",
+     "p": "La lente va su una linea. Trascinala sul bordo se serve, poi tocca Looks Right."
+    },
+    {
+     "key": "worth",
+     "t": "Worth Grading?",
+     "p": "Inserisci i prezzi di vendita e vedi quanto renderebbe un PSA 10 o un PSA 9 dopo le tariffe."
+    },
+    {
+     "key": "closeups",
+     "t": "Corner & Edge Close-ups",
+     "p": "I quattro angoli e i quattro bordi dalla foto originale. Toccane uno per ingrandirlo."
+    },
+    {
+     "key": "ledger",
+     "t": "Submission Log",
+     "p": "Registra gli invii e portali da Preparing a Sent a Returned."
+    },
+    {
+     "key": "share",
+     "t": "Share Studio",
+     "p": "Scegli un layout e decidi se mostrare le linee di misura."
+    }
+   ],
    "app": {
     "scan": "Scan Card",
     "looks": "Looks Right",
+    "step": "Line %1$ld of %2$ld",
     "worth": "Worth Grading?",
-    "saved": "Saved"
+    "raw": "Raw (sell as is)",
+    "worthIt": "Worth grading",
+    "corners": "Corners",
+    "edges": "Edges (middle)",
+    "ledger": "Submission Log",
+    "preparing": "Preparing",
+    "sent": "Sent",
+    "returned": "Returned",
+    "share": "Share Studio",
+    "lines": "Show measurement lines"
    }
   }
  },
@@ -1218,16 +1628,57 @@
   "mobile_bar": "Grátis no iPhone",
   "hero_card_alt": "Charizard da coleção básica de Pokémon de 1999 com linhas de medição na borda interna da moldura amarela: esquerda/direita {lr}, topo/base {tb}",
   "trademark": "Pokémon e as imagens das cartas são marcas e obras protegidas da Nintendo, Creatures Inc., GAME FREAK inc. e The Pokémon Company. O CenterMint não é afiliado a essas empresas nem patrocinado ou endossado por elas.",
-  "flow": {
-   "h2": "Do scan ao Submission Log",
-   "p": "Escaneie a carta, confirme cada linha com a lupa, faça a conta da taxa de graduação, veja os cantos e registre o envio.",
-   "note": "Desenhado ao vivo no navegador a partir de telas simplificadas do app (em inglês). Os números são a medição do app para este Charizard; os preços são um exemplo.",
-   "alt": "Animação: Scan Card vira o anel de análise, depois o Charizard com as quatro linhas de medição e {lr}, {tb}; a lupa confere uma linha e Looks Right é tocado; Worth Grading? mostra PSA 10 +$125.25 e PSA 9 +$16.50; os quatro cantos ampliados; a linha PSA · Value 4/4 do Submission Log; Saved.",
+  "flows": {
+   "h2": "Como fica no app",
+   "p": "Seis loops curtos, um por tarefa. As telas são simplificadas; a carta e os números são reais.",
+   "note": "Desenhado ao vivo no navegador. O app está em inglês; os preços do Worth Grading? são um exemplo.",
+   "items": [
+    {
+     "key": "measure",
+     "t": "Escanear e medir",
+     "p": "Encontra a borda da carta e a moldura impressa e mostra as duas proporções."
+    },
+    {
+     "key": "check",
+     "t": "Conferir cada linha",
+     "p": "A lupa vai até uma linha. Arraste-a para a borda se precisar e toque em Looks Right."
+    },
+    {
+     "key": "worth",
+     "t": "Worth Grading?",
+     "p": "Digite os preços de venda e veja quanto um PSA 10 ou um PSA 9 renderia depois das taxas."
+    },
+    {
+     "key": "closeups",
+     "t": "Corner & Edge Close-ups",
+     "p": "Os quatro cantos e as quatro bordas da foto original. Toque em um para ampliar."
+    },
+    {
+     "key": "ledger",
+     "t": "Submission Log",
+     "p": "Registre o que você envia e mude de Preparing para Sent e Returned."
+    },
+    {
+     "key": "share",
+     "t": "Share Studio",
+     "p": "Escolha um layout e decida se as linhas de medição aparecem."
+    }
+   ],
    "app": {
     "scan": "Scan Card",
     "looks": "Looks Right",
+    "step": "Line %1$ld of %2$ld",
     "worth": "Worth Grading?",
-    "saved": "Saved"
+    "raw": "Raw (sell as is)",
+    "worthIt": "Worth grading",
+    "corners": "Corners",
+    "edges": "Edges (middle)",
+    "ledger": "Submission Log",
+    "preparing": "Preparing",
+    "sent": "Sent",
+    "returned": "Returned",
+    "share": "Share Studio",
+    "lines": "Show measurement lines"
    }
   }
  }

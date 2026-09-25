@@ -73,6 +73,13 @@
 <figcaption class="hero-readout"><span><i aria-hidden="true">↔</i> {{ card.lr }}</span><span><i aria-hidden="true">↕</i> {{ card.tb }}</span></figcaption></figure>
 <p class="imprint">{{ hero.intro }}</p>
 </section>
+<section class="flows" id="in-the-app" aria-labelledby="flows-title" data-flows data-flow-v="{{ v.flow }}" data-card="{{ card.json }}" data-labels="{{ ui.flows.app|tojson|forceescape }}" data-images="{{ {'card': rel ~ 'assets/img/sample-card-640.webp', 'loupe': rel ~ 'assets/img/sample-card-960.webp', 'tiles': [rel ~ 'assets/img/closeup-tl.webp', rel ~ 'assets/img/closeup-tr.webp', rel ~ 'assets/img/closeup-bl.webp', rel ~ 'assets/img/closeup-br.webp'], 'edges': [rel ~ 'assets/img/closeup-t.webp', rel ~ 'assets/img/closeup-b.webp', rel ~ 'assets/img/closeup-l.webp', rel ~ 'assets/img/closeup-r.webp']}|tojson|forceescape }}">
+<header class="flows-head"><h2 id="flows-title">{{ ui.flows.h2 }}</h2><p>{{ ui.flows.p }}</p></header>
+<ol class="flow-list" tabindex="0" aria-label="{{ ui.flows.h2 }}">
+{% for it in ui.flows["items"] %}<li class="flow-item"><figure class="flow" data-flow="{{ it.key }}" role="img" aria-label="{{ it.t }}: {{ it.p }}"><div class="fl-stage fl-empty"></div></figure><h3>{{ it.t }}</h3><p>{{ it.p }}</p></li>
+{% endfor %}</ol>
+<p class="flows-note">{{ ui.flows.note }}</p>
+</section>
 <div class="stage" aria-hidden="true">
 <div class="lightbox"><div class="panel" data-panel data-card="{{ card.json }}" data-stage-v="{{ v.stage }}">
 <i class="trim tl"></i><i class="trim tr"></i><i class="trim bl"></i><i class="trim br"></i>
@@ -172,14 +179,6 @@
 </div></div>
 </article>
 </section>
-
-<section class="watch mat" id="watch" aria-labelledby="watch-title">
-<div class="wrap watch-grid">
-<div><h2 id="watch-title">{{ ui.flow.h2 }}</h2><p>{{ ui.flow.p }}</p><p class="small">{{ ui.flow.note }}</p></div>
-<figure class="flow" data-flow data-flow-v="{{ v.flow }}" data-card="{{ card.json }}" data-labels="{{ ui.flow.app|tojson|forceescape }}" data-images="{{ {'card': rel ~ 'assets/img/sample-card-640.webp', 'loupe': rel ~ 'assets/img/sample-card.webp', 'tiles': [rel ~ 'assets/img/closeup-tl.webp', rel ~ 'assets/img/closeup-tr.webp', rel ~ 'assets/img/closeup-bl.webp', rel ~ 'assets/img/closeup-br.webp']}|tojson|forceescape }}" role="img" aria-label="{{ ui.flow.alt.replace('{lr}', card.lr).replace('{tb}', card.tb) }}"><img class="flow-poster" src="{{ rel }}assets/video/flow-poster.webp" width="1080" height="1080" alt="" loading="lazy" decoding="async"></figure>
-</div>
-</section>
-
 <section class="pricing wrap" id="pricing" aria-labelledby="pricing-title">
 <h2 class="sec-h2" id="pricing-title">{{ pricing.h2 }}</h2>
 <div class="sheets">

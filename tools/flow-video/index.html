@@ -2,11 +2,11 @@
 <html lang="en"><head><meta charset="utf-8"><title>flow render</title><link rel="icon" href="data:,">
 <!-- Render page for tools/flow-video/render.py: the site's flow animation at 1080 x 1080, driven by seek(). -->
 <link rel="stylesheet" href="../../site.css">
-<style>html,body{margin:0;width:1080px;height:1080px;overflow:hidden;background:#ECEBE8}.flow{max-width:none;width:1080px}</style>
+<style>html,body{margin:0;width:1080px;height:1080px;overflow:hidden;background:#ECEBE8}.flow{margin:0;width:1080px}</style>
 </head><body>
 <figure class="flow" id="flow"></figure>
 <script type="module">
-import { mount, DURATION, POSTER_BEAT } from "../../assets/js/flow.js";
+import { mount } from "../../assets/js/flow.js";
 const q = new URLSearchParams(location.search);
 const [ui, measure, app] = await Promise.all(["../content/ui.json", "../src/art/real/charizard-measure.json", "../src/art/real/charizard-app.json"].map(u => fetch(u).then(r => r.json())));
 const b = measure.border_px, [w, h] = measure.size;
@@ -14,13 +14,13 @@ const card = { w, h, l: b.l, r: w - b.r, t: b.t, b: h - b.b, lr: app.lr, tb: app
 const img = "../../assets/img/";
 await document.fonts.ready;
 const f = await mount(document.getElementById("flow"), {
-  labels: ui[q.get("lang") || "en"].flow.app, card, still: true,
-  images: { card: img + "sample-card-640.webp", loupe: img + "sample-card.webp", tiles: ["tl", "tr", "bl", "br"].map(k => `${img}closeup-${k}.webp`) },
+  segment: q.get("seg") || "measure", labels: ui[q.get("lang") || "en"].flows.app, card, still: true,
+  images: { card: img + "sample-card-640.webp", loupe: img + "sample-card.webp",
+    tiles: ["tl", "tr", "bl", "br"].map(k => `${img}closeup-${k}.webp`), edges: ["t", "b", "l", "r"].map(k => `${img}closeup-${k}.webp`) },
 });
-await document.fonts.ready;
 await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
 window.flowSeek = (t) => f.seek(t);
-window.FLOW = { duration: DURATION, poster: POSTER_BEAT * 0.5 };
+window.FLOW = { duration: f.duration, poster: f.poster };
 window.__ready = true;
 </script>
 </body></html>

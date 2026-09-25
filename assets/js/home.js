@@ -139,18 +139,21 @@ function imageStage() {
   set(0);
 }
 
-// One-shape flow (assets/js/flow.js): imported when the block comes near; reduced motion gets one still frame.
+// One-shape loops (assets/js/flow.js): imported and mounted when the block comes near; each loop plays only
+// while it is on screen. Reduced motion gets one still frame per loop.
 function setupFlow() {
-  const root = document.querySelector("[data-flow]");
-  if (!root) return;
-  const start = () => import(`./flow.js?v=${root.dataset.flowV || "0"}`).then(mod => {
-    mod.mount(root, {
-      labels: JSON.parse(root.dataset.labels),
-      card: JSON.parse(root.dataset.card),
-      images: JSON.parse(root.dataset.images),
-      still: reduceMotion,
-    });
-  }).catch(err => console.warn("Flow animation unavailable; showing the still frame.", err));
-  const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { io.disconnect(); start(); } }, { rootMargin: "400px 0px" });
-  io.observe(root);
+  const sec = document.querySelector("[data-flows]");
+  if (!sec) return;
+  const data = { labels: JSON.parse(sec.dataset.labels), card: JSON.parse(sec.dataset.card), images: JSON.parse(sec.dataset.images) };
+  // Start only after the page has loaded and gone idle, so the loops never compete with the hero image.
+  const io = new IntersectionObserver(([e]) => {
+    if (!e.isIntersecting) return;
+    io.disconnect();
+    import(`./flow.js?v=${sec.dataset.flowV || "0"}`).then(m => {
+      for (const f of sec.querySelectorAll("[data-flow]")) m.mount(f, { segment: f.dataset.flow, ...data, still: reduceMotion });
+    }).catch(err => console.warn("Flow animation unavailable.", err));
+  }, { rootMargin: "200px 0px" });
+  const idle = window.requestIdleCallback || (cb => setTimeout(cb, 200));
+  const arm = () => idle(() => io.observe(sec), { timeout: 1500 });
+  if (document.readyState === "complete") arm(); else addEventListener("load", arm, { once: true });
 }
