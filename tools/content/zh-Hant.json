@@ -10,9 +10,9 @@
   {
    "@context": "https://schema.org",
    "@type": "MobileApplication",
-   "@id": "https://zhao73.github.io/centermint/#app",
+   "@id": "https://centermint.app/#app",
    "name": "CenterMint",
-   "url": "https://zhao73.github.io/centermint/zh-Hant/",
+   "url": "https://centermint.app/zh-Hant/",
    "description": "用 iPhone 量測寶可夢、海賊王、球員卡的置中比例，逐條檢查不確定的邊線，放大四角四邊查白邊，算清送鑑費值不值得。可對照 PSA、BGS、CGC 公開標準的免費 App。",
    "inLanguage": [
     "en",
@@ -54,7 +54,7 @@
    "@context": "https://schema.org",
    "@type": "FAQPage",
    "inLanguage": "zh-Hant",
-   "url": "https://zhao73.github.io/centermint/zh-Hant/#faq",
+   "url": "https://centermint.app/zh-Hant/#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -135,7 +135,7 @@
    "@type": "HowTo",
    "name": "用 CenterMint 量測卡牌置中",
    "inLanguage": "zh-Hant",
-   "url": "https://zhao73.github.io/centermint/zh-Hant/#how-to",
+   "url": "https://centermint.app/zh-Hant/#how-to",
    "tool": {
     "@type": "HowToTool",
     "name": "CenterMint (iPhone)"
@@ -314,15 +314,15 @@
   "h2": "實用工具與指南",
   "links": [
    {
-    "href": "https://zhao73.github.io/centermint/zh-Hans/guides/worth-grading/",
+    "href": "https://centermint.app/zh-Hans/guides/worth-grading/",
     "text": "卡牌值不值得送鑑？送鑑費、PSA 9/10 價差與回本線（簡體中文）"
    },
    {
-    "href": "https://zhao73.github.io/centermint/zh-Hans/guides/check-corners-edges/",
+    "href": "https://centermint.app/zh-Hans/guides/check-corners-edges/",
     "text": "送鑑前怎麼檢查四角和卡邊白邊（簡體中文）"
    },
    {
-    "href": "https://zhao73.github.io/centermint/calculator/",
+    "href": "https://centermint.app/calculator/",
     "text": "卡牌置中計算器（英文）"
    }
   ]

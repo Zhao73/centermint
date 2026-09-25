@@ -49,7 +49,7 @@ C, M and Y never fill large areas. They appear as thin lines, registration marks
 │   guided line check · Worth Grading? + live calculator · close-ups   │
 │   contact sheet · Submission Log · share image · batch + PDF         │
 ├──────────────────── cutting mat (green, grid) ───────────────────────┤
-│ Watch it measure            [p5 video: loupe tour of the real card] │
+│ From scan to submission log [one-shape flow, live, on the mat]   │
 ├──────────────────────────────────────────────────────────────────────┤
 │ Free sheet (white)  ┆ perforation ┆  Pro sheet (ink)                  │
 │ What it does not do (magenta delete marks)                           │
@@ -93,3 +93,13 @@ Every card on the site is real: a 1999 Pokémon Base Set Charizard, from a publi
 - tools/build.py reads both and writes the overlays, readouts, the stage's `data-card`, and tools/og/og.html (template tools/templates/og.html). It stops the build if the card no longer sits inside the 55/45 reference the page claims.
 - Screenshots: tools/import_shots.py prefers `tmp/raw-site/` (real card) over `tmp/raw-v3/` (App Store set, drawn card) and records the source in assets/shots/sources.json; build.py never shows a raw-v3 screenshot that has a card in it (result, guide, closeups, share) and uses the English raw-site one instead.
 - Footer on every page: trademark notice for Pokémon and the card images (Nintendo, Creatures, GAME FREAK, The Pokémon Company; no affiliation or endorsement).
+
+## One-shape flow (September 2026)
+
+Replaces the "Watch it measure" video block (the p5 video files stay in assets/video, unused by the page).
+One element morphs through the app's path (Scan Card, analyzing ring, the Charizard measured, loupe + Looks Right,
+Worth Grading?, close-ups, Submission Log row, Saved) on a light warm-grey stage (#ECEBE8) that sits on the
+cutting mat. Black and white components, Process Cyan (#00A0DC) as the only accent (the site's measuring-line
+colour; buttons stay ink so white text keeps its contrast). Archivo. A real cursor presses, drags and taps;
+the camera zooms so each state fills the frame. Springs with at most ~0.6 % overshoot; content swaps with a
+short blur. 120 BPM, 8 bars. Details: tools/flow-video/README.md.

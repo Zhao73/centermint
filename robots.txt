@@ -1,9 +1,12 @@
-# Note: crawlers read robots.txt only at the host root (https://zhao73.github.io/robots.txt).
-# This copy documents the intended policy for the CenterMint pages.
 User-agent: *
-Allow: /centermint/
+Allow: /
 
-# Search and AI assistants are welcome to read and cite these pages.
+# Search engines and AI assistants are welcome to read and cite these pages.
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Google-Extended
 User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
@@ -12,9 +15,6 @@ User-agent: Claude-SearchBot
 User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
-User-agent: Google-Extended
-User-agent: Applebot-Extended
-User-agent: Bingbot
-Allow: /centermint/
+Allow: /
 
-Sitemap: https://zhao73.github.io/centermint/sitemap.xml
+Sitemap: https://centermint.app/sitemap.xml

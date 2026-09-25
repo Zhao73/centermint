@@ -10,9 +10,9 @@
   {
    "@context": "https://schema.org",
    "@type": "MobileApplication",
-   "@id": "https://zhao73.github.io/centermint/#app",
+   "@id": "https://centermint.app/#app",
    "name": "CenterMint",
-   "url": "https://zhao73.github.io/centermint/vi/",
+   "url": "https://centermint.app/vi/",
    "description": "Ứng dụng iPhone miễn phí: đo căn giữa thẻ Pokémon, One Piece, thẻ thể thao, phóng to góc và cạnh, tính xem có đáng trả phí chấm điểm. Chuẩn PSA, BGS, CGC.",
    "inLanguage": [
     "en",
@@ -54,7 +54,7 @@
    "@context": "https://schema.org",
    "@type": "FAQPage",
    "inLanguage": "vi",
-   "url": "https://zhao73.github.io/centermint/vi/#faq",
+   "url": "https://centermint.app/vi/#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -135,7 +135,7 @@
    "@type": "HowTo",
    "name": "Đo căn giữa thẻ bằng CenterMint",
    "inLanguage": "vi",
-   "url": "https://zhao73.github.io/centermint/vi/#how-to",
+   "url": "https://centermint.app/vi/#how-to",
    "tool": {
     "@type": "HowToTool",
     "name": "CenterMint (iPhone)"
@@ -314,19 +314,19 @@
   "h2": "Công cụ và hướng dẫn miễn phí",
   "links": [
    {
-    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "href": "https://centermint.app/guides/worth-grading/",
     "text": "Is it worth grading? Break-even calculator (English)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "href": "https://centermint.app/guides/check-corners-edges/",
     "text": "How to check corners and edges before grading (English)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/calculator/",
+    "href": "https://centermint.app/calculator/",
     "text": "Card centering calculator (English)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "href": "https://centermint.app/guides/measure-card-centering/",
     "text": "How to measure card centering on iPhone (English)"
    }
   ]

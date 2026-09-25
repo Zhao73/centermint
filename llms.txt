@@ -29,29 +29,29 @@ App interface languages: English, Japanese, Korean, Vietnamese, Simplified Chine
 
 ## Privacy
 
-Measurement runs on the device without an account. Photos are uploaded only if the user opts in to correction sharing (off by default) or accepts a one-time batch-learning notice, which can be declined. Entered prices and the Submission Log are stored on the device. Details: https://zhao73.github.io/centermint/privacy.html
+Measurement runs on the device without an account. Photos are uploaded only if the user opts in to correction sharing (off by default) or accepts a one-time batch-learning notice, which can be declined. Entered prices and the Submission Log are stored on the device. Details: https://centermint.app/privacy
 
 ## Pages
 
-- [Home (English)](https://zhao73.github.io/centermint/)
-- [日本語](https://zhao73.github.io/centermint/ja/)
-- [简体中文](https://zhao73.github.io/centermint/zh-Hans/)
-- [繁體中文](https://zhao73.github.io/centermint/zh-Hant/)
-- [한국어](https://zhao73.github.io/centermint/ko/)
-- [Tiếng Việt](https://zhao73.github.io/centermint/vi/)
-- [Deutsch](https://zhao73.github.io/centermint/de/)
-- [Français](https://zhao73.github.io/centermint/fr/)
-- [Español](https://zhao73.github.io/centermint/es/)
-- [Italiano](https://zhao73.github.io/centermint/it/)
-- [Português (Brasil)](https://zhao73.github.io/centermint/pt-BR/)
+- [Home (English)](https://centermint.app/)
+- [日本語](https://centermint.app/ja/)
+- [简体中文](https://centermint.app/zh-Hans/)
+- [繁體中文](https://centermint.app/zh-Hant/)
+- [한국어](https://centermint.app/ko/)
+- [Tiếng Việt](https://centermint.app/vi/)
+- [Deutsch](https://centermint.app/de/)
+- [Français](https://centermint.app/fr/)
+- [Español](https://centermint.app/es/)
+- [Italiano](https://centermint.app/it/)
+- [Português (Brasil)](https://centermint.app/pt-BR/)
 
 ## Guides and tools
 
-- [Is it worth grading? PSA 9 vs PSA 10 break-even calculator](https://zhao73.github.io/centermint/guides/worth-grading/) · [日本語](https://zhao73.github.io/centermint/ja/guides/worth-grading/) · [简体中文](https://zhao73.github.io/centermint/zh-Hans/guides/worth-grading/)
-- [How to check corners and edges before grading](https://zhao73.github.io/centermint/guides/check-corners-edges/) · [日本語](https://zhao73.github.io/centermint/ja/guides/check-corners-edges/) · [简体中文](https://zhao73.github.io/centermint/zh-Hans/guides/check-corners-edges/)
-- [Card centering calculator](https://zhao73.github.io/centermint/calculator/) · [日本語](https://zhao73.github.io/centermint/ja/calculator/)
-- [How to measure card centering on iPhone](https://zhao73.github.io/centermint/guides/measure-card-centering/) · [日本語](https://zhao73.github.io/centermint/ja/guides/measure-card-centering/)
-- [How to find the inner border on a full-art card](https://zhao73.github.io/centermint/guides/full-art-borders/) · [日本語](https://zhao73.github.io/centermint/ja/guides/full-art-borders/)
+- [Is it worth grading? PSA 9 vs PSA 10 break-even calculator](https://centermint.app/guides/worth-grading/) · [日本語](https://centermint.app/ja/guides/worth-grading/) · [简体中文](https://centermint.app/zh-Hans/guides/worth-grading/)
+- [How to check corners and edges before grading](https://centermint.app/guides/check-corners-edges/) · [日本語](https://centermint.app/ja/guides/check-corners-edges/) · [简体中文](https://centermint.app/zh-Hans/guides/check-corners-edges/)
+- [Card centering calculator](https://centermint.app/calculator/) · [日本語](https://centermint.app/ja/calculator/)
+- [How to measure card centering on iPhone](https://centermint.app/guides/measure-card-centering/) · [日本語](https://centermint.app/ja/guides/measure-card-centering/)
+- [How to find the inner border on a full-art card](https://centermint.app/guides/full-art-borders/) · [日本語](https://centermint.app/ja/guides/full-art-borders/)
 
 ## Official grading sources
 

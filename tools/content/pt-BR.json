@@ -10,9 +10,9 @@
   {
    "@context": "https://schema.org",
    "@type": "MobileApplication",
-   "@id": "https://zhao73.github.io/centermint/#app",
+   "@id": "https://centermint.app/#app",
    "name": "CenterMint",
-   "url": "https://zhao73.github.io/centermint/pt-BR/",
+   "url": "https://centermint.app/pt-BR/",
    "description": "App para iPhone: meça a centralização das cartas, amplie cantos e bordas e calcule se a taxa de avaliação compensa. Referências da PSA, BGS e CGC.",
    "inLanguage": [
     "en",
@@ -54,7 +54,7 @@
    "@context": "https://schema.org",
    "@type": "FAQPage",
    "inLanguage": "pt-BR",
-   "url": "https://zhao73.github.io/centermint/pt-BR/#faq",
+   "url": "https://centermint.app/pt-BR/#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -135,7 +135,7 @@
    "@type": "HowTo",
    "name": "Medir a centralização de uma carta com o CenterMint",
    "inLanguage": "pt-BR",
-   "url": "https://zhao73.github.io/centermint/pt-BR/#how-to",
+   "url": "https://centermint.app/pt-BR/#how-to",
    "tool": {
     "@type": "HowToTool",
     "name": "CenterMint (iPhone)"
@@ -314,19 +314,19 @@
   "h2": "Ferramentas e guias gratuitos",
   "links": [
    {
-    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "href": "https://centermint.app/guides/worth-grading/",
     "text": "Is it worth grading? Break-even calculator (inglês)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "href": "https://centermint.app/guides/check-corners-edges/",
     "text": "How to check corners and edges before grading (inglês)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/calculator/",
+    "href": "https://centermint.app/calculator/",
     "text": "Card centering calculator (inglês)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "href": "https://centermint.app/guides/measure-card-centering/",
     "text": "How to measure card centering on iPhone (inglês)"
    }
   ]

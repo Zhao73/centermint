@@ -175,8 +175,8 @@
 
 <section class="watch mat" id="watch" aria-labelledby="watch-title">
 <div class="wrap watch-grid">
-<div><h2 id="watch-title">{{ ui.video_h2 }}</h2><p>{{ ui.video_p }}</p><p class="small">{{ ui.video_note }}</p></div>
-<figure class="watch-video"><video data-video muted loop playsinline preload="none" poster="{{ rel }}assets/video/measure-wide-poster.webp" width="1280" height="800" aria-label="{{ ui.video_h2 }}"><source src="{{ rel }}assets/video/measure-wide.webm" type="video/webm"><source src="{{ rel }}assets/video/measure-wide.mp4" type="video/mp4"></video></figure>
+<div><h2 id="watch-title">{{ ui.flow.h2 }}</h2><p>{{ ui.flow.p }}</p><p class="small">{{ ui.flow.note }}</p></div>
+<figure class="flow" data-flow data-flow-v="{{ v.flow }}" data-card="{{ card.json }}" data-labels="{{ ui.flow.app|tojson|forceescape }}" data-images="{{ {'card': rel ~ 'assets/img/sample-card-640.webp', 'loupe': rel ~ 'assets/img/sample-card.webp', 'tiles': [rel ~ 'assets/img/closeup-tl.webp', rel ~ 'assets/img/closeup-tr.webp', rel ~ 'assets/img/closeup-bl.webp', rel ~ 'assets/img/closeup-br.webp']}|tojson|forceescape }}" role="img" aria-label="{{ ui.flow.alt.replace('{lr}', card.lr).replace('{tb}', card.tb) }}"><img class="flow-poster" src="{{ rel }}assets/video/flow-poster.webp" width="1080" height="1080" alt="" loading="lazy" decoding="async"></figure>
 </div>
 </section>
 
@@ -193,7 +193,7 @@
 <section class="limits wrap" id="limits" aria-labelledby="limits-title">
 <h2 class="sec-h2" id="limits-title">{{ limits.h2 }}</h2>
 <ul class="dele">{% for i in limits['items'] %}<li>{{ i }}</li>{% endfor %}</ul>
-<div class="limits-foot"><p>{{ limits.privacy }} <a href="{{ base }}privacy.html">{{ footer.privacy }}</a></p><p>{{ limits.languages }}</p></div>
+<div class="limits-foot"><p>{{ limits.privacy }} <a href="{{ base }}privacy">{{ footer.privacy }}</a></p><p>{{ limits.languages }}</p></div>
 </section>
 
 <section class="faq wrap" id="faq" aria-labelledby="faq-title">
@@ -214,7 +214,7 @@
 <div class="foot-grid">
 <div><h2 class="foot-h">{{ ui.footer_download }}</h2><div class="get">{{ badge() }}<figure class="qr">{{ qr_foot }}<figcaption>{{ ui.qr_caption }}</figcaption></figure></div></div>
 <nav class="foot-langs" aria-label="{{ ui.footer_languages }}"><h2 class="foot-h">{{ ui.footer_languages }}</h2><ul>{% for l in langs %}<li><a lang="{{ l }}" hreflang="{{ l }}" href="{{ page_url(l) }}"{% if l == lang %} aria-current="page"{% endif %}>{{ names[l] }}</a></li>{% endfor %}</ul></nav>
-<div><h2 class="foot-h">{{ ui.footer_more }}</h2><ul><li><a href="{{ base }}privacy.html">{{ footer.privacy }}</a></li><li><a href="{{ base }}terms.html">{{ footer.terms }}</a></li><li><a href="mailto:qwe911291860@gmail.com">{{ footer.email }}</a></li></ul></div>
+<div><h2 class="foot-h">{{ ui.footer_more }}</h2><ul><li><a href="{{ base }}privacy">{{ footer.privacy }}</a></li><li><a href="{{ base }}terms">{{ footer.terms }}</a></li><li><a href="mailto:qwe911291860@gmail.com">{{ footer.email }}</a></li></ul></div>
 </div>
 <p class="copy">{{ footer["copy"] }}</p>
 <p class="tm">{{ ui.trademark }}</p>

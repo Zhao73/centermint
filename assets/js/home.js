@@ -6,6 +6,7 @@ setupVideos();
 setupDock();
 setupOdometers();
 setupStage();
+setupFlow();
 
 // Muted loop videos: play only while on screen; with reduced motion show the poster and native controls.
 function setupVideos() {
@@ -136,4 +137,20 @@ function imageStage() {
   steps.forEach(s => io.observe(s));
   io.observe(hero);
   set(0);
+}
+
+// One-shape flow (assets/js/flow.js): imported when the block comes near; reduced motion gets one still frame.
+function setupFlow() {
+  const root = document.querySelector("[data-flow]");
+  if (!root) return;
+  const start = () => import(`./flow.js?v=${root.dataset.flowV || "0"}`).then(mod => {
+    mod.mount(root, {
+      labels: JSON.parse(root.dataset.labels),
+      card: JSON.parse(root.dataset.card),
+      images: JSON.parse(root.dataset.images),
+      still: reduceMotion,
+    });
+  }).catch(err => console.warn("Flow animation unavailable; showing the still frame.", err));
+  const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { io.disconnect(); start(); } }, { rootMargin: "400px 0px" });
+  io.observe(root);
 }

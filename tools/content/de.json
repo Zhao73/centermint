@@ -10,9 +10,9 @@
   {
    "@context": "https://schema.org",
    "@type": "MobileApplication",
-   "@id": "https://zhao73.github.io/centermint/#app",
+   "@id": "https://centermint.app/#app",
    "name": "CenterMint",
-   "url": "https://zhao73.github.io/centermint/de/",
+   "url": "https://centermint.app/de/",
    "description": "iPhone-App: Zentrierung von Sammelkarten messen, Ecken und Kanten vergrößern und prüfen, ob sich die Grading-Gebühr lohnt. PSA-, BGS- und CGC-Referenzen.",
    "inLanguage": [
     "en",
@@ -54,7 +54,7 @@
    "@context": "https://schema.org",
    "@type": "FAQPage",
    "inLanguage": "de",
-   "url": "https://zhao73.github.io/centermint/de/#faq",
+   "url": "https://centermint.app/de/#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -135,7 +135,7 @@
    "@type": "HowTo",
    "name": "Karten-Zentrierung mit CenterMint messen",
    "inLanguage": "de",
-   "url": "https://zhao73.github.io/centermint/de/#how-to",
+   "url": "https://centermint.app/de/#how-to",
    "tool": {
     "@type": "HowToTool",
     "name": "CenterMint (iPhone)"
@@ -314,19 +314,19 @@
   "h2": "Kostenlose Tools und Anleitungen",
   "links": [
    {
-    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "href": "https://centermint.app/guides/worth-grading/",
     "text": "Is it worth grading? Break-even calculator (Englisch)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "href": "https://centermint.app/guides/check-corners-edges/",
     "text": "How to check corners and edges before grading (Englisch)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/calculator/",
+    "href": "https://centermint.app/calculator/",
     "text": "Card centering calculator (Englisch)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "href": "https://centermint.app/guides/measure-card-centering/",
     "text": "How to measure card centering on iPhone (Englisch)"
    }
   ]

@@ -29,7 +29,7 @@ from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent.parent
 TOOLS = ROOT / "tools"
-BASE = "https://zhao73.github.io/centermint/"
+BASE = "https://centermint.app/"
 LANGS = ["en", "zh-Hans", "zh-Hant", "ja", "ko", "vi", "de", "fr", "es", "it", "pt-BR"]
 NAMES = {"en": "English", "zh-Hans": "简体中文", "zh-Hant": "繁體中文", "ja": "日本語", "ko": "한국어",
          "vi": "Tiếng Việt", "de": "Deutsch", "fr": "Français", "es": "Español", "it": "Italiano", "pt-BR": "Português"}
@@ -70,7 +70,7 @@ def sample_card() -> dict:
                (0, vh - edge, edge, edge), ((vw - span) / 2, vh - edge, span, edge), (vw - edge, vh - edge, edge, edge)],
     )
     # For the WebGL stage: the same lines in texture pixels.
-    card["json"] = json.dumps({"w": w, "h": h, "l": b["l"], "r": w - b["r"], "t": b["t"], "b": h - b["b"],
+    card["json"] = json.dumps({"w": w, "h": h, "l": b["l"], "r": w - b["r"], "t": b["t"], "b": h - b["b"], "lr": lr, "tb": tb,
                                "close": [[round(x / k), round(y / k), round(cw / k), round(ch / k)] for x, y, cw, ch in card["close"]]})
     assert card["within"], "the sample card must sit inside the PSA 10 front reference the page claims"
     return card
@@ -278,7 +278,7 @@ def build_og_source() -> None:
 
 def main() -> None:
     ui_all = json.loads((TOOLS / "content/ui.json").read_text(encoding="utf-8"))
-    v = {"css": version("site.css"), "js": version("site.js"), "home": version("assets/js/home.js"), "stage": version("assets/js/stage3d.js")}
+    v = {"css": version("site.css"), "js": version("site.js"), "home": version("assets/js/home.js"), "stage": version("assets/js/stage3d.js"), "flow": version("assets/js/flow.js")}
     pages = []
     for lang in LANGS:
         out = build_home(lang, ui_all, v)

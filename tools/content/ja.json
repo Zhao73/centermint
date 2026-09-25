@@ -10,9 +10,9 @@
   {
    "@context": "https://schema.org",
    "@type": "MobileApplication",
-   "@id": "https://zhao73.github.io/centermint/#app",
+   "@id": "https://centermint.app/#app",
    "name": "CenterMint",
-   "url": "https://zhao73.github.io/centermint/ja/",
+   "url": "https://centermint.app/ja/",
    "description": "ポケカ・ワンピース・スポーツカードのセンタリングを iPhone で測定。怪しい線を一本ずつ確認し、四隅・四辺を拡大、鑑定費用を払う価値があるかを計算。PSA・BGS・CGC の公開基準と比較できる無料アプリ。",
    "inLanguage": [
     "en",
@@ -49,13 +49,13 @@
     "@type": "Person",
     "name": "JIAPENG Zhao"
    },
-   "screenshot": "https://zhao73.github.io/centermint/assets/img/loupe-top-border.webp"
+   "screenshot": "https://centermint.app/assets/img/loupe-top-border.webp"
   },
   {
    "@context": "https://schema.org",
    "@type": "FAQPage",
    "inLanguage": "ja",
-   "url": "https://zhao73.github.io/centermint/ja/#faq",
+   "url": "https://centermint.app/ja/#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -136,7 +136,7 @@
    "@type": "HowTo",
    "name": "CenterMint でカードのセンタリングを測る手順",
    "inLanguage": "ja",
-   "url": "https://zhao73.github.io/centermint/ja/#how-to",
+   "url": "https://centermint.app/ja/#how-to",
    "tool": {
     "@type": "HowToTool",
     "name": "CenterMint (iPhone)"
@@ -315,23 +315,23 @@
   "h2": "無料の計算機とガイド",
   "links": [
    {
-    "href": "https://zhao73.github.io/centermint/ja/guides/worth-grading/",
+    "href": "https://centermint.app/ja/guides/worth-grading/",
     "text": "PSA 鑑定に出す価値はある？ PSA 10・PSA 9 の損益分岐を計算"
    },
    {
-    "href": "https://zhao73.github.io/centermint/ja/guides/check-corners-edges/",
+    "href": "https://centermint.app/ja/guides/check-corners-edges/",
     "text": "鑑定前に四隅と四辺の白欠けをチェックする方法"
    },
    {
-    "href": "https://zhao73.github.io/centermint/ja/calculator/",
+    "href": "https://centermint.app/ja/calculator/",
     "text": "カードのセンタリング計算機"
    },
    {
-    "href": "https://zhao73.github.io/centermint/ja/guides/measure-card-centering/",
+    "href": "https://centermint.app/ja/guides/measure-card-centering/",
     "text": "iPhone でカードのセンタリングを測る方法"
    },
    {
-    "href": "https://zhao73.github.io/centermint/ja/guides/full-art-borders/",
+    "href": "https://centermint.app/ja/guides/full-art-borders/",
     "text": "フルアートカードの内枠を見分ける方法"
    }
   ]

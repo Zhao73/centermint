@@ -10,9 +10,9 @@
   {
    "@context": "https://schema.org",
    "@type": "MobileApplication",
-   "@id": "https://zhao73.github.io/centermint/#app",
+   "@id": "https://centermint.app/#app",
    "name": "CenterMint",
-   "url": "https://zhao73.github.io/centermint/ko/",
+   "url": "https://centermint.app/ko/",
    "description": "포켓몬, 원피스, 스포츠 카드의 센터링을 iPhone으로 측정하고, 불확실한 선을 하나씩 확인하고, 모서리와 가장자리를 확대하고, 그레이딩 비용을 낼 가치가 있는지 계산하세요. PSA·BGS·CGC 공개 기준과 비교하는 무료 앱.",
    "inLanguage": [
     "en",
@@ -54,7 +54,7 @@
    "@context": "https://schema.org",
    "@type": "FAQPage",
    "inLanguage": "ko",
-   "url": "https://zhao73.github.io/centermint/ko/#faq",
+   "url": "https://centermint.app/ko/#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -135,7 +135,7 @@
    "@type": "HowTo",
    "name": "CenterMint로 카드 센터링 측정하기",
    "inLanguage": "ko",
-   "url": "https://zhao73.github.io/centermint/ko/#how-to",
+   "url": "https://centermint.app/ko/#how-to",
    "tool": {
     "@type": "HowToTool",
     "name": "CenterMint (iPhone)"
@@ -314,19 +314,19 @@
   "h2": "무료 도구와 가이드",
   "links": [
    {
-    "href": "https://zhao73.github.io/centermint/guides/worth-grading/",
+    "href": "https://centermint.app/guides/worth-grading/",
     "text": "Is it worth grading? Break-even calculator (English)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/check-corners-edges/",
+    "href": "https://centermint.app/guides/check-corners-edges/",
     "text": "How to check corners and edges before grading (English)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/calculator/",
+    "href": "https://centermint.app/calculator/",
     "text": "Card centering calculator (English)"
    },
    {
-    "href": "https://zhao73.github.io/centermint/guides/measure-card-centering/",
+    "href": "https://centermint.app/guides/measure-card-centering/",
     "text": "How to measure card centering on iPhone (English)"
    }
   ]

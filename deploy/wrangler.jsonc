@@ -1,0 +1,19 @@
+{
+  // Static site on Cloudflare (moved from zhao73.github.io/centermint on 2026-09-25).
+  // Deploy: sh deploy/deploy.sh
+  "name": "centermint-site",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [
+    { "pattern": "centermint.app", "custom_domain": true },
+    { "pattern": "www.centermint.app", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}

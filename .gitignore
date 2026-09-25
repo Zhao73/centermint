@@ -7,3 +7,5 @@ tools/src/art/real/candidates/
 tools/src/art/real/*.png
 tools/src/art/real/*.jpg
 tools/src/art/real/pika.json
+deploy/dist/
+deploy/.wrangler/
