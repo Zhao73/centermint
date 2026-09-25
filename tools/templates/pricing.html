@@ -1,0 +1,25 @@
+{% extends "page.html" %}
+{% block content %}
+{%- set P = ui.site.pricing -%}
+<section class="plans wrap" aria-labelledby="plans-title">
+<h2 class="sr" id="plans-title">{{ pricing.h2 }}</h2>
+<div class="sheets">
+<div class="sheet sheet--free"><h3>{{ pricing.free_title }}</h3><p class="sheet-price">{{ prices.zero }}</p><ul>{% for i in pricing.free %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<div class="sheet sheet--pro"><h3>{{ pricing.pro_title }}</h3>
+<div class="plan-prices">
+<p><span class="pp-k">{{ P.monthly }}</span><span class="pp-v">{{ prices.main.m }}</span><span class="pp-u">{{ P.per_month }}</span></p>
+<p><span class="pp-k">{{ P.yearly }}</span><span class="pp-v">{{ prices.main.y }}</span><span class="pp-u">{{ P.per_year }}</span><span class="pp-trial">{{ P.trial }}</span></p>
+</div>
+<ul>{% for i in pricing.pro %}<li>{{ i }}</li>{% endfor %}</ul></div>
+</div>
+</section>
+<section class="regions wrap" aria-labelledby="regions-title">
+<h2 class="sec-h2" id="regions-title">{{ P.region_h }}</h2>
+<table class="price-table">
+<thead><tr><th scope="col">{{ P.region }}</th><th scope="col">{{ P.monthly }}</th><th scope="col">{{ P.yearly }} <span class="pp-trial">{{ P.trial }}</span></th></tr></thead>
+<tbody>{% for r in prices.rows %}<tr><th scope="row">{{ r.name }}</th><td>{{ r.m }}</td><td>{{ r.y }}</td></tr>{% endfor %}</tbody>
+</table>
+<p class="note">{{ P.note }}</p>
+{{ badge() }}
+</section>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "page.html" %}
+{% block content %}
+<section class="guide-index wrap" aria-labelledby="gi-title">
+<h2 class="sr" id="gi-title">{{ h1 }}</h2>
+<ul class="gi-list">{% for g in guides %}<li><a href="{{ g.href }}"{% if g.lang != lang %} hreflang="{{ g.lang }}"{% endif %}><span class="gi-t">{{ g.title }}</span>{% if g.lang != lang %}<span class="gi-lang">{{ ui.site.guides.en_tag }}</span>{% endif %}<span class="gi-d">{{ g.description }}</span></a></li>{% endfor %}</ul>
+</section>
+{% endblock %}

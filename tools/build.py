@@ -164,28 +164,175 @@ def worth_guide_url(lang: str) -> str:
     return f"{BASE}guides/worth-grading/"
 
 
-def build_home(lang: str, ui_all: dict, v: dict) -> Path:
+# ---------------------------------------------------------------- section pages and navigation
+SECTIONS = ["features", "pricing", "guides", "faq"]
+HOME_FAQ = [0, 1, 2, 6]          # the FAQ items the home page keeps (sleeves, accuracy, PSA 10, Free vs Pro)
+
+
+def prefix(lang: str) -> str:
+    return "" if lang == "en" else f"{lang}/"
+
+
+def section_url(lang: str, key: str) -> str:
+    return f"{BASE}{prefix(lang)}{key}/"
+
+
+def tabs_for(lang: str, ui: dict) -> list[dict]:
+    return [{"key": k, "href": section_url(lang, k), "text": ui["site"]["nav"][k]} for k in SECTIONS]
+
+
+# CenterMint Pro prices as the App Store shows them (read from App Store Connect, 2026-09). Monthly and yearly
+# auto-renewing subscriptions only; the yearly plan starts with a 1-week free trial. There is no lifetime purchase.
+PRICES = {
+    "US": ("USD", "2.99", "19.99"), "GB": ("GBP", "2.99", "19.99"), "CA": ("CAD", "3.99", "24.99"), "AU": ("AUD", "4.99", "29.99"),
+    "JP": ("JPY", "500", "3000"), "CN": ("CNY", "22", "148"), "TW": ("TWD", "90", "690"), "HK": ("HKD", "22", "148"),
+    "KR": ("KRW", "4400", "29000"), "VN": ("VND", "99000", "599000"), "EU": ("EUR", "2.99", "22.99"),
+    "MX": ("MXN", "69", "399"), "BR": ("BRL", "19.90", "129.90"),
+}
+EU_COUNTRIES = ["DE", "FR", "ES", "IT"]   # same euro price in these four storefronts
+REGIONS_BY_LANG = {"en": ["US", "GB", "CA", "AU"], "ja": ["JP"], "zh-Hans": ["CN"], "zh-Hant": ["TW", "HK"], "ko": ["KR"],
+                   "vi": ["VN"], "de": ["EU"], "fr": ["EU"], "es": ["EU", "MX"], "it": ["EU"], "pt-BR": ["BR"]}
+
+
+def money(cur: str, amount: str, lang: str) -> str:
+    """Format a price the way the App Store shows it in that storefront."""
+    n = float(amount)
+    def grp(x, sep):                      # 29000 -> 29,000 / 599000 -> 599.000
+        return f"{int(round(x)):,}".replace(",", sep)
+    if cur == "EUR":
+        return f"{amount.replace('.', ',')}\u00a0€"
+    if cur == "BRL":
+        return f"R$\u00a0{amount.replace('.', ',')}"
+    if cur == "VND":
+        return f"{grp(n, '.')}\u00a0₫"
+    sym = {"USD": "$", "GBP": "£", "CAD": "CA$", "AUD": "A$", "JPY": "¥", "CNY": "¥", "TWD": "NT$", "HKD": "HK$", "KRW": "₩", "MXN": "MX$"}[cur]
+    return f"{sym}{grp(n, ',')}" if cur in ("JPY", "KRW", "TWD", "HKD", "CNY", "MXN") and n == int(n) else f"{sym}{amount}"
+
+
+def prices_for(lang: str, ui: dict) -> dict:
+    rows = []
+    for r in REGIONS_BY_LANG[lang]:
+        cur, m, y = PRICES[r]
+        rows.append({"region": r, "name": ui["site"]["pricing"]["regions"][r], "cur": cur, "m_raw": m, "y_raw": y,
+                     "m": money(cur, m, lang), "y": money(cur, y, lang)})
+    main = rows[0]
+    return {"rows": rows, "main": main, "zero": money(main["cur"], "0", lang)}
+
+
+def pricing_jsonld(lang: str, prices: dict, ui: dict) -> dict:
+    offers = [{"@type": "Offer", "name": "CenterMint", "price": "0", "priceCurrency": prices["main"]["cur"], "category": "free"}]
+    for r in prices["rows"]:
+        region = [{"@type": "Country", "name": c} for c in (EU_COUNTRIES if r["region"] == "EU" else [r["region"]])]
+        for key, dur, amount in (("monthly", "P1M", r["m_raw"]), ("yearly", "P1Y", r["y_raw"])):
+            offers.append({"@type": "Offer", "name": f"CenterMint Pro ({ui['site']['pricing'][key]})", "price": amount,
+                           "priceCurrency": r["cur"], "eligibleRegion": region,
+                           "priceSpecification": {"@type": "UnitPriceSpecification", "price": amount, "priceCurrency": r["cur"],
+                                                  "billingDuration": dur}})
+    return {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "CenterMint", "url": BASE,
+            "operatingSystem": "iOS 17.0 or later", "applicationCategory": "UtilitiesApplication",
+            "downloadUrl": "https://apps.apple.com/app/id6760965068", "offers": offers}
+
+
+def faq_jsonld(lang: str, items: list, url: str) -> dict:
+    return {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": lang, "url": url,
+            "mainEntity": [{"@type": "Question", "name": BeautifulSoup(q["q"], "html.parser").get_text(),
+                            "acceptedAnswer": {"@type": "Answer", "text": BeautifulSoup(q["a"], "html.parser").get_text()}} for q in items]}
+
+
+def breadcrumb_jsonld(lang: str, name: str, url: str) -> dict:
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "CenterMint", "item": page_url(lang)},
+        {"@type": "ListItem", "position": 2, "name": name, "item": url}]}
+
+
+def as_script(block: dict) -> Markup:
+    return Markup(json.dumps(block, ensure_ascii=False, separators=(", ", ": ")).replace("</", "<\\/"))
+
+
+def base_ctx(lang: str, ui_all: dict, v: dict, rel: str) -> dict:
+    """Everything the shared header/footer and the macros need."""
     content = json.loads((TOOLS / f"content/{lang}.json").read_text(encoding="utf-8"))
     ui = ui_all[lang]
-    rel = "" if lang == "en" else "../"
     shots = shots_for(lang)
     for s in shots.values():
         s["src"] = rel + s["path"]
     app_url = BeautifulSoup(content["hero"]["app_url"], "html.parser").text if "&amp;" in content["hero"]["app_url"] else content["hero"]["app_url"]
-    ctx = dict(
-        lang=lang, langs=LANGS, names=NAMES, page_url=page_url, url=page_url(lang), base=BASE, rel=rel, v=v,
-        title=content["title"], description=content["description"],
-        og_title=content["og_title"], og_description=content["og_description"], og_locale=OG_LOCALES[lang],
-        og_alternates=[OG_LOCALES[l] for l in LANGS if l != lang],
-        extra_head=[verification_meta(m) for m in content["extra_head"]], jsonld=jsonld_blocks(content, shots),
+    prices = prices_for(lang, ui)
+    return dict(
+        content=content, lang=lang, langs=LANGS, names=NAMES, page_url=page_url, base=BASE, rel=rel, v=v,
+        og_locale=OG_LOCALES[lang], og_alternates=[OG_LOCALES[l] for l in LANGS if l != lang],
         nav_label=content["nav_label"], ui=ui, shots=shots, app_url=app_url, badge_w=badge_width(lang),
-        qr=qr_svg(app_url, ui["badge_alt"]), qr_foot=qr_svg(app_url, ui["badge_alt"]),
-        worth_guide=worth_guide_url(lang), card=CARD,
+        qr_foot=qr_svg(app_url, ui["badge_alt"]), worth_guide=worth_guide_url(lang), card=CARD,
+        home_url=page_url(lang), tabs=tabs_for(lang, ui), page_href=lambda k: section_url(lang, k), prices=prices,
         **{k: markup_tree(content[k]) for k in ("hero", "new", "measure", "pricing", "limits", "howto", "faq", "tools", "footer")},
         sources_label=Markup(content["sources_label"]),
     )
+
+
+def build_home(lang: str, ui_all: dict, v: dict) -> Path:
+    ctx = base_ctx(lang, ui_all, v, "" if lang == "en" else "../")
+    content = ctx["content"]
+    faq_items = content["faq"]["items"]
+    home_faq = [faq_items[i] for i in HOME_FAQ]
+    # Stored JSON-LD minus the full FAQ; the home FAQPage lists only the questions shown on the page.
+    blocks = [b for b in jsonld_blocks(content, ctx["shots"]) if '"FAQPage"' not in str(b)]
+    blocks.append(as_script(faq_jsonld(lang, home_faq, page_url(lang) + "#faq")))
+    ctx.update(
+        url=page_url(lang), title=content["title"], description=content["description"],
+        og_title=content["og_title"], og_description=content["og_description"],
+        extra_head=[verification_meta(m) for m in content["extra_head"]], jsonld=blocks,
+        qr=qr_svg(ctx["app_url"], ctx["ui"]["badge_alt"]), current_tab="",
+        alternates=[{"lang": l, "href": page_url(l)} for l in LANGS], home_faq=markup_tree(home_faq),
+    )
     html = env.get_template("home.html").render(**ctx)
     out = ROOT / ("index.html" if lang == "en" else f"{lang}/index.html")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html, encoding="utf-8")
+    return out
+
+
+def guide_catalog() -> list[dict]:
+    """Every article page (guides and calculators) with its language, title and description, from tools/src/pages."""
+    out = []
+    for src in sorted((TOOLS / "src/pages").rglob("index.html")):
+        soup = BeautifulSoup(src.read_text(encoding="utf-8"), "html.parser")
+        rel_path = src.relative_to(TOOLS / "src/pages").parent
+        parts = rel_path.parts
+        lang = soup.html.get("lang", "en")
+        slug = "/".join(parts[1:] if parts[0] in LANGS else parts)
+        desc = soup.find("meta", attrs={"name": "description"})
+        out.append({"slug": slug, "lang": lang, "href": BASE + str(rel_path) + "/", "title": soup.h1.get_text(" ", strip=True),
+                    "description": desc["content"] if desc else ""})
+    return out
+
+
+GUIDE_ORDER = ["guides/measure-card-centering", "guides/full-art-borders", "guides/worth-grading", "guides/check-corners-edges", "calculator"]
+
+
+def build_section(lang: str, key: str, ui_all: dict, v: dict, catalog: list[dict]) -> Path:
+    rel = "../" if lang == "en" else "../../"
+    ctx = base_ctx(lang, ui_all, v, rel)
+    ui, content = ctx["ui"], ctx["content"]
+    S = ui["site"][key]
+    url = section_url(lang, key)
+    blocks = [breadcrumb_jsonld(lang, S["h1"], url)]
+    extra = {}
+    if key == "pricing":
+        blocks.append(pricing_jsonld(lang, ctx["prices"], ui))
+    elif key == "faq":
+        blocks.append(faq_jsonld(lang, content["faq"]["items"], url))
+    elif key == "guides":
+        guides = []
+        for slug in GUIDE_ORDER:
+            own = [g for g in catalog if g["slug"] == slug and g["lang"] == lang]
+            guides.append(own[0] if own else next(g for g in catalog if g["slug"] == slug and g["lang"] == "en"))
+        extra["guides"] = guides
+        blocks.append({"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": g["href"], "name": g["title"]} for i, g in enumerate(guides)]})
+    ctx.update(url=url, title=S["title"], description=S["description"], h1=S["h1"], intro=S["intro"], current_tab=key,
+               alternates=[{"lang": l, "href": section_url(l, key)} for l in LANGS], jsonld=[as_script(b) for b in blocks], **extra)
+    html = env.get_template(f"{key}.html").render(**ctx)
+    out = ROOT / f"{prefix(lang)}{key}/index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
     return out
@@ -244,6 +391,8 @@ def build_guide(src: Path, ui_all: dict, v: dict) -> Path:
     copy = foot.find_all("p")[-1].get_text()
 
     html = env.get_template("guide.html").render(
+        home_url=page_url(lang if lang in LANGS else "en"), tabs=tabs_for(lang, ui), current_tab="guides",
+        guides_url=section_url(lang, "guides"),
         lang=lang, names=NAMES, ui=ui, rel=rel, v=v, base=BASE, head_meta=Markup(head_meta), jsonld=Markup(jsonld),
         alternates=alternates, nav=nav_links, nav_label=soup.header.nav.get("aria-label", "Navigation"),
         home=home, crumb=crumb, main_html=Markup(main_html), app_url=app_url, badge_w=badge_width(lang),
@@ -284,6 +433,12 @@ def main() -> None:
         out = build_home(lang, ui_all, v)
         pages.append(page_url(lang))
         print("home ", out.relative_to(ROOT))
+    catalog = guide_catalog()
+    for lang in LANGS:
+        for key in SECTIONS:
+            out = build_section(lang, key, ui_all, v, catalog)
+            pages.append(section_url(lang, key))
+            print("page ", out.relative_to(ROOT))
     for src in sorted((TOOLS / "src/pages").rglob("index.html")):
         out = build_guide(src, ui_all, v)
         pages.append(BASE + str(out.parent.relative_to(ROOT)) + "/")

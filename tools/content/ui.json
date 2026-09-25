@@ -150,6 +150,63 @@
     "share": "Share Studio",
     "lines": "Show measurement lines"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Site",
+    "features": "Features",
+    "pricing": "Pricing",
+    "guides": "Guides",
+    "faq": "FAQ"
+   },
+   "features": {
+    "title": "CenterMint features: centering, line check, Worth Grading?, close-ups",
+    "description": "Everything CenterMint does on iPhone: centering from a photo, a guided line check with a loupe, Worth Grading? profit math, corner and edge close-ups, a Submission Log, share images and batch scanning.",
+    "h1": "Features",
+    "intro": "What the app does, screen by screen, and what it leaves to you."
+   },
+   "pricing": {
+    "title": "CenterMint pricing: free, or Pro monthly or yearly",
+    "description": "CenterMint is free to download. CenterMint Pro is a monthly or yearly subscription; the yearly plan starts with a 1-week free trial. Prices by App Store region.",
+    "h1": "Pricing",
+    "intro": "Measuring is free. Pro adds the tools for deciding what to send and keeping track of it.",
+    "free_price": "Free",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "per_month": "/ month",
+    "per_year": "/ year",
+    "trial": "1-week free trial",
+    "region_h": "Pro prices by App Store region",
+    "region": "Region",
+    "note": "Prices are what the App Store showed for each region when this page was updated; the price shown at purchase in the App Store applies, and whether tax is included depends on the region. Subscriptions renew automatically until you cancel them in your Apple Account settings. The free trial applies to the yearly plan.",
+    "regions": {
+     "US": "United States",
+     "GB": "United Kingdom",
+     "CA": "Canada",
+     "AU": "Australia"
+    }
+   },
+   "guides": {
+    "title": "CenterMint guides: measure centering, full-art borders, worth grading, corners",
+    "description": "Free guides and tools for card collectors: measure centering on iPhone, find the inner border on a full-art card, work out whether a card is worth grading, and check corners and edges.",
+    "h1": "Guides and tools",
+    "intro": "Practical guides and free browser tools. Nothing to install.",
+    "en_tag": "English"
+   },
+   "faq": {
+    "title": "CenterMint FAQ: card centering, grading and the app",
+    "description": "Answers about CenterMint: sleeves and slabs, accuracy, PSA 10 centering, Worth Grading?, prices, corners and surface, Free and Pro, affiliation and privacy.",
+    "h1": "Questions and answers",
+    "intro": "About measuring centering, grading references and how the app handles your photos."
+   },
+   "home": {
+    "all_features": "All features",
+    "pricing_more": "Plans and prices",
+    "faq_more": "All questions",
+    "guides_more": "Guides and tools",
+    "pro_line": "Pro: {m} a month or {y} a year. The yearly plan starts with a 1-week free trial."
+   },
+   "limits_h": "What CenterMint does not do"
   }
  },
  "ja": {
@@ -303,6 +360,60 @@
     "share": "シェアスタジオ",
     "lines": "測定ラインを表示"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "サイト",
+    "features": "機能",
+    "pricing": "料金",
+    "guides": "ガイド",
+    "faq": "よくある質問"
+   },
+   "features": {
+    "title": "CenterMint の機能：センタリング測定・線の確認・鑑定に出す価値は？・拡大",
+    "description": "CenterMint が iPhone でできること。写真からのセンタリング測定、拡大鏡で一本ずつ確認する線チェック、鑑定に出す価値の計算、四隅・四辺の拡大、鑑定記録、シェア画像、バッチ測定。",
+    "h1": "機能",
+    "intro": "アプリの画面ごとに、できることとあなたが判断することをまとめました。"
+   },
+   "pricing": {
+    "title": "CenterMint の料金：無料、Pro は月額または年額",
+    "description": "CenterMint は無料でダウンロードできます。CenterMint Pro は月額または年額のサブスクリプションで、年額プランは 1 週間の無料トライアル付き。地域ごとの App Store 価格。",
+    "h1": "料金",
+    "intro": "測定は無料。Pro では、提出するカードを決めて記録するための機能が使えます。",
+    "free_price": "無料",
+    "monthly": "月額",
+    "yearly": "年額",
+    "per_month": "/ 月",
+    "per_year": "/ 年",
+    "trial": "1 週間無料トライアル",
+    "region_h": "地域別の Pro 価格（App Store）",
+    "region": "地域",
+    "note": "価格はこのページ更新時に各地域の App Store に表示されていたものです。実際の価格は購入時に App Store に表示される金額が適用され、税込みかどうかは地域によって異なります。サブスクリプションは Apple アカウントの設定で解約するまで自動更新されます。無料トライアルは年額プランが対象です。",
+    "regions": {
+     "JP": "日本"
+    }
+   },
+   "guides": {
+    "title": "CenterMint ガイド：センタリングの測り方・フルアートの内枠・鑑定の損益・四隅の確認",
+    "description": "カードコレクター向けの無料ガイドとツール。iPhone でのセンタリングの測り方、フルアートカードの内枠の見分け方、鑑定に出す価値の計算、四隅・エッジの確認方法。",
+    "h1": "ガイドとツール",
+    "intro": "実用的なガイドと、ブラウザで使える無料ツール。インストールは不要です。",
+    "en_tag": "英語"
+   },
+   "faq": {
+    "title": "CenterMint よくある質問：センタリング・鑑定・アプリについて",
+    "description": "スリーブや鑑定ケース、精度、PSA 10 のセンタリング、鑑定に出す価値は？、相場、角と表面、無料と Pro、提携関係、プライバシーについての回答。",
+    "h1": "よくある質問",
+    "intro": "センタリングの測り方、鑑定基準、写真の扱いについて。"
+   },
+   "home": {
+    "all_features": "すべての機能",
+    "pricing_more": "プランと料金",
+    "faq_more": "すべての質問",
+    "guides_more": "ガイドとツール",
+    "pro_line": "Pro：月額 {m} または年額 {y}。年額プランは 1 週間の無料トライアルから始まります。"
+   },
+   "limits_h": "CenterMint がしないこと"
   }
  },
  "zh-Hans": {
@@ -456,6 +567,60 @@
     "share": "分享工作室",
     "lines": "显示测量线"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "网站",
+    "features": "功能",
+    "pricing": "价格",
+    "guides": "指南",
+    "faq": "常见问题"
+   },
+   "features": {
+    "title": "CenterMint 功能：居中测量、逐条对线、值不值得送评、四角特写",
+    "description": "CenterMint 在 iPhone 上能做什么：照片测居中、放大镜逐条对线、值不值得送评的算账、四角四边特写、送评账本、分享图和批量扫描。",
+    "h1": "功能",
+    "intro": "按 App 的画面逐一说明它做什么、哪些要你自己判断。"
+   },
+   "pricing": {
+    "title": "CenterMint 价格：免费，Pro 按月或按年订阅",
+    "description": "CenterMint 可免费下载。CenterMint Pro 是按月或按年的订阅，年订阅先有 1 周免费试用。各地区 App Store 价格。",
+    "h1": "价格",
+    "intro": "测量免费。Pro 提供决定送哪几张、并把送评记下来的工具。",
+    "free_price": "免费",
+    "monthly": "按月",
+    "yearly": "按年",
+    "per_month": "/ 月",
+    "per_year": "/ 年",
+    "trial": "1 周免费试用",
+    "region_h": "各地区 Pro 价格（App Store）",
+    "region": "地区",
+    "note": "价格是本页更新时各地区 App Store 显示的金额；实际以购买时 App Store 显示的价格为准，是否含税因地区而异。订阅会自动续期，直到你在 Apple 账户设置中取消。免费试用适用于年订阅。",
+    "regions": {
+     "CN": "中国大陆"
+    }
+   },
+   "guides": {
+    "title": "CenterMint 指南：测居中、全图卡内框、值不值得送评、检查四角",
+    "description": "给卡牌收藏者的免费指南和工具：用 iPhone 测居中、全图卡怎么找内框、算一张卡值不值得送评、送评前检查四角和卡边。",
+    "h1": "指南和工具",
+    "intro": "实用指南和在浏览器里就能用的免费工具，不用安装。",
+    "en_tag": "英文"
+   },
+   "faq": {
+    "title": "CenterMint 常见问题：卡牌居中、送评和 App",
+    "description": "关于卡套和评级壳、准确度、PSA 10 居中标准、值不值得送评、行情价格、四角和表面、免费版和 Pro、合作关系和隐私的回答。",
+    "h1": "常见问题",
+    "intro": "关于怎么测居中、评级参考标准，以及 App 怎样处理你的照片。"
+   },
+   "home": {
+    "all_features": "全部功能",
+    "pricing_more": "方案和价格",
+    "faq_more": "全部问题",
+    "guides_more": "指南和工具",
+    "pro_line": "Pro：每月 {m}，或每年 {y}。年订阅先有 1 周免费试用。"
+   },
+   "limits_h": "CenterMint 不做什么"
   }
  },
  "zh-Hant": {
@@ -609,6 +774,61 @@
     "share": "分享工作室",
     "lines": "顯示測量線"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "網站",
+    "features": "功能",
+    "pricing": "價格",
+    "guides": "指南",
+    "faq": "常見問題"
+   },
+   "features": {
+    "title": "CenterMint 功能：置中測量、逐條對線、值不值得送鑑、四角特寫",
+    "description": "CenterMint 在 iPhone 上能做什麼：照片測置中、放大鏡逐條對線、值不值得送鑑的試算、四角四邊特寫、送鑑帳本、分享圖與批次掃描。",
+    "h1": "功能",
+    "intro": "依 App 的畫面逐一說明它做什麼、哪些要你自己判斷。"
+   },
+   "pricing": {
+    "title": "CenterMint 價格：免費，Pro 按月或按年訂閱",
+    "description": "CenterMint 可免費下載。CenterMint Pro 是按月或按年的訂閱，年訂閱先有 1 週免費試用。各地區 App Store 價格。",
+    "h1": "價格",
+    "intro": "測量免費。Pro 提供決定送哪幾張、並把送鑑記下來的工具。",
+    "free_price": "免費",
+    "monthly": "按月",
+    "yearly": "按年",
+    "per_month": "/ 月",
+    "per_year": "/ 年",
+    "trial": "1 週免費試用",
+    "region_h": "各地區 Pro 價格（App Store）",
+    "region": "地區",
+    "note": "價格是本頁更新時各地區 App Store 顯示的金額；實際以購買時 App Store 顯示的價格為準，是否含稅因地區而異。訂閱會自動續訂，直到你在 Apple 帳號設定中取消。免費試用適用於年訂閱。",
+    "regions": {
+     "TW": "台灣",
+     "HK": "香港"
+    }
+   },
+   "guides": {
+    "title": "CenterMint 指南：測置中、全圖卡內框、值不值得送鑑、檢查四角",
+    "description": "給卡牌收藏者的免費指南與工具：用 iPhone 測置中、全圖卡怎麼找內框、算一張卡值不值得送鑑、送鑑前檢查四角與卡邊。",
+    "h1": "指南與工具",
+    "intro": "實用指南和在瀏覽器裡就能用的免費工具，不用安裝。",
+    "en_tag": "英文"
+   },
+   "faq": {
+    "title": "CenterMint 常見問題：卡牌置中、送鑑與 App",
+    "description": "關於卡套與鑑定殼、準確度、PSA 10 置中標準、值不值得送鑑、行情價格、四角與表面、免費版與 Pro、合作關係與隱私的回答。",
+    "h1": "常見問題",
+    "intro": "關於怎麼測置中、鑑定參考標準，以及 App 怎樣處理你的照片。"
+   },
+   "home": {
+    "all_features": "全部功能",
+    "pricing_more": "方案與價格",
+    "faq_more": "全部問題",
+    "guides_more": "指南與工具",
+    "pro_line": "Pro：每月 {m}，或每年 {y}。年訂閱先有 1 週免費試用。"
+   },
+   "limits_h": "CenterMint 不做什麼"
   }
  },
  "ko": {
@@ -762,6 +982,60 @@
     "share": "공유 스튜디오",
     "lines": "측정선 표시"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "사이트",
+    "features": "기능",
+    "pricing": "가격",
+    "guides": "가이드",
+    "faq": "자주 묻는 질문"
+   },
+   "features": {
+    "title": "CenterMint 기능: 센터링 측정, 선 확인, 그레이딩할 가치가 있을까?, 확대",
+    "description": "CenterMint가 iPhone에서 하는 일: 사진으로 센터링 측정, 확대경으로 선 하나씩 확인, 그레이딩 손익 계산, 모서리·가장자리 확대, 그레이딩 기록, 공유 이미지와 일괄 스캔.",
+    "h1": "기능",
+    "intro": "앱 화면별로 앱이 하는 일과 직접 판단할 일을 정리했습니다."
+   },
+   "pricing": {
+    "title": "CenterMint 가격: 무료, Pro는 월간 또는 연간",
+    "description": "CenterMint는 무료로 내려받을 수 있습니다. CenterMint Pro는 월간 또는 연간 구독이며 연간 요금제는 1주 무료 체험으로 시작합니다. 지역별 App Store 가격.",
+    "h1": "가격",
+    "intro": "측정은 무료입니다. Pro에서는 보낼 카드를 정하고 기록하는 도구를 쓸 수 있습니다.",
+    "free_price": "무료",
+    "monthly": "월간",
+    "yearly": "연간",
+    "per_month": "/ 월",
+    "per_year": "/ 년",
+    "trial": "1주 무료 체험",
+    "region_h": "지역별 Pro 가격 (App Store)",
+    "region": "지역",
+    "note": "가격은 이 페이지를 업데이트할 때 각 지역 App Store에 표시된 금액입니다. 실제로는 구매할 때 App Store에 표시되는 가격이 적용되며, 세금 포함 여부는 지역마다 다릅니다. 구독은 Apple 계정 설정에서 취소할 때까지 자동 갱신됩니다. 무료 체험은 연간 요금제에 적용됩니다.",
+    "regions": {
+     "KR": "대한민국"
+    }
+   },
+   "guides": {
+    "title": "CenterMint 가이드: 센터링 측정, 풀아트 안쪽 테두리, 그레이딩 손익, 모서리 확인",
+    "description": "카드 수집가를 위한 무료 가이드와 도구: iPhone으로 센터링 측정, 풀아트 카드의 안쪽 테두리 찾기, 그레이딩할 가치 계산, 모서리와 가장자리 확인.",
+    "h1": "가이드와 도구",
+    "intro": "실용적인 가이드와 브라우저에서 바로 쓰는 무료 도구. 설치할 필요가 없습니다.",
+    "en_tag": "영어"
+   },
+   "faq": {
+    "title": "CenterMint 자주 묻는 질문: 카드 센터링, 그레이딩, 앱",
+    "description": "슬리브와 슬랩, 정확도, PSA 10 센터링, 그레이딩할 가치가 있을까?, 시세, 모서리와 표면, 무료와 Pro, 제휴 관계, 개인정보에 대한 답변.",
+    "h1": "자주 묻는 질문",
+    "intro": "센터링 측정 방법, 그레이딩 기준, 사진을 다루는 방식에 대해."
+   },
+   "home": {
+    "all_features": "모든 기능",
+    "pricing_more": "요금제와 가격",
+    "faq_more": "모든 질문",
+    "guides_more": "가이드와 도구",
+    "pro_line": "Pro: 월 {m} 또는 연 {y}. 연간 요금제는 1주 무료 체험으로 시작합니다."
+   },
+   "limits_h": "CenterMint가 하지 않는 일"
   }
  },
  "vi": {
@@ -915,6 +1189,60 @@
     "share": "Studio chia sẻ",
     "lines": "Hiện đường đo"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Trang",
+    "features": "Tính năng",
+    "pricing": "Giá",
+    "guides": "Hướng dẫn",
+    "faq": "Hỏi đáp"
+   },
+   "features": {
+    "title": "Tính năng CenterMint: đo căn giữa, kiểm tra từng đường, có đáng gửi chấm điểm?, phóng to",
+    "description": "CenterMint làm gì trên iPhone: đo căn giữa từ ảnh, kiểm tra từng đường bằng kính lúp, tính lời lỗ khi gửi chấm, phóng to góc và cạnh, sổ gửi chấm, ảnh chia sẻ và quét hàng loạt.",
+    "h1": "Tính năng",
+    "intro": "Từng màn hình của ứng dụng: nó làm gì và điều gì do bạn quyết định."
+   },
+   "pricing": {
+    "title": "Giá CenterMint: miễn phí, Pro theo tháng hoặc theo năm",
+    "description": "CenterMint tải miễn phí. CenterMint Pro là gói đăng ký theo tháng hoặc theo năm; gói năm bắt đầu với 1 tuần dùng thử miễn phí. Giá theo khu vực App Store.",
+    "h1": "Giá",
+    "intro": "Đo miễn phí. Pro thêm công cụ để chọn thẻ nên gửi và theo dõi các lần gửi.",
+    "free_price": "Miễn phí",
+    "monthly": "Theo tháng",
+    "yearly": "Theo năm",
+    "per_month": "/ tháng",
+    "per_year": "/ năm",
+    "trial": "Dùng thử miễn phí 1 tuần",
+    "region_h": "Giá Pro theo khu vực App Store",
+    "region": "Khu vực",
+    "note": "Giá là mức App Store hiển thị ở từng khu vực khi trang này được cập nhật; giá áp dụng là giá App Store hiển thị lúc mua, và việc đã gồm thuế hay chưa tùy khu vực. Gói đăng ký tự động gia hạn cho đến khi bạn hủy trong cài đặt Tài khoản Apple. Dùng thử miễn phí áp dụng cho gói năm.",
+    "regions": {
+     "VN": "Việt Nam"
+    }
+   },
+   "guides": {
+    "title": "Hướng dẫn CenterMint: đo căn giữa, viền trong thẻ full-art, có đáng gửi chấm, kiểm tra góc",
+    "description": "Hướng dẫn và công cụ miễn phí cho người sưu tầm thẻ: đo căn giữa trên iPhone, tìm viền trong của thẻ full-art, tính xem thẻ có đáng gửi chấm và kiểm tra góc, cạnh.",
+    "h1": "Hướng dẫn và công cụ",
+    "intro": "Hướng dẫn thực tế và công cụ miễn phí chạy ngay trong trình duyệt, không cần cài đặt.",
+    "en_tag": "Tiếng Anh"
+   },
+   "faq": {
+    "title": "Hỏi đáp CenterMint: căn giữa thẻ, chấm điểm và ứng dụng",
+    "description": "Giải đáp về bọc thẻ và hộp chấm điểm, độ chính xác, căn giữa cho PSA 10, Có đáng gửi chấm điểm?, giá thị trường, góc và bề mặt, Miễn phí và Pro, liên kết và quyền riêng tư.",
+    "h1": "Hỏi đáp",
+    "intro": "Về cách đo căn giữa, các mức tham chiếu chấm điểm và cách ứng dụng xử lý ảnh của bạn."
+   },
+   "home": {
+    "all_features": "Tất cả tính năng",
+    "pricing_more": "Gói và giá",
+    "faq_more": "Tất cả câu hỏi",
+    "guides_more": "Hướng dẫn và công cụ",
+    "pro_line": "Pro: {m} mỗi tháng hoặc {y} mỗi năm. Gói năm bắt đầu với 1 tuần dùng thử miễn phí."
+   },
+   "limits_h": "CenterMint không làm gì"
   }
  },
  "de": {
@@ -1068,6 +1396,60 @@
     "share": "Share Studio",
     "lines": "Show measurement lines"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Website",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "guides": "Ratgeber",
+    "faq": "FAQ"
+   },
+   "features": {
+    "title": "CenterMint-Funktionen: Zentrierung, Linienprüfung, Worth Grading?, Close-ups",
+    "description": "Was CenterMint auf dem iPhone kann: Zentrierung aus einem Foto, geführte Linienprüfung mit Lupe, Worth Grading? als Gewinnrechnung, Close-ups von Ecken und Kanten, Submission Log, Share-Bilder und Batch-Scans.",
+    "h1": "Funktionen",
+    "intro": "Was die App Bildschirm für Bildschirm macht – und was sie dir überlässt."
+   },
+   "pricing": {
+    "title": "CenterMint-Preise: kostenlos oder Pro im Monats- oder Jahresabo",
+    "description": "CenterMint ist kostenlos. CenterMint Pro ist ein Monats- oder Jahresabo; das Jahresabo beginnt mit 1 Woche Gratistest. Preise je App-Store-Region.",
+    "h1": "Preise",
+    "intro": "Messen ist kostenlos. Pro bringt die Werkzeuge, um zu entscheiden, was du einschickst, und den Überblick zu behalten.",
+    "free_price": "Kostenlos",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "per_month": "/ Monat",
+    "per_year": "/ Jahr",
+    "trial": "1 Woche gratis testen",
+    "region_h": "Pro-Preise nach App-Store-Region",
+    "region": "Region",
+    "note": "Die Preise sind die, die der App Store in der jeweiligen Region beim Aktualisieren dieser Seite anzeigte; maßgeblich ist der Preis, den der App Store beim Kauf anzeigt, und ob Steuern enthalten sind, hängt von der Region ab. Abos verlängern sich automatisch, bis du sie in den Einstellungen deines Apple Accounts kündigst. Der Gratistest gilt für das Jahresabo.",
+    "regions": {
+     "EU": "Deutschland"
+    }
+   },
+   "guides": {
+    "title": "CenterMint-Ratgeber: Zentrierung messen, Full-Art-Rand, Grading-Rechnung, Ecken prüfen",
+    "description": "Kostenlose Ratgeber und Tools für Kartensammler: Zentrierung mit dem iPhone messen, den Innenrand von Full-Art-Karten finden, ausrechnen, ob sich das Grading lohnt, und Ecken und Kanten prüfen. Auf Englisch.",
+    "h1": "Ratgeber und Tools",
+    "intro": "Praktische Ratgeber und kostenlose Tools im Browser. Die Ratgeber gibt es bisher auf Englisch.",
+    "en_tag": "Englisch"
+   },
+   "faq": {
+    "title": "CenterMint FAQ: Kartenzentrierung, Grading und die App",
+    "description": "Antworten zu Hüllen und Slabs, Genauigkeit, PSA-10-Zentrierung, Worth Grading?, Marktpreisen, Ecken und Oberfläche, Kostenlos und Pro, Verbindungen zu Grading-Firmen und Datenschutz.",
+    "h1": "Fragen und Antworten",
+    "intro": "Zum Messen der Zentrierung, zu Grading-Richtlinien und zum Umgang mit deinen Fotos."
+   },
+   "home": {
+    "all_features": "Alle Funktionen",
+    "pricing_more": "Abos und Preise",
+    "faq_more": "Alle Fragen",
+    "guides_more": "Ratgeber und Tools",
+    "pro_line": "Pro: {m} im Monat oder {y} im Jahr. Das Jahresabo beginnt mit 1 Woche Gratistest."
+   },
+   "limits_h": "Was CenterMint nicht macht"
   }
  },
  "fr": {
@@ -1221,6 +1603,60 @@
     "share": "Share Studio",
     "lines": "Show measurement lines"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Site",
+    "features": "Fonctions",
+    "pricing": "Tarifs",
+    "guides": "Guides",
+    "faq": "FAQ"
+   },
+   "features": {
+    "title": "Fonctions de CenterMint : centrage, vérification des lignes, Worth Grading?, gros plans",
+    "description": "Ce que fait CenterMint sur iPhone : centrage à partir d’une photo, vérification guidée des lignes à la loupe, calcul Worth Grading?, gros plans des coins et des bords, Submission Log, images à partager et scan par lots.",
+    "h1": "Fonctions",
+    "intro": "Ce que fait l’app, écran par écran, et ce qu’elle vous laisse décider."
+   },
+   "pricing": {
+    "title": "Tarifs CenterMint : gratuit, ou Pro au mois ou à l’année",
+    "description": "CenterMint est gratuit. CenterMint Pro est un abonnement mensuel ou annuel ; l’abonnement annuel commence par 1 semaine d’essai gratuit. Prix par région de l’App Store.",
+    "h1": "Tarifs",
+    "intro": "Mesurer est gratuit. Pro ajoute les outils pour décider quoi envoyer et suivre vos envois.",
+    "free_price": "Gratuit",
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "per_month": "/ mois",
+    "per_year": "/ an",
+    "trial": "1 semaine d’essai gratuit",
+    "region_h": "Prix de Pro par région de l’App Store",
+    "region": "Région",
+    "note": "Les prix sont ceux que l’App Store affichait dans chaque région lors de la mise à jour de cette page ; le prix affiché par l’App Store au moment de l’achat fait foi, et l’inclusion des taxes dépend de la région. Les abonnements se renouvellent automatiquement jusqu’à leur résiliation dans les réglages de votre compte Apple. L’essai gratuit concerne l’abonnement annuel.",
+    "regions": {
+     "EU": "France"
+    }
+   },
+   "guides": {
+    "title": "Guides CenterMint : mesurer le centrage, bordure des full-art, rentabilité du grading, coins",
+    "description": "Guides et outils gratuits pour collectionneurs : mesurer le centrage sur iPhone, trouver la bordure intérieure d’une carte full-art, calculer si le grading est rentable et vérifier coins et bords. En anglais.",
+    "h1": "Guides et outils",
+    "intro": "Des guides pratiques et des outils gratuits dans le navigateur. Les guides sont pour l’instant en anglais.",
+    "en_tag": "anglais"
+   },
+   "faq": {
+    "title": "FAQ CenterMint : centrage des cartes, grading et l’app",
+    "description": "Réponses sur les sleeves et slabs, la précision, le centrage pour un PSA 10, Worth Grading?, les prix du marché, coins et surface, Gratuit et Pro, les liens avec les sociétés de grading et la confidentialité.",
+    "h1": "Questions et réponses",
+    "intro": "Sur la mesure du centrage, les références de grading et la façon dont l’app traite vos photos."
+   },
+   "home": {
+    "all_features": "Toutes les fonctions",
+    "pricing_more": "Offres et tarifs",
+    "faq_more": "Toutes les questions",
+    "guides_more": "Guides et outils",
+    "pro_line": "Pro : {m} par mois ou {y} par an. L’abonnement annuel commence par 1 semaine d’essai gratuit."
+   },
+   "limits_h": "Ce que CenterMint ne fait pas"
   }
  },
  "es": {
@@ -1374,6 +1810,61 @@
     "share": "Share Studio",
     "lines": "Show measurement lines"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Sitio",
+    "features": "Funciones",
+    "pricing": "Precios",
+    "guides": "Guías",
+    "faq": "Preguntas"
+   },
+   "features": {
+    "title": "Funciones de CenterMint: centrado, revisión de líneas, Worth Grading?, primeros planos",
+    "description": "Lo que hace CenterMint en iPhone: centrado a partir de una foto, revisión guiada de líneas con lupa, cálculo Worth Grading?, primeros planos de esquinas y bordes, Submission Log, imágenes para compartir y escaneo por lotes.",
+    "h1": "Funciones",
+    "intro": "Lo que hace la app, pantalla por pantalla, y lo que deja en tus manos."
+   },
+   "pricing": {
+    "title": "Precios de CenterMint: gratis, o Pro mensual o anual",
+    "description": "CenterMint es gratis. CenterMint Pro es una suscripción mensual o anual; la anual empieza con 1 semana de prueba gratis. Precios por región del App Store.",
+    "h1": "Precios",
+    "intro": "Medir es gratis. Pro añade las herramientas para decidir qué enviar y llevar el control de tus envíos.",
+    "free_price": "Gratis",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "per_month": "/ mes",
+    "per_year": "/ año",
+    "trial": "1 semana de prueba gratis",
+    "region_h": "Precios de Pro por región del App Store",
+    "region": "Región",
+    "note": "Los precios son los que mostraba el App Store en cada región al actualizar esta página; se aplica el precio que muestre el App Store al comprar, y si incluye impuestos depende de la región. Las suscripciones se renuevan automáticamente hasta que las canceles en los ajustes de tu cuenta de Apple. La prueba gratis se aplica a la suscripción anual.",
+    "regions": {
+     "EU": "España",
+     "MX": "México"
+    }
+   },
+   "guides": {
+    "title": "Guías de CenterMint: medir el centrado, borde de cartas full-art, si compensa el grading, esquinas",
+    "description": "Guías y herramientas gratis para coleccionistas: medir el centrado con el iPhone, encontrar el borde interior de una carta full-art, calcular si compensa el grading y revisar esquinas y bordes. En inglés.",
+    "h1": "Guías y herramientas",
+    "intro": "Guías prácticas y herramientas gratis en el navegador. Por ahora las guías están en inglés.",
+    "en_tag": "inglés"
+   },
+   "faq": {
+    "title": "Preguntas frecuentes de CenterMint: centrado, grading y la app",
+    "description": "Respuestas sobre fundas y slabs, precisión, centrado para un PSA 10, Worth Grading?, precios de mercado, esquinas y superficie, Gratis y Pro, relación con las empresas de grading y privacidad.",
+    "h1": "Preguntas y respuestas",
+    "intro": "Sobre cómo medir el centrado, las referencias de grading y cómo trata la app tus fotos."
+   },
+   "home": {
+    "all_features": "Todas las funciones",
+    "pricing_more": "Planes y precios",
+    "faq_more": "Todas las preguntas",
+    "guides_more": "Guías y herramientas",
+    "pro_line": "Pro: {m} al mes o {y} al año. La suscripción anual empieza con 1 semana de prueba gratis."
+   },
+   "limits_h": "Lo que CenterMint no hace"
   }
  },
  "it": {
@@ -1527,6 +2018,60 @@
     "share": "Share Studio",
     "lines": "Show measurement lines"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Sito",
+    "features": "Funzioni",
+    "pricing": "Prezzi",
+    "guides": "Guide",
+    "faq": "FAQ"
+   },
+   "features": {
+    "title": "Funzioni di CenterMint: centratura, controllo delle linee, Worth Grading?, primi piani",
+    "description": "Cosa fa CenterMint su iPhone: centratura da una foto, controllo guidato delle linee con la lente, calcolo Worth Grading?, primi piani di angoli e bordi, Submission Log, immagini da condividere e scansione in serie.",
+    "h1": "Funzioni",
+    "intro": "Cosa fa l’app, schermata per schermata, e cosa lascia decidere a te."
+   },
+   "pricing": {
+    "title": "Prezzi di CenterMint: gratis, o Pro mensile o annuale",
+    "description": "CenterMint è gratis. CenterMint Pro è un abbonamento mensile o annuale; l’annuale inizia con 1 settimana di prova gratuita. Prezzi per regione dell’App Store.",
+    "h1": "Prezzi",
+    "intro": "Misurare è gratis. Pro aggiunge gli strumenti per decidere cosa inviare e tenere traccia degli invii.",
+    "free_price": "Gratis",
+    "monthly": "Mensile",
+    "yearly": "Annuale",
+    "per_month": "/ mese",
+    "per_year": "/ anno",
+    "trial": "1 settimana di prova gratuita",
+    "region_h": "Prezzi di Pro per regione dell’App Store",
+    "region": "Regione",
+    "note": "I prezzi sono quelli mostrati dall’App Store in ogni regione quando questa pagina è stata aggiornata; vale il prezzo mostrato dall’App Store al momento dell’acquisto, e l’inclusione delle tasse dipende dalla regione. Gli abbonamenti si rinnovano automaticamente finché non li annulli nelle impostazioni del tuo account Apple. La prova gratuita riguarda l’abbonamento annuale.",
+    "regions": {
+     "EU": "Italia"
+    }
+   },
+   "guides": {
+    "title": "Guide di CenterMint: misurare la centratura, bordo delle full-art, conviene gradare, angoli",
+    "description": "Guide e strumenti gratuiti per collezionisti: misurare la centratura con l’iPhone, trovare il bordo interno di una carta full-art, calcolare se conviene gradare e controllare angoli e bordi. In inglese.",
+    "h1": "Guide e strumenti",
+    "intro": "Guide pratiche e strumenti gratuiti nel browser. Per ora le guide sono in inglese.",
+    "en_tag": "inglese"
+   },
+   "faq": {
+    "title": "FAQ di CenterMint: centratura delle carte, grading e l’app",
+    "description": "Risposte su bustine e slab, precisione, centratura per un PSA 10, Worth Grading?, prezzi di mercato, angoli e superficie, Gratis e Pro, rapporti con le società di grading e privacy.",
+    "h1": "Domande e risposte",
+    "intro": "Su come misurare la centratura, i riferimenti di grading e come l’app tratta le tue foto."
+   },
+   "home": {
+    "all_features": "Tutte le funzioni",
+    "pricing_more": "Piani e prezzi",
+    "faq_more": "Tutte le domande",
+    "guides_more": "Guide e strumenti",
+    "pro_line": "Pro: {m} al mese o {y} all’anno. L’abbonamento annuale inizia con 1 settimana di prova gratuita."
+   },
+   "limits_h": "Cosa non fa CenterMint"
   }
  },
  "pt-BR": {
@@ -1680,6 +2225,60 @@
     "share": "Share Studio",
     "lines": "Show measurement lines"
    }
+  },
+  "site": {
+   "nav": {
+    "label": "Site",
+    "features": "Recursos",
+    "pricing": "Preços",
+    "guides": "Guias",
+    "faq": "Perguntas"
+   },
+   "features": {
+    "title": "Recursos do CenterMint: centralização, conferência de linhas, Worth Grading?, close-ups",
+    "description": "O que o CenterMint faz no iPhone: centralização a partir de uma foto, conferência guiada das linhas com lupa, conta do Worth Grading?, close-ups de cantos e bordas, Submission Log, imagens para compartilhar e escaneamento em lote.",
+    "h1": "Recursos",
+    "intro": "O que o app faz, tela por tela, e o que fica por sua conta."
+   },
+   "pricing": {
+    "title": "Preços do CenterMint: grátis, ou Pro mensal ou anual",
+    "description": "O CenterMint é grátis. O CenterMint Pro é uma assinatura mensal ou anual; a anual começa com 1 semana de teste grátis. Preços por região da App Store.",
+    "h1": "Preços",
+    "intro": "Medir é grátis. O Pro traz as ferramentas para decidir o que enviar e acompanhar seus envios.",
+    "free_price": "Grátis",
+    "monthly": "Mensal",
+    "yearly": "Anual",
+    "per_month": "/ mês",
+    "per_year": "/ ano",
+    "trial": "1 semana de teste grátis",
+    "region_h": "Preços do Pro por região da App Store",
+    "region": "Região",
+    "note": "Os preços são os que a App Store mostrava em cada região quando esta página foi atualizada; vale o preço mostrado pela App Store na compra, e a inclusão de impostos depende da região. As assinaturas são renovadas automaticamente até você cancelar nos ajustes da sua conta Apple. O teste grátis vale para a assinatura anual.",
+    "regions": {
+     "BR": "Brasil"
+    }
+   },
+   "guides": {
+    "title": "Guias do CenterMint: medir a centralização, borda de cartas full-art, vale graduar, cantos",
+    "description": "Guias e ferramentas grátis para colecionadores: medir a centralização no iPhone, achar a borda interna de uma carta full-art, calcular se vale graduar e conferir cantos e bordas. Em inglês.",
+    "h1": "Guias e ferramentas",
+    "intro": "Guias práticos e ferramentas grátis no navegador. Por enquanto os guias estão em inglês.",
+    "en_tag": "inglês"
+   },
+   "faq": {
+    "title": "Perguntas frequentes do CenterMint: centralização, graduação e o app",
+    "description": "Respostas sobre sleeves e slabs, precisão, centralização para um PSA 10, Worth Grading?, preços de mercado, cantos e superfície, Grátis e Pro, relação com as empresas de graduação e privacidade.",
+    "h1": "Perguntas e respostas",
+    "intro": "Sobre como medir a centralização, as referências de graduação e como o app trata suas fotos."
+   },
+   "home": {
+    "all_features": "Todos os recursos",
+    "pricing_more": "Planos e preços",
+    "faq_more": "Todas as perguntas",
+    "guides_more": "Guias e ferramentas",
+    "pro_line": "Pro: {m} por mês ou {y} por ano. A assinatura anual começa com 1 semana de teste grátis."
+   },
+   "limits_h": "O que o CenterMint não faz"
   }
  }
 }

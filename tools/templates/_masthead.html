@@ -1,0 +1,14 @@
+{#- Site header shared by every page: logo, section tabs, language menu, download. -#}
+<header class="masthead">
+<div class="colorbar" aria-hidden="true"></div>
+<div class="masthead-row">
+<a class="wordmark" href="{{ home_url }}"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 1v22M1 12h22"/></g></svg><span>CenterMint</span></a>
+<nav class="tabs" aria-label="{{ ui.site.nav.label }}"><ul>{% for t in tabs %}<li><a href="{{ t.href }}"{% if t.key == current_tab %} aria-current="page"{% endif %}>{{ t.text }}</a></li>{% endfor %}</ul></nav>
+<div class="masthead-nav">
+{% if alternates|length > 1 %}<details class="langs"><summary><span class="sr">{{ ui.lang_label }}: </span><span lang="{{ lang }}">{{ names[lang] }}</span></summary>
+<ul>{% for a in alternates %}<li><a lang="{{ a.lang }}" hreflang="{{ a.lang }}" href="{{ a.href }}"{% if a.lang == lang %} aria-current="page"{% endif %}>{{ names[a.lang] }}</a></li>{% endfor %}</ul>
+</details>{% endif %}
+<a class="masthead-dl" data-app-link href="{{ app_url }}">{{ ui.download }}</a>
+</div>
+</div>
+</header>

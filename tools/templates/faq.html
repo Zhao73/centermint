@@ -1,0 +1,8 @@
+{% extends "page.html" %}
+{% block content %}
+<section class="faq faq--page wrap" aria-labelledby="faq-title">
+<h2 class="sr" id="faq-title">{{ faq.h2 }}</h2>
+<div class="faq-list">{% for q in faq['items'] %}<details{% if loop.first %} open{% endif %}><summary>{{ q.q }}</summary><p>{{ q.a }}</p></details>{% endfor %}</div>
+<p class="sources">{{ sources_label }} <a href="https://www.psacard.com/gradingstandards">PSA</a><a href="https://www.beckett.com/grading">BGS</a><a href="https://www.cgccards.com/card-grading/grading-scale/">CGC</a></p>
+</section>
+{% endblock %}

@@ -3,7 +3,7 @@
 > CenterMint is an iPhone app (iOS 17 or later) that measures the left/right and top/bottom centering of trading cards and sports cards from a photo, compares the result with the published PSA, BGS and CGC centering references, and helps collectors decide whether a card is worth the grading fee. It is an independent tool made by JIAPENG Zhao and is not affiliated with PSA, Beckett (BGS), CGC, Pokémon or any card publisher.
 
 App Store: https://apps.apple.com/app/id6760965068
-Price: free download; optional CenterMint Pro (monthly or yearly subscription, or one-time purchase; prices shown in the app).
+Price: free download. Optional CenterMint Pro is an auto-renewing subscription, monthly or yearly only (the yearly plan starts with a 1-week free trial); for example US$2.99 a month or US$19.99 a year, ¥500 / ¥3,000 in Japan. All regions: https://centermint.app/pricing/
 App interface languages: English, Japanese, Korean, Vietnamese, Simplified Chinese, Traditional Chinese.
 
 ## What it does
@@ -33,6 +33,7 @@ Measurement runs on the device without an account. Photos are uploaded only if t
 
 ## Pages
 
+- [Features](https://centermint.app/features/) · [Pricing](https://centermint.app/pricing/) · [Guides and tools](https://centermint.app/guides/) · [FAQ](https://centermint.app/faq/) (each also under /ja/, /zh-Hans/, /zh-Hant/, /ko/, /vi/, /de/, /fr/, /es/, /it/, /pt-BR/)
 - [Home (English)](https://centermint.app/)
 - [日本語](https://centermint.app/ja/)
 - [简体中文](https://centermint.app/zh-Hans/)

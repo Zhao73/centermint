@@ -8,18 +8,18 @@
 <meta name="theme-color" content="#F3F5F7"><meta name="color-scheme" content="light">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../site.css?v=058234fa">
+<link rel="stylesheet" href="../site.css?v=621fa3a7">
 <script>document.documentElement.classList.replace("no-js","js")</script>
 <script src="../site.js?v=bd2c070b" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Card centering calculator", "headline": "Card centering calculator", "description": "Calculate left/right and top/bottom card centering from measured border widths. Free browser tool with a directional preview.", "url": "https://centermint.app/calculator/", "inLanguage": "en", "dateModified": "2026-09-09", "author": {"@type": "Person", "name": "JIAPENG Zhao"}, "publisher": {"@type": "Organization", "name": "CenterMint", "url": "https://centermint.app/"}}</script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
-<div class="g-top">
-<header class="masthead">
+<div class="g-top"><header class="masthead">
 <div class="colorbar" aria-hidden="true"></div>
 <div class="masthead-row">
 <a class="wordmark" href="https://centermint.app/"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 1v22M1 12h22"/></g></svg><span>CenterMint</span></a>
+<nav class="tabs" aria-label="Site"><ul><li><a href="https://centermint.app/features/">Features</a></li><li><a href="https://centermint.app/pricing/">Pricing</a></li><li><a href="https://centermint.app/guides/" aria-current="page">Guides</a></li><li><a href="https://centermint.app/faq/">FAQ</a></li></ul></nav>
 <div class="masthead-nav">
 <details class="langs"><summary><span class="sr">Language: </span><span lang="en">English</span></summary>
 <ul><li><a lang="en" hreflang="en" href="https://centermint.app/calculator/" aria-current="page">English</a></li><li><a lang="ja" hreflang="ja" href="https://centermint.app/ja/calculator/">日本語</a></li></ul>
@@ -27,11 +27,9 @@
 <a class="masthead-dl" data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=en_calculator_202609">Download</a>
 </div>
 </div>
-</header>
-<nav class="g-nav" aria-label="Navigation"><ul><li><a href="https://centermint.app/">Home</a></li><li><a href="https://centermint.app/calculator/" aria-current="page">Calculator</a></li><li><a href="https://centermint.app/guides/measure-card-centering/">iPhone guide</a></li><li><a href="https://centermint.app/guides/full-art-borders/">Full-art borders</a></li></ul></nav>
-</div>
+</header></div>
 <main id="content" class="guide-main">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="https://centermint.app/">CenterMint</a> / <span aria-current="page">Calculator</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="https://centermint.app/">CenterMint</a> / <a href="https://centermint.app/guides/">Guides</a> / <span aria-current="page">Calculator</span></nav>
 <section><h1>Card centering calculator</h1><p>Calculate left/right and top/bottom card centering from measured border widths. Free browser tool with a directional preview.</p></section><section><p id="input-help">Enter four measured border widths in the same unit, such as pixels or millimeters. This tool calculates ratios; it does not detect borders in a photo.</p><div class="calculator"><form id="centering-form" novalidate=""><div class="border-inputs"><label for="left">Left border<input aria-describedby="input-help input-error" autocomplete="off" id="left" inputmode="decimal" name="left" type="text" value="3"/></label><label for="right">Right border<input aria-describedby="input-help input-error" autocomplete="off" id="right" inputmode="decimal" name="right" type="text" value="2"/></label><label for="top">Top border<input aria-describedby="input-help input-error" autocomplete="off" id="top" inputmode="decimal" name="top" type="text" value="2"/></label><label for="bottom">Bottom border<input aria-describedby="input-help input-error" autocomplete="off" id="bottom" inputmode="decimal" name="bottom" type="text" value="2"/></label></div><p class="error" hidden="" id="input-error" role="alert">Use non-negative numbers; each pair must have a positive total.</p><button type="reset">Reset example</button></form><div class="measurement"><div aria-atomic="true" aria-live="polite" class="ratio-results"><p>Left / right<output id="horizontal">—</output></p><p>Top / bottom<output id="vertical">—</output></p></div><div aria-hidden="true" class="card-preview"><div id="inner-preview"></div></div><p class="caption">Illustrative border preview</p></div></div><noscript><p>JavaScript is needed for the interactive calculator. You can calculate manually with the formulas below.</p></noscript></section><section><h2>From border widths to a useful ratio</h2><p>Left share = left ÷ (left + right) × 100. Top share = top ÷ (top + bottom) × 100. The other side is the remainder. For example, left 3 mm and right 2 mm produce 60.0 / 40.0. Reversing the inputs produces 40.0 / 60.0; the amount of imbalance is the same.</p><p>Measure both widths at comparable positions, away from rounded corners. Keep front and back measurements separate. A perspective-distorted photograph can change the apparent widths: straighten the view before measuring. The preview is illustrative and does not reproduce a particular card.</p><p>One decimal place is a display choice, not proof of measurement accuracy. This calculator does not assign a grade.</p></section><section><h2>Explore the method</h2><ul><li><a href="https://centermint.app/guides/measure-card-centering/">iPhone guide</a></li><li><a href="https://centermint.app/guides/full-art-borders/">Full-art borders</a></li><li><a href="https://centermint.app/guides/worth-grading/">Is it worth grading? Break-even calculator</a></li><li><a href="https://centermint.app/guides/check-corners-edges/">Check corners and edges before grading</a></li></ul><a class="cta" data-app-link="" href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=en_calculator_202609">Measure a photo with CenterMint</a></section>
 </main>
 <footer class="foot g-foot mat">

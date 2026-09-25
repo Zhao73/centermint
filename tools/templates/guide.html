@@ -15,23 +15,9 @@
 </head>
 <body>
 <a class="skip" href="#content">{{ ui.skip }}</a>
-<div class="g-top">
-<header class="masthead">
-<div class="colorbar" aria-hidden="true"></div>
-<div class="masthead-row">
-<a class="wordmark" href="{{ home }}"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 1v22M1 12h22"/></g></svg><span>CenterMint</span></a>
-<div class="masthead-nav">
-{% if alternates|length > 1 %}<details class="langs"><summary><span class="sr">{{ ui.lang_label }}: </span><span lang="{{ lang }}">{{ names[lang] }}</span></summary>
-<ul>{% for a in alternates %}<li><a lang="{{ a.lang }}" hreflang="{{ a.lang }}" href="{{ a.href }}"{% if a.lang == lang %} aria-current="page"{% endif %}>{{ names[a.lang] }}</a></li>{% endfor %}</ul>
-</details>{% endif %}
-<a class="masthead-dl" data-app-link href="{{ app_url }}">{{ ui.download }}</a>
-</div>
-</div>
-</header>
-<nav class="g-nav" aria-label="{{ nav_label }}"><ul>{% for a in nav %}<li><a href="{{ a.href }}"{% if a.current %} aria-current="page"{% endif %}>{{ a.text }}</a></li>{% endfor %}</ul></nav>
-</div>
+<div class="g-top">{% include "_masthead.html" %}</div>
 <main id="content" class="guide-main">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ home }}">CenterMint</a> / <span aria-current="page">{{ crumb }}</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ home_url }}">CenterMint</a> / <a href="{{ guides_url }}">{{ ui.site.nav.guides }}</a> / <span aria-current="page">{{ crumb }}</span></nav>
 {{ main_html }}
 </main>
 <footer class="foot g-foot mat">

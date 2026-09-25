@@ -1,0 +1,13 @@
+{#- Site footer for the home page and the section pages. -#}
+<footer class="foot mat">
+<div class="wrap">
+<p class="foot-mark" aria-hidden="true">CenterMint</p>
+<div class="foot-grid">
+<div><h2 class="foot-h">{{ ui.footer_download }}</h2><div class="get">{{ badge() }}<figure class="qr">{{ qr_foot }}<figcaption>{{ ui.qr_caption }}</figcaption></figure></div></div>
+<nav class="foot-langs" aria-label="{{ ui.footer_languages }}"><h2 class="foot-h">{{ ui.footer_languages }}</h2><ul>{% for a in alternates %}<li><a lang="{{ a.lang }}" hreflang="{{ a.lang }}" href="{{ a.href }}"{% if a.lang == lang %} aria-current="page"{% endif %}>{{ names[a.lang] }}</a></li>{% endfor %}</ul></nav>
+<div><h2 class="foot-h">{{ ui.footer_more }}</h2><ul>{% for t in tabs %}<li><a href="{{ t.href }}">{{ t.text }}</a></li>{% endfor %}<li><a href="{{ base }}privacy">{{ footer.privacy }}</a></li><li><a href="{{ base }}terms">{{ footer.terms }}</a></li><li><a href="mailto:qwe911291860@gmail.com">{{ footer.email }}</a></li></ul></div>
+</div>
+<p class="copy">{{ footer["copy"] }}</p>
+<p class="tm">{{ ui.trademark }}</p>
+</div>
+</footer>

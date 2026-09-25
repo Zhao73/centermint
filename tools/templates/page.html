@@ -1,0 +1,39 @@
+{#- Layout for the section pages (features, pricing, guides, FAQ). -#}
+{%- from "_macros.html" import badge, device with context -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ url }}">
+{% for a in alternates %}<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.href }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ alternates[0].href }}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="CenterMint"><meta property="og:locale" content="{{ og_locale }}">
+<meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{ base }}assets/img/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{{ base }}assets/img/og.png">
+<meta name="theme-color" content="#F3F5F7"><meta name="color-scheme" content="light">
+<meta name="apple-itunes-app" content="app-id=6760965068">
+<link rel="icon" href="{{ rel }}assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{{ rel }}assets/img/apple-touch-icon.png">
+<link rel="preload" href="{{ rel }}assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ rel }}site.css?v={{ v.css }}">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+<script src="{{ rel }}site.js?v={{ v.js }}" defer></script>
+{% for block in jsonld %}<script type="application/ld+json">{{ block }}</script>
+{% endfor %}</head>
+<body class="page page--{{ current_tab }}">
+<a class="skip" href="#main">{{ ui.skip }}</a>
+<div class="g-top">{% include "_masthead.html" %}</div>
+<main id="main" class="page-main">
+<header class="page-head wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ home_url }}">CenterMint</a> / <span aria-current="page">{{ h1 }}</span></nav>
+<h1>{{ h1 }}</h1>
+<p class="page-intro">{{ intro }}</p>
+</header>
+{% block content %}{% endblock %}
+</main>
+{% include "_footer.html" %}
+</body>
+</html>

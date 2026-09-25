@@ -8,18 +8,18 @@
 <meta name="theme-color" content="#F3F5F7"><meta name="color-scheme" content="light">
 <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../site.css?v=058234fa">
+<link rel="stylesheet" href="../../site.css?v=621fa3a7">
 <script>document.documentElement.classList.replace("no-js","js")</script>
 <script src="../../site.js?v=bd2c070b" defer></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "カードのセンタリング計算機", "headline": "カードのセンタリング計算機", "description": "左右・上下の余白を入力してセンタリング比率を計算。向きを保った図で確認できる無料のブラウザー用ツールです。", "url": "https://centermint.app/ja/calculator/", "inLanguage": "ja", "dateModified": "2026-09-09", "author": {"@type": "Person", "name": "JIAPENG Zhao"}, "publisher": {"@type": "Organization", "name": "CenterMint", "url": "https://centermint.app/"}}</script>
 </head>
 <body>
 <a class="skip" href="#content">本文へ移動</a>
-<div class="g-top">
-<header class="masthead">
+<div class="g-top"><header class="masthead">
 <div class="colorbar" aria-hidden="true"></div>
 <div class="masthead-row">
 <a class="wordmark" href="https://centermint.app/ja/"><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="6"/><path d="M12 1v22M1 12h22"/></g></svg><span>CenterMint</span></a>
+<nav class="tabs" aria-label="サイト"><ul><li><a href="https://centermint.app/ja/features/">機能</a></li><li><a href="https://centermint.app/ja/pricing/">料金</a></li><li><a href="https://centermint.app/ja/guides/" aria-current="page">ガイド</a></li><li><a href="https://centermint.app/ja/faq/">よくある質問</a></li></ul></nav>
 <div class="masthead-nav">
 <details class="langs"><summary><span class="sr">言語: </span><span lang="ja">日本語</span></summary>
 <ul><li><a lang="en" hreflang="en" href="https://centermint.app/calculator/">English</a></li><li><a lang="ja" hreflang="ja" href="https://centermint.app/ja/calculator/" aria-current="page">日本語</a></li></ul>
@@ -27,11 +27,9 @@
 <a class="masthead-dl" data-app-link href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=ja_calculator_202609">ダウンロード</a>
 </div>
 </div>
-</header>
-<nav class="g-nav" aria-label="ナビゲーション"><ul><li><a href="https://centermint.app/ja/">ホーム</a></li><li><a href="https://centermint.app/ja/calculator/" aria-current="page">比率計算機</a></li><li><a href="https://centermint.app/ja/guides/measure-card-centering/">iPhone で測る</a></li><li><a href="https://centermint.app/ja/guides/full-art-borders/">フルアートの内枠</a></li></ul></nav>
-</div>
+</header></div>
 <main id="content" class="guide-main">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="https://centermint.app/ja/">CenterMint</a> / <span aria-current="page">比率計算機</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="https://centermint.app/ja/">CenterMint</a> / <a href="https://centermint.app/ja/guides/">ガイド</a> / <span aria-current="page">比率計算機</span></nav>
 <section><h1>カードのセンタリング計算機</h1><p>左右・上下の余白を入力してセンタリング比率を計算。向きを保った図で確認できる無料のブラウザー用ツールです。</p></section><section><p id="input-help">同じ単位で測った四辺の幅を入力します。ピクセルでも mm でも構いません。このツールは比率の計算用で、写真から枠を検出するものではありません。</p><div class="calculator"><form id="centering-form" novalidate=""><div class="border-inputs"><label for="left">左の余白<input aria-describedby="input-help input-error" autocomplete="off" id="left" inputmode="decimal" name="left" type="text" value="3"/></label><label for="right">右の余白<input aria-describedby="input-help input-error" autocomplete="off" id="right" inputmode="decimal" name="right" type="text" value="2"/></label><label for="top">上の余白<input aria-describedby="input-help input-error" autocomplete="off" id="top" inputmode="decimal" name="top" type="text" value="2"/></label><label for="bottom">下の余白<input aria-describedby="input-help input-error" autocomplete="off" id="bottom" inputmode="decimal" name="bottom" type="text" value="2"/></label></div><p class="error" hidden="" id="input-error" role="alert">0 以上の数値を入力し、左右・上下それぞれの合計を 0 より大きくしてください。</p><button type="reset">入力例に戻す</button></form><div class="measurement"><div aria-atomic="true" aria-live="polite" class="ratio-results"><p>左 / 右<output id="horizontal">—</output></p><p>上 / 下<output id="vertical">—</output></p></div><div aria-hidden="true" class="card-preview"><div id="inner-preview"></div></div><p class="caption">余白の比率を示すイメージ</p></div></div><noscript><p>対話式の計算には JavaScript が必要です。下の式から手計算もできます。</p></noscript></section><section><h2>余白の幅から比率を求める</h2><p>左の割合 = 左 ÷（左 + 右）× 100。上の割合 = 上 ÷（上 + 下）× 100。反対側は残りの割合です。左 3 mm、右 2 mm なら 60.0 / 40.0。左右を入れ替えると 40.0 / 60.0 ですが、ずれの程度は同じです。</p><p>丸い角を避け、対応する位置で両側の幅を測ります。表と裏は別々に測ってください。斜めの写真は見かけの余白が変わるので、視点を整えてから測ります。図は比率の説明用で、特定のカードを再現したものではありません。</p><p>小数 1 桁の表示は測定精度を保証しません。この計算機は鑑定点数を判定しません。</p></section><section><h2>測り方を詳しく見る</h2><ul><li><a href="https://centermint.app/ja/guides/measure-card-centering/">iPhone で測る</a></li><li><a href="https://centermint.app/ja/guides/full-art-borders/">フルアートの内枠</a></li><li><a href="https://centermint.app/ja/guides/worth-grading/">鑑定に出す価値はある？損益分岐の計算</a></li><li><a href="https://centermint.app/ja/guides/check-corners-edges/">鑑定前に四隅と四辺をチェック</a></li></ul><a class="cta" data-app-link="" href="https://apps.apple.com/app/apple-store/id6760965068?pt=128550180&amp;mt=8&amp;ct=ja_calculator_202609">CenterMint で写真から測る</a></section>
 </main>
 <footer class="foot g-foot mat">

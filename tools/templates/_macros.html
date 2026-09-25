@@ -1,0 +1,8 @@
+{#- Shared macros. Import with context: {% from "_macros.html" import badge, device with context %} -#}
+{%- macro device(key, cls='') -%}
+{%- set s = shots[key] -%}
+<figure class="device {{cls}}{% if not s.real %} is-placeholder{% endif %}"><img src="{{ s.src }}" width="603" height="1311" loading="lazy" decoding="async" alt="{{ ui.shot_alt[key] }}"></figure>
+{%- endmacro -%}
+{%- macro badge(cls='') -%}
+<a class="badge {{cls}}" data-app-link href="{{ app_url }}"><img src="{{ rel }}assets/badges/app-store-{{ lang }}.svg" width="{{ badge_w }}" height="40" alt="{{ ui.badge_alt }}"></a>
+{%- endmacro -%}

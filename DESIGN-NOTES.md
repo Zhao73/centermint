@@ -106,3 +106,18 @@ Hero headline: Archivo at normal width (font-stretch 100 %, weight 800, tight tr
 language; the wide cut read as stretched on phones. Section headings keep the wider cut.
 
 Phones and tablets no longer show a proof figure under every how-to step: the loops above show the same steps.
+
+## Section pages and tabs (September 2026)
+
+Every page shares one header (tools/templates/_masthead.html): logo, tabs Features / Pricing / Guides / FAQ, language
+menu, Download. Phones: the tabs are a slim scrollable row under the logo (all four fit at 390 px in every
+language); from 960 px they sit inline. The current tab gets an ink underline.
+
+New pages per language: /features/ (the full feature rows, the calculator and "What CenterMint does not do"),
+/pricing/ (Free vs Pro plus the Pro price table for that language's App Store regions), /guides/ (index of the
+guides and calculator, English versions tagged where a language has none) and /faq/ (all questions). The home page
+keeps hero, the six loops, the measuring steps (desktop 3D story and HowTo data), a short feature list, a price
+summary and four FAQ questions, each linking on.
+
+Pro is monthly or yearly only; the yearly plan has a 1-week free trial. Prices live in tools/build.py (PRICES,
+REGIONS_BY_LANG) and feed both the page and the SoftwareApplication offers, so they cannot disagree.

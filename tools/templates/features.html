@@ -1,0 +1,75 @@
+{% extends "page.html" %}
+{% block content %}
+<section class="features" id="new" aria-labelledby="new-title">
+<header class="sec-head wrap">
+<h2 id="new-title">{{ new.h2 }}</h2>
+<p>{{ new.intro }}</p>
+<p class="ver">{{ ui.new_in }}</p>
+</header>
+{% set f = new.features %}
+<article class="feature wrap" id="line-check">
+<div class="f-text">
+<h3>{{ f[0].title }} <span class="plan{% if f[0].pro %} pro{% endif %}">{{ f[0].plan }}</span></h3><p>{{ f[0].body }}</p>
+<h3>{{ f[1].title }} <span class="plan{% if f[1].pro %} pro{% endif %}">{{ f[1].plan }}</span></h3><p>{{ f[1].body }}</p>
+</div>
+<div class="f-media">{{ device('guide') }}</div>
+</article>
+<article class="feature feature--calc wrap" id="worth-grading">
+<div class="f-text">
+<h3>{{ f[2].title }} <span class="plan{% if f[2].pro %} pro{% endif %}">{{ f[2].plan }}</span></h3><p>{{ f[2].body }}</p>
+<form class="calc" id="value-form" novalidate aria-labelledby="calc-title">
+<h4 id="calc-title">{{ ui.calc.h }}</h4>
+<p class="help" id="value-help">{{ ui.calc.help }}</p>
+<div class="calc-grid">
+{% for id, key, val in [('raw-price','raw',0),('second-price','second',1),('top-price','top',2),('grading-fee','fee',3),('selling-fee','sell',4)] %}<label for="{{ id }}">{{ ui.calc[key] }}<input id="{{ id }}" name="{{ id }}" type="text" inputmode="decimal" value="{{ ui.calc.example[val] }}" autocomplete="off" aria-describedby="value-help value-error"></label>
+{% endfor %}<label for="centering-ceiling" class="wide">{{ ui.calc.ceiling }}<select id="centering-ceiling" name="centering-ceiling"><option value="">{{ ui.calc.opts[0] }}</option><option value="10">{{ ui.calc.opts[1] }}</option><option value="9">{{ ui.calc.opts[2] }}</option><option value="8">{{ ui.calc.opts[3] }}</option></select></label>
+</div>
+<p id="value-error" class="error" role="alert" hidden>{{ ui.calc.error }}</p>
+<div class="calc-out" aria-live="polite" aria-atomic="true">
+<p class="value-verdict" id="value-verdict"{% for k, t in ui.calc.verdict.items() %} data-{{ k }}="{{ t }}"{% endfor %}>—</p>
+<p class="value-detail" id="value-detail"></p>
+<div class="calc-nums"><p>{{ ui.calc.out[0] }}<output id="gain-second">—</output></p><p>{{ ui.calc.out[1] }}<output id="gain-top">—</output></p><p>{{ ui.calc.out[2] }}<output id="break-even">—</output></p></div>
+</div>
+<div class="calc-foot"><button type="reset">{{ ui.calc.reset }}</button><a href="{{ worth_guide }}">{{ ui.calc.more }}</a></div>
+<p class="caption">{{ ui.calc.caption }}</p>
+</form>
+</div>
+<div class="f-media">{{ device('value') }}</div>
+</article>
+<article class="feature wrap" id="close-ups">
+<div class="f-text">
+<h3>{{ f[3].title }} <span class="plan{% if f[3].pro %} pro{% endif %}">{{ f[3].plan }}</span></h3><p>{{ f[3].body }}</p>
+<div class="contact">{% for k in ['tl','t','tr','l','r','bl','b','br'] %}<figure><img src="{{ rel }}assets/img/closeup-{{ k }}.webp" width="200" height="200" loading="lazy" decoding="async" alt=""><figcaption>{{ ui.closeup_labels[loop.index0] }}</figcaption></figure>{% endfor %}</div>
+<p class="contact-cap">{{ ui.closeups_caption }}</p>
+</div>
+<div class="f-media">{{ device('closeups') }}</div>
+</article>
+<article class="feature wrap" id="submission-log">
+<div class="f-text">
+<h3>{{ f[4].title }} <span class="plan{% if f[4].pro %} pro{% endif %}">{{ f[4].plan }}</span></h3><p>{{ f[4].body }}</p>
+</div>
+<div class="f-media">{{ device('ledger') }}</div>
+</article>
+<article class="feature wrap" id="share">
+<div class="f-text">
+<h3>{{ ui.f_share_title }} <span class="plan">{{ f[0].plan }}</span></h3><p>{{ measure['items'][4] }}</p>
+</div>
+<div class="f-media">{{ device('share') }}</div>
+</article>
+<article class="feature wrap" id="batch">
+<div class="f-text">
+<h3>{{ ui.f_batch_title }} <span class="plan pro">{{ f[4].plan }}</span></h3><p>{{ measure['items'][5] }}</p>
+</div>
+<div class="f-media"><div class="bins-wrap">
+<div class="bins" aria-hidden="true">{% for bin in ui.batch_bins %}{% set c = [4,3,2][loop.index0] %}{% set H = 104 + (c-1)*14 %}<div class="bin"><svg viewBox="0 0 120 {{ H }}">{% for k in range(c) %}<rect x="{{ 16 + k*6 }}" y="{{ H - 102 - k*14 }}" width="72" height="100" rx="4" fill="{% if loop.last %}#fff{% else %}#E9EDF1{% endif %}" stroke="#14161A" stroke-width="1.5"/>{% endfor %}</svg><p>{{ bin }}</p></div>{% endfor %}</div>
+<p class="pdf-note"><svg viewBox="0 0 26 32" aria-hidden="true"><path d="M1 1h16l8 8v22H1z" fill="#fff" stroke="#14161A" stroke-width="1.5"/><path d="M17 1v8h8" fill="none" stroke="#14161A" stroke-width="1.5"/><path d="M6 16h14M6 20h14M6 24h9" stroke="#D6247B" stroke-width="1.5"/></svg>{{ ui.batch_pdf }}</p>
+</div></div>
+</article>
+</section>
+
+<section class="limits wrap" id="limits" aria-labelledby="limits-title">
+<h2 class="sec-h2" id="limits-title">{{ limits.h2 }}</h2>
+<ul class="dele">{% for i in limits['items'] %}<li>{{ i }}</li>{% endfor %}</ul>
+<div class="limits-foot"><p>{{ limits.privacy }} <a href="{{ base }}privacy">{{ footer.privacy }}</a></p><p>{{ limits.languages }}</p></div>
+</section>
+{% endblock %}
