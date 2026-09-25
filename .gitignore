@@ -2,3 +2,8 @@
 .DS_Store
 __pycache__/
 tools/p5-video/node_modules/
+# Large local-only card sources (build reads only the two json files)
+tools/src/art/real/candidates/
+tools/src/art/real/*.png
+tools/src/art/real/*.jpg
+tools/src/art/real/pika.json

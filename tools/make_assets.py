@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Build the static image assets from tools/src/art (run once after changing the art).
 
-- assets/img/card-offcenter*.webp : texture for the 3D stage and the phone figures
-- assets/img/closeup-*.webp       : real full-resolution crops of our own sample card
+- assets/img/sample-card*.webp    : the real sample card (texture for the 3D stage, hero/step figures, OG)
 - assets/img/apple-touch-icon.png, favicon.svg
 Screenshots are imported separately by tools/import_shots.py; the OG image by tools/render_og.py.
 """
@@ -20,29 +19,49 @@ def webp(im, path, q=84):
     print(path.relative_to(ROOT), im.size, path.stat().st_size // 1024, "KB")
 
 
-# Off-center sample card (left/right 52.9/47.1, top/bottom 50.6/49.4).
-off = Image.open(ART / "card-offcenter.png").convert("RGB")
-webp(off, OUT / "card-offcenter.webp", 86)
-for width in (640, 360):
-    webp(off.resize((width, round(width * off.height / off.width)), Image.LANCZOS), OUT / f"card-offcenter-{width}.webp", 82)
+# The sample card is a real one: a 1999 Base Set Charizard scan, upscaled by tools/make_real_card.py,
+# which also measures its printed borders (tools/src/art/real/charizard-measure.json).
+flat = Image.open(ART / "real/charizard-flat.png").convert("RGBA")
+# 3D texture: opaque, corners filled with the border colour so the shader's rounded mask never shows a dark fringe.
+opaque = Image.new("RGBA", flat.size, flat.getpixel((flat.width // 2, 12)))
+opaque.alpha_composite(flat)
+opaque = opaque.convert("RGB")
+webp(opaque.resize((1600, round(1600 * flat.height / flat.width)), Image.LANCZOS), OUT / "sample-card.webp", 86)
+# Figures (hero, steps, OG): keep the transparent rounded corners.
+for width in (960, 640, 480, 360):
+    webp(flat.resize((width, round(width * flat.height / flat.width)), Image.LANCZOS), OUT / f"sample-card-{width}.webp", 74)
+# The eight close-ups (assets/img/closeup-*.webp) come from tools/make_real_card.py.
 
-# Close-ups: the app crops the four corners and the middle of the four edges from the
-# original photo at full resolution. We do the same on our own sample card photo.
-card = Image.open(ART / "card.png").convert("RGB")
-w, h = card.size
-# The art has a white margin with rounded corners; lay it on a dark neutral background so the
-# crops read like the app's close-ups (card edge against the background), not like a white glitch.
-mask = Image.new("L", card.size, 0)
-ImageDraw.Draw(mask).rounded_rectangle((9, 8, 1050, 1474), radius=42, fill=255)
-card = Image.composite(card, Image.new("RGB", card.size, (28, 31, 36)), mask)
-s = 200  # crop size in source pixels (shown at ~110–150 CSS px)
-boxes = {
-    "tl": (0, 0), "t": ((w - s) // 2, 0), "tr": (w - s, 0),
-    "l": (0, (h - s) // 2), "r": (w - s, (h - s) // 2),
-    "bl": (0, h - s), "b": ((w - s) // 2, h - s), "br": (w - s, h - s),
-}
-for key, (x, y) in boxes.items():
-    webp(card.crop((x, y, x + s, y + s)), OUT / f"closeup-{key}.webp", 84)
+# Guide figure: the top printed border of the real card under a loupe, with the measuring line on its inner edge.
+import json
+from PIL import ImageFilter
+m = json.loads((ART / "real/charizard-measure.json").read_text())
+top = m["border_px"]["t"]
+S, Z = 900, 4                                   # output size, magnification (card px -> figure px)
+half = S / Z / 2
+cx, cy = m["size"][0] * 0.5, top * 0.55         # lens centre: middle of the top border, a little above its inner edge
+fig = Image.new("RGBA", (S, S), (46, 91, 79, 255))
+d = ImageDraw.Draw(fig)
+for step, a in ((20 * Z / 4, 18), (100 * Z / 4, 40)):   # cutting-mat grid, magnified with the card
+    x = 0.0
+    while x < S:
+        d.line([(x, 0), (x, S)], fill=(232, 240, 236, a)); d.line([(0, x), (S, x)], fill=(232, 240, 236, a)); x += step
+box = (int(cx - half), 0, int(cx + half), int(cy + half))
+crop = flat.crop(box).resize(((box[2] - box[0]) * Z, (box[3] - box[1]) * Z), Image.LANCZOS)
+fig.alpha_composite(crop, (0, int(S / 2 - cy * Z)))
+d = ImageDraw.Draw(fig)
+y_edge, y_inner = S / 2 - cy * Z, S / 2 + (top - cy) * Z
+d.line([(0, y_inner), (S, y_inner)], fill=(0, 160, 220, 255), width=5)
+bx = S * 0.72
+d.line([(bx, y_edge), (bx, y_inner)], fill=(214, 36, 123, 255), width=4)
+for y in (y_edge, y_inner):
+    d.line([(bx - 16, y), (bx + 16, y)], fill=(214, 36, 123, 255), width=4)
+lens = Image.new("L", (S, S), 0)
+ImageDraw.Draw(lens).ellipse((6, 6, S - 7, S - 7), fill=255)
+out = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+out.paste(fig, (0, 0), lens.filter(ImageFilter.GaussianBlur(1)))
+ImageDraw.Draw(out).ellipse((6, 6, S - 7, S - 7), outline=(20, 22, 26, 255), width=10)
+webp(out.resize((600, 600), Image.LANCZOS), OUT / "loupe-top-border.webp", 82)
 
 # Icons: a registration mark (circle + cross) in ink on proof white.
 def reg_mark(size):

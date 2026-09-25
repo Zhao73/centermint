@@ -5,7 +5,7 @@
   "download": "Download",
   "badge_alt": "Download on the App Store",
   "qr_caption": "Scan with your iPhone camera to open CenterMint in the App Store.",
-  "stage_caption": "Our own sample card, drawn for CenterMint. Its left and right borders are 52.9 / 47.1.",
+  "stage_caption": "A real card: Charizard from the 1999 Pokémon Base Set. Its left and right borders are {lr}.",
   "loupe_hint": "Move the pointer over the card to use the loupe.",
   "readout_lr": "Left / right",
   "readout_tb": "Top / bottom",
@@ -31,7 +31,7 @@
    "ledger": "Submission Log with grading fees and returned grades",
    "share": "Share image with the card photo and its centering"
   },
-  "closeups_caption": "Crops from our sample card at full resolution: four corners, four edges. You judge the whitening; the app does not score it.",
+  "closeups_caption": "Crops from the Charizard photo at full resolution: four corners, four edges. You judge the whitening; the app does not score it.",
   "closeup_labels": [
    "Top left",
    "Top edge",
@@ -93,12 +93,14 @@
    ]
   },
   "video_h2": "Watch it measure",
-  "video_p": "Cards land on the mat. The outer edge and the printed inner border are found, the ratios appear, and the one that is off-center gets flagged.",
-  "video_note": "Abstract cards drawn for this page. In the app you measure your own card from a photo.",
+  "video_p": "The loupe travels around a real card. Each line settles on the inner edge of the printed border, then the ratios are checked against the PSA 10 front reference.",
+  "video_note": "Charizard, Pokémon Base Set (1999), from a scan. In the app you measure your own card from a photo.",
   "footer_download": "Get CenterMint",
   "footer_languages": "Languages",
   "footer_more": "Contact and legal",
-  "mobile_bar": "Free on iPhone"
+  "mobile_bar": "Free on iPhone",
+  "hero_card_alt": "Charizard from the 1999 Pokémon Base Set with measuring lines on the inner edge of its yellow border: left/right {lr}, top/bottom {tb}",
+  "trademark": "Pokémon and the card images are trademarks and copyrights of Nintendo, Creatures Inc., GAME FREAK inc. and The Pokémon Company. CenterMint is not affiliated with, sponsored or endorsed by them."
  },
  "ja": {
   "skip": "本文へ移動",
@@ -106,7 +108,7 @@
   "download": "ダウンロード",
   "badge_alt": "App Store からダウンロード",
   "qr_caption": "iPhone のカメラで読み取ると、App Store の CenterMint を開きます。",
-  "stage_caption": "CenterMint のために描いたサンプルカード。左右の余白は 52.9 / 47.1 です。",
+  "stage_caption": "実在のカード：1999 年の英語版 Base Set のリザードン。左右の余白は {lr} です。",
   "loupe_hint": "カードの上でポインタを動かすと拡大鏡になります。",
   "readout_lr": "左右",
   "readout_tb": "上下",
@@ -132,7 +134,7 @@
    "ledger": "鑑定費用と戻ってきた評価を記録する鑑定記録",
    "share": "カード写真とセンタリングを載せた共有画像"
   },
-  "closeups_caption": "サンプルカードの画像から元の解像度で切り出した四隅と四辺。白欠けの判断はあなたの目で。アプリは採点しません。",
+  "closeups_caption": "リザードンの写真から元の解像度で切り出した四隅と四辺。白欠けの判断はあなたの目で。アプリは採点しません。",
   "closeup_labels": [
    "左上",
    "上辺",
@@ -194,12 +196,14 @@
    ]
   },
   "video_h2": "測る様子を見る",
-  "video_p": "カードがマットに置かれると、外縁と印刷された内枠が見つかり、比率が表示されます。中心がずれた一枚には印がつきます。",
-  "video_note": "このページのために描いた抽象的なカードです。アプリでは、あなたのカードを写真から測ります。",
+  "video_p": "拡大鏡が実在のカードを一周し、線が印刷枠の内側にぴたりと合います。最後に比率を PSA 10 の表面の目安と比べます。",
+  "video_note": "1999 年の英語版 Base Set のリザードン（スキャン画像）。アプリでは、あなたのカードを写真から測ります。",
   "footer_download": "CenterMint を入手",
   "footer_languages": "言語",
   "footer_more": "お問い合わせと規約",
-  "mobile_bar": "iPhone で無料"
+  "mobile_bar": "iPhone で無料",
+  "hero_card_alt": "1999 年の英語版 Base Set のリザードン。黄色い枠の内側に測定線（左右 {lr}、上下 {tb}）",
+  "trademark": "ポケモンおよびカード画像の商標・著作権は任天堂、クリーチャーズ、ゲームフリーク、株式会社ポケモンに帰属します。CenterMint はこれらの企業と提携しておらず、承認も受けていません。"
  },
  "zh-Hans": {
   "skip": "跳到正文",
@@ -207,7 +211,7 @@
   "download": "下载",
   "badge_alt": "在 App Store 下载",
   "qr_caption": "用 iPhone 相机扫一扫，打开 App Store 里的 CenterMint。",
-  "stage_caption": "这是我们为 CenterMint 画的示例卡，左右边距是 52.9 / 47.1。",
+  "stage_caption": "这是一张真实的卡：1999 年英文版 Base Set 的喷火龙，左右边距是 {lr}。",
   "loupe_hint": "把鼠标移到卡上，就是一个放大镜。",
   "readout_lr": "左右",
   "readout_tb": "上下",
@@ -233,7 +237,7 @@
    "ledger": "送评账本：送评费和回来的分数",
    "share": "带卡牌照片和居中比例的分享图"
   },
-  "closeups_caption": "从示例卡图片按原清晰度裁出的四个角和四条边。白边要你自己判断，App 不打分。",
+  "closeups_caption": "从喷火龙照片按原清晰度裁出的四个角和四条边。白边要你自己判断，App 不打分。",
   "closeup_labels": [
    "左上角",
    "上边",
@@ -295,12 +299,14 @@
    ]
   },
   "video_h2": "看它怎么测",
-  "video_p": "卡落到切割垫上，外框和印刷内框被找出来，比例随之出现；偏心的那一张会被标出来。",
-  "video_note": "画面里是为本页画的抽象卡。在 App 里，你测的是自己卡的照片。",
+  "video_p": "放大镜沿着一张真实的卡走一圈，每条线都贴到印刷边框的内沿上，最后把比例和 PSA 10 正面参考对比。",
+  "video_note": "画面里是 1999 年英文版 Base Set 的喷火龙（扫描图）。在 App 里，你测的是自己卡的照片。",
   "footer_download": "下载 CenterMint",
   "footer_languages": "语言",
   "footer_more": "联系与条款",
-  "mobile_bar": "iPhone 免费下载"
+  "mobile_bar": "iPhone 免费下载",
+  "hero_card_alt": "1999 年英文版 Base Set 的喷火龙，测量线压在黄边内沿上：左右 {lr}，上下 {tb}",
+  "trademark": "宝可梦及卡牌图像的商标和版权归任天堂、Creatures、GAME FREAK 和 The Pokémon Company 所有。CenterMint 与上述公司没有关联，也未获得其认可。"
  },
  "zh-Hant": {
   "skip": "跳到正文",
@@ -308,7 +314,7 @@
   "download": "下載",
   "badge_alt": "在 App Store 下載",
   "qr_caption": "用 iPhone 相機掃描，開啟 App Store 裡的 CenterMint。",
-  "stage_caption": "這是我們為 CenterMint 畫的範例卡，左右邊距是 52.9 / 47.1。",
+  "stage_caption": "這是一張真實的卡：1999 年英文版 Base Set 的噴火龍，左右邊距是 {lr}。",
   "loupe_hint": "把游標移到卡上，就是一個放大鏡。",
   "readout_lr": "左右",
   "readout_tb": "上下",
@@ -334,7 +340,7 @@
    "ledger": "送鑑帳本：送鑑費與回來的分數",
    "share": "附卡牌照片與置中比例的分享圖"
   },
-  "closeups_caption": "從範例卡圖片依原解析度裁出的四個角與四條邊。白邊要你自己判斷，App 不評分。",
+  "closeups_caption": "從噴火龍照片依原解析度裁出的四個角與四條邊。白邊要你自己判斷，App 不評分。",
   "closeup_labels": [
    "左上角",
    "上邊",
@@ -396,12 +402,14 @@
    ]
   },
   "video_h2": "看它怎麼測",
-  "video_p": "卡落到切割墊上，外框和印刷內框被找出來，比例隨之出現；偏心的那一張會被標出來。",
-  "video_note": "畫面裡是為本頁畫的抽象卡。在 App 裡，你測的是自己卡的照片。",
+  "video_p": "放大鏡沿著一張真實的卡走一圈，每條線都貼到印刷邊框的內緣上，最後把比例和 PSA 10 正面參考比對。",
+  "video_note": "畫面裡是 1999 年英文版 Base Set 的噴火龍（掃描圖）。在 App 裡，你測的是自己卡的照片。",
   "footer_download": "下載 CenterMint",
   "footer_languages": "語言",
   "footer_more": "聯絡與條款",
-  "mobile_bar": "iPhone 免費下載"
+  "mobile_bar": "iPhone 免費下載",
+  "hero_card_alt": "1999 年英文版 Base Set 的噴火龍，測量線壓在黃邊內緣上：左右 {lr}，上下 {tb}",
+  "trademark": "寶可夢及卡牌圖像的商標與著作權屬於任天堂、Creatures、GAME FREAK 與 The Pokémon Company。CenterMint 與上述公司沒有關聯，也未獲得其認可。"
  },
  "ko": {
   "skip": "본문으로 건너뛰기",
@@ -409,7 +417,7 @@
   "download": "다운로드",
   "badge_alt": "App Store에서 다운로드",
   "qr_caption": "iPhone 카메라로 스캔하면 App Store의 CenterMint가 열립니다.",
-  "stage_caption": "CenterMint를 위해 직접 그린 샘플 카드입니다. 좌우 여백은 52.9 / 47.1입니다.",
+  "stage_caption": "실제 카드입니다: 1999년 영문판 Base Set의 리자몽. 좌우 여백은 {lr}입니다.",
   "loupe_hint": "카드 위로 포인터를 움직이면 확대경이 됩니다.",
   "readout_lr": "좌우",
   "readout_tb": "상하",
@@ -435,7 +443,7 @@
    "ledger": "그레이딩 비용과 돌아온 등급을 기록하는 그레이딩 기록",
    "share": "카드 사진과 센터링을 담은 공유 이미지"
   },
-  "closeups_caption": "샘플 카드 이미지에서 원래 해상도로 잘라 낸 네 모서리와 네 가장자리입니다. 화이트닝은 직접 판단하세요. 앱은 점수를 매기지 않습니다.",
+  "closeups_caption": "리자몽 사진에서 원래 해상도로 잘라 낸 네 모서리와 네 가장자리입니다. 화이트닝은 직접 판단하세요. 앱은 점수를 매기지 않습니다.",
   "closeup_labels": [
    "왼쪽 위",
    "위쪽",
@@ -497,12 +505,14 @@
    ]
   },
   "video_h2": "측정하는 모습 보기",
-  "video_p": "카드가 매트 위에 놓이면 바깥 테두리와 인쇄된 안쪽 테두리를 찾고 비율이 나타납니다. 중심이 어긋난 카드는 표시됩니다.",
-  "video_note": "이 페이지를 위해 그린 추상적인 카드입니다. 앱에서는 내 카드 사진으로 측정합니다.",
+  "video_p": "확대경이 실제 카드를 한 바퀴 돌며 각 선을 인쇄 테두리 안쪽 가장자리에 맞춥니다. 마지막으로 비율을 PSA 10 앞면 기준과 비교합니다.",
+  "video_note": "1999년 영문판 Base Set의 리자몽(스캔 이미지)입니다. 앱에서는 내 카드 사진으로 측정합니다.",
   "footer_download": "CenterMint 받기",
   "footer_languages": "언어",
   "footer_more": "문의와 약관",
-  "mobile_bar": "iPhone 무료"
+  "mobile_bar": "iPhone 무료",
+  "hero_card_alt": "1999년 영문판 Base Set의 리자몽, 노란 테두리 안쪽 가장자리에 측정선: 좌우 {lr}, 상하 {tb}",
+  "trademark": "포켓몬 및 카드 이미지의 상표권과 저작권은 Nintendo, Creatures Inc., GAME FREAK inc., The Pokémon Company에 있습니다. CenterMint는 이들과 제휴 관계가 없으며 승인이나 후원을 받지 않았습니다."
  },
  "vi": {
   "skip": "Chuyển đến nội dung",
@@ -510,7 +520,7 @@
   "download": "Tải về",
   "badge_alt": "Tải về trên App Store",
   "qr_caption": "Quét bằng camera iPhone để mở CenterMint trên App Store.",
-  "stage_caption": "Thẻ mẫu do chúng tôi vẽ cho CenterMint. Viền trái và phải là 52.9 / 47.1.",
+  "stage_caption": "Một thẻ thật: Charizard trong bộ Pokémon Base Set năm 1999. Viền trái và phải là {lr}.",
   "loupe_hint": "Di chuột lên thẻ để dùng kính lúp.",
   "readout_lr": "Trái / phải",
   "readout_tb": "Trên / dưới",
@@ -536,7 +546,7 @@
    "ledger": "Sổ gửi chấm với phí chấm điểm và điểm nhận về",
    "share": "Ảnh chia sẻ có ảnh thẻ và độ căn giữa"
   },
-  "closeups_caption": "Cắt từ ảnh thẻ mẫu ở độ phân giải gốc: bốn góc, bốn cạnh. Bạn tự đánh giá vết trắng; ứng dụng không chấm điểm.",
+  "closeups_caption": "Cắt từ ảnh Charizard ở độ phân giải gốc: bốn góc, bốn cạnh. Bạn tự đánh giá vết trắng; ứng dụng không chấm điểm.",
   "closeup_labels": [
    "Góc trên trái",
    "Cạnh trên",
@@ -598,12 +608,14 @@
    ]
   },
   "video_h2": "Xem cách đo",
-  "video_p": "Thẻ đặt xuống tấm lót cắt. Cạnh ngoài và viền in bên trong được tìm ra, tỉ lệ hiện lên, và thẻ lệch tâm được đánh dấu.",
-  "video_note": "Thẻ trừu tượng vẽ riêng cho trang này. Trong ứng dụng, bạn đo thẻ của mình từ ảnh.",
+  "video_p": "Kính lúp đi một vòng quanh một thẻ thật. Mỗi đường khớp vào mép trong của viền in, rồi tỉ lệ được so với mức tham chiếu mặt trước PSA 10.",
+  "video_note": "Charizard, Pokémon Base Set (1999), từ ảnh quét. Trong ứng dụng, bạn đo thẻ của mình từ ảnh.",
   "footer_download": "Tải CenterMint",
   "footer_languages": "Ngôn ngữ",
   "footer_more": "Liên hệ và pháp lý",
-  "mobile_bar": "Miễn phí trên iPhone"
+  "mobile_bar": "Miễn phí trên iPhone",
+  "hero_card_alt": "Charizard trong bộ Pokémon Base Set năm 1999 với các đường đo ở mép trong viền vàng: trái/phải {lr}, trên/dưới {tb}",
+  "trademark": "Pokémon và hình ảnh thẻ là nhãn hiệu và bản quyền của Nintendo, Creatures Inc., GAME FREAK inc. và The Pokémon Company. CenterMint không liên kết, không được tài trợ hay chứng thực bởi các công ty này."
  },
  "de": {
   "skip": "Zum Inhalt springen",
@@ -611,7 +623,7 @@
   "download": "Laden",
   "badge_alt": "Laden im App Store",
   "qr_caption": "Mit der iPhone-Kamera scannen, um CenterMint im App Store zu öffnen.",
-  "stage_caption": "Unsere eigene Beispielkarte, für CenterMint gezeichnet. Linker und rechter Rand: 52.9 / 47.1.",
+  "stage_caption": "Eine echte Karte: Glurak aus dem Pokémon-Grundset (Base Set) von 1999. Linker und rechter Rand: {lr}.",
   "loupe_hint": "Bewege den Zeiger über die Karte, dann wird er zur Lupe.",
   "readout_lr": "Links / rechts",
   "readout_tb": "Oben / unten",
@@ -637,7 +649,7 @@
    "ledger": "Submission Log mit Grading-Gebühren und zurückgekommenen Noten",
    "share": "Bild zum Teilen mit Kartenfoto und Zentrierung"
   },
-  "closeups_caption": "Ausschnitte aus unserer Beispielkarte in voller Auflösung: vier Ecken, vier Kanten. Weiße Stellen beurteilst du selbst; die App vergibt keine Note.",
+  "closeups_caption": "Ausschnitte aus dem Glurak-Foto in voller Auflösung: vier Ecken, vier Kanten. Weiße Stellen beurteilst du selbst; die App vergibt keine Note.",
   "closeup_labels": [
    "Oben links",
    "Oberkante",
@@ -699,12 +711,14 @@
    ]
   },
   "video_h2": "So wird gemessen",
-  "video_p": "Karten landen auf der Schneidematte. Außenkante und gedruckter Innenrahmen werden gefunden, die Verhältnisse erscheinen, und die dezentrierte Karte wird markiert.",
-  "video_note": "Abstrakte Karten, eigens für diese Seite gezeichnet. In der App misst du deine eigene Karte auf einem Foto.",
+  "video_p": "Die Lupe wandert einmal um eine echte Karte. Jede Linie legt sich an die Innenkante des gedruckten Rands, dann werden die Verhältnisse mit der PSA-10-Richtlinie für die Vorderseite verglichen.",
+  "video_note": "Glurak, Pokémon-Grundset (1999), nach einem Scan. In der App misst du deine eigene Karte auf einem Foto.",
   "footer_download": "CenterMint laden",
   "footer_languages": "Sprachen",
   "footer_more": "Kontakt und Rechtliches",
-  "mobile_bar": "Kostenlos fürs iPhone"
+  "mobile_bar": "Kostenlos fürs iPhone",
+  "hero_card_alt": "Glurak aus dem Pokémon-Grundset von 1999 mit Messlinien an der Innenkante des gelben Rands: links/rechts {lr}, oben/unten {tb}",
+  "trademark": "Pokémon und die Kartenbilder sind Marken und urheberrechtlich geschützt von Nintendo, Creatures Inc., GAME FREAK inc. und The Pokémon Company. CenterMint ist mit diesen Unternehmen nicht verbunden und wird von ihnen weder gesponsert noch unterstützt."
  },
  "fr": {
   "skip": "Aller au contenu",
@@ -712,7 +726,7 @@
   "download": "Télécharger",
   "badge_alt": "Télécharger dans l’App Store",
   "qr_caption": "Scannez avec l’appareil photo de l’iPhone pour ouvrir CenterMint dans l’App Store.",
-  "stage_caption": "Notre propre carte d’exemple, dessinée pour CenterMint. Marges gauche et droite : 52.9 / 47.1.",
+  "stage_caption": "Une vraie carte : Dracaufeu, set de base Pokémon de 1999. Marges gauche et droite : {lr}.",
   "loupe_hint": "Passez le pointeur sur la carte : il devient une loupe.",
   "readout_lr": "Gauche / droite",
   "readout_tb": "Haut / bas",
@@ -738,7 +752,7 @@
    "ledger": "Submission Log avec les frais de gradation et les notes reçues",
    "share": "Image à partager avec la photo de la carte et son centrage"
   },
-  "closeups_caption": "Recadrages en pleine résolution de notre carte d’exemple : quatre coins, quatre bords. Vous jugez le blanchiment ; l’app ne note rien.",
+  "closeups_caption": "Recadrages en pleine résolution de la photo de Dracaufeu : quatre coins, quatre bords. Vous jugez le blanchiment ; l’app ne note rien.",
   "closeup_labels": [
    "Coin haut gauche",
    "Bord haut",
@@ -800,12 +814,14 @@
    ]
   },
   "video_h2": "Voir la mesure",
-  "video_p": "Les cartes se posent sur le tapis de découpe. Le bord extérieur et la bordure imprimée sont trouvés, les ratios s’affichent, et la carte décentrée est signalée.",
-  "video_note": "Cartes abstraites dessinées pour cette page. Dans l’app, vous mesurez votre propre carte à partir d’une photo.",
+  "video_p": "La loupe fait le tour d’une vraie carte. Chaque ligne se pose sur le bord intérieur de la bordure imprimée, puis les ratios sont comparés à la référence PSA 10 pour le recto.",
+  "video_note": "Dracaufeu, set de base Pokémon (1999), d’après un scan. Dans l’app, vous mesurez votre propre carte à partir d’une photo.",
   "footer_download": "Obtenir CenterMint",
   "footer_languages": "Langues",
   "footer_more": "Contact et mentions",
-  "mobile_bar": "Gratuit sur iPhone"
+  "mobile_bar": "Gratuit sur iPhone",
+  "hero_card_alt": "Dracaufeu du set de base Pokémon de 1999, avec les lignes de mesure sur le bord intérieur de la bordure jaune : gauche/droite {lr}, haut/bas {tb}",
+  "trademark": "Pokémon et les images des cartes sont des marques et des œuvres protégées de Nintendo, Creatures Inc., GAME FREAK inc. et The Pokémon Company. CenterMint n’est ni affilié à ces sociétés, ni sponsorisé, ni approuvé par elles."
  },
  "es": {
   "skip": "Ir al contenido",
@@ -813,7 +829,7 @@
   "download": "Descargar",
   "badge_alt": "Descárgalo en el App Store",
   "qr_caption": "Escanéalo con la cámara del iPhone para abrir CenterMint en el App Store.",
-  "stage_caption": "Nuestra propia carta de ejemplo, dibujada para CenterMint. Bordes izquierdo y derecho: 52.9 / 47.1.",
+  "stage_caption": "Una carta real: Charizard de la colección básica de Pokémon de 1999. Bordes izquierdo y derecho: {lr}.",
   "loupe_hint": "Pasa el puntero sobre la carta y se convierte en una lupa.",
   "readout_lr": "Izquierda / derecha",
   "readout_tb": "Arriba / abajo",
@@ -839,7 +855,7 @@
    "ledger": "Submission Log con tarifas de gradeo y notas recibidas",
    "share": "Imagen para compartir con la foto de la carta y su centrado"
   },
-  "closeups_caption": "Recortes a resolución completa de nuestra carta de ejemplo: cuatro esquinas, cuatro bordes. El blanqueado lo juzgas tú; la app no lo puntúa.",
+  "closeups_caption": "Recortes a resolución completa de la foto de Charizard: cuatro esquinas, cuatro bordes. El blanqueado lo juzgas tú; la app no lo puntúa.",
   "closeup_labels": [
    "Arriba izquierda",
    "Borde superior",
@@ -901,12 +917,14 @@
    ]
   },
   "video_h2": "Así mide",
-  "video_p": "Las cartas caen sobre la plancha de corte. Se encuentran el borde exterior y el marco impreso, aparecen las proporciones y la carta descentrada queda marcada.",
-  "video_note": "Cartas abstractas dibujadas para esta página. En la app mides tu propia carta a partir de una foto.",
+  "video_p": "La lupa recorre una carta real. Cada línea se asienta en el borde interior del marco impreso y después las proporciones se comparan con la referencia PSA 10 del anverso.",
+  "video_note": "Charizard, colección básica de Pokémon (1999), a partir de un escaneo. En la app mides tu propia carta a partir de una foto.",
   "footer_download": "Consigue CenterMint",
   "footer_languages": "Idiomas",
   "footer_more": "Contacto y legal",
-  "mobile_bar": "Gratis en iPhone"
+  "mobile_bar": "Gratis en iPhone",
+  "hero_card_alt": "Charizard de la colección básica de Pokémon de 1999 con líneas de medida en el borde interior del marco amarillo: izquierda/derecha {lr}, arriba/abajo {tb}",
+  "trademark": "Pokémon y las imágenes de las cartas son marcas y obras protegidas de Nintendo, Creatures Inc., GAME FREAK inc. y The Pokémon Company. CenterMint no está afiliada a estas empresas ni cuenta con su patrocinio o aprobación."
  },
  "it": {
   "skip": "Vai al contenuto",
@@ -914,7 +932,7 @@
   "download": "Scarica",
   "badge_alt": "Scarica su App Store",
   "qr_caption": "Inquadra con la fotocamera dell’iPhone per aprire CenterMint su App Store.",
-  "stage_caption": "La nostra carta di esempio, disegnata per CenterMint. Margini sinistro e destro: 52.9 / 47.1.",
+  "stage_caption": "Una carta vera: Charizard del set base Pokémon del 1999. Margini sinistro e destro: {lr}.",
   "loupe_hint": "Muovi il puntatore sulla carta: diventa una lente.",
   "readout_lr": "Sinistra / destra",
   "readout_tb": "Alto / basso",
@@ -940,7 +958,7 @@
    "ledger": "Submission Log con costi di gradazione e voti ricevuti",
    "share": "Immagine da condividere con la foto della carta e la centratura"
   },
-  "closeups_caption": "Ritagli a piena risoluzione della nostra carta di esempio: quattro angoli, quattro bordi. Lo sbiancamento lo giudichi tu; l’app non dà voti.",
+  "closeups_caption": "Ritagli a piena risoluzione della foto di Charizard: quattro angoli, quattro bordi. Lo sbiancamento lo giudichi tu; l’app non dà voti.",
   "closeup_labels": [
    "In alto a sinistra",
    "Bordo superiore",
@@ -1002,12 +1020,14 @@
    ]
   },
   "video_h2": "Guarda come misura",
-  "video_p": "Le carte si posano sul tappetino da taglio. Si trovano il bordo esterno e la cornice stampata, compaiono i rapporti e la carta decentrata viene segnalata.",
-  "video_note": "Carte astratte disegnate per questa pagina. Nell’app misuri la tua carta da una foto.",
+  "video_p": "La lente fa il giro di una carta vera. Ogni linea si posa sul bordo interno della cornice stampata, poi i rapporti vengono confrontati con il riferimento PSA 10 per il fronte.",
+  "video_note": "Charizard, set base Pokémon (1999), da una scansione. Nell’app misuri la tua carta da una foto.",
   "footer_download": "Scarica CenterMint",
   "footer_languages": "Lingue",
   "footer_more": "Contatti e note legali",
-  "mobile_bar": "Gratis su iPhone"
+  "mobile_bar": "Gratis su iPhone",
+  "hero_card_alt": "Charizard del set base Pokémon del 1999 con le linee di misura sul bordo interno della cornice gialla: sinistra/destra {lr}, alto/basso {tb}",
+  "trademark": "Pokémon e le immagini delle carte sono marchi e opere protette di Nintendo, Creatures Inc., GAME FREAK inc. e The Pokémon Company. CenterMint non è affiliata a queste società né sponsorizzata o approvata da esse."
  },
  "pt-BR": {
   "skip": "Ir para o conteúdo",
@@ -1015,7 +1035,7 @@
   "download": "Baixar",
   "badge_alt": "Baixar na App Store",
   "qr_caption": "Aponte a câmera do iPhone para abrir o CenterMint na App Store.",
-  "stage_caption": "Nossa própria carta de exemplo, desenhada para o CenterMint. Bordas esquerda e direita: 52.9 / 47.1.",
+  "stage_caption": "Uma carta real: Charizard da coleção básica de Pokémon de 1999. Bordas esquerda e direita: {lr}.",
   "loupe_hint": "Passe o ponteiro sobre a carta e ele vira uma lupa.",
   "readout_lr": "Esquerda / direita",
   "readout_tb": "Topo / base",
@@ -1041,7 +1061,7 @@
    "ledger": "Submission Log com taxas de graduação e notas recebidas",
    "share": "Imagem para compartilhar com a foto da carta e a centralização"
   },
-  "closeups_caption": "Recortes em resolução total da nossa carta de exemplo: quatro cantos, quatro bordas. Você avalia o desgaste branco; o app não dá nota.",
+  "closeups_caption": "Recortes em resolução total da foto do Charizard: quatro cantos, quatro bordas. Você avalia o desgaste branco; o app não dá nota.",
   "closeup_labels": [
    "Canto superior esquerdo",
    "Borda superior",
@@ -1103,11 +1123,13 @@
    ]
   },
   "video_h2": "Veja como mede",
-  "video_p": "As cartas pousam na base de corte. A borda externa e a moldura impressa são encontradas, as proporções aparecem e a carta descentralizada é marcada.",
-  "video_note": "Cartas abstratas desenhadas para esta página. No app você mede a sua carta a partir de uma foto.",
+  "video_p": "A lupa dá a volta em uma carta real. Cada linha se assenta na borda interna da moldura impressa e, no fim, as proporções são comparadas com a referência PSA 10 da frente.",
+  "video_note": "Charizard, coleção básica de Pokémon (1999), a partir de um escaneamento. No app você mede a sua carta a partir de uma foto.",
   "footer_download": "Baixe o CenterMint",
   "footer_languages": "Idiomas",
   "footer_more": "Contato e termos",
-  "mobile_bar": "Grátis no iPhone"
+  "mobile_bar": "Grátis no iPhone",
+  "hero_card_alt": "Charizard da coleção básica de Pokémon de 1999 com linhas de medição na borda interna da moldura amarela: esquerda/direita {lr}, topo/base {tb}",
+  "trademark": "Pokémon e as imagens das cartas são marcas e obras protegidas da Nintendo, Creatures Inc., GAME FREAK inc. e The Pokémon Company. O CenterMint não é afiliado a essas empresas nem patrocinado ou endossado por elas."
  }
 }

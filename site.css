@@ -72,12 +72,32 @@ a:hover{text-decoration-color:var(--magenta)}
 .qr svg{width:84px;height:84px;background:#fff;padding:0}
 .qr figcaption{font-size:13px;line-height:1.4;color:var(--ink-2);max-width:17ch}
 .imprint{margin:40px 0 0;padding-top:16px;border-top:1px solid var(--rule);font-size:14px;line-height:1.6;color:var(--ink-2);max-width:44em}
-.hero-video{margin:32px calc(var(--pad) * -1) 0;position:relative;background:var(--mat)}
-.hero-video video{width:100%;height:auto;aspect-ratio:720/900;object-fit:cover}
+/* Phone/tablet hero: the real sample card on a small lightbox, measured in a CSS loop (desktop uses the WebGL stage). */
+.hero-card{margin:32px calc(var(--pad) * -1) 0;padding:52px 0 26px;position:relative;background:radial-gradient(ellipse 70% 60% at 50% 44%,#FFFFFF 0%,#FAFBFC 55%,#F2F4F7 100%);box-shadow:inset 0 1px 0 #E3E7EC,inset 0 -1px 0 #E3E7EC}
+.hero-card .hero-fig{width:min(56vw,300px);margin:0 auto}
+.hero-readout{display:flex;justify-content:center;gap:28px;margin-top:40px;font-size:17px;font-weight:720;font-stretch:112%;font-variant-numeric:tabular-nums;color:var(--ink)}
+.hero-readout i{font-style:normal;color:var(--cyan);margin-right:4px}
+@media (prefers-reduced-motion:no-preference){
+  .hero-fig .o-trim{animation:hf-trim 10s linear infinite}
+  .hero-fig .o-reg{animation:hf-reg 10s linear infinite}
+  .hero-fig .o-reg .c{animation:hf-c 10s linear infinite}
+  .hero-fig .o-reg .m{animation:hf-m 10s linear infinite}
+  .hero-fig .o-reg .y{animation:hf-y 10s linear infinite}
+  .hero-fig .o-lines{animation:hf-lines 10s linear infinite}
+  .hero-fig .o-num,.hero-readout span{animation:hf-num 10s linear infinite}
+  .hero-readout span+span{animation-delay:.25s}
+}
+@keyframes hf-trim{0%,6%{opacity:0}11%,90%{opacity:1}97%,100%{opacity:0}}
+@keyframes hf-reg{0%,12%{opacity:0}17%,90%{opacity:1}97%,100%{opacity:0}}
+@keyframes hf-c{0%,17%{transform:translate(-40px,-26px);animation-timing-function:cubic-bezier(.2,1.4,.4,1)}30%,100%{transform:none}}
+@keyframes hf-m{0%,19%{transform:translate(34px,-30px);animation-timing-function:cubic-bezier(.2,1.4,.4,1)}32%,100%{transform:none}}
+@keyframes hf-y{0%,21%{transform:translate(-8px,40px);animation-timing-function:cubic-bezier(.2,1.4,.4,1)}34%,100%{transform:none}}
+@keyframes hf-lines{0%,36%{opacity:0}40%,90%{opacity:1}97%,100%{opacity:0}}
+@keyframes hf-num{0%,46%{opacity:0;transform:translateY(4px)}52%,90%{opacity:1;transform:none}97%,100%{opacity:0}}
 
 .stage{display:none}
 .proof-fig{position:relative;margin:0}
-.proof-fig img{width:100%;height:auto;border-radius:3.4%/2.4%;box-shadow:0 1px 1px rgba(20,22,26,.18),0 12px 28px -10px rgba(20,22,26,.35)}
+.proof-fig img{width:100%;height:auto;border-radius:5%/3.65%;box-shadow:0 1px 1px rgba(20,22,26,.18),0 12px 28px -10px rgba(20,22,26,.35)}
 .proof-fig svg.ov{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 .ov .o-trim,.ov .o-lines,.ov .o-reg,.ov .o-num,.ov .o-close{opacity:0;transition:opacity .5s var(--ease-out)}
 .ov .o-trim path{stroke:var(--ink);stroke-width:2;fill:none;vector-effect:non-scaling-stroke}
@@ -262,6 +282,7 @@ a:hover{text-decoration-color:var(--magenta)}
 .foot .qr svg{width:92px;height:92px;padding:6px;background:#fff}
 .foot .qr figcaption{color:var(--mat-ink-2)}
 .copy{margin:56px 0 0;padding-top:16px;border-top:1px solid rgba(232,240,236,.2);font-size:13px;color:var(--mat-ink-2)}
+.tm{margin:10px 0 0;max-width:62em;font-size:12px;line-height:1.55;color:var(--mat-ink-2)}
 
 /* mobile download dock */
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom));background:rgba(243,245,247,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--rule);transform:translateY(110%);transition:transform .35s var(--ease-out);font-size:15px;font-weight:620}
@@ -289,7 +310,7 @@ a:hover{text-decoration-color:var(--magenta)}
 @media (min-width:1100px){
   .story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);grid-template-areas:"hero stage" "howto stage"}
   .hero{grid-area:hero;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:110px 56px 56px var(--edge)}
-  .hero-video{display:none}
+  .hero-card{display:none}
   .howto{grid-area:howto;padding:40px 56px 18vh var(--edge)}
   .step{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding:48px 0}
   .step-fig{display:none}
@@ -413,3 +434,4 @@ html.lenis,html.lenis body{height:auto}
 @media (max-width:420px){.masthead-row{gap:8px}.wordmark{font-size:17px;gap:8px}.langs summary{padding:0 8px;font-size:14px}.masthead-dl{padding:0 12px;font-size:14px}}
 /* Skip layout/paint of far-below-the-fold blocks until they approach the viewport. */
 .features,.watch,.pricing,.limits,.faq,.guides,.foot{content-visibility:auto;contain-intrinsic-size:auto 1200px}
+.guide-main .loupe-fig img{display:block;width:min(100%,300px);height:auto;margin:0 auto 14px}

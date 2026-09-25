@@ -9,7 +9,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-URL = "http://localhost:8765/centermint/tools/og/og.html"
+import os
+URL = os.environ.get("OG_URL", "http://localhost:8765/centermint/tools/og/og.html")
 out = ROOT / "assets/img/og.png"
 with tempfile.TemporaryDirectory() as profile:
     subprocess.run([CHROME, "--headless=new", f"--user-data-dir={profile}", "--hide-scrollbars", "--force-device-scale-factor=1",

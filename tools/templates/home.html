@@ -1,14 +1,15 @@
-{%- macro overlay(state_extra='') -%}
-<svg class="ov" viewBox="0 0 1040 1459" aria-hidden="true" focusable="false">
-<g class="o-trim"><path d="M-24 0H-84M0-24V-84M1064 0H1124M1040-24V-84M-24 1459H-84M0 1483V1543M1064 1459H1124M1040 1483V1543"/></g>
-<g class="o-lines"><line x1="45.5" y1="-110" x2="45.5" y2="1569"/><line x1="999.5" y1="-110" x2="999.5" y2="1569"/><line x1="-110" y1="41" x2="1150" y2="41"/><line x1="-110" y1="1419" x2="1150" y2="1419"/></g>
-<g class="o-close"><rect x="0" y="0" width="190" height="190"/><rect x="425" y="0" width="190" height="190"/><rect x="850" y="0" width="190" height="190"/><rect x="0" y="634" width="190" height="190"/><rect x="850" y="634" width="190" height="190"/><rect x="0" y="1269" width="190" height="190"/><rect x="425" y="1269" width="190" height="190"/><rect x="850" y="1269" width="190" height="190"/></g>
-<g class="o-reg">{% for x, y in [(45.5,41),(999.5,41),(45.5,1419),(999.5,1419)] %}<g transform="translate({{x}} {{y}})">{% for c in ['c','m','y'] %}<g class="{{c}}"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g>{% endfor %}</g>{% endfor %}</g>
-<g class="o-num"><text x="-34" y="752" text-anchor="end">52.9</text><text x="1074" y="752">47.1</text><text x="520" y="-44" text-anchor="middle">50.6</text><text x="520" y="1552" text-anchor="middle">49.4</text></g>
+{%- macro overlay() -%}
+{%- set c = card -%}
+<svg class="ov" viewBox="0 0 {{ c.vw }} {{ c.vh }}" aria-hidden="true" focusable="false">
+<g class="o-trim"><path d="M-24 0H-84M0-24V-84M{{ c.vw + 24 }} 0H{{ c.vw + 84 }}M{{ c.vw }}-24V-84M-24 {{ c.vh }}H-84M0 {{ c.vh + 24 }}V{{ c.vh + 84 }}M{{ c.vw + 24 }} {{ c.vh }}H{{ c.vw + 84 }}M{{ c.vw }} {{ c.vh + 24 }}V{{ c.vh + 84 }}"/></g>
+<g class="o-lines"><line x1="{{ c.l }}" y1="-110" x2="{{ c.l }}" y2="{{ c.vh + 110 }}"/><line x1="{{ c.r }}" y1="-110" x2="{{ c.r }}" y2="{{ c.vh + 110 }}"/><line x1="-110" y1="{{ c.t }}" x2="{{ c.vw + 110 }}" y2="{{ c.t }}"/><line x1="-110" y1="{{ c.b }}" x2="{{ c.vw + 110 }}" y2="{{ c.b }}"/></g>
+<g class="o-close">{% for x, y, w, h in c.close %}<rect x="{{ x }}" y="{{ y }}" width="{{ w }}" height="{{ h }}"/>{% endfor %}</g>
+<g class="o-reg">{% for x, y in [(c.l, c.t), (c.r, c.t), (c.l, c.b), (c.r, c.b)] %}<g transform="translate({{x}} {{y}})">{% for k in ['c','m','y'] %}<g class="{{k}}"><circle r="24"/><path d="M-40 0H40M0-40V40"/></g>{% endfor %}</g>{% endfor %}</g>
+<g class="o-num"><text x="-34" y="{{ (c.vh / 2 + 22)|round(1) }}" text-anchor="end">{{ c.lr_a }}</text><text x="{{ c.vw + 34 }}" y="{{ (c.vh / 2 + 22)|round(1) }}">{{ c.lr_b }}</text><text x="{{ c.vw / 2 }}" y="-44" text-anchor="middle">{{ c.tb_a }}</text><text x="{{ c.vw / 2 }}" y="{{ c.vh + 93 }}" text-anchor="middle">{{ c.tb_b }}</text></g>
 </svg>
 {%- endmacro -%}
 {%- macro gauge(extra_class='') -%}
-<div class="gauge {{extra_class}}" aria-hidden="true"><svg viewBox="0 0 260 46"><rect class="g-ok" x="10" y="20" width="120" height="10"/><line class="g-axis" x1="10" y1="30" x2="250" y2="30"/>{% for x, t in [(10,'50/50'),(130,'55/45'),(250,'60/40')] %}<line class="g-tick" x1="{{x}}" y1="26" x2="{{x}}" y2="36"/><text x="{{x}}" y="46" text-anchor="middle">{{t}}</text>{% endfor %}<path class="g-mark" d="M79.6 19l-5-8h10z"/><text class="g-val" x="79.6" y="8" text-anchor="middle">52.9</text></svg></div>
+<div class="gauge {{extra_class}}" aria-hidden="true"><svg viewBox="0 0 260 46"><rect class="g-ok" x="10" y="20" width="120" height="10"/><line class="g-axis" x1="10" y1="30" x2="250" y2="30"/>{% for x, t in [(10,'50/50'),(130,'55/45'),(250,'60/40')] %}<line class="g-tick" x1="{{x}}" y1="26" x2="{{x}}" y2="36"/><text x="{{x}}" y="46" text-anchor="middle">{{t}}</text>{% endfor %}<path class="g-mark" d="M{{ card.gauge_x }} 19l-5-8h10z"/><text class="g-val" x="{{ card.gauge_x }}" y="8" text-anchor="middle">{{ card.lr_a }}</text></svg></div>
 {%- endmacro -%}
 {%- macro device(key, cls='') -%}
 {%- set s = shots[key] -%}
@@ -31,13 +32,13 @@
 {% endfor %}<link rel="alternate" hreflang="x-default" href="{{ page_url('en') }}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="CenterMint"><meta property="og:locale" content="{{ og_locale }}">{% for loc in og_alternates %}<meta property="og:locale:alternate" content="{{ loc }}">{% endfor %}
 <meta property="og:title" content="{{ og_title }}"><meta property="og:description" content="{{ og_description }}"><meta property="og:url" content="{{ url }}">
-<meta property="og:image" content="{{ base }}assets/img/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{{ ui.stage_caption }}">
+<meta property="og:image" content="{{ base }}assets/img/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{{ ui.stage_caption.replace('{lr}', card.lr) }}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{{ base }}assets/img/og.png">
 <meta name="theme-color" content="#F3F5F7"><meta name="color-scheme" content="light">
 <meta name="apple-itunes-app" content="app-id=6760965068">
 <link rel="icon" href="{{ rel }}assets/img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="{{ rel }}assets/img/apple-touch-icon.png">
 <link rel="preload" href="{{ rel }}assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ rel }}assets/video/measure-tall-poster.webp" as="image" media="(max-width: 1099px)" fetchpriority="high">
+<link rel="preload" as="image" href="{{ rel }}assets/img/sample-card-640.webp" imagesrcset="{{ rel }}assets/img/sample-card-360.webp 360w, {{ rel }}assets/img/sample-card-480.webp 480w, {{ rel }}assets/img/sample-card-640.webp 640w, {{ rel }}assets/img/sample-card-960.webp 960w" imagesizes="(min-width: 760px) 300px, 58vw" media="(max-width: 1099px)" fetchpriority="high">
 <link rel="stylesheet" href="{{ rel }}site.css?v={{ v.css }}">
 <script>document.documentElement.classList.replace("no-js","js")</script>
 {% for block in jsonld %}<script type="application/ld+json">{{ block }}</script>
@@ -68,22 +69,23 @@
 {{ badge() }}
 <figure class="qr">{{ qr }}<figcaption>{{ ui.qr_caption }}</figcaption></figure>
 </div>
-<figure class="hero-video"><video data-video muted loop playsinline preload="none" poster="{{ rel }}assets/video/measure-tall-poster.webp" width="720" height="900" aria-label="{{ ui.video_h2 }}"><source src="{{ rel }}assets/video/measure-tall.webm" type="video/webm"><source src="{{ rel }}assets/video/measure-tall.mp4" type="video/mp4"></video></figure>
+<figure class="hero-card"><div class="proof-fig hero-fig" data-state="4"><img src="{{ rel }}assets/img/sample-card-640.webp" srcset="{{ rel }}assets/img/sample-card-360.webp 360w, {{ rel }}assets/img/sample-card-480.webp 480w, {{ rel }}assets/img/sample-card-640.webp 640w, {{ rel }}assets/img/sample-card-960.webp 960w" sizes="(min-width: 760px) 300px, 58vw" width="640" height="880" alt="{{ ui.hero_card_alt.replace('{lr}', card.lr).replace('{tb}', card.tb) }}" fetchpriority="high" decoding="async">{{ overlay() }}</div>
+<figcaption class="hero-readout"><span><i aria-hidden="true">↔</i> {{ card.lr }}</span><span><i aria-hidden="true">↕</i> {{ card.tb }}</span></figcaption></figure>
 <p class="imprint">{{ hero.intro }}</p>
 </section>
 <div class="stage" aria-hidden="true">
-<div class="lightbox"><div class="panel" data-panel>
+<div class="lightbox"><div class="panel" data-panel data-card="{{ card.json }}" data-stage-v="{{ v.stage }}">
 <i class="trim tl"></i><i class="trim tr"></i><i class="trim bl"></i><i class="trim br"></i>
 <canvas data-gl></canvas>
-<div class="proof-fig stage-fig" data-state="0" data-stage-fig><img src="{{ rel }}assets/img/card-offcenter-640.webp" width="640" height="898" alt="" loading="lazy" decoding="async">{{ overlay() }}</div>
-<div class="gl-labels" data-gl-labels><span data-lbl="l">52.9</span><span data-lbl="r">47.1</span><span data-lbl="t">50.6</span><span data-lbl="b">49.4</span></div>
+<div class="proof-fig stage-fig" data-state="0" data-stage-fig><img src="{{ rel }}assets/img/sample-card-640.webp" width="640" height="880" alt="" loading="lazy" decoding="async">{{ overlay() }}</div>
+<div class="gl-labels" data-gl-labels><span data-lbl="l">{{ card.lr_a }}</span><span data-lbl="r">{{ card.lr_b }}</span><span data-lbl="t">{{ card.tb_a }}</span><span data-lbl="b">{{ card.tb_b }}</span></div>
 <div class="readout" data-readout>
-<div class="ro-row" data-ro-row="lr"><span class="ro-k">{{ ui.readout_lr }}</span><span class="ro-v" data-odo="52.9 / 47.1">52.9 / 47.1</span></div>
-<div class="ro-row" data-ro-row="tb"><span class="ro-k">{{ ui.readout_tb }}</span><span class="ro-v" data-odo="50.6 / 49.4">50.6 / 49.4</span></div>
+<div class="ro-row" data-ro-row="lr"><span class="ro-k">{{ ui.readout_lr }}</span><span class="ro-v" data-odo="{{ card.lr }}">{{ card.lr }}</span></div>
+<div class="ro-row" data-ro-row="tb"><span class="ro-k">{{ ui.readout_tb }}</span><span class="ro-v" data-odo="{{ card.tb }}">{{ card.tb }}</span></div>
 <div class="ro-row ro-ref" data-ro-row="ref"><span class="ro-k">{{ ui.readout_ref }}</span><span class="ro-v">{{ ui.readout_within }}</span></div>
 {{ gauge('ro-gauge') }}
 </div>
-<p class="stage-cap">{{ ui.stage_caption }}<span class="loupe-hint">{{ ui.loupe_hint }}</span></p>
+<p class="stage-cap">{{ ui.stage_caption.replace('{lr}', card.lr) }}<span class="loupe-hint">{{ ui.loupe_hint }}</span></p>
 </div></div>
 </div>
 <section class="howto" id="how-to" aria-labelledby="howto-title">
@@ -97,7 +99,7 @@
 {% if n == 1 %}<p class="note-raw"><strong>{{ ui.raw_only }}</strong> {{ measure['items'][1] }}</p>
 {% elif n == 2 %}<p class="step-more">{{ measure['items'][0] }}</p>
 {% elif n == 3 %}<p class="step-more">{{ measure['items'][2] }}</p><p class="step-more">{{ measure['items'][3] }}</p>
-{% endif %}<div class="proof-fig step-fig" data-state="{{ n }}"><img src="{{ rel }}assets/img/card-offcenter-640.webp" srcset="{{ rel }}assets/img/card-offcenter-360.webp 360w, {{ rel }}assets/img/card-offcenter-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="898" alt="" loading="lazy" decoding="async">{{ overlay() }}</div>
+{% endif %}<div class="proof-fig step-fig" data-state="{{ n }}"><img src="{{ rel }}assets/img/sample-card-640.webp" srcset="{{ rel }}assets/img/sample-card-360.webp 360w, {{ rel }}assets/img/sample-card-480.webp 480w, {{ rel }}assets/img/sample-card-640.webp 640w" sizes="(min-width: 760px) 280px, 62vw" width="640" height="880" alt="" loading="lazy" decoding="async">{{ overlay() }}</div>
 {% if n == 4 %}{{ gauge() }}{{ device('result') }}{% endif %}
 </li>
 {% endfor %}</ol>
@@ -215,6 +217,7 @@
 <div><h2 class="foot-h">{{ ui.footer_more }}</h2><ul><li><a href="{{ base }}privacy.html">{{ footer.privacy }}</a></li><li><a href="{{ base }}terms.html">{{ footer.terms }}</a></li><li><a href="mailto:qwe911291860@gmail.com">{{ footer.email }}</a></li></ul></div>
 </div>
 <p class="copy">{{ footer["copy"] }}</p>
+<p class="tm">{{ ui.trademark }}</p>
 </div>
 </footer>
 <div class="dock" data-dock aria-hidden="true"><span>{{ ui.mobile_bar }}</span><a class="badge" data-app-link href="{{ app_url }}" tabindex="-1"><img src="{{ rel }}assets/badges/app-store-{{ lang }}.svg" width="{{ badge_w }}" height="40" alt="{{ ui.badge_alt }}"></a></div>

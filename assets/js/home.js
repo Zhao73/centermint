@@ -105,7 +105,8 @@ function setupStage() {
   if (!desktop.matches) return; // phones and tablets use the per-step figures instead of the stage
   applyReadout(0);
   if (capableOf3D()) {
-    import("./stage3d.js")
+    // Versioned like the other scripts so a new card geometry never meets a cached stage3d.js.
+    import(`./stage3d.js?v=${panel.dataset.stageV || "0"}`)
       .then(mod => mod.start({ panel, onStep: applyReadout }))
       .catch(err => { console.warn("3D stage unavailable, using the image stage.", err); imageStage(); });
   } else {

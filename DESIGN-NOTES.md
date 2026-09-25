@@ -28,7 +28,7 @@ C, M and Y never fill large areas. They appear as thin lines, registration marks
 ## Type
 
 - Archivo (variable, self-hosted woff2: latin, latin-ext, vietnamese). Headlines use the wide end of the width axis (`font-stretch: 112–125%`) at 700–800; body text is normal width at 400.
-- All figures use `font-variant-numeric: tabular-nums` so ratios such as 52.9 / 47.1 line up like a densitometer readout.
+- All figures use `font-variant-numeric: tabular-nums` so ratios such as 54.4 / 45.6 line up like a densitometer readout.
 - CJK falls back to system fonts per language (`:lang()`): PingFang SC / TC, Hiragino Sans, Apple SD Gothic Neo, then Noto and Windows fonts. No CJK web fonts are loaded. CJK headlines get more line height and a smaller size.
 
 ## Layout (desktop home)
@@ -41,15 +41,15 @@ C, M and Y never fill large areas. They appear as thin lines, registration marks
 │ lede                         │   ┌ trim marks ┐                      │
 │ [App Store badge] [QR]       │   │  3D card   │  ← WebGL, loupe      │
 │ imprint paragraph            │   └────────────┘                      │
-├──────────────────────────────┤   readout  L/R 52.9 / 47.1            │
-│ How to measure (5 steps,     │            T/B 50.6 / 49.4            │
+├──────────────────────────────┤   readout  L/R 54.4 / 45.6            │
+│ How to measure (5 steps,     │            T/B 51.9 / 48.1            │
 │ each ~85vh, drives the 3D)   │                                       │
 ├──────────────────────────────┴───────────────────────────────────────┤
 │ Before you pay to grade: feature rows, text | device, alternating    │
 │   guided line check · Worth Grading? + live calculator · close-ups   │
 │   contact sheet · Submission Log · share image · batch + PDF         │
 ├──────────────────── cutting mat (green, grid) ───────────────────────┤
-│ Watch it measure            [p5 video, muted loop]                   │
+│ Watch it measure            [p5 video: loupe tour of the real card] │
 ├──────────────────────────────────────────────────────────────────────┤
 │ Free sheet (white)  ┆ perforation ┆  Pro sheet (ink)                  │
 │ What it does not do (magenta delete marks)                           │
@@ -59,11 +59,11 @@ C, M and Y never fill large areas. They appear as thin lines, registration marks
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-Phone (390 px): single column. Hero shows the tall p5 video instead of WebGL. Each how-to step carries its own small proof figure (card photo plus an SVG overlay showing that step). A slim App Store bar appears at the bottom once the hero badge has scrolled away and hides again at the footer.
+Phone (390 px): single column. Hero shows the real sample card on a small lightbox with the same SVG overlay as the step figures, measured in a 10 s CSS loop (static final state with reduced motion); the card image is preloaded with srcset, so it is the LCP. Each how-to step carries its own small proof figure (card photo plus an SVG overlay showing that step). A slim App Store bar appears at the bottom once the hero badge has scrolled away and hides again at the footer.
 
 ## The one memorable moment
 
-Desktop hero, Three.js: our own sample card floats tilted above the lightbox. Scrolling lays it flat; trim marks appear at the outer corners; three registration marks per corner (cyan, magenta, yellow, drawn with multiply blending) fly in from the corners and converge until they print as one black mark on the inner printed border; the four measurement lines snap on with a small overshoot; the readout rolls to 52.9 / 47.1 and 50.6 / 49.4. Step 4 lights up the PSA 10 front reference (55/45) with a small gauge in the readout, step 5 outlines the eight close-up regions. The pointer is a loupe (fragment shader magnification with a CMY fringe on the rim and a registration cross in the middle).
+Desktop hero, Three.js: the sample card (a real card, see below) floats tilted above the lightbox. Scrolling lays it flat; trim marks appear at the outer corners; three registration marks per corner (cyan, magenta, yellow, drawn with multiply blending) fly in from the corners and converge until they print as one black mark on the inner printed border; the four measurement lines snap on with a small overshoot; the readout rolls to 52.9 / 47.1 and 50.6 / 49.4. Step 4 lights up the PSA 10 front reference (55/45) with a small gauge in the readout, step 5 outlines the eight close-up regions. The pointer is a loupe (fragment shader magnification with a CMY fringe on the rim and a registration cross in the middle).
 
 Everything else is quiet: no scroll-reveal fades, no hover lifts.
 
@@ -71,9 +71,9 @@ Everything else is quiet: no scroll-reveal fades, no hover lifts.
 
 - Three.js r170 (ES module from jsDelivr): card with rounded-corner SDF mask, fake sheen, contact shadow, shader loupe, multiply-blended registration marks. Loaded only on wide screens with a fine pointer, WebGL, 4+ cores, no Save-Data and no reduced motion.
 - GSAP 3.15 + ScrollTrigger for the step timeline; Lenis 1.3 for smooth wheel scrolling (desktop only).
-- p5.js generative video (tools/p5-video), rendered offline to H.264 and VP9. Used as the phone hero and in the "Watch it measure" block. With reduced motion it does not autoplay; the poster is shown.
+- p5.js video (tools/p5-video), rendered offline and streamed straight into ffmpeg (H.264 and VP9, no frame files). A loupe travels round the real card, each line settles on the inner edge of the printed border, then the ratios are checked against the PSA 10 front reference. Only in the "Watch it measure" block (tablet and desktop). With reduced motion it does not autoplay; the poster is shown.
 - Odometer digits in the readout.
-- Performance: Archivo is self-hosted and preloaded; the phone hero preloads the video poster; the stage script does nothing on phones; far-below sections use `content-visibility: auto`. Lighthouse on a heavily loaded dev machine without gzip: mobile 92 / 100 / 100 / 100, desktop 99 / 100 / 100 / 100 (performance / accessibility / best practices / SEO).
+- Performance: Archivo is self-hosted and preloaded; the phone hero preloads the card image (srcset); the stage script does nothing on phones; far-below sections use `content-visibility: auto`. Lighthouse on a heavily loaded dev machine without gzip: mobile 92 / 100 / 100 / 100, desktop 99 / 100 / 100 / 100 (performance / accessibility / best practices / SEO).
 - Fallbacks: without WebGL, the same stage is an image with an SVG overlay driven by IntersectionObserver; with reduced motion, it shows the final measured state.
 
 ## Removed on the last pass
@@ -83,3 +83,13 @@ Everything else is quiet: no scroll-reveal fades, no hover lifts.
 ## Do not repeat next time
 
 Registration-mark / proofing-desk language, cool proof white plus cutting-mat green, Archivo wide headlines.
+
+## Sample card (September 2026)
+
+Every card on the site is real: a 1999 Pokémon Base Set Charizard, from a public scan upscaled 4x (tools/make_real_card.py). The drawn baseball card and the abstract p5 cards were removed.
+
+- Line positions: `tools/src/art/real/charizard-measure.json` (inner edge of the yellow border, measured on the 2400 x 3300 scan).
+- Numbers shown everywhere (page, 3D stage, video, OG image): `tools/src/art/real/charizard-app.json`, the app's own automatic reading (54.4 / 45.6, 51.9 / 48.1), so the page matches the App screenshots. The two sources differ by about 1 px on the scan.
+- tools/build.py reads both and writes the overlays, readouts, the stage's `data-card`, and tools/og/og.html (template tools/templates/og.html). It stops the build if the card no longer sits inside the 55/45 reference the page claims.
+- Screenshots: tools/import_shots.py prefers `tmp/raw-site/` (real card) over `tmp/raw-v3/` (App Store set, drawn card) and records the source in assets/shots/sources.json; build.py never shows a raw-v3 screenshot that has a card in it (result, guide, closeups, share) and uses the English raw-site one instead.
+- Footer on every page: trademark notice for Pokémon and the card images (Nintendo, Creatures, GAME FREAK, The Pokémon Company; no affiliation or endorsement).

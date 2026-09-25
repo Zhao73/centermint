@@ -7,12 +7,17 @@ import Lenis from "lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Card geometry in card-local units: width 1, height A. Pixel values are from the 1040×1459 texture.
-const TEX_W = 1040, TEX_H = 1459;
-const A = TEX_H / TEX_W;
+// Card geometry in card-local units: width 1, height A. Pixel values come from the measured scan of the
+// real sample card (panel[data-card], written by tools/build.py from tools/src/art/real/charizard-measure.json).
+let TEX_W = 1, TEX_H = 1, A = 1, INNER = null, CLOSE = [];
 const px = x => x / TEX_W - 0.5;
 const py = y => (0.5 - y / TEX_H) * A;
-const INNER = { l: px(45.5), r: px(999.5), t: py(41), b: py(1419) }; // left/right 52.9/47.1, top/bottom 50.6/49.4
+function readCard(panel) {
+  const c = JSON.parse(panel.dataset.card);
+  TEX_W = c.w; TEX_H = c.h; A = TEX_H / TEX_W;
+  INNER = { l: px(c.l), r: px(c.r), t: py(c.t), b: py(c.b) }; // inner edges of the printed border
+  CLOSE = c.close; // close-up regions [x, y, w, h] in texture pixels
+}
 
 const INK = new THREE.Color(0x14161a), CYAN = new THREE.Color(0x00a0dc), MAGENTA = new THREE.Color(0xd6247b), YELLOW = new THREE.Color(0xf2c200), WHITE = new THREE.Color(0xffffff);
 
@@ -21,7 +26,8 @@ export async function start({ panel, onStep }) {
   const labelBox = panel.querySelector("[data-gl-labels]");
   const labels = Object.fromEntries([...labelBox.querySelectorAll("[data-lbl]")].map(el => [el.dataset.lbl, el]));
   // The fallback <img> is lazy, so resolve its src attribute rather than currentSrc (may still be empty).
-  const cardUrl = new URL(panel.querySelector("[data-stage-fig] img").getAttribute("src"), location.href).href.replace("card-offcenter-640", "card-offcenter");
+  readCard(panel);
+  const cardUrl = new URL(panel.querySelector("[data-stage-fig] img").getAttribute("src"), location.href).href.replace("sample-card-640", "sample-card");
 
   // Pass sRGB values straight through so canvas colours match the CSS colours exactly.
   THREE.ColorManagement.enabled = false;
@@ -58,7 +64,7 @@ export async function start({ panel, onStep }) {
   const cardMat = new THREE.ShaderMaterial({
     transparent: true,
     uniforms: {
-      uMap: { value: tex }, uAspect: { value: 1 / A }, uRadius: { value: 0.047 },
+      uMap: { value: tex }, uAspect: { value: 1 / A }, uRadius: { value: 3.18 / 63 },
       uMouse: { value: new THREE.Vector2(0.5, 0.5) }, uLoupe: { value: 0 }, uLensR: { value: 0.13 }, uZoom: { value: 2.6 },
       uSheen: { value: 0 }, uSheenAmt: { value: 0.1 }, uRim: { value: 0.003 },
     },
@@ -127,10 +133,9 @@ export async function start({ panel, onStep }) {
   }
   // Close-up regions (4 corners, 4 edge midpoints), outlined.
   const closeRegions = [];
-  const cs = 190 / TEX_W;
-  for (const [cx, cy] of [[0, 0], [425, 0], [850, 0], [0, 634], [850, 634], [0, 1269], [425, 1269], [850, 1269]]) {
-    const x = px(cx + 95), y = py(cy + 95);
-    closeRegions.push({ x, y, edges: [flat(CYAN, 4), flat(CYAN, 4), flat(CYAN, 4), flat(CYAN, 4)] });
+  for (const [cx, cy, cw, ch] of CLOSE) {
+    const x = px(cx + cw / 2), y = py(cy + ch / 2);
+    closeRegions.push({ x, y, w: cw / TEX_W, h: ch / TEX_W, edges: [flat(CYAN, 4), flat(CYAN, 4), flat(CYAN, 4), flat(CYAN, 4)] });
   }
   // Registration marks: three layers (C, M, Y) per inner corner, multiplied so a perfect fit prints black.
   const regCorners = [[INNER.l, INNER.t], [INNER.r, INNER.t], [INNER.l, INNER.b], [INNER.r, INNER.b]];
@@ -197,11 +202,11 @@ export async function start({ panel, onStep }) {
       reg.armH.scale.set(0.1, w, 1); reg.armV.scale.set(w, 0.1, 1);
     }
     for (const c of closeRegions) {
-      const [e0, e1, e2, e3] = c.edges, h = cs / 2;
-      e0.scale.set(cs, thin, 1); e0.position.set(c.x, c.y + h, 0);
-      e1.scale.set(cs, thin, 1); e1.position.set(c.x, c.y - h, 0);
-      e2.scale.set(thin, cs, 1); e2.position.set(c.x - h, c.y, 0);
-      e3.scale.set(thin, cs, 1); e3.position.set(c.x + h, c.y, 0);
+      const [e0, e1, e2, e3] = c.edges, hw = c.w / 2, hh = c.h / 2;
+      e0.scale.set(c.w, thin, 1); e0.position.set(c.x, c.y + hh, 0);
+      e1.scale.set(c.w, thin, 1); e1.position.set(c.x, c.y - hh, 0);
+      e2.scale.set(thin, c.h, 1); e2.position.set(c.x - hw, c.y, 0);
+      e3.scale.set(thin, c.h, 1); e3.position.set(c.x + hw, c.y, 0);
     }
   }
   new ResizeObserver(resize).observe(panel);
